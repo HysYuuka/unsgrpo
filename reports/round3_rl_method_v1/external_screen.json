@@ -1,0 +1,518 @@
+{
+  "status": "CANDIDATE_IDS_FROZEN_RAW_ASSETS_NOT_READY",
+  "time": {
+    "utc": "2026-10-29T01:35:35.688369+00:00",
+    "hong_kong": "2026-10-29T09:35:35.688369+08:00"
+  },
+  "official_repository": "https://github.com/aliensunmin/DomainSpecificHighlight",
+  "official_revision": "29083d2dc8ee951986f6fb436f1be8f92c8937fd",
+  "list_type": "vlist_sel official domain-relevant test subsets",
+  "hash_rule": "sha256(UTF-8 video_id), ascending then ID",
+  "candidate_sources": [
+    {
+      "category": "dog",
+      "video_id": "msjK8nHZHZ0",
+      "hash": "01e18f13f4b34817d7da78580571f2f899fdc422abc7fd57f4cada0eaa129e4e",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/dog_vlist_sel.json",
+        "sha256": "5e78c0cc77802d760dc531bdbde89a48be9596fe107cc7adefc49a28d62dabe7",
+        "bytes": 807
+      }
+    },
+    {
+      "category": "dog",
+      "video_id": "1gjntnYm8NA",
+      "hash": "03af1194ae922fb61fb6098acd9ee83eda5524c81c8c3af5cc9168093a2fa232",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/dog_vlist_sel.json",
+        "sha256": "5e78c0cc77802d760dc531bdbde89a48be9596fe107cc7adefc49a28d62dabe7",
+        "bytes": 807
+      }
+    },
+    {
+      "category": "dog",
+      "video_id": "O3XxuutEvoo",
+      "hash": "0d377248af35b49636f9a80d322c5eb626d769fae1fd3f1a1726e49293899e3a",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/dog_vlist_sel.json",
+        "sha256": "5e78c0cc77802d760dc531bdbde89a48be9596fe107cc7adefc49a28d62dabe7",
+        "bytes": 807
+      }
+    },
+    {
+      "category": "dog",
+      "video_id": "Mp8Pz86J660",
+      "hash": "142c40a16911edf7bb80c27daf9d41a629456d6e558805715fe9e515e3c1480f",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/dog_vlist_sel.json",
+        "sha256": "5e78c0cc77802d760dc531bdbde89a48be9596fe107cc7adefc49a28d62dabe7",
+        "bytes": 807
+      }
+    },
+    {
+      "category": "gymnastics",
+      "video_id": "86YLsw7efDM",
+      "hash": "0411172ce1e6a8eff911d3445947c9088b87cf75293feb95f4841b8b46ba66b7",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/gymnastics_vlist_sel.json",
+        "sha256": "36ace2c10303b3483e81eb5224c25cce421ca516e3eb8a38c1896315f7d5b1cd",
+        "bytes": 1152
+      }
+    },
+    {
+      "category": "gymnastics",
+      "video_id": "iQRMMFiYAUw",
+      "hash": "1d1955f9cb09629c05d4d5b66a0876b53820e44e61266039680f1a391ef3158e",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/gymnastics_vlist_sel.json",
+        "sha256": "36ace2c10303b3483e81eb5224c25cce421ca516e3eb8a38c1896315f7d5b1cd",
+        "bytes": 1152
+      }
+    },
+    {
+      "category": "gymnastics",
+      "video_id": "KldEfRhv7H0",
+      "hash": "1e7a46c4269d6d2aec7f448c49b1d75509dfd5da644a658461c4c243a4eac7f8",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/gymnastics_vlist_sel.json",
+        "sha256": "36ace2c10303b3483e81eb5224c25cce421ca516e3eb8a38c1896315f7d5b1cd",
+        "bytes": 1152
+      }
+    },
+    {
+      "category": "gymnastics",
+      "video_id": "s6LNwTThBgs",
+      "hash": "2554ff9d5e5d800cf570b88f854143f5b11dfae31e5fb93265456299ba7c6382",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/gymnastics_vlist_sel.json",
+        "sha256": "36ace2c10303b3483e81eb5224c25cce421ca516e3eb8a38c1896315f7d5b1cd",
+        "bytes": 1152
+      }
+    },
+    {
+      "category": "parkour",
+      "video_id": "VjUdsrtAU6Y",
+      "hash": "09935a47217e3f848b2ec77206e860e0fe378b05fe0d0ef6b062b80117d0a22f",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/parkour_vlist_sel.json",
+        "sha256": "0ce8d54749cedbef1251750768a0cabaffba84880028dc2b177355b5f784f07b",
+        "bytes": 912
+      }
+    },
+    {
+      "category": "parkour",
+      "video_id": "pmpqBiJe-aw",
+      "hash": "16dbda1df788a4984f33368a0e2e640380e185e18bbd8e6e1c5107c6c885255f",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/parkour_vlist_sel.json",
+        "sha256": "0ce8d54749cedbef1251750768a0cabaffba84880028dc2b177355b5f784f07b",
+        "bytes": 912
+      }
+    },
+    {
+      "category": "parkour",
+      "video_id": "yUjJq0kvxcw",
+      "hash": "188d942121fe0c0f9733cc5eb0b332c8ed0add84b6ac3800a95913bb4fcc1986",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/parkour_vlist_sel.json",
+        "sha256": "0ce8d54749cedbef1251750768a0cabaffba84880028dc2b177355b5f784f07b",
+        "bytes": 912
+      }
+    },
+    {
+      "category": "parkour",
+      "video_id": "52pxVtnSOE8",
+      "hash": "3b5c4391b25aea4f367b532d33f4dd5afb3583f7b7f649ce7543e4f6c08cfdca",
+      "official_partition": "TestTightL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/parkour_vlist_sel.json",
+        "sha256": "0ce8d54749cedbef1251750768a0cabaffba84880028dc2b177355b5f784f07b",
+        "bytes": 912
+      }
+    },
+    {
+      "category": "skating",
+      "video_id": "DGcO0QgcXtw",
+      "hash": "10f3fd3620098ca7a6ed69c0f10e946a1c641fd890d90cf82137409a02c2c1f4",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/skating_vlist_sel.json",
+        "sha256": "48a4d14ff2b24c03cd5c9b66854adb29d441709adcdf511014c49cc50dca12e0",
+        "bytes": 792
+      }
+    },
+    {
+      "category": "skating",
+      "video_id": "CQZNrEstSag",
+      "hash": "1153194bf18044788266b560621607b438e0d4cf023fefb8d382952afb7dba70",
+      "official_partition": "TestTightL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/skating_vlist_sel.json",
+        "sha256": "48a4d14ff2b24c03cd5c9b66854adb29d441709adcdf511014c49cc50dca12e0",
+        "bytes": 792
+      }
+    },
+    {
+      "category": "skating",
+      "video_id": "TM9-qyWnXpQ",
+      "hash": "1ba84024abb4ae89986d41abfc9d545988986b6de36e57860e217b92e01f2b86",
+      "official_partition": "TestTightL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/skating_vlist_sel.json",
+        "sha256": "48a4d14ff2b24c03cd5c9b66854adb29d441709adcdf511014c49cc50dca12e0",
+        "bytes": 792
+      }
+    },
+    {
+      "category": "skating",
+      "video_id": "AJ98A2y1dVw",
+      "hash": "1f3ea3c10e91a3c69960ed41791c01139da3f6db83103dd1801467e046c51113",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/skating_vlist_sel.json",
+        "sha256": "48a4d14ff2b24c03cd5c9b66854adb29d441709adcdf511014c49cc50dca12e0",
+        "bytes": 792
+      }
+    },
+    {
+      "category": "skiing",
+      "video_id": "_10CbYdTG5M",
+      "hash": "006aae1a77a9f631476100fd88630a2c284cd8e7a414721e428c733cf5ad938c",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/skiing_vlist_sel.json",
+        "sha256": "352b8923da4147d91c0132f1707b0c63adfbbcee646a64aeb7bd27388190e404",
+        "bytes": 1527
+      }
+    },
+    {
+      "category": "skiing",
+      "video_id": "mRdthCqe6Nk",
+      "hash": "030d398e5ca8f22328f6fdc6616efa3032d5ce50bb249798ffcd8d0ae660651a",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/skiing_vlist_sel.json",
+        "sha256": "352b8923da4147d91c0132f1707b0c63adfbbcee646a64aeb7bd27388190e404",
+        "bytes": 1527
+      }
+    },
+    {
+      "category": "skiing",
+      "video_id": "JJSu7Lh9rvs",
+      "hash": "0ad786d55425219235eebc94e6696e08fab84791a0d5764f6372223ea599b10a",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/skiing_vlist_sel.json",
+        "sha256": "352b8923da4147d91c0132f1707b0c63adfbbcee646a64aeb7bd27388190e404",
+        "bytes": 1527
+      }
+    },
+    {
+      "category": "skiing",
+      "video_id": "09v0HNf81J0",
+      "hash": "0b07029957e23cdf95f4b3db384ac7939039a7da9c9ccc2a724ff3f43af0a083",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/skiing_vlist_sel.json",
+        "sha256": "352b8923da4147d91c0132f1707b0c63adfbbcee646a64aeb7bd27388190e404",
+        "bytes": 1527
+      }
+    },
+    {
+      "category": "surfing",
+      "video_id": "5BD5oxQXRR0",
+      "hash": "014e42046636fb4ad4bf9478467a035ccca59cc0a062a33b11127ae4f73b1302",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/surfing_vlist_sel.json",
+        "sha256": "30132cb025228faf9b916a003f1c0ec6ab17d861221664147d9c95fcdfb7c73b",
+        "bytes": 1437
+      }
+    },
+    {
+      "category": "surfing",
+      "video_id": "K0f_DpVOjfA",
+      "hash": "01fed0ac4eec0ab9af6d959fe3b787fbbabd4f23c9b90800d23ed63df7671b77",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/surfing_vlist_sel.json",
+        "sha256": "30132cb025228faf9b916a003f1c0ec6ab17d861221664147d9c95fcdfb7c73b",
+        "bytes": 1437
+      }
+    },
+    {
+      "category": "surfing",
+      "video_id": "H5FEdJYokO4",
+      "hash": "06ce533a5fc570ea5b6be1a4b077bf84dc7bde9143cb1462bfeadc8502f6d707",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/surfing_vlist_sel.json",
+        "sha256": "30132cb025228faf9b916a003f1c0ec6ab17d861221664147d9c95fcdfb7c73b",
+        "bytes": 1437
+      }
+    },
+    {
+      "category": "surfing",
+      "video_id": "uUuYnKLETLw",
+      "hash": "18cae88950a877c6a2e567a1f9bd3ad146c064de1a4436ed849ad4cf3450317a",
+      "official_partition": "TestLooseL",
+      "availability": "NOT_VERIFIED_RAW_VIDEO",
+      "source_list": {
+        "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/surfing_vlist_sel.json",
+        "sha256": "30132cb025228faf9b916a003f1c0ec6ab17d861221664147d9c95fcdfb7c73b",
+        "bytes": 1437
+      }
+    }
+  ],
+  "replacement_queues": {
+    "dog": [
+      "msjK8nHZHZ0",
+      "1gjntnYm8NA",
+      "O3XxuutEvoo",
+      "Mp8Pz86J660",
+      "fXx44D1sqUw",
+      "OCVXhRG2fEA",
+      "PWqLJKZeBC8",
+      "MkBdHvXPocc",
+      "xZIN_s-qhbU",
+      "sTd06idFa0E",
+      "bZzP2MieC1c",
+      "PcvdX5OVgfQ",
+      "ppNjl3I3iJs",
+      "p0oxRJD1GUk",
+      "a2nj7XCo2Rk",
+      "dlH2K9N_jSM",
+      "9D_Q8l_ruQk",
+      "wf_qlAizlSM",
+      "9rP5yF9EC3Y",
+      "P0MnXh6bnKk",
+      "yN7h90Y-04g",
+      "OxSsRZqPfyk",
+      "Om5mczkpcVg",
+      "fxOfeQdFrVE",
+      "hSRyclcZyGM"
+    ],
+    "gymnastics": [
+      "86YLsw7efDM",
+      "iQRMMFiYAUw",
+      "KldEfRhv7H0",
+      "s6LNwTThBgs",
+      "zr5LSPMBpiI",
+      "FT7yIi3-tG0",
+      "_E-oVuk3vNk",
+      "YPd7RDN5CkE",
+      "DyZ0gZ5xmxI",
+      "rPsKpHKzUso",
+      "-9PfBU4Tu4c",
+      "RoiLzMA_ilA",
+      "osTqtEzHBsc",
+      "d4XlDg22yIE",
+      "iDJM9j11U-c",
+      "affAIVH9uRA",
+      "tzq5cJQ9NQA",
+      "YcD5_ZCfhfI",
+      "nBZiGSccsTg",
+      "eB4Toq9dUWs",
+      "E0aRE1_ea8E",
+      "BBPw_3Rv3uk",
+      "G5mySU_8TU0",
+      "-hE9v3izo4c",
+      "PAjJbT1DRnY",
+      "2AuigNFEsTM",
+      "eUyuw2J5FaE",
+      "PEKRfJYYEgU",
+      "EwQ-aMK2sKg",
+      "lzEhLAPxZyQ",
+      "Rq0BpciuvBM",
+      "NAfBa7lqg2Q",
+      "s4it3_HVIr4",
+      "z3cNtOMKK7A",
+      "BU7YlQAOBkM",
+      "T_zWyrVzyvw"
+    ],
+    "parkour": [
+      "VjUdsrtAU6Y",
+      "pmpqBiJe-aw",
+      "yUjJq0kvxcw",
+      "52pxVtnSOE8",
+      "MBzVhDlwCxU",
+      "Be4IlnKeBOo",
+      "3STjP8GqXk0",
+      "uGLs9atTvNc",
+      "XM4le45pW-E",
+      "CkWqQnitiwk",
+      "ucTkpjZO_o4",
+      "qlGPuopK3CI",
+      "TFdbCRkVeIA",
+      "Pmfggm7ojlY",
+      "08k4ysX_XJE",
+      "oT6g0I2Ok9o",
+      "lk8_DOxYnRY",
+      "5Mj1mJO57F4",
+      "ozyyrQkvWFQ",
+      "fLek7GRIxjE",
+      "3rgz0GASPbw",
+      "HXabA9I2h2M",
+      "4-4BgyGphLQ",
+      "JeOhZT8tsfY",
+      "8APFeNkHkOU",
+      "pvyy-j51M64",
+      "6sMNnWqa_as"
+    ],
+    "skating": [
+      "DGcO0QgcXtw",
+      "CQZNrEstSag",
+      "TM9-qyWnXpQ",
+      "AJ98A2y1dVw",
+      "SZClqA7rjOg",
+      "VszVaULK11c",
+      "ixsKaNplm6o",
+      "g1WbAIzkw80",
+      "lsU1NVsTwW4",
+      "1n7Afe5AZCM",
+      "n6VL2bX-MjE",
+      "2oOe2_Ew6Ao",
+      "kNvIyxKwHfU",
+      "QFJgviTgf0s",
+      "OeJMoe9rzVU",
+      "8x8ESK5MnR0",
+      "kpg7l0y0oow",
+      "nabfs6Dzyw0",
+      "BGZaaqFjoRY",
+      "SLN-xH-rsU0",
+      "NC6vxbZZZHs",
+      "r0lvvcgi7HY",
+      "7TQbqKWjLcI",
+      "4cyx1VpDjc4"
+    ],
+    "skiing": [
+      "_10CbYdTG5M",
+      "mRdthCqe6Nk",
+      "JJSu7Lh9rvs",
+      "09v0HNf81J0",
+      "bXq9rRSbI3c",
+      "vT33-8KUb2Q",
+      "lhgmIgzBQxs",
+      "ZueaKXReGjU",
+      "YJCR2q-WRhQ",
+      "7sM2SP0FEks",
+      "dJdc1piq44U",
+      "zqXd4EgUFhE",
+      "HW6_sPym938",
+      "ruySf5zL7Kw",
+      "Z8X9WIojH1U",
+      "2pstGBM4p0w",
+      "91lDbBHUx0w",
+      "SSlv7qJK5zA",
+      "0AHkDElk3ws",
+      "ZnA4-ggkFu8",
+      "hjZLa2DTuqs",
+      "8aWN-0NZErI",
+      "RjagI4pAUpw",
+      "HHMm9a0UEFc",
+      "b53-VPsWom4",
+      "5VaY6LgIqDs",
+      "RGxiOb9hlS0",
+      "MXyv-Ut9HRg",
+      "drHPy6wSZGs",
+      "iAMGMz8-5rc",
+      "1EmrEluKmHY",
+      "IyoD3G5igY0",
+      "iXdt4v42mbs",
+      "Ka2qcp3jmWo",
+      "9wtXO2lF6hM",
+      "I7wFmP6P7p0",
+      "FRqlf0_2t2o",
+      "jRbst8kjWW8",
+      "iaHbK6ogafc",
+      "_BYqZjuKpKA",
+      "mGST8ZekCZc"
+    ],
+    "surfing": [
+      "5BD5oxQXRR0",
+      "K0f_DpVOjfA",
+      "H5FEdJYokO4",
+      "uUuYnKLETLw",
+      "p2eU5z647Mw",
+      "J-P-t6g19SM",
+      "KKjovY6uXFY",
+      "9GpZHq1n8ps",
+      "CefGXyYu_zU",
+      "4RsZz_8d8Ro",
+      "HwKv3Xc5MAE",
+      "gVcCGUtpA90",
+      "TXfsxoLiWd4",
+      "82OzgxT2tH8",
+      "wvQ0h5Nwsxc",
+      "wSQvcOWn0Ec",
+      "GS09SevPYT4",
+      "YbwdDCzVczU",
+      "HevmZSTRIt0",
+      "0P2PZXUa0Bg",
+      "IjQhHPlTfdE",
+      "l8ME6z_EWKE",
+      "Mkyp0z_Cgig",
+      "p8VUjcZyK70",
+      "jaCOI_VwIjc",
+      "ZxRfxCjBMFU",
+      "hdklRTNrq0I",
+      "SI2JbS48Upg",
+      "QLCR4isBO4w",
+      "Xa0y6b6Vm6U",
+      "mSVxaAJcNJQ",
+      "lw_1fEY9QTo",
+      "-d72e4v9skA",
+      "3Y1Jp1_fFLQ",
+      "o0on6yIXJQE",
+      "lbp6_wCXqvw",
+      "Eiq8GHi4kEo",
+      "NB5Ez5kJfMU",
+      "s9dTu2fcbNg",
+      "D_e2wTd3quo",
+      "0-fstXuo_Pw",
+      "bcmXVyFbsRg",
+      "5K0jJHiTcHw"
+    ]
+  },
+  "available_raw_sources": 0,
+  "complete_available_24_source_screen_ready": false,
+  "availability_exception": "Network/assets not ready; candidates are not claimed to be available raw videos.",
+  "highlight_annotations_read": false,
+  "raw_asset_bytes_downloaded": 0,
+  "evaluation": "Only after internal repeat gate and raw availability; otherwise DATA_NOT_READY or NOT_REACHED_PREVIOUS_GATE",
+  "replacement_rule": "Only raw unavailability, in frozen per-category hash order; every replacement logged"
+}

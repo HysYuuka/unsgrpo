@@ -1,0 +1,11 @@
+{
+  "date_HK": "2026-10-31",
+  "state": "EXPERIMENTS_STOPPED_BY_USER",
+  "current_focus": "Organize existing competition system and evidence in the private highlight repository",
+  "restart_authorized": false,
+  "automatic_daily_sync": false,
+  "this_sync_authorized": true,
+  "static_crop_results": "research/static_crop_rank/reports/STOPPED_RESULTS_20261031.json",
+  "static_crop_stop_receipt": "research/static_crop_rank/reports/STOP_RECEIPT_20261031.json",
+  "raw_media_annotations_and_weights_publication": false
+}

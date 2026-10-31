@@ -1,0 +1,90 @@
+{
+  "time_HK": "2026-10-31T19:01:56.705054+08:00",
+  "authorization": "User requested stopping experiments, GitHub archival and storage cleanup on 2026-10-31.",
+  "state": "COMPLETED",
+  "files": [
+    {
+      "path": "/autodl-fs/data/unsgrpo/decisive_rl_v2/teacher_model/model-00001-of-00004.safetensors",
+      "bytes": 4902275944,
+      "expected_sha256": "d5d0aef0eb170fc7453a296c43c0849a56f510555d3588e4fd662bb35490aefa",
+      "reason": "Unmodified public 8B teacher weights for closed no-go experiment; source revision and download receipt retained.",
+      "restore_repository": "Qwen/Qwen3-VL-8B-Instruct",
+      "restore_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+      "sha256": "d5d0aef0eb170fc7453a296c43c0849a56f510555d3588e4fd662bb35490aefa",
+      "removed": true
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/decisive_rl_v2/teacher_model/model-00002-of-00004.safetensors",
+      "bytes": 4915962496,
+      "expected_sha256": "8be88fb5501e4d5719a6d4cc212e6a13480330e74f3e8c77daa1a68f199106b5",
+      "reason": "Unmodified public 8B teacher weights for closed no-go experiment; source revision and download receipt retained.",
+      "restore_repository": "Qwen/Qwen3-VL-8B-Instruct",
+      "restore_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+      "sha256": "8be88fb5501e4d5719a6d4cc212e6a13480330e74f3e8c77daa1a68f199106b5",
+      "removed": true
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/decisive_rl_v2/teacher_model/model-00003-of-00004.safetensors",
+      "bytes": 4999831048,
+      "expected_sha256": "83de00eafe6e0d57ccd009dbcf71c9974d74df2f016c27afb7e95aafd16b2192",
+      "reason": "Unmodified public 8B teacher weights for closed no-go experiment; source revision and download receipt retained.",
+      "restore_repository": "Qwen/Qwen3-VL-8B-Instruct",
+      "restore_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+      "sha256": "83de00eafe6e0d57ccd009dbcf71c9974d74df2f016c27afb7e95aafd16b2192",
+      "removed": true
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/decisive_rl_v2/teacher_model/model-00004-of-00004.safetensors",
+      "bytes": 2716270024,
+      "expected_sha256": "0a88b98e9f96270973f567e6a2c103ede6ccdf915ca3075e21c755604d0377a5",
+      "reason": "Unmodified public 8B teacher weights for closed no-go experiment; source revision and download receipt retained.",
+      "restore_repository": "Qwen/Qwen3-VL-8B-Instruct",
+      "restore_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+      "sha256": "0a88b98e9f96270973f567e6a2c103ede6ccdf915ca3075e21c755604d0377a5",
+      "removed": true
+    },
+    {
+      "path": "/autodl-fs/data/highlight-aesthetic-rl/assets/cpic/model-00001-of-00002.safetensors.partial",
+      "bytes": 4969549296,
+      "reason": "Incomplete public CPIC download, never promoted to a valid model; acquisition receipts and completed shard retained.",
+      "restore_repository": "zzqingz/CPIC",
+      "restore_receipt": "/root/autodl-tmp/highlight-aesthetic-rl/reports/CPIC_EXPECTED.json",
+      "sha256": "fae3a49002a56ce338dd8bf03b4364279d5746ebe2c921bb4c7e3e3eefa8178a",
+      "removed": true
+    }
+  ],
+  "disk_before": {
+    "/autodl-fs/data": {
+      "total": 214748364800,
+      "used": 54817476608,
+      "free": 159930888192
+    },
+    "/root/autodl-tmp": {
+      "total": 53687091200,
+      "used": 6392946688,
+      "free": 47294144512
+    }
+  },
+  "preserved": [
+    "All trained best and last checkpoints, including MUSIQ optimizer and RNG",
+    "Raw predictions, training logs, original datasets and data archives",
+    "Competition repository and all research evidence",
+    "Completed CPIC shard and acquisition metadata",
+    "Original 2B policy and LoRA adapters"
+  ],
+  "public_asset_bytes_removed": 22503888808,
+  "pip_cache_bytes_removed": 191142437,
+  "total_bytes_removed": 22695031245,
+  "disk_after": {
+    "/autodl-fs/data": {
+      "total": 214748364800,
+      "used": 32313581568,
+      "free": 182434783232
+    },
+    "/root/autodl-tmp": {
+      "total": 53687091200,
+      "used": 6400802816,
+      "free": 47286288384
+    }
+  }
+}

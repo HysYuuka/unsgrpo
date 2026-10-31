@@ -1,0 +1,37 @@
+{
+  "images": 3335,
+  "official_records": 3336,
+  "official_split": {
+    "train": 2636,
+    "val": 200,
+    "test": 500
+  },
+  "unique_original_split": {
+    "train": 2635,
+    "val": 200,
+    "test": 500
+  },
+  "all_candidates": 287967,
+  "candidates_min": 52,
+  "candidates_max": 90,
+  "mos_range": [
+    0.86,
+    5.0
+  ],
+  "manifest_sha256": "0098f7686d7a984b9bfd6993040998a1366c85d5f0a5fcb837a7179404d37d84",
+  "official_archive_sha256": "b895a3f9e03c8f70c37194370441dc2f17bb60e0ab437447ee240b003cd6550b",
+  "official_split_preserved": true,
+  "duplicate_policy": "One identical train-image pair grouped; same boxes, two published MOS vectors retained; average separately computed annotation-set losses. No relabeling, no candidate deletion.",
+  "duplicate_bytes_or_decoded_rgb": [
+    {
+      "duplicate": "/root/autodl-fs/highlight-aesthetic-rl/assets/gaic/GAIC/images/train/225959.jpg",
+      "prior": "/root/autodl-fs/highlight-aesthetic-rl/assets/gaic/GAIC/images/train/220928.jpg"
+    },
+    {
+      "duplicate": "/root/autodl-fs/highlight-aesthetic-rl/assets/gaic/GAIC/images/train/225959.jpg",
+      "prior": "/root/autodl-fs/highlight-aesthetic-rl/assets/gaic/GAIC/images/train/220928.jpg"
+    }
+  ],
+  "label_policy": "Exclude only official -2 sentinel; retain six published MOS values 0.86/0.93 without clipping; use nominal (MOS-1)/4 affine scale, valid normalized range [-0.035,1]. No inferred or corrected human labels.",
+  "coordinates": "native y1 x1 y2 x2 reordered to xyxy; pixel-edge convention as official Python crop slicing; no +/-1 shift"
+}

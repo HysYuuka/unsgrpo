@@ -1,0 +1,84 @@
+{
+  "status": "COMPLETED_REVIEWED_AND_ARCHIVED",
+  "created_utc": "2026-10-28T04:01:11.762180+00:00",
+  "evaluation_scope": "10 DEVELOPMENT sources, not independent test",
+  "report": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/round2_diagnostic_v1/FINAL_REPORT.md",
+    "sha256": "62bf80ff2cf209224f77ad40a486f808df69361774d5f2cfc18d323bb995e4c8",
+    "bytes": 16829
+  },
+  "decision_summary": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/round2_diagnostic_v1/FINAL_SUMMARY.json",
+    "sha256": "6c82acf01e48d7d2c74d87bc7fa324d7d5588aed127bf80c25afc8fc4696ffce",
+    "bytes": 5235
+  },
+  "proposed_not_executed_next_experiment": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/round2_diagnostic_v1/NEXT_MINIMAL_EXPERIMENT.json",
+    "sha256": "022c450da3e743d842c846afd74c2aee30a0120f69e9dd081fe94ecca2e82b63",
+    "bytes": 2484
+  },
+  "scientific_freeze": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round2_diagnostic_v1/round2.freeze.json",
+    "sha256": "507aa502c23cabc53453ce9cd8cc958c6561afe33f92f8168a9549ff4277bc76",
+    "bytes": 32140
+  },
+  "frozen_round1_project_files_unchanged": 57,
+  "all_round2_frozen_sources_and_inputs_unchanged": true,
+  "independent_metric_check": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round2_diagnostic_v1/independent_verification.json",
+    "sha256": "41422a3062be43eaf1f13aac7620e90a27f8db755a2158a561f97abff996678b",
+    "bytes": 1614
+  },
+  "reproduction_namespace_check": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round2_diagnostic_v1/replay_namespace_check_receipt.json",
+    "sha256": "585480aa0bc6cf7d83839b8274086aac0146e1a2ee6d4647ed734e649d77e3e3",
+    "bytes": 1160
+  },
+  "archives": {
+    "status": "COMPLETED_SHA_VERIFIED",
+    "receipt": {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round2_diagnostic_v1/review_archive_receipt.json",
+      "sha256": "712994ecb793a7ff753cddf4c8166c56ea5e7019f5209fd1860d2266bd334517",
+      "bytes": 19388
+    },
+    "archive_root": "/autodl-fs/data/unsgrpo/archives/round2_diagnostic_v1_review_v1",
+    "verified_payload_files": 60,
+    "verified_payload_bytes": 5338847,
+    "main_archive_receipt": {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round2_diagnostic_v1/archive_receipt.json",
+      "sha256": "2b1b06a1437e1a2eea1599fd9b19f343745e70c0128f35ad19a6c2dc4e9178bb",
+      "bytes": 37843
+    },
+    "main_archive_files": 114,
+    "main_archive_payload_bytes": 23673418,
+    "local_sources_retained": true
+  },
+  "storage_audit": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round2_diagnostic_v1/storage_final.json",
+    "sha256": "f8e4031e215b2f6ad4836c040fc8d1ddf8f110178474b7e47ebb55deaf7ea0d3",
+    "bytes": 1916
+  },
+  "storage": {
+    "logical_round2_working_bytes_before_closure": 28142254,
+    "logical_round2_report_bytes_before_closure": 703673,
+    "scoped_round2_repository_code_config_test_bytes": 127121,
+    "scoped_code_files": 19,
+    "both_archives_verified_payload_bytes": 29012265,
+    "local_free_bytes": 30727729152,
+    "file_free_bytes": 202428801024,
+    "all_registered_budgets_and_reserves_passed": true,
+    "measurement_note": "Logical file sizes include preparation and review; storage snapshot precedes these small closure records. Scoped code bytes are current whole files, not a Git diff against an empty initial repository."
+  },
+  "execution": {
+    "all_phases_complete": true,
+    "remaining_diagnostic_jobs": 0,
+    "active_GPU_processes_observed": 0,
+    "screen_jobs_observed": 0,
+    "new_Qwen_or_GRPO_training": 0,
+    "CPU_student_fits": 12,
+    "frozen_input_requests": 24,
+    "subagents_used": false,
+    "automatic_Git_sync": false
+  },
+  "closure_metadata_archive_policy": "The closure, lightweight review receipt and final storage audit are appended as generated control metadata; original scientific payload manifests remain unchanged."
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASSED_CPU_ONLY",
+  "originals_independently_rechecked": 10795,
+  "native_candidate_scores_checked": 259080,
+  "source_group_weighting_fixture": true,
+  "aligned_seeds_not_added_as_samples": true,
+  "independent_metrics_reject_corruption": true,
+  "early_inference_gate_blocks_before_GPU_import": true,
+  "GPU_work": false
+}

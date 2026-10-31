@@ -1,0 +1,21 @@
+{
+  "status": "REWARD_NOT_ALIGNED",
+  "time": {
+    "utc": "2026-10-29T03:29:09.521083+00:00",
+    "hong_kong": "2026-10-29T11:29:09.521083+08:00"
+  },
+  "recommendation": "候选池存在更好答案，但两种奖励均未证明能选出来；结束当前奖励配方，不追加训练或第三个教师prompt。",
+  "selected_reward": null,
+  "screen_result": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/screen_result.json",
+    "sha256": "2d3756cdf16cad7a2074404534e1e6f8cdd9cdb65ed16e1c0e5391a909515854",
+    "bytes": 112588
+  },
+  "evaluated_seeds": [],
+  "two_seed_fixed_branch_signal": {},
+  "new_training_runs": 0,
+  "GPU_seconds": 645.5105947097763,
+  "human_train_labels_read": false,
+  "Git_sync": false,
+  "clarified_conclusion": "候选确有改善空间，但新旧奖励均未达到预定辨别力准入，结束当前配方、不启动训练。旧奖励存在弱正向选择信号，不能把停止决定解释为奖励完全没有信息。"
+}

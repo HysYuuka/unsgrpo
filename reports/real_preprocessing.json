@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETED",
+  "n_videos": 50,
+  "n_train": 40,
+  "n_test": 10,
+  "n_clips": 6316,
+  "n_sampled_frames": 25264,
+  "n_decoded_native_frames": 352355,
+  "max_sampling_error_seconds": 0.041666666666685614,
+  "mean_sampling_error_seconds_frame_weighted": 0.01624896761841369,
+  "terminal_frame_hold_samples": 11,
+  "terminal_frame_hold_videos": 10,
+  "sum_successful_video_preparation_seconds": 418.7592466264032,
+  "failed_initial_attempt_cost_included": false,
+  "failed_initial_attempt_cost_note": "Original attempt console retained; summed per-video seconds excludes failed decode attempts and hash sealing overhead",
+  "prepared_manifest_path": "/root/autodl-tmp/unsgrpo-work/prepared/prepared.jsonl",
+  "prepared_manifest_sha256": "ec889de91b2e10ab9810f5dd66349ce2f9353ec21c52c633701f71ca7b714b29",
+  "all_media_have_initial_seals": true,
+  "human_annotation_values_read": false
+}

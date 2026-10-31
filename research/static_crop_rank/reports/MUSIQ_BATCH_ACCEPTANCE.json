@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "chunk": 4,
+  "full_native_preprocessing": true,
+  "additional_padding_mask": 0,
+  "score_max_abs": 1.4901161193847656e-07,
+  "gradient_relative_l2": 8.964133467673854e-06,
+  "worst_material_tensor": 2.8816213452033636e-05,
+  "all_parameters_checked": 248
+}

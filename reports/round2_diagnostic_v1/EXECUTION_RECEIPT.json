@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETED_NUMERICAL_DIAGNOSTICS",
+  "freeze": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round2_diagnostic_v1/round2.freeze.json",
+    "sha256": "507aa502c23cabc53453ce9cd8cc958c6561afe33f92f8168a9549ff4277bc76",
+    "bytes": 32140
+  },
+  "state": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round2_diagnostic_v1/state.json",
+    "sha256": "74abec260f684b726a42c0a7dea0724c80a45fbe771aad5ff6ebcf65d7e434bd",
+    "bytes": 4147
+  },
+  "cpu_stage_wall_seconds": 61.20951048377901,
+  "total_execution_wall_seconds": 106.99094423418865,
+  "work_bytes_added": 17125270,
+  "frozen_input_stage_wall_seconds": 45.11757465079427,
+  "GRPO_or_Qwen_training": false,
+  "evaluation_status": "DEVELOPMENT_ONLY",
+  "subagents_used": false
+}

@@ -1,0 +1,19 @@
+{
+  "time_HK": "2026-10-30T18:31:14.856104+08:00",
+  "status": "FROZEN_BEFORE_ANY_CPC_MODEL_INFERENCE",
+  "files": {
+    "scripts/evaluate_cpc_external.py": "c325a18cf6e6f6e9d8740f0b4cca51e7fb0ad6f947077884a9f175cc770be050",
+    "scripts/finish_external_when_ready.py": "52ef82949adf9cabb4057b62cea000f4b63cd5466455e243649aa70381f25108",
+    "tests/cpc_external_cpu.py": "bb68415d852c5e5ea9e1e2cf456d8d4909811974fc77de956cef65aafa82737d",
+    "configs/cpc_external_protocol.json": "bbdeac60bc8456ce5395a20330ecff6b7913782b932e64e143fe9f18c4e514b9",
+    "reports/PUBLISHED_WEIGHT_FREEZE_20261030.json": "3335ff09accfda7dd9c574e619689edd5f18c310479df5465867f001c4e94a4c",
+    "src/croprank/core.py": "43a64f33e659021874f1a20bad0eb93d045d18adefdec2359fb79a4a5260d284",
+    "src/croprank/model.py": "43768b68bcfd5837fdd4bb0e8951ac09c50e58d31785af091a4d9925a02d5c20",
+    "src/croprank/replay.py": "7cee86961e00126fc82f8dc1158c9bd1b08b91a6e6f5bb9c1fd748624af1b679",
+    "src/croprank/musiq.py": "e4df433728d1a4d6661fd62d7e18820887471b05c2ab9cbcf09a6ac4b9ac8492",
+    "src/croprank/gaic.py": "db6e7b322de8c152a2467d3cfbe7834b2ef05bf06862f37e4dc7495a9530cf71",
+    "src/croprank/train.py": "86fa711a915c50950657c1bd1d6be8ec9cfc183b6335373110a57ad37ee27920"
+  },
+  "CPU_acceptance": "reports/CPC_EXTERNAL_CPU_ACCEPTANCE.json",
+  "real_GPU_inference_acceptance": "NOT_RUN_UNTIL_CONTROLLED_MATRIX_COMPLETE"
+}

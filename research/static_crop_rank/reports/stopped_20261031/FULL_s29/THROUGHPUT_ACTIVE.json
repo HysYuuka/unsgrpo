@@ -1,0 +1,14 @@
+{
+  "variant": "FULL",
+  "seed": 29,
+  "observed_optimizer_steps": 100,
+  "candidate_chunk": 90,
+  "global_step_end": 100,
+  "all_candidates": true,
+  "median_step_seconds": 1.1882418545428663,
+  "mean_step_seconds": 1.1892406151490287,
+  "train_only_hours_one_30epoch_run": 3.270411691659829,
+  "validation_excluded": true,
+  "do_not_apply_to_other_architectures": true,
+  "peak_allocated_bytes": 2401019904
+}

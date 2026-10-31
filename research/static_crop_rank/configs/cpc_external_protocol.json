@@ -1,0 +1,24 @@
+{
+  "version": "cpc_external_v1_20261030",
+  "purpose": "External inference only; no CPC training, calibration, checkpoint selection or parameter changes",
+  "coordinate_conversion": "Published bboxes are xyxy pixel edges; retain exact endpoints; reject invalid source rather than clip or shift",
+  "label_conversion": "Arithmetic mean across published per-rater assigned scores, with every raw rater vector retained; not GAIC MOS, no 1..5 normalization",
+  "candidate_policy": "Every native annotated candidate; original file order defines crop_id and score tie order",
+  "overlap": {
+    "exact": "file SHA256 or decoded RGB SHA256, including mirrored RGB",
+    "perceptual": "32x32 luminance DCT pHash, low8x8 median excluding DC; original and horizontal mirror",
+    "perceptual_max_hamming": 8,
+    "relative_aspect_ratio_tolerance": 0.02,
+    "strong_match_max_RGB_MAE_255": 8.0,
+    "strong_match_min_RGB_correlation": 0.98,
+    "ambiguous_policy": "Exclude entire CPC source group if any GAIC TRAIN/VAL pHash proposal within aspect tolerance remains ambiguous; retain every reason and coverage count",
+    "published_AVA_id_collision": "Also exclude an entire group if its published ava_obj_* numeric identity equals a GAIC TRAIN/VAL source_id; conservative possible-identity exclusion, not a verified pixel match",
+    "GAIC_TEST": "Flag and stratify overlap; do not claim shared sources are an independent test sample"
+  },
+  "CPC_source_groups": "Union exact/mirrored RGB identities and same published source family after removing _obj_<number>_; unknown original URL coverage remains a limitation",
+  "metrics": ["acc1_5", "acc1_10", "mean_acc_5", "mean_acc_10", "srcc", "regret_in_CPC_assigned_score_units"],
+  "statistical_unit": "source group, average images and then aligned seeds within group; no crop/pair bootstrap",
+  "evaluation_gate": "All12 controlled endpoints frozen and main supervisor successfully completed, with no other GPU worker",
+  "manual_geometry_examples": "First4 eligible originals by SHA256(source_id), candidate indices0,5,15,23 when present; no model-score selection",
+  "no_metric_based_protocol_adjustment": true
+}

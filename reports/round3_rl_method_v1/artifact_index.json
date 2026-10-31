@@ -1,0 +1,1221 @@
+{
+  "status": "VERIFIED_ARTIFACT_INDEX",
+  "time": {
+    "utc": "2026-10-29T01:51:58.127524+00:00",
+    "hong_kong": "2026-10-29T09:51:58.127524+08:00"
+  },
+  "files": [
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/front_driver.log",
+      "sha256": "635746b079a3383555aef280b0b04bc2bcb1035f41638fdf22c229b0e50db719",
+      "bytes": 130,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/front_end.freeze.json",
+      "sha256": "892777826a35b8aafd107d0471e5f2abda8e52727f146658c9bbec949aa4a409",
+      "bytes": 11966,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/front_end_source_snapshot/reports/ROUND3_RL_METHOD_PLAN_20261028.json",
+      "sha256": "3b994e9748cb28cb87c7a18ca892dbcaf1c6d6cec02882d90f6a041b338cccef",
+      "bytes": 9866,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/front_end_source_snapshot/reports/ROUND3_RL_METHOD_PLAN_20261028.md",
+      "sha256": "62d1e4130c15c33c387b01d8724961a04d09289d67b69ecaa1dad352b482b756",
+      "bytes": 27078,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/front_end_source_snapshot/scripts/round3_build_teacher.py",
+      "sha256": "4c9fffffe5e8df5b8dfde6ac67b3e5de2eb20de66edca99b0b00918c26348d4e",
+      "bytes": 10626,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/front_end_source_snapshot/scripts/round3_materialize_targets.py",
+      "sha256": "8e8743b95067615490372651e8ac7e203948d8c189f36047ecd364fabc6ad2e5",
+      "bytes": 2421,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/front_end_source_snapshot/scripts/round3_prepare.py",
+      "sha256": "0d8c8c5c511653a87475a481c91e5635aeec9d1458b0b768cb62ef15fd5f441b",
+      "bytes": 9546,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/front_end_source_snapshot/scripts/round3_teacher_quality.py",
+      "sha256": "c2fc4663758a6753801ff3ed5034421dc6ab1767841f558fee8abcdda1b993e7",
+      "bytes": 5811,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/front_end_source_snapshot/src/unsgrpo/round3_common.py",
+      "sha256": "9adb6020f355abb8ee530b83da26ae339968d19ea9a0c7acaa24e1ac44270788",
+      "bytes": 3330,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/front_end_source_snapshot/src/unsgrpo/round3_reward.py",
+      "sha256": "0f01da3ed905ce76a3028cef78ac99feeadac912be74215286171f955783a5ca",
+      "bytes": 4464,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/front_end_source_snapshot/src/unsgrpo/round3_teacher.py",
+      "sha256": "0624d0ae13132a6add26be9004d558a5676a939044d7f5944968bbbd7f1b6bb0",
+      "bytes": 5416,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/front_end_source_snapshot/src/unsgrpo/round3_trainer_adapter.py",
+      "sha256": "eb2b3469991e7c6c9bfbc123bf4eb4b6c0bf8e65c6a3dc0e13bdd5551facebd8",
+      "bytes": 2500,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/front_end_source_snapshot/tests/test_round3_contracts.py",
+      "sha256": "acfbec66c3f72ca364adabe52b2e05f385fd036559d977c92647bd71589d7199",
+      "bytes": 5228,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/front_state.json",
+      "sha256": "fd6d5648b11429d115e884d0427deb2687bd0bd619e47a20fd7b0561256c2fd2",
+      "bytes": 3310,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/gpu_sessions.jsonl",
+      "sha256": "f190c8b48a0252aaaa633ce05d4c7f428b632af61ce9ae88ed30197cbd41873a",
+      "bytes": 552,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/independent_verification.json",
+      "sha256": "86936473f04ce9de5852ef622c16d7d8b4733aaa38fe4f334fbe948457f537f3",
+      "bytes": 1303,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/initial_state.json",
+      "sha256": "52a453148500ba7163066e1e744ef48d559c37249a02c69c13f48e61873246a0",
+      "bytes": 202,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/logs/B_quality050.log",
+      "sha256": "04e107b165018f6d50e7e91b937b447bdcf9559a22896a9ed3f4f64f9315ba4b",
+      "bytes": 515,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/logs/B_quality075.log",
+      "sha256": "4af672326470b4a466769c7985492e94699001e4a0c96524902421b582209ee2",
+      "bytes": 516,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/logs/B_targets050.log",
+      "sha256": "649f526be5e3971bf3711673902b3bc740fd0e23d2b42c4b41e14690fb61106e",
+      "bytes": 35,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/logs/B_targets075.log",
+      "sha256": "a9214a4d54e2f652e30e89d9ca2685dd80b90daf811723390defc87c2eedd3d9",
+      "bytes": 35,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/logs/B_teacher.log",
+      "sha256": "62bd98984f3c10d398d748541d6c3a8d198fa176a4a8c8e576b5b1cade7e303a",
+      "bytes": 2785,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/logs/cache_replay.log",
+      "sha256": "6da4664fffca3caf359630092ee83f5f96f4ae0d91be9aeaf961740ace0a2125",
+      "bytes": 84,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/logs/cpu_contracts.log",
+      "sha256": "afbd49aa677d988cafb26a09b518fdfd0d8d6e5b2c651903dea145360a3cb7fc",
+      "bytes": 98,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/logs/cpu_contracts_initial_assertion.log",
+      "sha256": "8cdd932df335c8cb81ed714264ff565af32d73aa8757229b2139e8620240b82c",
+      "bytes": 1544,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/logs/independent_verification.log",
+      "sha256": "cfe93b880d53657f586a1b8302a548ff4dfa25ba371a104419ea73fa7ad36f80",
+      "bytes": 442,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/logs/independent_verification_initial_token_assumption.log",
+      "sha256": "686a28cdb566a81ba46f820c83279399da18293e08bfd6601daf1140146135c3",
+      "bytes": 404,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/logs/report.log",
+      "sha256": "f50a55d5973b562b0f8850657cabea84c0b020d6b81218c13b3f130d74b43b05",
+      "bytes": 70,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/logs/report_initial_syntax.log",
+      "sha256": "3fd1b76c6e52abe685577bc5580cc11d9769ecdd4908f1aa16562d8314b4fedb",
+      "bytes": 635,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/logs/stage_A_prepare.log",
+      "sha256": "17be742bf61c7971e0e5aacfbc7449d3b46a7e9d304d38b40ae52b4b42cac03c",
+      "bytes": 236,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/logs/storage_final.log",
+      "sha256": "a9464fc30903a295dc71372d6492a929a1a1a18f44c4f83f41d45b86a34b386e",
+      "bytes": 1916,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/logs/storage_initial.log",
+      "sha256": "53514acc9d5ab0f85d2122dfa8d6ae14ec2fcf24a72afd9d188bfb67605615d1",
+      "bytes": 1916,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/reused_source_integrity.json",
+      "sha256": "d7db8459f6b44599df6ad6eb9c413a4db6deb998e52b99fff1b929702781dab2",
+      "bytes": 1061,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/additional_network_receipt.json",
+      "sha256": "972e9ae14be1150e511745b7f5e34d3cbd112492617afd870b49b7520c2bd3d2",
+      "bytes": 1822,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/dog_vlist_sel.json",
+      "sha256": "5e78c0cc77802d760dc531bdbde89a48be9596fe107cc7adefc49a28d62dabe7",
+      "bytes": 807,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/final_network_probes.json",
+      "sha256": "4500dba90e7e8dade207a73bb755c398c3d8f24b6df7d9b7dc135f3f68b05f19",
+      "bytes": 801,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/gymnastics_vlist_sel.json",
+      "sha256": "36ace2c10303b3483e81eb5224c25cce421ca516e3eb8a38c1896315f7d5b1cd",
+      "bytes": 1152,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/network_receipt.json",
+      "sha256": "ad0b4b199072b6b32c1286fa613def7e14f8146fff5e13065912971fc3487264",
+      "bytes": 993,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/parkour_vlist_sel.json",
+      "sha256": "0ce8d54749cedbef1251750768a0cabaffba84880028dc2b177355b5f784f07b",
+      "bytes": 912,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/skating_vlist_sel.json",
+      "sha256": "48a4d14ff2b24c03cd5c9b66854adb29d441709adcdf511014c49cc50dca12e0",
+      "bytes": 792,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/skiing_vlist_sel.json",
+      "sha256": "352b8923da4147d91c0132f1707b0c63adfbbcee646a64aeb7bd27388190e404",
+      "bytes": 1527,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/surfing_vlist_sel.json",
+      "sha256": "30132cb025228faf9b916a003f1c0ec6ab17d861221664147d9c95fcdfb7c73b",
+      "bytes": 1437,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/umt_README.md",
+      "sha256": "94179dd280bc03cf14c05102424b968f2a0b759d09b19d97222ceec8de305717",
+      "bytes": 16606,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/umt_tvsum.py",
+      "sha256": "f7c962a7abb061d37844eb4baa1503e0e3dba54caa5483d97f68287776e7f347",
+      "bytes": 4117,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/youtube_README.md",
+      "sha256": "7830eac586b712e1afe4dcf80e611f5d47293cf7b7ab7a85409abff69e562cb8",
+      "bytes": 6182,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/youtube_commit_direct.json",
+      "sha256": "cb80455bc53fb11f5943b063df62be721431489f7669a38a686a7528a745ed8a",
+      "bytes": 4162,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/youtube_lists_pinned_revision_verification.json",
+      "sha256": "61f95c24f49477c431cd4588beb459ad187f7b8c66deb78bf7cfc6ed621e8b4e",
+      "bytes": 1877,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/storage_final.json",
+      "sha256": "a9464fc30903a295dc71372d6492a929a1a1a18f44c4f83f41d45b86a34b386e",
+      "bytes": 1916,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/storage_initial.json",
+      "sha256": "53514acc9d5ab0f85d2122dfa8d6ae14ec2fcf24a72afd9d188bfb67605615d1",
+      "bytes": 1916,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/teacher_pair_pool.json",
+      "sha256": "0e23d85502d79a826f7de95744ef8ae748cd205805ff6128761d227151ff4a62",
+      "bytes": 805802,
+      "location": "working"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/cache_replay_receipt.json",
+      "sha256": "1e2af8d90dd6866930d002240da3997d436cb99bc8315880d812896eade65ce4",
+      "bytes": 2156,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/final_control/storage_final.json",
+      "sha256": "a9464fc30903a295dc71372d6492a929a1a1a18f44c4f83f41d45b86a34b386e",
+      "bytes": 1916,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/final_control/storage_final.log",
+      "sha256": "a9464fc30903a295dc71372d6492a929a1a1a18f44c4f83f41d45b86a34b386e",
+      "bytes": 1916,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/front_driver.log",
+      "sha256": "635746b079a3383555aef280b0b04bc2bcb1035f41638fdf22c229b0e50db719",
+      "bytes": 130,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/front_end.freeze.json",
+      "sha256": "892777826a35b8aafd107d0471e5f2abda8e52727f146658c9bbec949aa4a409",
+      "bytes": 11966,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/front_end_source_snapshot/reports/ROUND3_RL_METHOD_PLAN_20261028.json",
+      "sha256": "3b994e9748cb28cb87c7a18ca892dbcaf1c6d6cec02882d90f6a041b338cccef",
+      "bytes": 9866,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/front_end_source_snapshot/reports/ROUND3_RL_METHOD_PLAN_20261028.md",
+      "sha256": "62d1e4130c15c33c387b01d8724961a04d09289d67b69ecaa1dad352b482b756",
+      "bytes": 27078,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/front_end_source_snapshot/scripts/round3_build_teacher.py",
+      "sha256": "4c9fffffe5e8df5b8dfde6ac67b3e5de2eb20de66edca99b0b00918c26348d4e",
+      "bytes": 10626,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/front_end_source_snapshot/scripts/round3_materialize_targets.py",
+      "sha256": "8e8743b95067615490372651e8ac7e203948d8c189f36047ecd364fabc6ad2e5",
+      "bytes": 2421,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/front_end_source_snapshot/scripts/round3_prepare.py",
+      "sha256": "0d8c8c5c511653a87475a481c91e5635aeec9d1458b0b768cb62ef15fd5f441b",
+      "bytes": 9546,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/front_end_source_snapshot/scripts/round3_teacher_quality.py",
+      "sha256": "c2fc4663758a6753801ff3ed5034421dc6ab1767841f558fee8abcdda1b993e7",
+      "bytes": 5811,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/front_end_source_snapshot/src/unsgrpo/round3_common.py",
+      "sha256": "9adb6020f355abb8ee530b83da26ae339968d19ea9a0c7acaa24e1ac44270788",
+      "bytes": 3330,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/front_end_source_snapshot/src/unsgrpo/round3_reward.py",
+      "sha256": "0f01da3ed905ce76a3028cef78ac99feeadac912be74215286171f955783a5ca",
+      "bytes": 4464,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/front_end_source_snapshot/src/unsgrpo/round3_teacher.py",
+      "sha256": "0624d0ae13132a6add26be9004d558a5676a939044d7f5944968bbbd7f1b6bb0",
+      "bytes": 5416,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/front_end_source_snapshot/src/unsgrpo/round3_trainer_adapter.py",
+      "sha256": "eb2b3469991e7c6c9bfbc123bf4eb4b6c0bf8e65c6a3dc0e13bdd5551facebd8",
+      "bytes": 2500,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/front_end_source_snapshot/tests/test_round3_contracts.py",
+      "sha256": "acfbec66c3f72ca364adabe52b2e05f385fd036559d977c92647bd71589d7199",
+      "bytes": 5228,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/front_state.json",
+      "sha256": "fd6d5648b11429d115e884d0427deb2687bd0bd619e47a20fd7b0561256c2fd2",
+      "bytes": 3310,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/gpu_sessions.jsonl",
+      "sha256": "f190c8b48a0252aaaa633ce05d4c7f428b632af61ce9ae88ed30197cbd41873a",
+      "bytes": 552,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/independent_verification.json",
+      "sha256": "86936473f04ce9de5852ef622c16d7d8b4733aaa38fe4f334fbe948457f537f3",
+      "bytes": 1303,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/initial_state.json",
+      "sha256": "52a453148500ba7163066e1e744ef48d559c37249a02c69c13f48e61873246a0",
+      "bytes": 202,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/logs/B_quality050.log",
+      "sha256": "04e107b165018f6d50e7e91b937b447bdcf9559a22896a9ed3f4f64f9315ba4b",
+      "bytes": 515,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/logs/B_quality075.log",
+      "sha256": "4af672326470b4a466769c7985492e94699001e4a0c96524902421b582209ee2",
+      "bytes": 516,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/logs/B_targets050.log",
+      "sha256": "649f526be5e3971bf3711673902b3bc740fd0e23d2b42c4b41e14690fb61106e",
+      "bytes": 35,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/logs/B_targets075.log",
+      "sha256": "a9214a4d54e2f652e30e89d9ca2685dd80b90daf811723390defc87c2eedd3d9",
+      "bytes": 35,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/logs/B_teacher.log",
+      "sha256": "62bd98984f3c10d398d748541d6c3a8d198fa176a4a8c8e576b5b1cade7e303a",
+      "bytes": 2785,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/logs/cache_replay.log",
+      "sha256": "6da4664fffca3caf359630092ee83f5f96f4ae0d91be9aeaf961740ace0a2125",
+      "bytes": 84,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/logs/cpu_contracts.log",
+      "sha256": "afbd49aa677d988cafb26a09b518fdfd0d8d6e5b2c651903dea145360a3cb7fc",
+      "bytes": 98,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/logs/cpu_contracts_initial_assertion.log",
+      "sha256": "8cdd932df335c8cb81ed714264ff565af32d73aa8757229b2139e8620240b82c",
+      "bytes": 1544,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/logs/independent_verification.log",
+      "sha256": "cfe93b880d53657f586a1b8302a548ff4dfa25ba371a104419ea73fa7ad36f80",
+      "bytes": 442,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/logs/independent_verification_initial_token_assumption.log",
+      "sha256": "686a28cdb566a81ba46f820c83279399da18293e08bfd6601daf1140146135c3",
+      "bytes": 404,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/logs/report.log",
+      "sha256": "f50a55d5973b562b0f8850657cabea84c0b020d6b81218c13b3f130d74b43b05",
+      "bytes": 70,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/logs/report_initial_syntax.log",
+      "sha256": "3fd1b76c6e52abe685577bc5580cc11d9769ecdd4908f1aa16562d8314b4fedb",
+      "bytes": 635,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/logs/stage_A_prepare.log",
+      "sha256": "17be742bf61c7971e0e5aacfbc7449d3b46a7e9d304d38b40ae52b4b42cac03c",
+      "bytes": 236,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/logs/storage_initial.log",
+      "sha256": "53514acc9d5ab0f85d2122dfa8d6ae14ec2fcf24a72afd9d188bfb67605615d1",
+      "bytes": 1916,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/reused_source_integrity.json",
+      "sha256": "d7db8459f6b44599df6ad6eb9c413a4db6deb998e52b99fff1b929702781dab2",
+      "bytes": 1061,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/sources/additional_network_receipt.json",
+      "sha256": "972e9ae14be1150e511745b7f5e34d3cbd112492617afd870b49b7520c2bd3d2",
+      "bytes": 1822,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/sources/dog_vlist_sel.json",
+      "sha256": "5e78c0cc77802d760dc531bdbde89a48be9596fe107cc7adefc49a28d62dabe7",
+      "bytes": 807,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/sources/final_network_probes.json",
+      "sha256": "4500dba90e7e8dade207a73bb755c398c3d8f24b6df7d9b7dc135f3f68b05f19",
+      "bytes": 801,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/sources/gymnastics_vlist_sel.json",
+      "sha256": "36ace2c10303b3483e81eb5224c25cce421ca516e3eb8a38c1896315f7d5b1cd",
+      "bytes": 1152,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/sources/network_receipt.json",
+      "sha256": "ad0b4b199072b6b32c1286fa613def7e14f8146fff5e13065912971fc3487264",
+      "bytes": 993,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/sources/parkour_vlist_sel.json",
+      "sha256": "0ce8d54749cedbef1251750768a0cabaffba84880028dc2b177355b5f784f07b",
+      "bytes": 912,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/sources/skating_vlist_sel.json",
+      "sha256": "48a4d14ff2b24c03cd5c9b66854adb29d441709adcdf511014c49cc50dca12e0",
+      "bytes": 792,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/sources/skiing_vlist_sel.json",
+      "sha256": "352b8923da4147d91c0132f1707b0c63adfbbcee646a64aeb7bd27388190e404",
+      "bytes": 1527,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/sources/surfing_vlist_sel.json",
+      "sha256": "30132cb025228faf9b916a003f1c0ec6ab17d861221664147d9c95fcdfb7c73b",
+      "bytes": 1437,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/sources/umt_README.md",
+      "sha256": "94179dd280bc03cf14c05102424b968f2a0b759d09b19d97222ceec8de305717",
+      "bytes": 16606,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/sources/umt_tvsum.py",
+      "sha256": "f7c962a7abb061d37844eb4baa1503e0e3dba54caa5483d97f68287776e7f347",
+      "bytes": 4117,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/sources/youtube_README.md",
+      "sha256": "7830eac586b712e1afe4dcf80e611f5d47293cf7b7ab7a85409abff69e562cb8",
+      "bytes": 6182,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/sources/youtube_commit_direct.json",
+      "sha256": "cb80455bc53fb11f5943b063df62be721431489f7669a38a686a7528a745ed8a",
+      "bytes": 4162,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/sources/youtube_lists_pinned_revision_verification.json",
+      "sha256": "61f95c24f49477c431cd4588beb459ad187f7b8c66deb78bf7cfc6ed621e8b4e",
+      "bytes": 1877,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/storage_initial.json",
+      "sha256": "53514acc9d5ab0f85d2122dfa8d6ae14ec2fcf24a72afd9d188bfb67605615d1",
+      "bytes": 1916,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/provenance_work/teacher_pair_pool.json",
+      "sha256": "0e23d85502d79a826f7de95744ef8ae748cd205805ff6128761d227151ff4a62",
+      "bytes": 805802,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/DECISION.md",
+      "sha256": "6c902c2e51e47d7d6f6b58271020140d68606c142cab0248b2fca39f25498dd8",
+      "bytes": 10760,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/ablation_contrasts.csv",
+      "sha256": "79ab8cf2cfbb8b753268b6e66923ece32b722df4895780977f9c1941c07a26fd",
+      "bytes": 288,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/external_screen.json",
+      "sha256": "53f0fc491cfae9169a85ced81e8d6af9e03e91ba2656a66f96dccf665c1c3ba9",
+      "bytes": 17026,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/external_stage_status.json",
+      "sha256": "49a6f89acf2897431c05656bc3f628deeda14263ec2cddd0076b100aff7137a0",
+      "bytes": 877,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/format_failure_examples.json",
+      "sha256": "16be08425ab9ed998a05691b64a164e3d6be912fe6db39de67c067168d675ba7",
+      "bytes": 9903,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/historical_baselines.json",
+      "sha256": "00b953d4ec05ce8740d9d65cdf51fecaa9001ef4a4c42b3da048f45ebfd6ac48",
+      "bytes": 81292,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/method_spec.actual.json",
+      "sha256": "3e31b10336df8664d7e38d227d09885c72fb5c4938ac2579db568cd7c310d4c7",
+      "bytes": 1722,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/method_spec.json",
+      "sha256": "fb15941b07195671614d5e4a07ef4fd06787b4e3894084a0055a51558428df1a",
+      "bytes": 11164,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/metric_choice.json",
+      "sha256": "a49bee5090712168fa147a0bfda4a02c8588bec12498b1694fc80d0de8748dd8",
+      "bytes": 9847,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/per_seed.csv",
+      "sha256": "9e650a78050746dbb9aeafafc0edeef9ef6d88f50904a6a533e472083aafc543",
+      "bytes": 599,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/per_video.csv",
+      "sha256": "f7a4d40c2ab2ff9ea507746afe6d6b8fa6e2dbe364df743e9c806be0e47fefd4",
+      "bytes": 15936,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/resource_receipt.json",
+      "sha256": "ec8f3ceca2bbe894a2593bd961a81bd8692175b7c920521429992a556971ceba",
+      "bytes": 2837,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/results.csv",
+      "sha256": "f59f7010aa2f006d02df261e7c51db1964851373b995fcdfbe8e443662c6aa9b",
+      "bytes": 1806,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/source_versions.json",
+      "sha256": "5e22573a9a1c45a503190a28a6643ad64651808823ffb60785bb69ec0dbdb7f6",
+      "bytes": 10399,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/teacher_cache_index.json",
+      "sha256": "06fc6c84bfa8bebaf513400b23510f3d9dc25e453aaf9aa5c0ca257fe86d051f",
+      "bytes": 20048,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/teacher_gate_alpha050.json",
+      "sha256": "10e6d0822966a838b49a0f168be47c0c26152705be8ac12cde66bba738a58e2a",
+      "bytes": 44837,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/teacher_gate_alpha075.json",
+      "sha256": "87bab3612384905e3fc52f4a271ce8e03877f60c42be4d31abe75c5735905f89",
+      "bytes": 44848,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/teacher_quality.csv",
+      "sha256": "331920bbb60bbf45ddc7a119486df054cee64417129d1a996ad527ecfdef9afd",
+      "bytes": 4396,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/teacher_quality_alpha050.csv",
+      "sha256": "c449251e76d991e0e6eb211af4178fa151affd59eb570b9f31099f12a0285190",
+      "bytes": 1764,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/teacher_quality_alpha075.csv",
+      "sha256": "b1f877940e95f13e38c0c1399c8cfa1db4287d3621125765d425d4996c0e3b45",
+      "bytes": 1774,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/report_snapshot/training_status.json",
+      "sha256": "c46d754b781a7ccbd158b14de72b88838eac3d3f66ea5f007f5e98fc26329233",
+      "bytes": 743,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/reports/ROUND3_RL_METHOD_PLAN_20261028.json",
+      "sha256": "3b994e9748cb28cb87c7a18ca892dbcaf1c6d6cec02882d90f6a041b338cccef",
+      "bytes": 9866,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/reports/ROUND3_RL_METHOD_PLAN_20261028.md",
+      "sha256": "62d1e4130c15c33c387b01d8724961a04d09289d67b69ecaa1dad352b482b756",
+      "bytes": 27078,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_build_teacher.py",
+      "sha256": "4c9fffffe5e8df5b8dfde6ac67b3e5de2eb20de66edca99b0b00918c26348d4e",
+      "bytes": 10626,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_closeout.py",
+      "sha256": "aec8ae8b402ab3b7406fb35dcae11df0cd2e51dc554dcebff69fbf8aa85175d9",
+      "bytes": 10167,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_detached_front.sh",
+      "sha256": "62a28842e87fd173a196ab1edab172d8b18ae1be13608ea44752817dd6285879",
+      "bytes": 515,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_front_driver.py",
+      "sha256": "e976f7451568ceccf890198d064f4c19459c7612a0c1964ff9316b3439b2b50f",
+      "bytes": 3099,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_materialize_targets.py",
+      "sha256": "8e8743b95067615490372651e8ac7e203948d8c189f36047ecd364fabc6ad2e5",
+      "bytes": 2421,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_prepare.py",
+      "sha256": "0d8c8c5c511653a87475a481c91e5635aeec9d1458b0b768cb62ef15fd5f441b",
+      "bytes": 9546,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_replay_cached.py",
+      "sha256": "0a11492fe9153f53a9a11141b683e8b1a4f58a6b9a29e5b77d0ae51f2c1c09ab",
+      "bytes": 4396,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_report.py",
+      "sha256": "1362c94a0945ec351d5585f5f76b84384383c06b7a38b1850122f0173d8b18f4",
+      "bytes": 20694,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_teacher_quality.py",
+      "sha256": "c2fc4663758a6753801ff3ed5034421dc6ab1767841f558fee8abcdda1b993e7",
+      "bytes": 5811,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_verify_artifacts.py",
+      "sha256": "735590b40967bf083d0fecbbf503f29a98d34fe9af6bae2d5fb0386033bca522",
+      "bytes": 4890,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/src/unsgrpo/round3_common.py",
+      "sha256": "9adb6020f355abb8ee530b83da26ae339968d19ea9a0c7acaa24e1ac44270788",
+      "bytes": 3330,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/src/unsgrpo/round3_reward.py",
+      "sha256": "0f01da3ed905ce76a3028cef78ac99feeadac912be74215286171f955783a5ca",
+      "bytes": 4464,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/src/unsgrpo/round3_teacher.py",
+      "sha256": "0624d0ae13132a6add26be9004d558a5676a939044d7f5944968bbbd7f1b6bb0",
+      "bytes": 5416,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/src/unsgrpo/round3_trainer_adapter.py",
+      "sha256": "eb2b3469991e7c6c9bfbc123bf4eb4b6c0bf8e65c6a3dc0e13bdd5551facebd8",
+      "bytes": 2500,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/tests/test_round3_contracts.py",
+      "sha256": "acfbec66c3f72ca364adabe52b2e05f385fd036559d977c92647bd71589d7199",
+      "bytes": 5228,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/clips_alpha050.jsonl",
+      "sha256": "c26549e1d2d1596eed33aee00eff08fb75d75e4971e0794cef3293ea43002c25",
+      "bytes": 6917429,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/clips_alpha075.jsonl",
+      "sha256": "1c608104989aad21129b218a918d8ee8d67e3cb1a5baffece47fad1df6625ca2",
+      "bytes": 6923745,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/exclusion.json",
+      "sha256": "96147432e9f08049f4a5bcde3fc27a9414ff55ebd91c1be4ae6c4e3a9f916b0f",
+      "bytes": 10725,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/format_precheck_v0.json",
+      "sha256": "99fba0c71c5741949bd037a7d7cf3c44cbc4582ae0f6756da0d71adcaff816b2",
+      "bytes": 344,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/format_precheck_v1.json",
+      "sha256": "3ab59eb27b2ae74e01f80daaa187d570bf144f671645ed70bd220a43db1acd57",
+      "bytes": 344,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/reference_targets.npz",
+      "sha256": "bbd222027ed60e63152571b3a69219fd82dc487808276fa68f879c9edcca0fdf",
+      "bytes": 83785,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/semantic.freeze.json",
+      "sha256": "c1acb5ee333a891599d55091df6d04e090ea0874609d4dbb26b4a7b7a3065458",
+      "bytes": 2621,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/semantic_calls.jsonl",
+      "sha256": "2eb2418e95c5517ea10d532bac9be0a8cb51e28bf59686edf818537c8de46905",
+      "bytes": 55669,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/semantic_clips.jsonl",
+      "sha256": "4de9d328bb6a53ad815ab303ddb1f13a93aac75ecf6ad39f40513c064516735f",
+      "bytes": 5969773,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/targets_alpha050.freeze.json",
+      "sha256": "e45b64a6693913eac9212f9564b21588a87ad1bdc7a4fbce895632225c5b2823",
+      "bytes": 908,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/targets_alpha050.npz",
+      "sha256": "baa7c8c7cc89c0fc0c1b1b9253f0f5d31d35ba854fadf3368a21d7b5d95a04f4",
+      "bytes": 52324,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/targets_alpha075.freeze.json",
+      "sha256": "0286852e3a445dc8b4348c6278c3af15593ece167dfca3e96bb28e57f66461ee",
+      "bytes": 909,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/targets_alpha075.npz",
+      "sha256": "baa7c8c7cc89c0fc0c1b1b9253f0f5d31d35ba854fadf3368a21d7b5d95a04f4",
+      "bytes": 52324,
+      "location": "persistent"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/DECISION.md",
+      "sha256": "6c902c2e51e47d7d6f6b58271020140d68606c142cab0248b2fca39f25498dd8",
+      "bytes": 10760,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/ablation_contrasts.csv",
+      "sha256": "79ab8cf2cfbb8b753268b6e66923ece32b722df4895780977f9c1941c07a26fd",
+      "bytes": 288,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/external_screen.json",
+      "sha256": "53f0fc491cfae9169a85ced81e8d6af9e03e91ba2656a66f96dccf665c1c3ba9",
+      "bytes": 17026,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/external_stage_status.json",
+      "sha256": "49a6f89acf2897431c05656bc3f628deeda14263ec2cddd0076b100aff7137a0",
+      "bytes": 877,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/format_failure_examples.json",
+      "sha256": "16be08425ab9ed998a05691b64a164e3d6be912fe6db39de67c067168d675ba7",
+      "bytes": 9903,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/historical_baselines.json",
+      "sha256": "00b953d4ec05ce8740d9d65cdf51fecaa9001ef4a4c42b3da048f45ebfd6ac48",
+      "bytes": 81292,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/method_spec.actual.json",
+      "sha256": "3e31b10336df8664d7e38d227d09885c72fb5c4938ac2579db568cd7c310d4c7",
+      "bytes": 1722,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/method_spec.json",
+      "sha256": "fb15941b07195671614d5e4a07ef4fd06787b4e3894084a0055a51558428df1a",
+      "bytes": 11164,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/metric_choice.json",
+      "sha256": "a49bee5090712168fa147a0bfda4a02c8588bec12498b1694fc80d0de8748dd8",
+      "bytes": 9847,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/per_seed.csv",
+      "sha256": "9e650a78050746dbb9aeafafc0edeef9ef6d88f50904a6a533e472083aafc543",
+      "bytes": 599,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/per_video.csv",
+      "sha256": "f7a4d40c2ab2ff9ea507746afe6d6b8fa6e2dbe364df743e9c806be0e47fefd4",
+      "bytes": 15936,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/resource_receipt.json",
+      "sha256": "ec8f3ceca2bbe894a2593bd961a81bd8692175b7c920521429992a556971ceba",
+      "bytes": 2837,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/results.csv",
+      "sha256": "f59f7010aa2f006d02df261e7c51db1964851373b995fcdfbe8e443662c6aa9b",
+      "bytes": 1806,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/source_versions.json",
+      "sha256": "5e22573a9a1c45a503190a28a6643ad64651808823ffb60785bb69ec0dbdb7f6",
+      "bytes": 10399,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/teacher_cache_index.json",
+      "sha256": "06fc6c84bfa8bebaf513400b23510f3d9dc25e453aaf9aa5c0ca257fe86d051f",
+      "bytes": 20048,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/teacher_gate_alpha050.json",
+      "sha256": "10e6d0822966a838b49a0f168be47c0c26152705be8ac12cde66bba738a58e2a",
+      "bytes": 44837,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/teacher_gate_alpha075.json",
+      "sha256": "87bab3612384905e3fc52f4a271ce8e03877f60c42be4d31abe75c5735905f89",
+      "bytes": 44848,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/teacher_quality.csv",
+      "sha256": "331920bbb60bbf45ddc7a119486df054cee64417129d1a996ad527ecfdef9afd",
+      "bytes": 4396,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/teacher_quality_alpha050.csv",
+      "sha256": "c449251e76d991e0e6eb211af4178fa151affd59eb570b9f31099f12a0285190",
+      "bytes": 1764,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/teacher_quality_alpha075.csv",
+      "sha256": "b1f877940e95f13e38c0c1399c8cfa1db4287d3621125765d425d4996c0e3b45",
+      "bytes": 1774,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/training_status.json",
+      "sha256": "c46d754b781a7ccbd158b14de72b88838eac3d3f66ea5f007f5e98fc26329233",
+      "bytes": 743,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/logs/round3_materialize_targets_alpha050.log",
+      "sha256": "649f526be5e3971bf3711673902b3bc740fd0e23d2b42c4b41e14690fb61106e",
+      "bytes": 35,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/logs/round3_materialize_targets_alpha075.log",
+      "sha256": "a9214a4d54e2f652e30e89d9ca2685dd80b90daf811723390defc87c2eedd3d9",
+      "bytes": 35,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/logs/round3_teacher_quality_alpha050.log",
+      "sha256": "04e107b165018f6d50e7e91b937b447bdcf9559a22896a9ed3f4f64f9315ba4b",
+      "bytes": 515,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/logs/round3_teacher_quality_alpha075.log",
+      "sha256": "4af672326470b4a466769c7985492e94699001e4a0c96524902421b582209ee2",
+      "bytes": 516,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/receipt.json",
+      "sha256": "1e2af8d90dd6866930d002240da3997d436cb99bc8315880d812896eade65ce4",
+      "bytes": 2156,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/reports/metric_choice.json",
+      "sha256": "a49bee5090712168fa147a0bfda4a02c8588bec12498b1694fc80d0de8748dd8",
+      "bytes": 9847,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/reports/teacher_gate_alpha050.json",
+      "sha256": "cddac661c4c806fbcf4af30ea84a19897c12bdff214bf8c32e7e417d8f666897",
+      "bytes": 44870,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/reports/teacher_gate_alpha075.json",
+      "sha256": "1f3b5955a2e90cbf34ffd552a7d7824894f2d62a867551ed407989a3a92b85c6",
+      "bytes": 44881,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/reports/teacher_quality_alpha050.csv",
+      "sha256": "c449251e76d991e0e6eb211af4178fa151affd59eb570b9f31099f12a0285190",
+      "bytes": 1764,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/reports/teacher_quality_alpha075.csv",
+      "sha256": "b1f877940e95f13e38c0c1399c8cfa1db4287d3621125765d425d4996c0e3b45",
+      "bytes": 1774,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/store/teacher/clips_alpha050.jsonl",
+      "sha256": "c26549e1d2d1596eed33aee00eff08fb75d75e4971e0794cef3293ea43002c25",
+      "bytes": 6917429,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/store/teacher/clips_alpha075.jsonl",
+      "sha256": "1c608104989aad21129b218a918d8ee8d67e3cb1a5baffece47fad1df6625ca2",
+      "bytes": 6923745,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/store/teacher/reference_targets.npz",
+      "sha256": "bbd222027ed60e63152571b3a69219fd82dc487808276fa68f879c9edcca0fdf",
+      "bytes": 83785,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/store/teacher/semantic.freeze.json",
+      "sha256": "c1acb5ee333a891599d55091df6d04e090ea0874609d4dbb26b4a7b7a3065458",
+      "bytes": 2621,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/store/teacher/semantic_calls.jsonl",
+      "sha256": "2eb2418e95c5517ea10d532bac9be0a8cb51e28bf59686edf818537c8de46905",
+      "bytes": 55669,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/store/teacher/semantic_clips.jsonl",
+      "sha256": "4de9d328bb6a53ad815ab303ddb1f13a93aac75ecf6ad39f40513c064516735f",
+      "bytes": 5969773,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/store/teacher/targets_alpha050.freeze.json",
+      "sha256": "0f3fe6ed40bdfd9555c9c143e2d489b62639d337f3c76d95b5112d63ea78aba3",
+      "bytes": 1007,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/store/teacher/targets_alpha050.npz",
+      "sha256": "baa7c8c7cc89c0fc0c1b1b9253f0f5d31d35ba854fadf3368a21d7b5d95a04f4",
+      "bytes": 52324,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/store/teacher/targets_alpha075.freeze.json",
+      "sha256": "85763163dadaa532278bada1d94a1dff402355bc24213fdf669893f40f59efdf",
+      "bytes": 1008,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/store/teacher/targets_alpha075.npz",
+      "sha256": "baa7c8c7cc89c0fc0c1b1b9253f0f5d31d35ba854fadf3368a21d7b5d95a04f4",
+      "bytes": 52324,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/work/teacher_pair_pool.json",
+      "sha256": "0e23d85502d79a826f7de95744ef8ae748cd205805ff6128761d227151ff4a62",
+      "bytes": 805802,
+      "location": "cache_replay"
+    },
+    {
+      "path": "/root/autodl-fs/unsgrpo/round3_rl_method_v1/metadata_history/initial_source_versions.json",
+      "sha256": "954c87ac14b5c9c7849d94b4ad77b10a287a3f59aeb17709d337c8e09df41ab7",
+      "bytes": 9942,
+      "location": "persistent"
+    },
+    {
+      "path": "/root/autodl-fs/unsgrpo/round3_rl_method_v1/metadata_history/initial_artifact_index.json",
+      "sha256": "019a3e725e79cb030cb371a26aef17712088ac6028916d80aec591f17b57652d",
+      "bytes": 51472,
+      "location": "persistent"
+    },
+    {
+      "path": "/root/autodl-fs/unsgrpo/round3_rl_method_v1/metadata_history/initial_CLOSED.json",
+      "sha256": "99752b918d0b58baff13d17377c4ea9779364fe7450c148b16e70f24a72c660d",
+      "bytes": 1731,
+      "location": "persistent"
+    },
+    {
+      "path": "/root/autodl-fs/unsgrpo/round3_rl_method_v1/final_control/source_role_metadata_correction.json",
+      "sha256": "c51867087cf1507e499bf962635555930e95d5ad58df75646597ee5420b2e941",
+      "bytes": 1081,
+      "location": "persistent"
+    }
+  ],
+  "files_count": 198,
+  "logical_bytes_including_verified_copies": 43762665,
+  "scope_note": "Contains only round-three generated files and reproduced-cache outputs; no models/videos or original annotation arrays copied. Index and final closure control records exclude themselves.",
+  "original_input_references": {
+    "/root/autodl-tmp/unsgrpo-work/prepared/prepared.jsonl": "ec889de91b2e10ab9810f5dd66349ce2f9353ec21c52c633701f71ca7b714b29",
+    "/root/autodl-fs/unsgrpo/datasets/pseudo/r0_visual_v1/pseudo.json": "31d341de06e08ec5407ddba1c3ff82638ad16da7c7f4af99c525d25b4f52bb4e",
+    "/root/autodl-fs/unsgrpo/datasets/pseudo/r0_visual_v1/cluster_model.joblib": "97224ccbe81bb85fd4c631a83bf00777a487ff487084eeb0232f7bca975420d6",
+    "/root/autodl-fs/unsgrpo/datasets/trainer_inputs/train_sft.jsonl": "6345a891b2908dfc8c14da99a840f6b5e4735719735813b37eb4cb459bc13d0a",
+    "/root/autodl-fs/unsgrpo/datasets/trainer_inputs/eval.jsonl": "ce9511b1be0ce581b88f93acc77785fcc28499dc0a230b374a8a008cd82ff07e",
+    "/root/autodl-tmp/unsgrpo/reports/common_s0.json": "2ccf31ba127b4b18ea6909ad9cc4b8f3734ae8ff692a902e1547dc4be2dc82e9",
+    "/root/autodl-tmp/unsgrpo/manifests/Qwen3-VL-2B-Instruct.asset.json": "76faa99fe16305bdd18c192e5121f8df581316f47cb7c11cf2617de29b54abf9",
+    "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/metric_choice.json": "a49bee5090712168fa147a0bfda4a02c8588bec12498b1694fc80d0de8748dd8",
+    "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/external_screen.json": "53f0fc491cfae9169a85ced81e8d6af9e03e91ba2656a66f96dccf665c1c3ba9",
+    "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/teacher_pair_pool.json": "0e23d85502d79a826f7de95744ef8ae748cd205805ff6128761d227151ff4a62"
+  },
+  "old_artifacts_deleted": false,
+  "model_endpoints": "NONE: not trained because teacher admission failed",
+  "actual_policy_rollout_and_loss_ledgers": "NONE: no policy rollout or update was executed",
+  "source_role_metadata_corrected": true,
+  "prior_index_preserved": {
+    "path": "/root/autodl-fs/unsgrpo/round3_rl_method_v1/metadata_history/initial_artifact_index.json",
+    "sha256": "019a3e725e79cb030cb371a26aef17712088ac6028916d80aec591f17b57652d",
+    "bytes": 51472
+  }
+}

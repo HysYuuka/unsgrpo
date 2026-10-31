@@ -1,0 +1,21 @@
+{
+  "src/croprank/__init__.py": "58e56241ecc32a6939f46b10af5df409c094a85ac2881240536d1993b2df82d7",
+  "src/croprank/core.py": "43a64f33e659021874f1a20bad0eb93d045d18adefdec2359fb79a4a5260d284",
+  "src/croprank/model.py": "43768b68bcfd5837fdd4bb0e8951ac09c50e58d31785af091a4d9925a02d5c20",
+  "src/croprank/replay.py": "7cee86961e00126fc82f8dc1158c9bd1b08b91a6e6f5bb9c1fd748624af1b679",
+  "src/croprank/musiq.py": "c176a7c155b6d0bea6e176d5487dc0f70687822645bfa379e9b14fa4adb509ba",
+  "src/croprank/train.py": "1665eeed697acc4eb7495094080c81db404c23dcd7777e058d641d0ff20aa9f2",
+  "src/croprank/musiq_vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "src/croprank/musiq_vendor/padding.py": "51693f915b64ffd03b72bea2ef7d709146fcf336fb1298739c13199ab87dd4f3",
+  "src/croprank/musiq_vendor/multiscale.py": "6d13c02ec4c93112282342a803ca5efca1d4eef3ddd033bf1aad6423c7904133",
+  "src/croprank/musiq_vendor/model.py": "dd2ad40489cacbc051d2f6aa5ca19c9576d458b6318d551a4565f7365f3855c4",
+  "src/croprank/musiq_vendor/support.py": "bf2e7894d4f30409958883b2f5e5db82e11f31493e612e990988c981a4949395",
+  "scripts/fetch_base.py": "f043fe8ebfe07eb8aa5307424699d9dbc00cb415c068c44974a8216de00c1789",
+  "scripts/prepare_data.py": "e25aea094e2872c40e8443bc69807f032ba5b9c73bb853a1c776f7ff564f2b96",
+  "scripts/vendor_musiq.py": "8b9101293a92a42d96905ff77a6f469097621f2aa356631ed6745de4cedf24e5",
+  "scripts/lock_protocol.py": "a9af1bf18a570022f7e7c37e89db2b3b2e92a81056c53054171fe16dc4b1ac15",
+  "scripts/run_matrix.py": "a5fac6f695ad3e23c73939e3ec8e8f9ed21f4cf0f99605050ddf32ac0387960e",
+  "scripts/evaluate_matrix.py": "c241bd6e7240fbced418d1a155e466c443b557af0423d7203cb3bd46f49f3cd5",
+  "tests/acceptance.py": "877528f06ffeefc970206c10407aac352f55c6a50e367d7363eac24490c81e3b",
+  "tests/additional_acceptance.py": "0641d73040927276d6601480ce2a153b3d30d17f6dda65884796ebc7721f22b4"
+}

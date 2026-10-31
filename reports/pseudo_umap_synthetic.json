@@ -1,0 +1,2114 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETED",
+  "created_at_utc": "2026-10-27T10:13:56.686657+00:00",
+  "train_only_diagnostics": true,
+  "used_human_highlight_labels": false,
+  "protocol": {
+    "method": "visual_R0_mean_cosine",
+    "embedding": "umap",
+    "seed": 42,
+    "umap_config": {
+      "n_neighbors": 15,
+      "n_components": 5,
+      "metric": "cosine",
+      "min_dist": 0.1,
+      "random_state": 42,
+      "transform_seed": 42,
+      "n_jobs": 1
+    },
+    "kmeans_config": {
+      "k_min": 4,
+      "k_max": 15,
+      "n_init": 20,
+      "algorithm": "lloyd",
+      "random_state": 42
+    },
+    "selected_k": 4,
+    "selected_silhouette": 0.6427938938140869,
+    "fit_video_ids": [
+      "v00",
+      "v01",
+      "v02",
+      "v03",
+      "v04",
+      "v05",
+      "v06",
+      "v07",
+      "v08",
+      "v09",
+      "v10",
+      "v11",
+      "v12",
+      "v13",
+      "v14",
+      "v15"
+    ],
+    "heldout_operation": "UMAP.transform then KMeans.predict only",
+    "reference_bank": "all clips of training videos in predicted cluster, including self during train",
+    "prototype_l2_renormalized": false,
+    "quantization": "numpy.rint(q*100), ties to nearest even integer",
+    "percentiles": "whole-video exact midrank; equal raw floats remain tied",
+    "versions": {
+      "numpy": "2.3.2",
+      "umap_learn": "0.5.12",
+      "sklearn": "1.9.1",
+      "joblib": "1.6.0"
+    }
+  },
+  "split_audit": {
+    "n_videos": 20,
+    "n_source_groups": 20,
+    "counts": {
+      "train": 16,
+      "test": 4,
+      "dev": 0
+    }
+  },
+  "k_search": [
+    {
+      "k": 4,
+      "cluster_sizes": {
+        "0": 4,
+        "1": 4,
+        "2": 4,
+        "3": 4
+      },
+      "inertia": 2.6858901977539062,
+      "status": "COMPLETED",
+      "silhouette": 0.6427938938140869
+    },
+    {
+      "k": 5,
+      "cluster_sizes": {
+        "0": 4,
+        "1": 4,
+        "2": 2,
+        "3": 4,
+        "4": 2
+      },
+      "inertia": 2.377114772796631,
+      "status": "COMPLETED",
+      "silhouette": 0.5081863403320312
+    },
+    {
+      "k": 6,
+      "cluster_sizes": {
+        "0": 4,
+        "1": 4,
+        "2": 1,
+        "3": 2,
+        "4": 3,
+        "5": 2
+      },
+      "inertia": 2.0743331909179688,
+      "status": "COMPLETED",
+      "silhouette": 0.3727737367153168
+    },
+    {
+      "k": 7,
+      "cluster_sizes": {
+        "0": 2,
+        "1": 2,
+        "2": 4,
+        "3": 1,
+        "4": 3,
+        "5": 2,
+        "6": 2
+      },
+      "inertia": 1.8074891567230225,
+      "status": "COMPLETED",
+      "silhouette": 0.23317059874534607
+    },
+    {
+      "k": 8,
+      "cluster_sizes": {
+        "0": 2,
+        "1": 2,
+        "2": 2,
+        "3": 3,
+        "4": 2,
+        "5": 2,
+        "6": 2,
+        "7": 1
+      },
+      "inertia": 1.541868805885315,
+      "status": "COMPLETED",
+      "silhouette": 0.09787209331989288
+    },
+    {
+      "k": 9,
+      "cluster_sizes": {
+        "0": 2,
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "4": 2,
+        "5": 1,
+        "6": 2,
+        "7": 1,
+        "8": 2
+      },
+      "inertia": 1.319096565246582,
+      "status": "COMPLETED",
+      "silhouette": 0.08447396010160446
+    },
+    {
+      "k": 10,
+      "cluster_sizes": {
+        "0": 2,
+        "1": 2,
+        "2": 1,
+        "3": 2,
+        "4": 2,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 2,
+        "9": 1
+      },
+      "inertia": 1.0999574661254883,
+      "status": "COMPLETED",
+      "silhouette": 0.0754232406616211
+    },
+    {
+      "k": 11,
+      "cluster_sizes": {
+        "0": 2,
+        "1": 1,
+        "2": 2,
+        "3": 2,
+        "4": 2,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1
+      },
+      "inertia": 0.8831303119659424,
+      "status": "COMPLETED",
+      "silhouette": 0.06684750318527222
+    },
+    {
+      "k": 12,
+      "cluster_sizes": {
+        "0": 1,
+        "1": 2,
+        "2": 2,
+        "3": 1,
+        "4": 2,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1
+      },
+      "inertia": 0.6664793491363525,
+      "status": "COMPLETED",
+      "silhouette": 0.05456758290529251
+    },
+    {
+      "k": 13,
+      "cluster_sizes": {
+        "0": 2,
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 1,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1
+      },
+      "inertia": 0.49073368310928345,
+      "status": "COMPLETED",
+      "silhouette": 0.043907977640628815
+    },
+    {
+      "k": 14,
+      "cluster_sizes": {
+        "0": 1,
+        "1": 2,
+        "2": 1,
+        "3": 1,
+        "4": 2,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1
+      },
+      "inertia": 0.31511616706848145,
+      "status": "COMPLETED",
+      "silhouette": 0.03280290216207504
+    },
+    {
+      "k": 15,
+      "cluster_sizes": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 2,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1
+      },
+      "inertia": 0.15726836025714874,
+      "status": "COMPLETED",
+      "silhouette": 0.020735666155815125
+    }
+  ],
+  "clusters": [
+    {
+      "cluster": 0,
+      "video_ids": [
+        "v01",
+        "v05",
+        "v09",
+        "v13"
+      ],
+      "video_count": 4,
+      "clip_count": 20
+    },
+    {
+      "cluster": 1,
+      "video_ids": [
+        "v02",
+        "v06",
+        "v10",
+        "v14"
+      ],
+      "video_count": 4,
+      "clip_count": 52
+    },
+    {
+      "cluster": 2,
+      "video_ids": [
+        "v03",
+        "v07",
+        "v11",
+        "v15"
+      ],
+      "video_count": 4,
+      "clip_count": 68
+    },
+    {
+      "cluster": 3,
+      "video_ids": [
+        "v00",
+        "v04",
+        "v08",
+        "v12"
+      ],
+      "video_count": 4,
+      "clip_count": 8
+    }
+  ],
+  "singleton_cluster_count": 0,
+  "raw": {
+    "n": 148,
+    "min": 0.9287286895149801,
+    "max": 0.9662570777384698,
+    "mean": 0.9531086271369629,
+    "std_population": 0.00663455925298576,
+    "p05": 0.9422422831119152,
+    "p50": 0.9539273400103306,
+    "p95": 0.963909236793434
+  },
+  "q": {
+    "n": 148,
+    "min": 0.029411764705882353,
+    "max": 0.9705882352941176,
+    "mean": 0.5,
+    "std_population": 0.2853962528781755,
+    "p05": 0.0558823529411765,
+    "p50": 0.5,
+    "p95": 0.9441176470588238
+  },
+  "integer_target_ties_across_training_clips": {
+    "n_values": 148,
+    "n_distinct": 35,
+    "duplicate_value_fraction": 0.7635135135135135,
+    "pair_tie_fraction": 0.024820739106453393
+  },
+  "window_W": {
+    "n": 36,
+    "min": 0.5,
+    "max": 11.470588235294118,
+    "mean": 7.802538964303668,
+    "std_population": 3.235659683379437,
+    "p05": 0.5,
+    "p50": 8.941176470588236,
+    "p95": 11.27262443438914
+  },
+  "zero_weight_window_count": 0,
+  "per_training_video": [
+    {
+      "video_id": "v00",
+      "source_group": "s00",
+      "n_clips": 2,
+      "cluster": 3,
+      "cluster_video_count": 4,
+      "self_clip_fraction_of_cluster": 0.25,
+      "raw": {
+        "n": 2,
+        "min": 0.9567509808098072,
+        "max": 0.9658479588122602,
+        "mean": 0.9612994698110338,
+        "std_population": 0.004548489001226452,
+        "p05": 0.9572058297099298,
+        "p50": 0.9612994698110338,
+        "p95": 0.9653931099121376
+      },
+      "raw_span": 0.009096978002452905,
+      "q": {
+        "n": 2,
+        "min": 0.25,
+        "max": 0.75,
+        "mean": 0.5,
+        "std_population": 0.25,
+        "p05": 0.275,
+        "p50": 0.5,
+        "p95": 0.725
+      },
+      "q_ties": {
+        "n_values": 2,
+        "n_distinct": 2,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "integer_target_ties": {
+        "n_values": 2,
+        "n_distinct": 2,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "r0_minus_video_equal_loo": {
+        "n": 2,
+        "min": 0.004273678352674781,
+        "max": 0.007306004353492712,
+        "mean": 0.005789841353083747,
+        "std_population": 0.0015161630004089655,
+        "p05": 0.004425294652715678,
+        "p50": 0.005789841353083747,
+        "p95": 0.007154388053451815
+      },
+      "r0_vs_loo_pearson": 0.9999999999999998,
+      "loo_global_fallback": false,
+      "loo_peer_count": 3,
+      "low_raw_clips": [
+        {
+          "clip_id": 1,
+          "bounds": [
+            2,
+            4
+          ],
+          "raw": 0.9567509808098072,
+          "q": 0.25
+        },
+        {
+          "clip_id": 0,
+          "bounds": [
+            0,
+            2
+          ],
+          "raw": 0.9658479588122602,
+          "q": 0.75
+        }
+      ],
+      "high_raw_clips": [
+        {
+          "clip_id": 0,
+          "bounds": [
+            0,
+            2
+          ],
+          "raw": 0.9658479588122602,
+          "q": 0.75
+        },
+        {
+          "clip_id": 1,
+          "bounds": [
+            2,
+            4
+          ],
+          "raw": 0.9567509808098072,
+          "q": 0.25
+        }
+      ]
+    },
+    {
+      "video_id": "v01",
+      "source_group": "s01",
+      "n_clips": 5,
+      "cluster": 0,
+      "cluster_video_count": 4,
+      "self_clip_fraction_of_cluster": 0.25,
+      "raw": {
+        "n": 5,
+        "min": 0.942444125736641,
+        "max": 0.9655250989429216,
+        "mean": 0.9544455236890812,
+        "std_population": 0.007859824490922668,
+        "p05": 0.9439513392121299,
+        "p50": 0.9551841352134548,
+        "p95": 0.9642388922419979
+      },
+      "raw_span": 0.023080973206280553,
+      "q": {
+        "n": 5,
+        "min": 0.1,
+        "max": 0.9,
+        "mean": 0.5,
+        "std_population": 0.282842712474619,
+        "p05": 0.14,
+        "p50": 0.5,
+        "p95": 0.86
+      },
+      "q_ties": {
+        "n_values": 5,
+        "n_distinct": 5,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "integer_target_ties": {
+        "n_values": 5,
+        "n_distinct": 5,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "r0_minus_video_equal_loo": {
+        "n": 5,
+        "min": 0.0012654314599582772,
+        "max": 0.003306096422149407,
+        "mean": 0.001996848759556169,
+        "std_population": 0.0008834823456202966,
+        "p05": 0.0012704142534260665,
+        "p50": 0.0013041584144275475,
+        "p95": 0.0032085195525092037
+      },
+      "r0_vs_loo_pearson": 0.9990203837577877,
+      "loo_global_fallback": false,
+      "loo_peer_count": 3,
+      "low_raw_clips": [
+        {
+          "clip_id": 2,
+          "bounds": [
+            4,
+            6
+          ],
+          "raw": 0.942444125736641,
+          "q": 0.1
+        },
+        {
+          "clip_id": 3,
+          "bounds": [
+            6,
+            8
+          ],
+          "raw": 0.9499801931140852,
+          "q": 0.3
+        },
+        {
+          "clip_id": 1,
+          "bounds": [
+            2,
+            4
+          ],
+          "raw": 0.9551841352134548,
+          "q": 0.5
+        }
+      ],
+      "high_raw_clips": [
+        {
+          "clip_id": 4,
+          "bounds": [
+            8,
+            10
+          ],
+          "raw": 0.9655250989429216,
+          "q": 0.9
+        },
+        {
+          "clip_id": 0,
+          "bounds": [
+            0,
+            2
+          ],
+          "raw": 0.9590940654383032,
+          "q": 0.7
+        },
+        {
+          "clip_id": 1,
+          "bounds": [
+            2,
+            4
+          ],
+          "raw": 0.9551841352134548,
+          "q": 0.5
+        }
+      ]
+    },
+    {
+      "video_id": "v02",
+      "source_group": "s02",
+      "n_clips": 13,
+      "cluster": 1,
+      "cluster_video_count": 4,
+      "self_clip_fraction_of_cluster": 0.25,
+      "raw": {
+        "n": 13,
+        "min": 0.9365503176354038,
+        "max": 0.9573254578535338,
+        "mean": 0.9498919476462855,
+        "std_population": 0.0055430941043391,
+        "p05": 0.9412498729262938,
+        "p50": 0.9520880646831879,
+        "p95": 0.9568225792581769
+      },
+      "raw_span": 0.020775140218130095,
+      "q": {
+        "n": 13,
+        "min": 0.038461538461538464,
+        "max": 0.9615384615384616,
+        "mean": 0.5,
+        "std_population": 0.2878197989826109,
+        "p05": 0.08461538461538462,
+        "p50": 0.5,
+        "p95": 0.9153846153846152
+      },
+      "q_ties": {
+        "n_values": 13,
+        "n_distinct": 13,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "integer_target_ties": {
+        "n_values": 13,
+        "n_distinct": 13,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "r0_minus_video_equal_loo": {
+        "n": 13,
+        "min": -0.0003329153912398075,
+        "max": 0.0024380992347082797,
+        "mean": 0.0012623300269685679,
+        "std_population": 0.0007365511544727675,
+        "p05": 0.00017586671085227944,
+        "p50": 0.0013307955523566006,
+        "p95": 0.002302384116633038
+      },
+      "r0_vs_loo_pearson": 0.9911711439496935,
+      "loo_global_fallback": false,
+      "loo_peer_count": 3,
+      "low_raw_clips": [
+        {
+          "clip_id": 8,
+          "bounds": [
+            16,
+            18
+          ],
+          "raw": 0.9365503176354038,
+          "q": 0.038461538461538464
+        },
+        {
+          "clip_id": 0,
+          "bounds": [
+            0,
+            2
+          ],
+          "raw": 0.9443829097868871,
+          "q": 0.11538461538461539
+        },
+        {
+          "clip_id": 10,
+          "bounds": [
+            20,
+            22
+          ],
+          "raw": 0.9444219002411098,
+          "q": 0.19230769230769232
+        }
+      ],
+      "high_raw_clips": [
+        {
+          "clip_id": 12,
+          "bounds": [
+            24,
+            26
+          ],
+          "raw": 0.9573254578535338,
+          "q": 0.9615384615384616
+        },
+        {
+          "clip_id": 9,
+          "bounds": [
+            18,
+            20
+          ],
+          "raw": 0.9564873268612722,
+          "q": 0.8846153846153846
+        },
+        {
+          "clip_id": 11,
+          "bounds": [
+            22,
+            24
+          ],
+          "raw": 0.9550654086359747,
+          "q": 0.8076923076923077
+        }
+      ]
+    },
+    {
+      "video_id": "v03",
+      "source_group": "s03",
+      "n_clips": 17,
+      "cluster": 2,
+      "cluster_video_count": 4,
+      "self_clip_fraction_of_cluster": 0.25,
+      "raw": {
+        "n": 17,
+        "min": 0.9467313590535217,
+        "max": 0.9646405306170359,
+        "mean": 0.9557482946649072,
+        "std_population": 0.0045670204545089745,
+        "p05": 0.9495499466737521,
+        "p50": 0.9556341583626184,
+        "p95": 0.9635685446154654
+      },
+      "raw_span": 0.017909171563514237,
+      "q": {
+        "n": 17,
+        "min": 0.029411764705882353,
+        "max": 0.9705882352941176,
+        "mean": 0.5,
+        "std_population": 0.2881752638568445,
+        "p05": 0.07647058823529412,
+        "p50": 0.5,
+        "p95": 0.9235294117647058
+      },
+      "q_ties": {
+        "n_values": 17,
+        "n_distinct": 17,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "integer_target_ties": {
+        "n_values": 17,
+        "n_distinct": 17,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "r0_minus_video_equal_loo": {
+        "n": 17,
+        "min": -8.22679345122701e-05,
+        "max": 0.0022280082729191353,
+        "mean": 0.0011464437047954672,
+        "std_population": 0.0005974840889825406,
+        "p05": 0.0004122814129700281,
+        "p50": 0.0010330387764549975,
+        "p95": 0.002197992772300461
+      },
+      "r0_vs_loo_pearson": 0.9918120385915342,
+      "loo_global_fallback": false,
+      "loo_peer_count": 3,
+      "low_raw_clips": [
+        {
+          "clip_id": 6,
+          "bounds": [
+            12,
+            14
+          ],
+          "raw": 0.9467313590535217,
+          "q": 0.029411764705882353
+        },
+        {
+          "clip_id": 7,
+          "bounds": [
+            14,
+            16
+          ],
+          "raw": 0.9502545935788097,
+          "q": 0.08823529411764706
+        },
+        {
+          "clip_id": 10,
+          "bounds": [
+            20,
+            22
+          ],
+          "raw": 0.9506173430434914,
+          "q": 0.14705882352941177
+        }
+      ],
+      "high_raw_clips": [
+        {
+          "clip_id": 15,
+          "bounds": [
+            30,
+            32
+          ],
+          "raw": 0.9646405306170359,
+          "q": 0.9705882352941176
+        },
+        {
+          "clip_id": 13,
+          "bounds": [
+            26,
+            28
+          ],
+          "raw": 0.9633005481150727,
+          "q": 0.9117647058823529
+        },
+        {
+          "clip_id": 12,
+          "bounds": [
+            24,
+            26
+          ],
+          "raw": 0.9595689266586801,
+          "q": 0.8529411764705882
+        }
+      ]
+    },
+    {
+      "video_id": "v04",
+      "source_group": "s04",
+      "n_clips": 2,
+      "cluster": 3,
+      "cluster_video_count": 4,
+      "self_clip_fraction_of_cluster": 0.25,
+      "raw": {
+        "n": 2,
+        "min": 0.9562951633564041,
+        "max": 0.9645999573829478,
+        "mean": 0.9604475603696759,
+        "std_population": 0.004152397013271858,
+        "p05": 0.9567104030577313,
+        "p50": 0.9604475603696759,
+        "p95": 0.9641847176816206
+      },
+      "raw_span": 0.008304794026543716,
+      "q": {
+        "n": 2,
+        "min": 0.25,
+        "max": 0.75,
+        "mean": 0.5,
+        "std_population": 0.25,
+        "p05": 0.275,
+        "p50": 0.5,
+        "p95": 0.725
+      },
+      "q_ties": {
+        "n_values": 2,
+        "n_distinct": 2,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "integer_target_ties": {
+        "n_values": 2,
+        "n_distinct": 2,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "r0_minus_video_equal_loo": {
+        "n": 2,
+        "min": 0.003630455231760865,
+        "max": 0.006398719907275918,
+        "mean": 0.005014587569518392,
+        "std_population": 0.0013841323377575265,
+        "p05": 0.003768868465536618,
+        "p50": 0.005014587569518392,
+        "p95": 0.0062603066735001656
+      },
+      "r0_vs_loo_pearson": 1.0,
+      "loo_global_fallback": false,
+      "loo_peer_count": 3,
+      "low_raw_clips": [
+        {
+          "clip_id": 0,
+          "bounds": [
+            0,
+            2
+          ],
+          "raw": 0.9562951633564041,
+          "q": 0.25
+        },
+        {
+          "clip_id": 1,
+          "bounds": [
+            2,
+            4
+          ],
+          "raw": 0.9645999573829478,
+          "q": 0.75
+        }
+      ],
+      "high_raw_clips": [
+        {
+          "clip_id": 1,
+          "bounds": [
+            2,
+            4
+          ],
+          "raw": 0.9645999573829478,
+          "q": 0.75
+        },
+        {
+          "clip_id": 0,
+          "bounds": [
+            0,
+            2
+          ],
+          "raw": 0.9562951633564041,
+          "q": 0.25
+        }
+      ]
+    },
+    {
+      "video_id": "v05",
+      "source_group": "s05",
+      "n_clips": 5,
+      "cluster": 0,
+      "cluster_video_count": 4,
+      "self_clip_fraction_of_cluster": 0.25,
+      "raw": {
+        "n": 5,
+        "min": 0.9457671829098488,
+        "max": 0.960637636531627,
+        "mean": 0.9529365853633391,
+        "std_population": 0.006072171305118346,
+        "p05": 0.945797416935805,
+        "p50": 0.954884436557511,
+        "p95": 0.9600051727809176
+      },
+      "raw_span": 0.01487045362177819,
+      "q": {
+        "n": 5,
+        "min": 0.1,
+        "max": 0.9,
+        "mean": 0.5,
+        "std_population": 0.28284271247461906,
+        "p05": 0.14,
+        "p50": 0.5,
+        "p95": 0.86
+      },
+      "q_ties": {
+        "n_values": 5,
+        "n_distinct": 5,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "integer_target_ties": {
+        "n_values": 5,
+        "n_distinct": 5,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "r0_minus_video_equal_loo": {
+        "n": 5,
+        "min": 0.0012006721538279086,
+        "max": 0.0026044131784166424,
+        "mean": 0.0018649133057534683,
+        "std_population": 0.0004875414246910605,
+        "p05": 0.0012580878655864547,
+        "p50": 0.00193654866541626,
+        "p95": 0.002502566906430492
+      },
+      "r0_vs_loo_pearson": 0.9976082650419649,
+      "loo_global_fallback": false,
+      "loo_peer_count": 3,
+      "low_raw_clips": [
+        {
+          "clip_id": 0,
+          "bounds": [
+            0,
+            2
+          ],
+          "raw": 0.9457671829098488,
+          "q": 0.1
+        },
+        {
+          "clip_id": 3,
+          "bounds": [
+            6,
+            8
+          ],
+          "raw": 0.9459183530396298,
+          "q": 0.3
+        },
+        {
+          "clip_id": 2,
+          "bounds": [
+            4,
+            6
+          ],
+          "raw": 0.954884436557511,
+          "q": 0.5
+        }
+      ],
+      "high_raw_clips": [
+        {
+          "clip_id": 1,
+          "bounds": [
+            2,
+            4
+          ],
+          "raw": 0.960637636531627,
+          "q": 0.9
+        },
+        {
+          "clip_id": 4,
+          "bounds": [
+            8,
+            10
+          ],
+          "raw": 0.9574753177780797,
+          "q": 0.7
+        },
+        {
+          "clip_id": 2,
+          "bounds": [
+            4,
+            6
+          ],
+          "raw": 0.954884436557511,
+          "q": 0.5
+        }
+      ]
+    },
+    {
+      "video_id": "v06",
+      "source_group": "s06",
+      "n_clips": 13,
+      "cluster": 1,
+      "cluster_video_count": 4,
+      "self_clip_fraction_of_cluster": 0.25,
+      "raw": {
+        "n": 13,
+        "min": 0.9287286895149801,
+        "max": 0.9588509309516067,
+        "mean": 0.9491337124830588,
+        "std_population": 0.008068193286579565,
+        "p05": 0.9356685068066999,
+        "p50": 0.9493802620823907,
+        "p95": 0.9587973926537859
+      },
+      "raw_span": 0.030122241436626562,
+      "q": {
+        "n": 13,
+        "min": 0.038461538461538464,
+        "max": 0.9615384615384616,
+        "mean": 0.5,
+        "std_population": 0.2878197989826109,
+        "p05": 0.08461538461538462,
+        "p50": 0.5,
+        "p95": 0.9153846153846152
+      },
+      "q_ties": {
+        "n_values": 13,
+        "n_distinct": 13,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "integer_target_ties": {
+        "n_values": 13,
+        "n_distinct": 13,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "r0_minus_video_equal_loo": {
+        "n": 13,
+        "min": 0.0004714395119447268,
+        "max": 0.0024575966301774166,
+        "mean": 0.0014301559834505233,
+        "std_population": 0.0005946363588552519,
+        "p05": 0.0006004921279111564,
+        "p50": 0.0014122599929449198,
+        "p95": 0.002414963263150649
+      },
+      "r0_vs_loo_pearson": 0.9984578843347698,
+      "loo_global_fallback": false,
+      "loo_peer_count": 3,
+      "low_raw_clips": [
+        {
+          "clip_id": 10,
+          "bounds": [
+            20,
+            22
+          ],
+          "raw": 0.9287286895149801,
+          "q": 0.038461538461538464
+        },
+        {
+          "clip_id": 11,
+          "bounds": [
+            22,
+            24
+          ],
+          "raw": 0.9402950516678463,
+          "q": 0.11538461538461539
+        },
+        {
+          "clip_id": 0,
+          "bounds": [
+            0,
+            2
+          ],
+          "raw": 0.9434955095777644,
+          "q": 0.19230769230769232
+        }
+      ],
+      "high_raw_clips": [
+        {
+          "clip_id": 2,
+          "bounds": [
+            4,
+            6
+          ],
+          "raw": 0.9588509309516067,
+          "q": 0.9615384615384616
+        },
+        {
+          "clip_id": 3,
+          "bounds": [
+            6,
+            8
+          ],
+          "raw": 0.9587617004552388,
+          "q": 0.8846153846153846
+        },
+        {
+          "clip_id": 6,
+          "bounds": [
+            12,
+            14
+          ],
+          "raw": 0.9575111059988907,
+          "q": 0.8076923076923077
+        }
+      ]
+    },
+    {
+      "video_id": "v07",
+      "source_group": "s07",
+      "n_clips": 17,
+      "cluster": 2,
+      "cluster_video_count": 4,
+      "self_clip_fraction_of_cluster": 0.25,
+      "raw": {
+        "n": 17,
+        "min": 0.9427655479821752,
+        "max": 0.9662570777384698,
+        "mean": 0.9551754460806481,
+        "std_population": 0.005772955062966373,
+        "p05": 0.94619602639582,
+        "p50": 0.9559029320426806,
+        "p95": 0.9631101118435282
+      },
+      "raw_span": 0.02349152975629465,
+      "q": {
+        "n": 17,
+        "min": 0.029411764705882353,
+        "max": 0.9705882352941176,
+        "mean": 0.5,
+        "std_population": 0.2881752638568445,
+        "p05": 0.07647058823529412,
+        "p50": 0.5,
+        "p95": 0.9235294117647058
+      },
+      "q_ties": {
+        "n_values": 17,
+        "n_distinct": 17,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "integer_target_ties": {
+        "n_values": 17,
+        "n_distinct": 17,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "r0_minus_video_equal_loo": {
+        "n": 17,
+        "min": -0.00043042699476281143,
+        "max": 0.001720107451097519,
+        "mean": 0.0006541587368839226,
+        "std_population": 0.000521134338214053,
+        "p05": -0.00012366161920569495,
+        "p50": 0.00058127901977989,
+        "p95": 0.0013083387369508866
+      },
+      "r0_vs_loo_pearson": 0.9962633021262497,
+      "loo_global_fallback": false,
+      "loo_peer_count": 3,
+      "low_raw_clips": [
+        {
+          "clip_id": 11,
+          "bounds": [
+            22,
+            24
+          ],
+          "raw": 0.9427655479821752,
+          "q": 0.029411764705882353
+        },
+        {
+          "clip_id": 9,
+          "bounds": [
+            18,
+            20
+          ],
+          "raw": 0.9470536459992313,
+          "q": 0.08823529411764706
+        },
+        {
+          "clip_id": 3,
+          "bounds": [
+            6,
+            8
+          ],
+          "raw": 0.9481010158517709,
+          "q": 0.14705882352941177
+        }
+      ],
+      "high_raw_clips": [
+        {
+          "clip_id": 4,
+          "bounds": [
+            8,
+            10
+          ],
+          "raw": 0.9662570777384698,
+          "q": 0.9705882352941176
+        },
+        {
+          "clip_id": 2,
+          "bounds": [
+            4,
+            6
+          ],
+          "raw": 0.9623233703697929,
+          "q": 0.9117647058823529
+        },
+        {
+          "clip_id": 13,
+          "bounds": [
+            26,
+            28
+          ],
+          "raw": 0.9612006980110696,
+          "q": 0.8529411764705882
+        }
+      ]
+    },
+    {
+      "video_id": "v08",
+      "source_group": "s08",
+      "n_clips": 2,
+      "cluster": 3,
+      "cluster_video_count": 4,
+      "self_clip_fraction_of_cluster": 0.25,
+      "raw": {
+        "n": 2,
+        "min": 0.9636855637089086,
+        "max": 0.9650007296738258,
+        "mean": 0.9643431466913672,
+        "std_population": 0.0006575829824586044,
+        "p05": 0.9637513220071544,
+        "p50": 0.9643431466913672,
+        "p95": 0.9649349713755799
+      },
+      "raw_span": 0.0013151659649172087,
+      "q": {
+        "n": 2,
+        "min": 0.25,
+        "max": 0.75,
+        "mean": 0.5,
+        "std_population": 0.25,
+        "p05": 0.275,
+        "p50": 0.5,
+        "p95": 0.725
+      },
+      "q_ties": {
+        "n_values": 2,
+        "n_distinct": 2,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "integer_target_ties": {
+        "n_values": 2,
+        "n_distinct": 2,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "r0_minus_video_equal_loo": {
+        "n": 2,
+        "min": 0.006506990268574153,
+        "max": 0.006945378923546852,
+        "mean": 0.006726184596060503,
+        "std_population": 0.00021919432748634948,
+        "p05": 0.006528909701322788,
+        "p50": 0.006726184596060503,
+        "p95": 0.006923459490798217
+      },
+      "r0_vs_loo_pearson": 1.0,
+      "loo_global_fallback": false,
+      "loo_peer_count": 3,
+      "low_raw_clips": [
+        {
+          "clip_id": 1,
+          "bounds": [
+            2,
+            4
+          ],
+          "raw": 0.9636855637089086,
+          "q": 0.25
+        },
+        {
+          "clip_id": 0,
+          "bounds": [
+            0,
+            2
+          ],
+          "raw": 0.9650007296738258,
+          "q": 0.75
+        }
+      ],
+      "high_raw_clips": [
+        {
+          "clip_id": 0,
+          "bounds": [
+            0,
+            2
+          ],
+          "raw": 0.9650007296738258,
+          "q": 0.75
+        },
+        {
+          "clip_id": 1,
+          "bounds": [
+            2,
+            4
+          ],
+          "raw": 0.9636855637089086,
+          "q": 0.25
+        }
+      ]
+    },
+    {
+      "video_id": "v09",
+      "source_group": "s09",
+      "n_clips": 5,
+      "cluster": 0,
+      "cluster_video_count": 4,
+      "self_clip_fraction_of_cluster": 0.25,
+      "raw": {
+        "n": 5,
+        "min": 0.9493094614882115,
+        "max": 0.9580948939048737,
+        "mean": 0.9525487378150785,
+        "std_population": 0.0030155222528240612,
+        "p05": 0.9495485080216877,
+        "p50": 0.952390320673641,
+        "p95": 0.9569647788945138
+      },
+      "raw_span": 0.008785432416662187,
+      "q": {
+        "n": 5,
+        "min": 0.1,
+        "max": 0.9,
+        "mean": 0.5,
+        "std_population": 0.282842712474619,
+        "p05": 0.14,
+        "p50": 0.5,
+        "p95": 0.86
+      },
+      "q_ties": {
+        "n_values": 5,
+        "n_distinct": 5,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "integer_target_ties": {
+        "n_values": 5,
+        "n_distinct": 5,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "r0_minus_video_equal_loo": {
+        "n": 5,
+        "min": 0.0004792335583045926,
+        "max": 0.004488255827919452,
+        "mean": 0.0024250851618534907,
+        "std_population": 0.001614025579950095,
+        "p05": 0.0005357360158521951,
+        "p50": 0.002483744460126225,
+        "p95": 0.004373093885710477
+      },
+      "r0_vs_loo_pearson": 0.8860244688414167,
+      "loo_global_fallback": false,
+      "loo_peer_count": 3,
+      "low_raw_clips": [
+        {
+          "clip_id": 1,
+          "bounds": [
+            2,
+            4
+          ],
+          "raw": 0.9493094614882115,
+          "q": 0.1
+        },
+        {
+          "clip_id": 3,
+          "bounds": [
+            6,
+            8
+          ],
+          "raw": 0.9505046941555925,
+          "q": 0.3
+        },
+        {
+          "clip_id": 4,
+          "bounds": [
+            8,
+            10
+          ],
+          "raw": 0.952390320673641,
+          "q": 0.5
+        }
+      ],
+      "high_raw_clips": [
+        {
+          "clip_id": 2,
+          "bounds": [
+            4,
+            6
+          ],
+          "raw": 0.9580948939048737,
+          "q": 0.9
+        },
+        {
+          "clip_id": 0,
+          "bounds": [
+            0,
+            2
+          ],
+          "raw": 0.9524443188530741,
+          "q": 0.7
+        },
+        {
+          "clip_id": 4,
+          "bounds": [
+            8,
+            10
+          ],
+          "raw": 0.952390320673641,
+          "q": 0.5
+        }
+      ]
+    },
+    {
+      "video_id": "v10",
+      "source_group": "s10",
+      "n_clips": 13,
+      "cluster": 1,
+      "cluster_video_count": 4,
+      "self_clip_fraction_of_cluster": 0.25,
+      "raw": {
+        "n": 13,
+        "min": 0.9296890756322944,
+        "max": 0.9579963088616674,
+        "mean": 0.949722189605725,
+        "std_population": 0.0068904961663617,
+        "p05": 0.9389305313846272,
+        "p50": 0.9515176020403086,
+        "p95": 0.9569988130463923
+      },
+      "raw_span": 0.028307233229373008,
+      "q": {
+        "n": 13,
+        "min": 0.038461538461538464,
+        "max": 0.9615384615384616,
+        "mean": 0.49999999999999994,
+        "std_population": 0.2878197989826109,
+        "p05": 0.08461538461538462,
+        "p50": 0.5,
+        "p95": 0.9153846153846152
+      },
+      "q_ties": {
+        "n_values": 13,
+        "n_distinct": 13,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "integer_target_ties": {
+        "n_values": 13,
+        "n_distinct": 13,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "r0_minus_video_equal_loo": {
+        "n": 13,
+        "min": -0.0002301882207047523,
+        "max": 0.002246095674946269,
+        "mean": 0.0011650503760683227,
+        "std_population": 0.000692737725320384,
+        "p05": -0.00019598424841387184,
+        "p50": 0.0012780857291559977,
+        "p95": 0.0019722288386282865
+      },
+      "r0_vs_loo_pearson": 0.9973230275914062,
+      "loo_global_fallback": false,
+      "loo_peer_count": 3,
+      "low_raw_clips": [
+        {
+          "clip_id": 8,
+          "bounds": [
+            16,
+            18
+          ],
+          "raw": 0.9296890756322944,
+          "q": 0.038461538461538464
+        },
+        {
+          "clip_id": 6,
+          "bounds": [
+            12,
+            14
+          ],
+          "raw": 0.9450915018861824,
+          "q": 0.11538461538461539
+        },
+        {
+          "clip_id": 9,
+          "bounds": [
+            18,
+            20
+          ],
+          "raw": 0.9466766108690317,
+          "q": 0.19230769230769232
+        }
+      ],
+      "high_raw_clips": [
+        {
+          "clip_id": 0,
+          "bounds": [
+            0,
+            2
+          ],
+          "raw": 0.9579963088616674,
+          "q": 0.9615384615384616
+        },
+        {
+          "clip_id": 2,
+          "bounds": [
+            4,
+            6
+          ],
+          "raw": 0.956333815836209,
+          "q": 0.8846153846153846
+        },
+        {
+          "clip_id": 11,
+          "bounds": [
+            22,
+            24
+          ],
+          "raw": 0.9550097842596693,
+          "q": 0.8076923076923077
+        }
+      ]
+    },
+    {
+      "video_id": "v11",
+      "source_group": "s11",
+      "n_clips": 17,
+      "cluster": 2,
+      "cluster_video_count": 4,
+      "self_clip_fraction_of_cluster": 0.25,
+      "raw": {
+        "n": 17,
+        "min": 0.9430205535913716,
+        "max": 0.9645433199606696,
+        "mean": 0.9548672427652538,
+        "std_population": 0.005222803475579067,
+        "p05": 0.9449013970670033,
+        "p50": 0.9544911074051361,
+        "p95": 0.9621854999716232
+      },
+      "raw_span": 0.021522766369297952,
+      "q": {
+        "n": 17,
+        "min": 0.029411764705882353,
+        "max": 0.9705882352941176,
+        "mean": 0.5,
+        "std_population": 0.2881752638568445,
+        "p05": 0.07647058823529412,
+        "p50": 0.5,
+        "p95": 0.9235294117647058
+      },
+      "q_ties": {
+        "n_values": 17,
+        "n_distinct": 17,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "integer_target_ties": {
+        "n_values": 17,
+        "n_distinct": 17,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "r0_minus_video_equal_loo": {
+        "n": 17,
+        "min": -0.0003880588923960149,
+        "max": 0.0015181806123960584,
+        "mean": 0.000716656292507533,
+        "std_population": 0.0005314771606573859,
+        "p05": -0.00022384220892990303,
+        "p50": 0.0007042157932207749,
+        "p95": 0.00137512010741192
+      },
+      "r0_vs_loo_pearson": 0.9954761390485097,
+      "loo_global_fallback": false,
+      "loo_peer_count": 3,
+      "low_raw_clips": [
+        {
+          "clip_id": 7,
+          "bounds": [
+            14,
+            16
+          ],
+          "raw": 0.9430205535913716,
+          "q": 0.029411764705882353
+        },
+        {
+          "clip_id": 11,
+          "bounds": [
+            22,
+            24
+          ],
+          "raw": 0.9453716079359111,
+          "q": 0.08823529411764706
+        },
+        {
+          "clip_id": 5,
+          "bounds": [
+            10,
+            12
+          ],
+          "raw": 0.9518503503666853,
+          "q": 0.14705882352941177
+        }
+      ],
+      "high_raw_clips": [
+        {
+          "clip_id": 12,
+          "bounds": [
+            24,
+            26
+          ],
+          "raw": 0.9645433199606696,
+          "q": 0.9705882352941176
+        },
+        {
+          "clip_id": 15,
+          "bounds": [
+            30,
+            32
+          ],
+          "raw": 0.9615960449743616,
+          "q": 0.9117647058823529
+        },
+        {
+          "clip_id": 3,
+          "bounds": [
+            6,
+            8
+          ],
+          "raw": 0.9604370305553624,
+          "q": 0.8529411764705882
+        }
+      ]
+    },
+    {
+      "video_id": "v12",
+      "source_group": "s12",
+      "n_clips": 2,
+      "cluster": 3,
+      "cluster_video_count": 4,
+      "self_clip_fraction_of_cluster": 0.25,
+      "raw": {
+        "n": 2,
+        "min": 0.9567198691616984,
+        "max": 0.9586523296615886,
+        "mean": 0.9576860994116435,
+        "std_population": 0.0009662302499451325,
+        "p05": 0.9568164921866928,
+        "p50": 0.9576860994116435,
+        "p95": 0.9585557066365942
+      },
+      "raw_span": 0.001932460499890265,
+      "q": {
+        "n": 2,
+        "min": 0.25,
+        "max": 0.75,
+        "mean": 0.5,
+        "std_population": 0.25,
+        "p05": 0.275,
+        "p50": 0.5,
+        "p95": 0.725
+      },
+      "q_ties": {
+        "n_values": 2,
+        "n_distinct": 2,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "integer_target_ties": {
+        "n_values": 2,
+        "n_distinct": 2,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "r0_minus_video_equal_loo": {
+        "n": 2,
+        "min": 0.00431647918365019,
+        "max": 0.004960632683613686,
+        "mean": 0.004638555933631938,
+        "std_population": 0.00032207674998174785,
+        "p05": 0.004348686858648365,
+        "p50": 0.004638555933631938,
+        "p95": 0.004928425008615511
+      },
+      "r0_vs_loo_pearson": 1.0,
+      "loo_global_fallback": false,
+      "loo_peer_count": 3,
+      "low_raw_clips": [
+        {
+          "clip_id": 0,
+          "bounds": [
+            0,
+            2
+          ],
+          "raw": 0.9567198691616984,
+          "q": 0.25
+        },
+        {
+          "clip_id": 1,
+          "bounds": [
+            2,
+            4
+          ],
+          "raw": 0.9586523296615886,
+          "q": 0.75
+        }
+      ],
+      "high_raw_clips": [
+        {
+          "clip_id": 1,
+          "bounds": [
+            2,
+            4
+          ],
+          "raw": 0.9586523296615886,
+          "q": 0.75
+        },
+        {
+          "clip_id": 0,
+          "bounds": [
+            0,
+            2
+          ],
+          "raw": 0.9567198691616984,
+          "q": 0.25
+        }
+      ]
+    },
+    {
+      "video_id": "v13",
+      "source_group": "s13",
+      "n_clips": 5,
+      "cluster": 0,
+      "cluster_video_count": 4,
+      "self_clip_fraction_of_cluster": 0.25,
+      "raw": {
+        "n": 5,
+        "min": 0.9461469550236747,
+        "max": 0.9640296761466399,
+        "mean": 0.9539357625421193,
+        "std_population": 0.006304609312797397,
+        "p05": 0.9469263019926104,
+        "p50": 0.9515843756202758,
+        "p95": 0.9627985641276426
+      },
+      "raw_span": 0.017882721122965184,
+      "q": {
+        "n": 5,
+        "min": 0.1,
+        "max": 0.9,
+        "mean": 0.5,
+        "std_population": 0.28284271247461906,
+        "p05": 0.14,
+        "p50": 0.5,
+        "p95": 0.86
+      },
+      "q_ties": {
+        "n_values": 5,
+        "n_distinct": 5,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "integer_target_ties": {
+        "n_values": 5,
+        "n_distinct": 5,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "r0_minus_video_equal_loo": {
+        "n": 5,
+        "min": 0.0009375394167864259,
+        "max": 0.003185101653941924,
+        "mean": 0.0017338552319017709,
+        "std_population": 0.000790084907178672,
+        "p05": 0.0009761709508342653,
+        "p50": 0.0016190988533959505,
+        "p95": 0.002907449152825325
+      },
+      "r0_vs_loo_pearson": 0.9952669724157992,
+      "loo_global_fallback": false,
+      "loo_peer_count": 3,
+      "low_raw_clips": [
+        {
+          "clip_id": 1,
+          "bounds": [
+            2,
+            4
+          ],
+          "raw": 0.9461469550236747,
+          "q": 0.1
+        },
+        {
+          "clip_id": 0,
+          "bounds": [
+            0,
+            2
+          ],
+          "raw": 0.9500436898683531,
+          "q": 0.3
+        },
+        {
+          "clip_id": 4,
+          "bounds": [
+            8,
+            10
+          ],
+          "raw": 0.9515843756202758,
+          "q": 0.5
+        }
+      ],
+      "high_raw_clips": [
+        {
+          "clip_id": 2,
+          "bounds": [
+            4,
+            6
+          ],
+          "raw": 0.9640296761466399,
+          "q": 0.9
+        },
+        {
+          "clip_id": 3,
+          "bounds": [
+            6,
+            8
+          ],
+          "raw": 0.9578741160516533,
+          "q": 0.7
+        },
+        {
+          "clip_id": 4,
+          "bounds": [
+            8,
+            10
+          ],
+          "raw": 0.9515843756202758,
+          "q": 0.5
+        }
+      ]
+    },
+    {
+      "video_id": "v14",
+      "source_group": "s14",
+      "n_clips": 13,
+      "cluster": 1,
+      "cluster_video_count": 4,
+      "self_clip_fraction_of_cluster": 0.25,
+      "raw": {
+        "n": 13,
+        "min": 0.9364225147522475,
+        "max": 0.9565623427072149,
+        "mean": 0.948106032989274,
+        "std_population": 0.006705281154746088,
+        "p05": 0.9369989175617144,
+        "p50": 0.9483742852251292,
+        "p95": 0.9559505329463696
+      },
+      "raw_span": 0.020139827954967382,
+      "q": {
+        "n": 13,
+        "min": 0.038461538461538464,
+        "max": 0.9615384615384616,
+        "mean": 0.5,
+        "std_population": 0.2878197989826109,
+        "p05": 0.08461538461538462,
+        "p50": 0.5,
+        "p95": 0.9153846153846152
+      },
+      "q_ties": {
+        "n_values": 13,
+        "n_distinct": 13,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "integer_target_ties": {
+        "n_values": 13,
+        "n_distinct": 13,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "r0_minus_video_equal_loo": {
+        "n": 13,
+        "min": -0.0019138881073520464,
+        "max": 0.0022028836671711405,
+        "mean": 0.0005474711121107056,
+        "std_population": 0.0010016832278966607,
+        "p05": -0.0010259719651449337,
+        "p50": 0.000821880865014446,
+        "p95": 0.0018104545221488513
+      },
+      "r0_vs_loo_pearson": 0.9929391484684565,
+      "loo_global_fallback": false,
+      "loo_peer_count": 3,
+      "low_raw_clips": [
+        {
+          "clip_id": 3,
+          "bounds": [
+            6,
+            8
+          ],
+          "raw": 0.9364225147522475,
+          "q": 0.038461538461538464
+        },
+        {
+          "clip_id": 2,
+          "bounds": [
+            4,
+            6
+          ],
+          "raw": 0.937383186101359,
+          "q": 0.11538461538461539
+        },
+        {
+          "clip_id": 4,
+          "bounds": [
+            8,
+            10
+          ],
+          "raw": 0.9384539138813417,
+          "q": 0.19230769230769232
+        }
+      ],
+      "high_raw_clips": [
+        {
+          "clip_id": 0,
+          "bounds": [
+            0,
+            2
+          ],
+          "raw": 0.9565623427072149,
+          "q": 0.9615384615384616
+        },
+        {
+          "clip_id": 10,
+          "bounds": [
+            20,
+            22
+          ],
+          "raw": 0.9555426597724727,
+          "q": 0.8846153846153846
+        },
+        {
+          "clip_id": 12,
+          "bounds": [
+            24,
+            26
+          ],
+          "raw": 0.9544337294340676,
+          "q": 0.8076923076923077
+        }
+      ]
+    },
+    {
+      "video_id": "v15",
+      "source_group": "s15",
+      "n_clips": 17,
+      "cluster": 2,
+      "cluster_video_count": 4,
+      "self_clip_fraction_of_cluster": 0.25,
+      "raw": {
+        "n": 17,
+        "min": 0.9421335986216781,
+        "max": 0.9580440595839343,
+        "mean": 0.9544496483267517,
+        "std_population": 0.003657477130290188,
+        "p05": 0.9502296798881692,
+        "p50": 0.9553210167107317,
+        "p95": 0.9578735350873856
+      },
+      "raw_span": 0.015910460962256234,
+      "q": {
+        "n": 17,
+        "min": 0.029411764705882353,
+        "max": 0.9705882352941176,
+        "mean": 0.5,
+        "std_population": 0.2881752638568445,
+        "p05": 0.07647058823529412,
+        "p50": 0.5,
+        "p95": 0.9235294117647058
+      },
+      "q_ties": {
+        "n_values": 17,
+        "n_distinct": 17,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "integer_target_ties": {
+        "n_values": 17,
+        "n_distinct": 17,
+        "duplicate_value_fraction": 0.0,
+        "pair_tie_fraction": 0.0
+      },
+      "r0_minus_video_equal_loo": {
+        "n": 17,
+        "min": -0.0007028657064338528,
+        "max": 0.0013172732796377096,
+        "mean": 0.0003174638759988599,
+        "std_population": 0.00044690340518223186,
+        "p05": -0.0003788376043117214,
+        "p50": 0.00035796600483617436,
+        "p95": 0.000975628179029164
+      },
+      "r0_vs_loo_pearson": 0.9929147346128312,
+      "loo_global_fallback": false,
+      "loo_peer_count": 3,
+      "low_raw_clips": [
+        {
+          "clip_id": 7,
+          "bounds": [
+            14,
+            16
+          ],
+          "raw": 0.9421335986216781,
+          "q": 0.029411764705882353
+        },
+        {
+          "clip_id": 14,
+          "bounds": [
+            28,
+            30
+          ],
+          "raw": 0.9522537002047919,
+          "q": 0.08823529411764706
+        },
+        {
+          "clip_id": 3,
+          "bounds": [
+            6,
+            8
+          ],
+          "raw": 0.9523134112927718,
+          "q": 0.14705882352941177
+        }
+      ],
+      "high_raw_clips": [
+        {
+          "clip_id": 4,
+          "bounds": [
+            8,
+            10
+          ],
+          "raw": 0.9580440595839343,
+          "q": 0.9705882352941176
+        },
+        {
+          "clip_id": 16,
+          "bounds": [
+            32,
+            34
+          ],
+          "raw": 0.9578309039632484,
+          "q": 0.9117647058823529
+        },
+        {
+          "clip_id": 13,
+          "bounds": [
+            26,
+            28
+          ],
+          "raw": 0.9573300174273492,
+          "q": 0.8529411764705882
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 25.438442066777498,
+  "hashes": {
+    "prepared_manifest": "d76f652fc7a9803080a62422629abe793623bd2043aa0512833a5c605987bdf6",
+    "pseudo_json": "8c95352b55802cbaf834e82f9465d227d9dce529380bb32f9b5209a6df825f90",
+    "cluster_model_joblib": "3f9cc02d0eb4c38dffe831831b8f5b152272f64ba335fc38e5281f9eec5e16ef",
+    "features": {
+      "v00": "25319f0971299221e1e1e30ca1a8a811fbc492a8912783cb78ce0d2074cd4933",
+      "v01": "e3c81fac55ce10dde76a82b7e0a6cd982d5ddc9c16703b6d5ee4c730da2fdd1d",
+      "v02": "77cbe1d1eaa14b18673ba31331ac63320308182871e477d99ad593f164dfa805",
+      "v03": "2a0825328fc8b90e14120f22daa787efd4af55e0a430afc0c55eb4aca82f9548",
+      "v04": "adf786c26c14905c9eae4fd103fb937af20a92e733296f356021215ca5ce4508",
+      "v05": "308f7c822ee1348349c8d3a64b2616f1e4b7c828f5851395c81c30801281f6af",
+      "v06": "9fe42be9406bbf78c6966c2bea9050678c9420d5500c046c41195a9e42711026",
+      "v07": "9b63731d900f9e8336e7733376665890921ec1ebe641b66c14db642308649e11",
+      "v08": "e858ba18ebddfdd8bf1ad36a06deb03cd7fa2fb9d6b273f1fb143d5b49fe7ae1",
+      "v09": "708f97786d5b3749a6f4699bc19751406d62fbb705f666ed3bc8f924bb0cd150",
+      "v10": "d9eb49046c502d71aca4e5cb6f6ca4fcc48b8ddee4acdb544d755cf540e1a6e7",
+      "v11": "0f1f5b161768f3c87166eaab322a1208567fdfcc59bbef262dd70b079d67f929",
+      "v12": "49ec5dbaf7dd8213a332f7c7bd7b4bd9d29555681e40fdb369e30665421c5548",
+      "v13": "71d81b745e44fe38db00456b4f9e8856d1c52ba503a3fef861e43538b91d83b8",
+      "v14": "f348f42d23c9d6cea84676549352f6cd05c76df5aa0f0d46780e6d83d756441a",
+      "v15": "ef2233e23f741a4fd9f905792751091aefa955fd8b234178ad59c5e1d80f480a",
+      "v16": "fb42d9795b2b4e322f02cf251a07e2c5b472233728da935084418681cab2d60c",
+      "v17": "4c6b25e2925d9585c8617729f042b7bf466e801faf5160d1f649ac207007c381",
+      "v18": "b938f8fe0cebc8f1f51747a781ce5ba65007b9191231027d281e3fddfd14abc7",
+      "v19": "54bde50ada671297fb0d3bc0b03cfc3f91c1f0d3a2274958a9e1f4413fc30466"
+    }
+  }
+}

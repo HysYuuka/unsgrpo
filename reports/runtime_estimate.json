@@ -1,0 +1,24 @@
+{
+  "updated_hong_kong": "2026-10-27T20:35:56.121633+08:00",
+  "controller_status": "RUNNING",
+  "active_stage": "S0_train",
+  "S0_updates": 202,
+  "S0_exposures": 3232,
+  "S0_remaining_minutes_estimated": 9.350347237631514,
+  "basis": {
+    "S0_seconds_per_update": 10.389274708479459,
+    "GRPO_seconds_per_update_from_two_update_16_completion_probe": 24.452375140041113,
+    "inference_assumed_seconds_per_window": 2.0,
+    "evaluation_hash_archive_overhead_minutes_assumed": 20
+  },
+  "remaining_hours_central_estimate": 5.112652913139341,
+  "estimated_finish_hong_kong": "2026-10-28T01:42:41.672120+08:00",
+  "check_interval_minutes": 10,
+  "notify_on": [
+    "stage completion",
+    "failure",
+    "required user action"
+  ],
+  "routine_per_update_broadcast": false,
+  "uncertainty": "Approximate; full GRPO and inference throughput may vary"
+}

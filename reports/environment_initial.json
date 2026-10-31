@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETED",
+  "scope": "basic CUDA only; not model training",
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "executable": "/root/miniconda3/bin/python",
+  "os": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "gpu_total_bytes": 25252724736,
+  "cuda_compute_seconds": 0.41398116713389754,
+  "cgroup_cpu_max": "1600000 100000",
+  "cgroup_memory_max": "128849018880",
+  "gpu_training_verified": false
+}

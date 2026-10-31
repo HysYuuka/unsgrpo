@@ -1,0 +1,41 @@
+{
+  "GAIC": {
+    "status": "OFFICIAL_WEIGHTS_ACQUIRED_PORT_ACCEPTANCE_CHECKED",
+    "weights": "/root/autodl-fs/highlight-static-rank/weights/gaic_official",
+    "evaluation": "queued after all controlled checkpoints freeze; official legacy ROI/RoD arithmetic port; separate published-model table"
+  },
+  "MUSIQ_AVA_stock": {
+    "status": "WEIGHTS_AND_FULL_NETWORK_VERIFIED",
+    "evaluation": "queued after controlled checkpoint freeze"
+  },
+  "FGAesQ_full_DiffToken": {
+    "status": "NOT_ACQUIRED_NETWORK_BLOCKED",
+    "reason": "Official Hugging Face and mirror metadata/download probes fail with connection/SSL EOF; bounded probes archived; no single-image substitution",
+    "official_url": "https://huggingface.co/yzc002/FGAesQ/tree/main",
+    "last_takeover_metadata_probe": "reports/EXTERNAL_METADATA_TAKEOVER_20261030.json",
+    "last_direct_download_probe": "reports/EXTERNAL_DIRECT_RANGE_TAKEOVER_20261030.json",
+    "author_published_expected_weight_SHA256": "7249cd7066aae7067258cc28d13fef1a369693e557c2fd9ac172edfaebd1af65",
+    "weight_SHA_source": "https://huggingface.co/yzc002/FGAesQ/blob/main/FGAesQ.pt",
+    "no_weight_downloaded_or_substitute_used": true
+  },
+  "FGAesthetics_Cropping": {
+    "status": "DATA_NOT_ACQUIRED_DIRECT_DOWNLOAD_SSL_EOF_MAPPING_NOT_STARTED",
+    "source_geometry_requirement": "must verify original and crop coordinate mapping; no crop-as-original fallback",
+    "bounded_probe": "reports/EXTERNAL_DIRECT_RANGE_TAKEOVER_20261030.json",
+    "crop_archive_only_scope": "crop-img.rar; do not download AIGC/natural archives",
+    "no_crop_as_original_substitution": true
+  },
+  "CPC": {
+    "status": "READY_FOR_FROZEN_CHECKPOINT_EXTERNAL_INFERENCE",
+    "official_download": "https://drive.google.com/open?id=1TMvuCSONEN1_9y7KnzKgy_7_fSFTHzyO",
+    "overlap_audit": "reports/CPC_CONVERSION_AND_OVERLAP.json",
+    "progress_file": "reports/CPC_ACQUISITION.json",
+    "manifest": "/root/autodl-fs/highlight-static-rank/data/cpc_external_manifest.jsonl",
+    "protocol": "reports/CPC_EXTERNAL_LOCK.json"
+  },
+  "GAFIC": {
+    "status": "PAPER_REFERENCE_ONLY_IMPLEMENTATION_GAPS",
+    "audit": "/root/autodl-tmp/highlight-research/reviews/ranking_close_read_20261030/CODE_AND_PROTOCOL_AUDIT.md"
+  },
+  "no_SOTA_or_full_competitiveness_claim_with_gaps": true
+}

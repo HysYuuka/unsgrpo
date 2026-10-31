@@ -1,0 +1,46 @@
+{
+  "status": "COMPLETED",
+  "source_url": "https://people.csail.mit.edu/yalesong/tvsum/tvsum50_ver_1_1.tgz",
+  "archive_sha256": "407d340bcd06fdc6d17374ebe6760b4a96816bcace228559c8283d9fb2520dea",
+  "publisher_checksum_available": false,
+  "split_seed": 42,
+  "manifest_sha256": "be39d95105986db93e6fbd885679af2dcea41a4d74f74c01b65a867b1d87968f",
+  "split": {
+    "n_videos": 50,
+    "n_source_groups": 50,
+    "counts": {
+      "train": 40,
+      "test": 10,
+      "dev": 0
+    }
+  },
+  "extracted": [
+    {
+      "name": "WebscopeReadMe.txt",
+      "bytes": 1875,
+      "sha256": "341fb9cd2b4f276ae6d497ea5f600b596698627bad1db54af1944171ce1e7eba"
+    },
+    {
+      "name": "README",
+      "bytes": 4127,
+      "sha256": "a5fccdd34b27ebda8b7aa2975079b7d35c3ffc29b7e897ca8b19c0932ddcd026"
+    },
+    {
+      "name": "ydata-tvsum50-data.zip",
+      "bytes": 136125,
+      "sha256": "9f718779ba0847e9fc70a361a65037a14b8e48408a732aea699d2bccb4c4fc1f"
+    },
+    {
+      "name": "ydata-tvsum50-matlab.zip",
+      "bytes": 655466,
+      "sha256": "bbe67f89964e8f42179869922708ef73a56db7d4de28a22f2e602f7243ba4e9d"
+    },
+    {
+      "name": "ydata-tvsum50-video.zip",
+      "bytes": 670834847,
+      "sha256": "3ac6ca002341b17a2211c8e920424201a50217f7128389e63905db4ae16f6a86"
+    }
+  ],
+  "annotation_values_read": false,
+  "near_duplicate_audit": "Exact byte duplicates grouped; other near duplicates not independently certified"
+}

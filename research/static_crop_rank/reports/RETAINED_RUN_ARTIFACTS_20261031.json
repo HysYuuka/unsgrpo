@@ -1,0 +1,445 @@
+{
+  "files": [
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s17/THROUGHPUT_100.json",
+      "bytes": 360,
+      "sha256": "6dff4ef1b3688405eb1d61eb05a353c61883c1ae9d242f772be067d914928e23",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s17/THROUGHPUT_100_chunk90_end224.json",
+      "bytes": 408,
+      "sha256": "27602cd27e2d246bcb669430935910c22e1c47bbc29e1665ca8a2846f39d25ea",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s17/THROUGHPUT_ACTIVE.json",
+      "bytes": 408,
+      "sha256": "27602cd27e2d246bcb669430935910c22e1c47bbc29e1665ca8a2846f39d25ea",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s17/TRAINING_COMPLETE.json",
+      "bytes": 202,
+      "sha256": "a6b3f02f3a5f59033512d3c8abd90da9f908cfad85a323b815a83d2961c36f72",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s17/best.pt",
+      "bytes": 364517319,
+      "sha256": "8b85043f0e4827409ae2a7a46b1dfbc3e4afcd89d29d9d7d9367387cd15af5f4",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s17/best_val_predictions.jsonl",
+      "bytes": 660581,
+      "sha256": "1592cdfa5edbb57c5c862106626c9b08ee5426ad07d12a272d31bebfb05e51aa",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s17/history.json",
+      "bytes": 19556,
+      "sha256": "0a9ea925fc6cb8d184679ea8eaee7aa5a63839f6fc4e592f255c5113a22be0a6",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s17/last.pt",
+      "bytes": 1093572549,
+      "sha256": "5ad7e9e7b620c781541ab6152b3772f1ba2554a6a317c9bc4e3324e03678ed42",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s17/last_val_predictions.jsonl",
+      "bytes": 660122,
+      "sha256": "22653e092840c273545a6e8a589a016093c06433f2f54306ca37e4c918ffe521",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s17/steps.jsonl",
+      "bytes": 3716900,
+      "sha256": "e8ae66e9b578905a36ba50dd2aa56f830ad95a698b039acc87d36c0c728c55fe",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s29/THROUGHPUT_100_chunk90_end100.json",
+      "bytes": 410,
+      "sha256": "e792f38a5187056b5823b1fb3cbdd4559afcb0138f2511046f2c4950a9bc993d",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s29/THROUGHPUT_ACTIVE.json",
+      "bytes": 410,
+      "sha256": "e792f38a5187056b5823b1fb3cbdd4559afcb0138f2511046f2c4950a9bc993d",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s29/TRAINING_COMPLETE.json",
+      "bytes": 203,
+      "sha256": "7e95dd891c38da52dce96fdc5a23d0a23518ed3d57c02ee5197f1d87db7d6ec6",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s29/best.pt",
+      "bytes": 364517319,
+      "sha256": "689233e2488111a63ffed666b3b306d6832f73a07900a853fcb9f7ef93846654",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s29/best_val_predictions.jsonl",
+      "bytes": 659855,
+      "sha256": "2d5736657b52967d10a4bfa9b0a51828d890c4143078a79130fcbc3b1d86072c",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s29/history.json",
+      "bytes": 19645,
+      "sha256": "924c84fefe68a36489e3deff3270911085ba3c37cfc604f65b955b3901945c7d",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s29/last.pt",
+      "bytes": 1093572485,
+      "sha256": "4ff429b5c3afae4d783021317eff220b833293114f4dca42cf2cd9acbae50e99",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s29/last_val_predictions.jsonl",
+      "bytes": 660437,
+      "sha256": "6ba1cb49bffd6fd8a7d616c2bdef9c47b7e03c6c79b9dba1ec06dba570875b44",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s29/steps.jsonl",
+      "bytes": 3718963,
+      "sha256": "4774e1db2684f2c17841d1fe3ad52da3d6ca51c94f987971d5ff2c3e1100e893",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s43/THROUGHPUT_100_chunk90_end100.json",
+      "bytes": 411,
+      "sha256": "155b46615c34d05b94a5adfb97b2daced5204923a0c43172763362ca6f595812",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s43/THROUGHPUT_ACTIVE.json",
+      "bytes": 411,
+      "sha256": "155b46615c34d05b94a5adfb97b2daced5204923a0c43172763362ca6f595812",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s43/TRAINING_COMPLETE.json",
+      "bytes": 202,
+      "sha256": "fb89e91283bf892002efe3be4c8a3c4eee2753d169fe8527919e5b59cdd30efa",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s43/best.pt",
+      "bytes": 364517319,
+      "sha256": "03ae5e0e53d629b1603a831d1fcd69e2aafbeb89bcecc718c4ad0a96fddb25dc",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s43/best_val_predictions.jsonl",
+      "bytes": 660205,
+      "sha256": "4a3ce8483126344a7e39e677e189cc423b0f26b58f481cbe65adb3e150ee725d",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s43/history.json",
+      "bytes": 19565,
+      "sha256": "6775d1e87627ebedc33a0b2b60d078cf8d52665acf77b3774f0a96802a22b3cc",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s43/last.pt",
+      "bytes": 1093572421,
+      "sha256": "4104ca5ec703d88983b1eb48f8038174b43b7bea389f492c2087163f7dba16c7",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s43/last_val_predictions.jsonl",
+      "bytes": 660125,
+      "sha256": "fd1753c613586e54b367d1b7ae5957f31ab5633f2dfd6ccba056a6d49ea3d914",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/FULL_s43/steps.jsonl",
+      "bytes": 3720619,
+      "sha256": "9e70fb64f2b478279f14bb2780633700e7ab056f080d5f43427ceadec284f8dc",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s17/THROUGHPUT_100_chunk90_end100.json",
+      "bytes": 412,
+      "sha256": "978e8bbc117f0bd62b12ffaa9c82ced143fb708872c4adaa995773bbd2fb58f6",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s17/THROUGHPUT_ACTIVE.json",
+      "bytes": 412,
+      "sha256": "978e8bbc117f0bd62b12ffaa9c82ced143fb708872c4adaa995773bbd2fb58f6",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s17/TRAINING_COMPLETE.json",
+      "bytes": 203,
+      "sha256": "11e214a2d623e71e3613b93ee13c5c81fcb917e8104ea4b6ec3e2f3c6344a895",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s17/best.pt",
+      "bytes": 364255175,
+      "sha256": "713477b7bdb50977bfd199348b60e80c0fd95d0c4ab4640bed0677481e57adb0",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s17/best_val_predictions.jsonl",
+      "bytes": 660126,
+      "sha256": "2bc3b74deaaca05ba41a53171fa5f03a7810316915ca6c593ec59371167ee771",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s17/history.json",
+      "bytes": 19645,
+      "sha256": "6e76673cf2ea5d74b1cf07c45b63fc949927abab084a70b30c7d336401d43008",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s17/last.pt",
+      "bytes": 1092786053,
+      "sha256": "ef574ec7f3ca591b757b1709344afb20e28ce00ce9f4dff44e0d0305e7c4ee38",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s17/last_val_predictions.jsonl",
+      "bytes": 660054,
+      "sha256": "e3b9715f8badd6461593b626694b64178317aaf41e3dda4d2a890d0fb29eade8",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s17/steps.jsonl",
+      "bytes": 3717850,
+      "sha256": "60574358b1f43a12f2355f49dffebe82a7258bf30c56f386fd774acb13412a6d",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s29/THROUGHPUT_100_chunk90_end100.json",
+      "bytes": 413,
+      "sha256": "09c94ac6d88550c07559ad91832d718b6b55fb842c3ea84cfa27ae48691ac05b",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s29/THROUGHPUT_ACTIVE.json",
+      "bytes": 413,
+      "sha256": "09c94ac6d88550c07559ad91832d718b6b55fb842c3ea84cfa27ae48691ac05b",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s29/TRAINING_COMPLETE.json",
+      "bytes": 203,
+      "sha256": "5859e20bd864dd8f10207ad55f745730f9c6451141475da3f874be4c5f85c639",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s29/best.pt",
+      "bytes": 364255175,
+      "sha256": "7e3152fd84b525b782a580af185515ee1e4a3f652f3c90deae8909a67779c3d9",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s29/best_val_predictions.jsonl",
+      "bytes": 660044,
+      "sha256": "88fc84a33333f9d417a9424dd35044f6faa90cb18013501d51ecec494558ef02",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s29/history.json",
+      "bytes": 19709,
+      "sha256": "3659cc13d13cb6a2284de34705faa335079f22da9523d25793267705b359847b",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s29/last.pt",
+      "bytes": 1092786053,
+      "sha256": "6919b30eafe0113ded5658fedf7bd0cb9ccf1155908de55995473d76e62a684c",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s29/last_val_predictions.jsonl",
+      "bytes": 660759,
+      "sha256": "43749198a146475d0c5594e77612baf6aa5d99208e9d4d6bfad8d6a82f87accf",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s29/steps.jsonl",
+      "bytes": 3720662,
+      "sha256": "0561504098e44ef60a673158fdbbaed90e3807658d93395e651b4cf93d5443ec",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s43/THROUGHPUT_100_chunk90_end100.json",
+      "bytes": 413,
+      "sha256": "6e799b24156291f42c55dcb7bf4bfda2b88784e067c375773e9551f7cff2f086",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s43/THROUGHPUT_ACTIVE.json",
+      "bytes": 413,
+      "sha256": "6e799b24156291f42c55dcb7bf4bfda2b88784e067c375773e9551f7cff2f086",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s43/TRAINING_COMPLETE.json",
+      "bytes": 203,
+      "sha256": "8aad119437b4a878f5c521978cd9d3c3a4a698b89673a6b82a3dd6f883cb5102",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s43/best.pt",
+      "bytes": 364255175,
+      "sha256": "7c2c2d3fba97fb9139bd47da343d5359a36156c4994e4145aa042d0a04ce08a9",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s43/best_val_predictions.jsonl",
+      "bytes": 660856,
+      "sha256": "d2e5caa84ca3a62045a7e0fe4c1e51684456b23dc0cbe1b93ddf9f7b0470acad",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s43/history.json",
+      "bytes": 19554,
+      "sha256": "e7141e1c053635337d8864732b2cae7461f8f0a48f22da5347c07adfd1b0fae7",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s43/last.pt",
+      "bytes": 1092785989,
+      "sha256": "0c58b6d8d464fa396d40ed94edd60d0893741125d2ca8594d04c4be6980e7dbb",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s43/last_val_predictions.jsonl",
+      "bytes": 660303,
+      "sha256": "a331bd2e7e1cbf0742c6ba313084b63e8a08ebbfa297ff32ddcaef31a3cc077e",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MATCHED_s43/steps.jsonl",
+      "bytes": 3720419,
+      "sha256": "8faa15dbb79cbeed6dd1f9cabf9bb516653af1f40d47009e61baa7f0dd9f9a99",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MUSIQ_FT_s17/THROUGHPUT_100_chunk90_end100.json",
+      "bytes": 415,
+      "sha256": "fa51e7f5f33f0cc0c2932cf16bb54b5aff3095624181298b8cc40322455bc029",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MUSIQ_FT_s17/THROUGHPUT_ACTIVE.json",
+      "bytes": 415,
+      "sha256": "fa51e7f5f33f0cc0c2932cf16bb54b5aff3095624181298b8cc40322455bc029",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MUSIQ_FT_s17/best.pt",
+      "bytes": 108611541,
+      "sha256": "b568df1a2488ec7e4531f9195db9de77f79d501d94cdf0395145917ed0fa5135",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MUSIQ_FT_s17/best_val_predictions.jsonl",
+      "bytes": 809449,
+      "sha256": "3afb56e9707eda085fcd43d1183773cdcc9de690af7bc2e9a3213e776cb12dd3",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MUSIQ_FT_s17/history.json",
+      "bytes": 640,
+      "sha256": "f4311cfab673a44d5c5913b1afa8acf287beca1eb4c5fecfd900872c7af87d6b",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MUSIQ_FT_s17/last.pt",
+      "bytes": 325868931,
+      "sha256": "64bac40dfa8b6d29ae4697fd6c051752c05188b3cad1710d9c028da12087b153",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MUSIQ_FT_s17/last_val_predictions.jsonl",
+      "bytes": 809449,
+      "sha256": "3afb56e9707eda085fcd43d1183773cdcc9de690af7bc2e9a3213e776cb12dd3",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    },
+    {
+      "path": "/autodl-fs/data/highlight-static-rank/runs/MUSIQ_FT_s17/steps.jsonl",
+      "bytes": 147458,
+      "sha256": "d241f21585e975d2f3fa27fff6e14a4b6b76561efb26df088a041b68cdd928b1",
+      "retained_locally": true,
+      "uploaded_weight_or_annotation": false
+    }
+  ]
+}

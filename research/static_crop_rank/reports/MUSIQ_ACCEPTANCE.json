@@ -1,0 +1,35 @@
+{
+  "strict_weights": true,
+  "score": [
+    0.43002626299858093
+  ],
+  "distribution": [
+    [
+      0.01575940102338791,
+      0.03817583620548248,
+      0.10236355662345886,
+      0.23158271610736847,
+      0.3240424692630768,
+      0.16942954063415527,
+      0.06818883121013641,
+      0.030855411663651466,
+      0.012273434549570084,
+      0.007328802719712257
+    ]
+  ],
+  "sum": 1.0,
+  "parameters": 27129290,
+  "all_parameters_have_gradient": true,
+  "full_crop_forward_backward_seconds": 0.6268045678734779,
+  "preprocessing": {
+    "patch_size": 32,
+    "patch_stride": 32,
+    "hse_grid_size": 10,
+    "longer_side_lengths": [
+      224,
+      384
+    ],
+    "max_seq_len_from_original_res": -1
+  },
+  "peak_bytes": 699474432
+}

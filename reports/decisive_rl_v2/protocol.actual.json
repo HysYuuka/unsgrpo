@@ -1,0 +1,193 @@
+{
+  "status": "FROZEN_BEFORE_FIRST_NEW_MODEL_CALL",
+  "time": {
+    "utc": "2026-10-29T10:16:52.343914+00:00",
+    "hong_kong": "2026-10-29T18:16:52.343914+08:00"
+  },
+  "plan": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/NEXT_DECISIVE_RL_EXPERIMENT_20261029.md",
+    "sha256": "0e09d41c81a78b20a346416f92dc41ce4419ed5d3489ea3a491d9587ae53c36c",
+    "bytes": 20855
+  },
+  "namespace": "decisive_rl_v2",
+  "model_teacher": {
+    "path": "/autodl-fs/data/unsgrpo/decisive_rl_v2/teacher_model/asset_receipt.json",
+    "sha256": "67abf577bf4e1cbf68be9bf8ea79230f57aaad0d7514db14d9d231b5ab3f5f1a",
+    "bytes": 4970
+  },
+  "common_S0": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/common_s0.json",
+    "sha256": "2ccf31ba127b4b18ea6909ad9cc4b8f3734ae8ff692a902e1547dc4be2dc82e9",
+    "bytes": 4798
+  },
+  "reused_inputs": {
+    "candidates": "/root/autodl-fs/unsgrpo/reward_to_rl_v1/screen/candidates.jsonl",
+    "old_rewards": "/root/autodl-fs/unsgrpo/reward_to_rl_v1/screen/candidate_rewards.jsonl",
+    "old_candidate_rewards_freeze": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/screen/candidates_and_rewards.freeze.json",
+    "old_full_video_H": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/screen/single_window_full_video_AP.jsonl",
+    "dev_windows.jsonl": "/root/autodl-tmp/unsgrpo-work/runs/decisive_rl_v2/dev_windows.jsonl",
+    "train_windows.initial.jsonl": "/root/autodl-tmp/unsgrpo-work/runs/decisive_rl_v2/train_windows.initial.jsonl"
+  },
+  "seed": 42,
+  "input": "Original 16-cell overview, 8 clips x4 frames; policy JSON 8 integers 0..100; original mean aggregation, illegal windows zero included",
+  "teacher_question": "Given the whole-video overview and the two clips, which clip would you retain in a short highlight reel of this video? Judge the significance and viewing value of the visible moment in this video's context. Motion, rarity, static appearance, or repetition alone does not determine value. A: the first clip is more valuable. B: the second clip is more valuable. C: their highlight value is similar. D: the visual evidence is insufficient to decide. Answer with one letter only.",
+  "teacher_candidates": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "teacher_dtype": "BF16, batch1, no quantization, last-position logits",
+  "technical": {
+    "seed": 2718,
+    "sources": [
+      "fWutDQy1nnY",
+      "vdmoEJ5YbrQ",
+      "oDXZc0tZe04",
+      "3eYKfiOEJNs",
+      "JKpqYvAdIsw",
+      "z_6gVvQb2d0",
+      "akI8YFjEmUw",
+      "JgHubY5Vw3Y"
+    ],
+    "nominal_views": 32,
+    "same_clip_C_in_both_min": 6,
+    "raw_mass_at_least_half_fraction_min": 0.9,
+    "top_rule": "unique argmax; C tied with D is insufficient for correct tie",
+    "view_cache": "exact prompt, overview/frame bytes, teacher revision and processor identity"
+  },
+  "edge_rules": {
+    "permutation_seed": 2718,
+    "pairs_per_window": 4,
+    "nonoverlapping": true,
+    "mass_min": 0.5,
+    "margin_min": 0.1,
+    "same_actual_direction_both_views": true,
+    "weight": "(1-TV(p,q_aligned))*mean_probability_margin",
+    "tie": "both unique C; archive only",
+    "unknown": "D, order conflict, low mass/margin or ambiguity; never a negative label"
+  },
+  "reward": "Kept-edge weighted order agreement 1/.5/0, invalid JSON -1, legal/no edge .5",
+  "development_gate": {
+    "sufficient_windows_min": 36,
+    "sources_with_at_least_two_sufficient_windows_min": 8,
+    "directional_edges_per_window_min": 2,
+    "distinct_clips_min": 4,
+    "G_new_pp_min": 0.15,
+    "G_new_minus_old_pp_min": 0.03,
+    "selected_minus_greedy_pp_min": 0,
+    "sources_positive_G_min": 6,
+    "accuracy_60pct_gate": false
+  },
+  "train_pool": {
+    "nominal_windows": 160,
+    "min_windows": 80,
+    "min_sources": 32,
+    "G": 4,
+    "sampling_seed": 31416,
+    "preference_reward_gap_min": 0.1,
+    "tie_seed": 1618,
+    "no_resampling_when_gap_insufficient": true,
+    "u": "mean directional weight * directional clip coverage /8",
+    "schedule_seed": 42,
+    "exposures_main": 320,
+    "exposures_DPO_long": 1280,
+    "source_balancing": "randomized source cycles; window draws with replacement; common 320-prefix"
+  },
+  "optimization": {
+    "seed": 42,
+    "main_steps": 80,
+    "DPO_long_steps": 320,
+    "prompts_per_step": 4,
+    "lr": 1e-05,
+    "warmup_steps": 4,
+    "actual_step1_to4_learning_rates": [
+      2.5e-06,
+      5e-06,
+      7.5e-06,
+      1e-05
+    ],
+    "after_warmup": "constant",
+    "weight_decay": 0,
+    "clip_grad_norm": 1,
+    "LoRA": {
+      "rank": 16,
+      "alpha": 32,
+      "dropout": 0,
+      "trainable": "language linear layers only"
+    },
+    "DPO_beta": 0.1,
+    "DPO_logp": "SUM over all actual generated completion tokens including actual EOS; no prompt",
+    "GRPO_G": 4,
+    "std": "sample",
+    "epsilon_adv": 0.0001,
+    "std_floor_guard": 0.05,
+    "beta_KL": 0.04,
+    "PPO_clip": 0.2,
+    "generation": {
+      "temperature": 1,
+      "top_p": 1,
+      "top_k": 0,
+      "repetition_penalty": 1,
+      "cap": 128
+    },
+    "reference": "Frozen original common S0 by disabling all fresh LoRA",
+    "all_zero_u_batch": "skip optimizer and scheduler; never change momentum",
+    "technical_checks": "Separate discarded four-step DPO and four-step guard adapters; eight optimizer calls total, charged to student technical budget",
+    "endpoints": [
+      "P-DPO-80",
+      "P-DPO-long-320",
+      "G-plain-80",
+      "G-guard-80"
+    ],
+    "recovery_only": [
+      40
+    ],
+    "DPO_continuation": "restore adapter/optimizer/scheduler/RNG after80, continue81..320; no endpoint AP read until all four frozen"
+  },
+  "decision": {
+    "GRPO_minus_S0_pp_min": 1,
+    "GRPO_minus_stronger_whole_macro_DPO_pp_min": 0.5,
+    "not_below_GCAL": true,
+    "positive_sources_vs_DPO_min": 6,
+    "each_leave_one_source_difference_positive": true,
+    "bootstrap_seed": 42,
+    "bootstrap_n": 10000,
+    "teacher_only_signal_rule": "Both RL fail; stronger DPO beats S0 by at least1pp and at least6/10 sources improve; project label, not significance"
+  },
+  "budgets": {
+    "GPU_total_seconds": 28800,
+    "GPU_buckets": {
+      "teacher": 5400,
+      "student": 1800,
+      "training": 18000,
+      "evaluation": 3600
+    },
+    "new_store_bytes": 42949672960,
+    "new_work_bytes": 5368709120,
+    "local_free_min": 10737418240,
+    "file_free_min": 21474836480,
+    "engineering_repairs_max": 1,
+    "engineering_preparation_elapsed_limit": 5400,
+    "metric_CPU_limit": 3600,
+    "evaluation_reserve_GPU_seconds": 3600
+  },
+  "human_labels": "No training human values; teacher/candidate rewards frozen before isolated dev evaluator reads cached H/ratings",
+  "known_89_conflicts": "final fixed-case review only; never used for inputs, question or admission",
+  "Git_sync": false,
+  "subagents_used": false,
+  "failure_case_reporting_rules": {
+    "interface": "First3 failed same-clip pairs sorted by source/clip",
+    "reward": "Lowest single-window G, max1/source, ties requestID, first3",
+    "final": "Worst3 source AP differences versus stronger whole-macro DPO for each RL; report positive values if fewer than3 failures"
+  },
+  "runtime_versions": {
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.6",
+    "ms-swift": "4.6.0",
+    "peft": "0.18.1",
+    "numpy": "2.3.2",
+    "scikit-learn": "1.9.1"
+  }
+}

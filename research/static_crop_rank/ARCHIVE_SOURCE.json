@@ -1,0 +1,16 @@
+{
+  "source_directory": "/root/autodl-tmp/highlight-static-rank",
+  "source_commit_before_stop": "6293e66da9bbd48807da8665529535542ad3e2a7",
+  "snapshot_date_HK": "2026-10-31",
+  "scope": "Stopped experiment code and lightweight evidence; raw predictions, human MOS and checkpoints retained locally only.",
+  "excluded_ephemeral_or_local_files": [
+    ".gitignore",
+    "reports/CPC_DOWNLOAD_PAGE.html",
+    "reports/CPC_DOWNLOAD_PID.json",
+    "reports/CPC_OFFICIAL_PAGE.html",
+    "reports/CPC_PREPARATION_PID.json",
+    "reports/EXTERNAL_CONTINUATION_PID.json"
+  ],
+  "stop_guards_added_after_source_commit": true,
+  "source_commit_after_stop": "9621baea28b591daed75169c2600198fcdcb511f"
+}

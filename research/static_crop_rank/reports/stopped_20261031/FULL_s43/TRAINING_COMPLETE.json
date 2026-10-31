@@ -1,0 +1,10 @@
+{
+  "epochs": 30,
+  "best": [
+    0.625,
+    -0.2836000084877014
+  ],
+  "steps": 9900,
+  "best_sha256": "03ae5e0e53d629b1603a831d1fcd69e2aafbeb89bcecc718c4ad0a96fddb25dc",
+  "test_not_evaluated": true
+}

@@ -1,0 +1,21 @@
+{
+  "status": "CLOSED",
+  "decision": "NO_GO_REWARD",
+  "time": {
+    "utc": "2026-10-29T10:23:23.960376+00:00",
+    "hong_kong": "2026-10-29T18:23:23.960376+08:00"
+  },
+  "artifact_index": {
+    "path": "/autodl-fs/data/unsgrpo/decisive_rl_v2/artifact_index.json",
+    "sha256": "c8d9a4940b944a92c33e6452c4f3097802fb61a02d3aba66fc6808b2cb4ea4f2",
+    "bytes": 59347
+  },
+  "independent_audit": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/decisive_rl_v2/independent_audit.json",
+    "sha256": "d85765e4a844753da6fa7f236a362ae26cc89955926211809d5c707636bcc8b2",
+    "bytes": 616
+  },
+  "archive": "/root/autodl-fs/unsgrpo/decisive_rl_v2/reproducibility",
+  "Git_sync": false,
+  "subagents_used": false
+}

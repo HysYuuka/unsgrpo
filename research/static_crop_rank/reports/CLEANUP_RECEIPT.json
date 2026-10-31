@@ -1,0 +1,39 @@
+{
+  "time": 1793347351.217411,
+  "files": [
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/checkpoints/smoke_merge_v1/model.safetensors",
+      "bytes": 4255140312,
+      "sha256": "e849834799d7dc3bd7e5a4caaf98c874f686043d772cb95afa2c4b8696bfc7fa",
+      "retained_adapter": "/root/autodl-tmp/unsgrpo-work/checkpoints/smoke_SFT_v2/v0-20261027-183346/checkpoint-4/adapter_model.safetensors",
+      "retained_base": "/root/autodl-fs/unsgrpo/models/Qwen3-VL-2B-Instruct",
+      "reason": "reconstructible merged inference copy; source adapter/base and metadata retained"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/checkpoints/smoke_merge_v2/model.safetensors",
+      "bytes": 4255140312,
+      "sha256": "e849834799d7dc3bd7e5a4caaf98c874f686043d772cb95afa2c4b8696bfc7fa",
+      "retained_adapter": "/root/autodl-tmp/unsgrpo-work/checkpoints/smoke_SFT_v2/v0-20261027-183346/checkpoint-4/adapter_model.safetensors",
+      "retained_base": "/root/autodl-fs/unsgrpo/models/Qwen3-VL-2B-Instruct",
+      "reason": "reconstructible merged inference copy; source adapter/base and metadata retained"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/checkpoints/smoke_merge_warm32_v1/model.safetensors",
+      "bytes": 4255140312,
+      "sha256": "78e29d2dd6b2eb259258d717258c9d26c05f8844c5960b43de9a252c5f1ae17c",
+      "retained_adapter": "/root/autodl-tmp/unsgrpo-work/checkpoints/smoke_SFT_warm32_v1/v0-20261027-192850/checkpoint-32/adapter_model.safetensors",
+      "retained_base": "/root/autodl-fs/unsgrpo/models/Qwen3-VL-2B-Instruct",
+      "reason": "reconstructible merged inference copy; source adapter/base and metadata retained"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/checkpoints/round1_seed42_v1__MERGE/model.safetensors",
+      "bytes": 4255140312,
+      "sha256": "82eb14956d688064a7fc6a630e13b5ba9f6784522623a795d11e2aec8730d07b",
+      "retained_adapter": "/root/autodl-tmp/unsgrpo-work/checkpoints/round1_seed42_v1__S0/v0-20261027-200049/checkpoint-256/adapter_model.safetensors",
+      "retained_base": "/root/autodl-fs/unsgrpo/models/Qwen3-VL-2B-Instruct",
+      "reason": "reconstructible merged inference copy; source adapter/base and metadata retained"
+    }
+  ],
+  "total_bytes": 17020561248,
+  "status": "deleted_only_listed_merged_weight_files"
+}

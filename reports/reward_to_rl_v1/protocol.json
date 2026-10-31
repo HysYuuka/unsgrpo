@@ -1,0 +1,189 @@
+{
+  "status": "FROZEN_BEFORE_GPU_AND_HUMAN_DIAGNOSTICS",
+  "time": {
+    "utc": "2026-10-29T03:13:24.587096+00:00",
+    "hong_kong": "2026-10-29T11:13:24.587096+08:00"
+  },
+  "plan": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/NEXT_REWARD_AND_RL_EXPERIMENT_20261029.md",
+    "sha256": "db9afd687ced8920b3238d4b191646cbb52f8010a2c58de4369adc898bfc1d35",
+    "bytes": 16430
+  },
+  "primary": "V0 stable mapper then round12; all ten sources DEVELOPMENT",
+  "public_top5": "NOT_READY; no new alignment attempt",
+  "policy": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/common_s0.json",
+    "sha256": "2ccf31ba127b4b18ea6909ad9cc4b8f3734ae8ff692a902e1547dc4be2dc82e9",
+    "bytes": 4798
+  },
+  "teacher": {
+    "path": "/root/autodl-tmp/unsgrpo/manifests/Qwen3-VL-2B-Instruct.asset.json",
+    "sha256": "76faa99fe16305bdd18c192e5121f8df581316f47cb7c11cf2617de29b54abf9",
+    "bytes": 1979
+  },
+  "train_sources": [
+    "3eYKfiOEJNs",
+    "4wU_LUjG5Ic",
+    "91IHQYk1IQM",
+    "98MoyGZKHXc",
+    "AwmHb44_ouw",
+    "E11zDS9XGzg",
+    "EE-bNr36nyA",
+    "EYqVtI9YWJA",
+    "J0nA4VgnoCo",
+    "JKpqYvAdIsw",
+    "JgHubY5Vw3Y",
+    "LRw_obCPUt0",
+    "NyBmCxDoHJU",
+    "PJrm840pAUI",
+    "RBCABdttQmI",
+    "Se3oxnaPsz0",
+    "VuWGsYPqAX8",
+    "WG0MBPpPC6I",
+    "WxtbjNsCQ8A",
+    "XkqCExn6_Us",
+    "XzYM3PfTM4w",
+    "Yi4Ij2NM7U4",
+    "_xMr-HKMfVA",
+    "akI8YFjEmUw",
+    "b626MiF1ew4",
+    "byxOvuiIJV0",
+    "eQu1rNs0an0",
+    "fWutDQy1nnY",
+    "i3wAGJaaktw",
+    "iVt07TCkFM0",
+    "jcoYJXDG9sw",
+    "kLxoNp-UchI",
+    "oDXZc0tZe04",
+    "qqR6AEXwxoQ",
+    "sTEELN-vY30",
+    "uGu_10sucQo",
+    "vdmoEJ5YbrQ",
+    "xmEERLqJ2kU",
+    "xwqBXPGE9pQ",
+    "z_6gVvQb2d0"
+  ],
+  "development_sources": [
+    "-esJrBWj2d8",
+    "0tmA_C6XwfM",
+    "37rzWOQsNIw",
+    "Bhxk-O1Y7Ho",
+    "GsAD1KT1xo8",
+    "HT5vyqe0Xaw",
+    "Hl-__g2gn_A",
+    "cjibtmSLxQ4",
+    "gzDbaEs1Rlg",
+    "xxdtq8mxegs"
+  ],
+  "dev_windows": 60,
+  "dev_candidates_per_window": 4,
+  "policy_sampling": {
+    "temperature": 1,
+    "top_p": 1,
+    "top_k": 0,
+    "cap": 128,
+    "repetition_penalty": 1,
+    "seed": 31415,
+    "order": "manifest dev-ID order, increasing selected-window index, then candidate 0..3; sequential calls"
+  },
+  "teacher_question": "Given the whole-video overview and the two clips, which clip contributes more important information about the video's main events? A means the first clip, B the second clip, and C means similarly important or insufficient evidence. Motion alone does not imply importance; a static key result may matter. Answer one letter only.",
+  "edge_permutation": "default_rng(int.from_bytes(sha256(2718|video_id|request_id)[:8],big)); 8 ring +4 opposite",
+  "answer_candidates": [
+    "A",
+    "B",
+    "C"
+  ],
+  "conditional_p": "p1=P(A|A,B), p2=P(B|A,B) in swapped view; C from ABC normalization",
+  "abstention": [
+    "C >= max(A,B) in either view",
+    "tied A/B or opposite actual winners",
+    "w < 0.2"
+  ],
+  "weight": "(1-t)*(1-abs(p1-p2))*2*abs((p1+p2)/2-0.5)",
+  "candidate_legality_gate": {
+    "all_four_legal_groups_fraction_min": 0.8
+  },
+  "information_gate": {
+    "H_range_min": 0.001,
+    "groups_min": 30,
+    "source_coverage_min": 8,
+    "mean_O_min": 0.0005,
+    "oracle_minus_greedy_positive": true
+  },
+  "reward_gate": {
+    "pair_H_gap_min": 0.001,
+    "accuracy_min": 0.6,
+    "G_positive": true,
+    "G_over_O_min": 0.2,
+    "selected_minus_greedy_min": 0
+  },
+  "reward_selection": "R_pair if alone passes; if both pass need +.03 accuracy and G >= R_old; otherwise R_old if passes; else stop",
+  "reward_selection_ties": "round(raw reward,12), average H over exact canonical maxima; never use H to break reward ties",
+  "training_pool": {
+    "initial_windows": 160,
+    "initial_sources": 40,
+    "pair_min_edges": 3,
+    "pair_min_clips": 4,
+    "final_min_windows": 80,
+    "final_min_sources": 32,
+    "offline_candidates_per_window": 4,
+    "offline_sampling_seed": 31416,
+    "RSFT_tie_seed": 1618,
+    "schedule_seed": 42,
+    "schedule": "320 exposures, source counts differ by <=1; randomized source cycles and replacement window draws; reused for every arm/seed"
+  },
+  "training": {
+    "arms": [
+      "G_plain",
+      "G_guard",
+      "RSFT"
+    ],
+    "seeds": [
+      42
+    ],
+    "conditional_extra_seed": 43,
+    "steps": 80,
+    "prompts_per_update": 4,
+    "G": 4,
+    "lr": 1e-05,
+    "weight_decay": 0,
+    "warmup": 0.05,
+    "cosine": true,
+    "clip_grad": 1,
+    "beta": 0.04,
+    "epsilon": 0.2,
+    "LoRA_rank": 16,
+    "LoRA_alpha": 32,
+    "LoRA_dropout": 0,
+    "visual_and_aligner_frozen": true,
+    "reference": "same fixed S0 via disabled fresh language LoRA",
+    "loss": "sequence completion mean then fixed batch mean",
+    "trainer_backend": "Auditable PyTorch optimizer loop using original Swift/Qwen encode, generate and forward path; actual raw generated tokens, no fabricated EOS",
+    "guard_std_floor": 0.05,
+    "advantage_epsilon": 0.0001,
+    "guard_pair_u": "mean kept w * distinct covered clips /8",
+    "guard_old_u": 1,
+    "RSFT_loss": "u * sequence mean completion CE; no prompt loss",
+    "technical_updates": 4,
+    "technical_adapter_reused": false,
+    "checkpoint_selection": "only final80; rolling40 recovery, no development selection"
+  },
+  "repeat_gate": {
+    "RL_over_max_S0_RSFT_GCAL_pp": 1,
+    "positive_sources_min": 6,
+    "repeat_all_three_arms": true
+  },
+  "budget": {
+    "screen_GPU_seconds": 3600,
+    "total_GPU_seconds": 21600,
+    "engineering_seconds": 14400,
+    "elapsed_after_first_GPU_seconds": 86400,
+    "software_fault_repairs_max": 1,
+    "new_persistent_bytes": 16106127360,
+    "new_temporary_bytes": 5368709120
+  },
+  "labels": "Only isolated development evaluation after candidates+teacher+rewards freeze. No train human annotation values.",
+  "Git_sync": false,
+  "subagents_used": false,
+  "prior_frozen_project_sources_verified": 57
+}

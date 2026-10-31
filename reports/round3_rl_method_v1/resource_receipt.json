@@ -1,0 +1,63 @@
+{
+  "status": "ACTUAL_EXECUTION_MEASUREMENTS",
+  "time": {
+    "utc": "2026-10-29T01:51:57.683506+00:00",
+    "hong_kong": "2026-10-29T09:51:57.683506+08:00"
+  },
+  "GPU_budget_seconds": 43200,
+  "GPU_occupied_seconds": 57.21812811307609,
+  "GPU_budget_unused_seconds": 43142.781871886924,
+  "teacher_generation_seconds": 47.925883105024695,
+  "teacher_phase_wall_seconds": 57.62822476495057,
+  "model_asset_hash_verification_before_GPU_session": true,
+  "teacher_calls": 12,
+  "teacher_prompt_tokens": 17260,
+  "teacher_generated_tokens": 1930,
+  "peak_CUDA_allocated_bytes": 4798956544,
+  "peak_CUDA_reserved_bytes": 4991221760,
+  "new_policy_training_runs": 0,
+  "optimizer_updates": 0,
+  "policy_rollout_tokens": 0,
+  "currency_cost": null,
+  "currency_cost_note": "No rental-rate/billing evidence; do not infer a monetary charge from 12-hour budget.",
+  "engineering_wall_start": "2026-10-29T01:26:48.701960+00:00",
+  "active_engineering_timer_available": false,
+  "engineering_limit_seconds": 21600,
+  "storage_final_receipt": "Final storage and allocated/logical counts appended by closure; no quota numbers are presented as consumption.",
+  "postrun_verification": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/independent_verification.json",
+    "sha256": "86936473f04ce9de5852ef622c16d7d8b4733aaa38fe4f334fbe948457f537f3",
+    "bytes": 1303
+  },
+  "cache_replay": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_verification_v1/receipt.json",
+    "sha256": "1e2af8d90dd6866930d002240da3997d436cb99bc8315880d812896eade65ce4",
+    "bytes": 2156
+  },
+  "engineering_elapsed_seconds_since_recorded_start": 1508.981049,
+  "metric_preparation_elapsed_upper_bound_since_recorded_start_seconds": 525.609754,
+  "metric_preparation_under_two_hours": true,
+  "engineering_since_recorded_start_under_six_hours": true,
+  "storage": {
+    "audit": {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/storage_final.json",
+      "sha256": "a9464fc30903a295dc71372d6492a929a1a1a18f44c4f83f41d45b86a34b386e",
+      "bytes": 1916
+    },
+    "code_report_logical_bytes_before_closure": 291177,
+    "working_logical_bytes_before_closure": 968862,
+    "replay_logical_bytes": 20971880,
+    "persistent_logical_bytes_before_report_snapshot": 21168133,
+    "new_R3_source_bytes": 93103,
+    "local_free_bytes": 30700163072,
+    "file_free_bytes": 202407333888,
+    "local_minimum_free_bytes": 10737418240,
+    "file_minimum_free_bytes": 128849018880,
+    "snapshot_scope": "After teacher, cached reproduction and large provenance/source copies; before final small report/control files.",
+    "raw_video_assets_added_bytes": 0,
+    "base_model_copies_added": 0,
+    "limits_passed": true
+  },
+  "training_admission_failed": true,
+  "unused_GPU_budget_not_reallocated_to_search": true
+}

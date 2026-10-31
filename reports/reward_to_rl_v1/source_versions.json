@@ -1,0 +1,211 @@
+{
+  "status": "SHA256_VERSIONED",
+  "sources": [
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/reward_to_rl_closeout.py",
+        "sha256": "268c688d331c087f9af95317749221d616409acc7b88862ad36ad105e7e4287f",
+        "bytes": 14701
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_closeout.py",
+        "sha256": "268c688d331c087f9af95317749221d616409acc7b88862ad36ad105e7e4287f",
+        "bytes": 14701
+      },
+      "role": "POSTRUN_VERIFICATION_OR_CLOSEOUT"
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/reward_to_rl_detached.sh",
+        "sha256": "8f9ee69b3f4e683510b48a34e47356fbc2890fc27ef21b84fd5725f63ec58923",
+        "bytes": 418
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_detached.sh",
+        "sha256": "8f9ee69b3f4e683510b48a34e47356fbc2890fc27ef21b84fd5725f63ec58923",
+        "bytes": 418
+      },
+      "role": "SCREEN_FROZEN"
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/reward_to_rl_driver.py",
+        "sha256": "b62736edc2cab37ed720efa7b26de7bc99a995ac105ff211fe8743cf46e30c37",
+        "bytes": 7945
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_driver.py",
+        "sha256": "b62736edc2cab37ed720efa7b26de7bc99a995ac105ff211fe8743cf46e30c37",
+        "bytes": 7945
+      },
+      "role": "REPAIRED_PRE_SCREEN"
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/reward_to_rl_evaluate.py",
+        "sha256": "a5d8d8bc5dc398cf3c150a121288d2d69dfd58c0875f89d565a88fb2d16ccfe3",
+        "bytes": 10665
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_evaluate.py",
+        "sha256": "a5d8d8bc5dc398cf3c150a121288d2d69dfd58c0875f89d565a88fb2d16ccfe3",
+        "bytes": 10665
+      },
+      "role": "SCREEN_FROZEN"
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/reward_to_rl_infer.py",
+        "sha256": "1a05cf7ff08b83256672472afd27ac21790f7f748aaff5feb822a119d6ed5170",
+        "bytes": 3640
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_infer.py",
+        "sha256": "1a05cf7ff08b83256672472afd27ac21790f7f748aaff5feb822a119d6ed5170",
+        "bytes": 3640
+      },
+      "role": "SCREEN_FROZEN"
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/reward_to_rl_pool.py",
+        "sha256": "44dfad820d6fd07860cef689fc91da6fe28e6c2825115057d5f906042cb844fa",
+        "bytes": 6642
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_pool.py",
+        "sha256": "44dfad820d6fd07860cef689fc91da6fe28e6c2825115057d5f906042cb844fa",
+        "bytes": 6642
+      },
+      "role": "SCREEN_FROZEN"
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/reward_to_rl_prepare.py",
+        "sha256": "00468880ce4fb4ba9ba2e2302073af11a789990acde957ddfab02bf6d454df20",
+        "bytes": 10138
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_prepare.py",
+        "sha256": "00468880ce4fb4ba9ba2e2302073af11a789990acde957ddfab02bf6d454df20",
+        "bytes": 10138
+      },
+      "role": "SCREEN_FROZEN"
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/reward_to_rl_report.py",
+        "sha256": "c22b9f267716b8ec62f7b662688930ee545d59e9e07187b6625fa8eaa794f339",
+        "bytes": 14398
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_report.py",
+        "sha256": "c22b9f267716b8ec62f7b662688930ee545d59e9e07187b6625fa8eaa794f339",
+        "bytes": 14398
+      },
+      "role": "SCREEN_FROZEN"
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/reward_to_rl_screen.py",
+        "sha256": "15e3ffeb81c19e7a2f59a3b8644644890ea3d44ae6d1541ad456669f18379609",
+        "bytes": 9408
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_screen.py",
+        "sha256": "15e3ffeb81c19e7a2f59a3b8644644890ea3d44ae6d1541ad456669f18379609",
+        "bytes": 9408
+      },
+      "role": "SCREEN_FROZEN"
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/reward_to_rl_train.py",
+        "sha256": "e9da34e0546dac344d62270183093c95d7032be410dcc12d361bf6569f78ea78",
+        "bytes": 12003
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_train.py",
+        "sha256": "e9da34e0546dac344d62270183093c95d7032be410dcc12d361bf6569f78ea78",
+        "bytes": 12003
+      },
+      "role": "SCREEN_FROZEN"
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/reward_to_rl_verify.py",
+        "sha256": "9ecbedcfc0e66fb369a7f0dadc373b740a768262c3b025dc1fecf634e80c719a",
+        "bytes": 6828
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_verify.py",
+        "sha256": "9ecbedcfc0e66fb369a7f0dadc373b740a768262c3b025dc1fecf634e80c719a",
+        "bytes": 6828
+      },
+      "role": "POSTRUN_VERIFICATION_OR_CLOSEOUT"
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/src/unsgrpo/reward_to_rl.py",
+        "sha256": "94f7b86e3219cc02c5a1dcec330e81f80fcf5dbf348378182a419fa56bb631f4",
+        "bytes": 4569
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/src/unsgrpo/reward_to_rl.py",
+        "sha256": "94f7b86e3219cc02c5a1dcec330e81f80fcf5dbf348378182a419fa56bb631f4",
+        "bytes": 4569
+      },
+      "role": "SCREEN_FROZEN"
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/src/unsgrpo/reward_to_rl_common.py",
+        "sha256": "9c0b7bbff778bbb91755b02b5f6ab0a1f929b991831fb7eb0819307587583775",
+        "bytes": 3953
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/src/unsgrpo/reward_to_rl_common.py",
+        "sha256": "9c0b7bbff778bbb91755b02b5f6ab0a1f929b991831fb7eb0819307587583775",
+        "bytes": 3953
+      },
+      "role": "REPAIRED_PRE_SCREEN"
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/src/unsgrpo/reward_to_rl_model.py",
+        "sha256": "495fada09d7cc0a5e803c3fd466e2768741160eace1f9e48f785f10fc0ad115b",
+        "bytes": 6951
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/src/unsgrpo/reward_to_rl_model.py",
+        "sha256": "495fada09d7cc0a5e803c3fd466e2768741160eace1f9e48f785f10fc0ad115b",
+        "bytes": 6951
+      },
+      "role": "REPAIRED_PRE_SCREEN"
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/tests/test_reward_to_rl.py",
+        "sha256": "862543daba3a17f436e4ed566fe811fa7773d709b38d1cd8649854b60c3cda48",
+        "bytes": 3880
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/tests/test_reward_to_rl.py",
+        "sha256": "862543daba3a17f436e4ed566fe811fa7773d709b38d1cd8649854b60c3cda48",
+        "bytes": 3880
+      },
+      "role": "REPAIRED_PRE_SCREEN"
+    }
+  ],
+  "runtime_versions": {
+    "torch": "2.8.0+cu128",
+    "numpy": "2.3.2",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "ms-swift": "4.6.0",
+    "transformers": "4.57.6",
+    "peft": "0.18.1"
+  },
+  "original_source_snapshot": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot",
+  "software_fix_snapshot": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_fix1_source_snapshot"
+}

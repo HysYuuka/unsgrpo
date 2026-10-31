@@ -1,0 +1,123 @@
+{
+  "status": "ACTUAL_RESOURCE_ACCOUNTING",
+  "time": {
+    "utc": "2026-10-29T03:29:09.493600+00:00",
+    "hong_kong": "2026-10-29T11:29:09.493600+08:00"
+  },
+  "conservative_GPU_occupied_seconds": 645.5105947097763,
+  "GPU_budget_seconds": 21600,
+  "screen_GPU_seconds": 645.5105947097763,
+  "sessions": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/gpu_sessions.jsonl",
+    "sha256": "ede43a7cfad76223bb7fb9ddcbf8182b7c25b36d1f0178b6d5d6c6a1a50cc885",
+    "bytes": 3395
+  },
+  "screen_candidates": {
+    "status": "CANDIDATES_FROZEN_NO_LABEL_READS",
+    "time": {
+      "utc": "2026-10-29T03:23:15.139572+00:00",
+      "hong_kong": "2026-10-29T11:23:15.139572+08:00"
+    },
+    "scope": "dev",
+    "n_windows": 60,
+    "n_answers": 240,
+    "all_four_legal_groups": 59,
+    "all_four_legal_fraction": 0.9833333333333333,
+    "file": {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/screen/candidates.jsonl",
+      "sha256": "9770a8786dcef0b1c744e2b70cfd648856db665fcb004256f58d5ada0407b9a4",
+      "bytes": 4212856
+    },
+    "sampling_seed": 31415,
+    "peak_CUDA_allocated_bytes": 4747958784,
+    "total_prompt_tokens": 536604,
+    "total_generated_tokens": 6581,
+    "policy": "actual common BF16 S0; no updating rollout reused"
+  },
+  "screen_teacher": {
+    "status": "FROZEN_LABEL_FREE_PREFERENCE_EDGES",
+    "time": {
+      "utc": "2026-10-29T03:28:54.288987+00:00",
+      "hong_kong": "2026-10-29T11:28:54.288987+08:00"
+    },
+    "scope": "dev",
+    "n_windows": 60,
+    "n_edges": 720,
+    "n_kept": 22,
+    "forward_calls": 1440,
+    "file": {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/screen/teacher_edges.jsonl",
+      "sha256": "b1ea1d3d44864ac0744871eada32aa8a9c9e0e1271c0cc1b214ebf3aecd1769c",
+      "bytes": 2499259
+    },
+    "peak_CUDA_allocated_bytes": 4433128960,
+    "abstention_counts": {
+      "A_B_tie": 42,
+      "opposite_actual_clip_after_swap": 644,
+      "weight_below_0.2": 12
+    },
+    "human_labels_read": false,
+    "policy_answers_seen_by_teacher": false
+  },
+  "interface": {
+    "status": "ACTUAL_CONDITIONAL_POSITION_MEDIA_NUMERIC_CHECK_PASSED",
+    "pairs": 24,
+    "self_pairs": 8,
+    "time": {
+      "utc": "2026-10-29T03:18:51.855953+00:00",
+      "hong_kong": "2026-10-29T11:18:51.855953+08:00"
+    },
+    "forward_calls": 48,
+    "single_token_in_all_contexts": true,
+    "peak_CUDA_allocated_bytes": 4433128960,
+    "human_labels_read": false
+  },
+  "new_policy_training_runs": 0,
+  "technical4": null,
+  "initial_time": {
+    "started_utc": "2026-10-29T03:00:25.257103+00:00",
+    "GPU_seconds_max": 21600,
+    "engineering_seconds_max": 14400,
+    "subagents_used": false,
+    "Git_sync": false
+  },
+  "storage_before_archiving": {
+    "temporary_bytes": 1339457,
+    "persistent_bytes": 7049326,
+    "light_report_bytes": 129905
+  },
+  "currency_cost": null,
+  "currency_note": "No billing/rental-rate evidence; budget is not consumption",
+  "Git_sync": false,
+  "subagents_used": false,
+  "independent_verification": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/independent_verification.json",
+    "sha256": "f9c3ebe7f518ac641532140f81e0024c40bf6d66b3216e999153b1f97dfe7e02",
+    "bytes": 1057
+  },
+  "software_repairs_used": 1,
+  "failed_teacher_forward_calls_not_in_cache": 1,
+  "actual_teacher_forwards_including_failed": 1489,
+  "teacher_coverage_postrun": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/teacher_coverage_postrun.json",
+    "sha256": "3ebf8eca2579fc1dc60b5dd77c3ee284ac017b75089963fec7cc910a7958b9a3",
+    "bytes": 804
+  },
+  "teacher_count_note": "Successful recorded interface/development/training forwards plus the unrecorded failed first view; no failed score fabricated.",
+  "storage_final": {
+    "audit": {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/storage_final.json",
+      "sha256": "dd2b33dc1d3f51c9dd2f1de75ce998f4c95b8538ac5ce9df11953652516bdade",
+      "bytes": 1916
+    },
+    "temporary_logical_bytes_before_control": 1360025,
+    "persistent_logical_bytes_before_report_snapshot": 8521658,
+    "report_logical_bytes_before_control": 281909,
+    "local_free_bytes": 30702063616,
+    "file_free_bytes": 202398044160,
+    "persistent_limit_bytes": 16106127360,
+    "temporary_limit_bytes": 5368709120,
+    "all_limits_and_reserves_passed": true,
+    "scope": "After large source/evidence archives, before small report and index control files."
+  }
+}

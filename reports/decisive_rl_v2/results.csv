@@ -1,0 +1,7 @@
+method,status,V0_AP_percent,training_seed,endpoint_step,actual_optimizer_calls,actual_prompt_exposures,online_training_completions,new_training_GPU_seconds,new_inference_GPU_seconds,historical_cost_note,legal_window_fraction
+S0,HISTORICAL_SAME_V0,46.09695752562991,42,,0,0,0,0.0,0,Historical training cost excluded from new run,1.0
+G-CAL,HISTORICAL_SAME_V0,46.69782950528466,42,,0,0,0,0.0,0,Historical training cost excluded from new run,1.0
+P-DPO-80,NOT_TRAINED_NO_GO_REWARD,,42,80,0,0,0,0,0,Teacher/offline candidate/technical shared costs in resource_receipt.json,
+P-DPO-long,NOT_TRAINED_NO_GO_REWARD,,42,320,0,0,0,0,0,Teacher/offline candidate/technical shared costs in resource_receipt.json,
+G-plain,NOT_TRAINED_NO_GO_REWARD,,42,80,0,0,0,0,0,Teacher/offline candidate/technical shared costs in resource_receipt.json,
+G-guard,NOT_TRAINED_NO_GO_REWARD,,42,80,0,0,0,0,0,Teacher/offline candidate/technical shared costs in resource_receipt.json,

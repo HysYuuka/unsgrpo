@@ -1,0 +1,144 @@
+{
+  "status": "ALL_SIX_FIXED_CASES_VISUALLY_REVIEWED",
+  "created_utc": "2026-10-28T03:40:17.391299+00:00",
+  "source_cases": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round2_diagnostic_v1/teachers/cases.json",
+    "sha256": "1aaf2f1fa8a2388cc5ed345c59c47e7654d4276d3f958294649197bbbac5944c"
+  },
+  "dense_review_receipt": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round2_diagnostic_v1/visual_review/dense_frame_review_receipt.json",
+    "sha256": "9a9b4608b62c6e0f3a7f807831e5e10905807105b65b85903f828a2f69c670b2"
+  },
+  "reviewed_model_input_frames": 24,
+  "additional_review_only_frames": 96,
+  "new_training_or_inference": false,
+  "principle": "Direct images support scene descriptions; model bias mechanisms remain hypotheses. A low-importance bus tail does not establish that a missed short event was important.",
+  "cases": [
+    {
+      "video_id": "-esJrBWj2d8",
+      "bounds": [
+        178.0,
+        180.0
+      ],
+      "direction": "proxy_high_human_low",
+      "direct_visual_observation": "片段前部黑场，随后淡入纸袋中静卧的橘猫；未见明显持续动作。",
+      "teacher_mean_percentile": 0.9880268199233715,
+      "teacher_std": 0.002709221383856527,
+      "teacher_min": 0.9870689655172413,
+      "teacher_max": 0.9956896551724138,
+      "human_percentile": 0.021551724137931036,
+      "human_mean_importance": 1.3041666666666665,
+      "annotator_importance_std": 0.7101618555731585,
+      "annotator_percentile_std": 0.21651267956680637,
+      "mean_annotator_time_fraction_above_own_median": 0.05249999999999986,
+      "original_four_input_frames_viewed": true,
+      "dense_review_only_16_frames_viewed": true,
+      "causal_visual_feature_identified": false
+    },
+    {
+      "video_id": "cjibtmSLxQ4",
+      "bounds": [
+        252.0,
+        254.0
+      ],
+      "direction": "proxy_high_human_low",
+      "direct_visual_observation": "商场入口有人走动，约253秒切到室外男子的近景，是镜头切换/过渡；不凭这些画面判断其完整故事作用。",
+      "teacher_mean_percentile": 0.9501028806584362,
+      "teacher_std": 0.0224930155443163,
+      "teacher_min": 0.8966049382716049,
+      "teacher_max": 0.9645061728395061,
+      "human_percentile": 0.020061728395061727,
+      "human_mean_importance": 1.0610599999999926,
+      "annotator_importance_std": 0.21772852460754372,
+      "annotator_percentile_std": 0.1453879802444935,
+      "mean_annotator_time_fraction_above_own_median": 0.054147499999997,
+      "original_four_input_frames_viewed": true,
+      "dense_review_only_16_frames_viewed": true,
+      "causal_visual_feature_identified": false
+    },
+    {
+      "video_id": "HT5vyqe0Xaw",
+      "bounds": [
+        86.0,
+        88.0
+      ],
+      "direction": "proxy_high_human_low",
+      "direct_visual_observation": "约86.02–86.39秒可见一辆蓝白色巴士，随后主要是树林和小径；原四帧输入仅首帧保留部分车辆，另三帧主要为树林。",
+      "teacher_mean_percentile": 0.9495884773662553,
+      "teacher_std": 0.02291261054662558,
+      "teacher_min": 0.9290123456790124,
+      "teacher_max": 0.9969135802469136,
+      "human_percentile": 0.05864197530864197,
+      "human_mean_importance": 1.265895000000001,
+      "annotator_importance_std": 0.5306971646674882,
+      "annotator_percentile_std": 0.14605028281032972,
+      "mean_annotator_time_fraction_above_own_median": 0.10529833333333335,
+      "original_four_input_frames_viewed": true,
+      "dense_review_only_16_frames_viewed": true,
+      "causal_visual_feature_identified": false
+    },
+    {
+      "video_id": "Bhxk-O1Y7Ho",
+      "bounds": [
+        272.0,
+        274.0
+      ],
+      "direction": "human_high_proxy_low",
+      "direct_visual_observation": "手持紫色WAHL电推剪的产品近景，背景为洗手台和工具；以展示为主而非大幅动作。",
+      "teacher_mean_percentile": 0.032694198623402164,
+      "teacher_std": 0.0013905738076431624,
+      "teacher_min": 0.028761061946902654,
+      "teacher_max": 0.033185840707964605,
+      "human_percentile": 0.9977876106194691,
+      "human_mean_importance": 3.3974666666666677,
+      "annotator_importance_std": 1.155615446225758,
+      "annotator_percentile_std": 0.20054537884975954,
+      "mean_annotator_time_fraction_above_own_median": 0.9491133333333337,
+      "original_four_input_frames_viewed": true,
+      "dense_review_only_16_frames_viewed": true,
+      "causal_visual_feature_identified": false
+    },
+    {
+      "video_id": "37rzWOQsNIw",
+      "bounds": [
+        66.0,
+        68.0
+      ],
+      "direction": "human_high_proxy_low",
+      "direct_visual_observation": "三明治成品近景，食材清楚可见；本段画面相对静态。",
+      "teacher_mean_percentile": 0.03530092592592593,
+      "teacher_std": 0.003273642505493276,
+      "teacher_min": 0.026041666666666668,
+      "teacher_max": 0.036458333333333336,
+      "human_percentile": 0.9739583333333334,
+      "human_mean_importance": 3.0885783333333316,
+      "annotator_importance_std": 1.40003794929816,
+      "annotator_percentile_std": 0.29980688590625393,
+      "mean_annotator_time_fraction_above_own_median": 0.6959208333333329,
+      "original_four_input_frames_viewed": true,
+      "dense_review_only_16_frames_viewed": true,
+      "causal_visual_feature_identified": false
+    },
+    {
+      "video_id": "-esJrBWj2d8",
+      "bounds": [
+        72.0,
+        74.0
+      ],
+      "direction": "human_high_proxy_low",
+      "direct_visual_observation": "猫低头从碟中进食，可见小幅头部动作；不同于同视频后部纸袋中静卧的画面。",
+      "teacher_mean_percentile": 0.07231800766283523,
+      "teacher_std": 0.01967685688139285,
+      "teacher_min": 0.021551724137931036,
+      "teacher_max": 0.08189655172413793,
+      "human_percentile": 0.9741379310344828,
+      "human_mean_importance": 3.1,
+      "annotator_importance_std": 1.409521195300021,
+      "annotator_percentile_std": 0.2959103523167186,
+      "mean_annotator_time_fraction_above_own_median": 0.6491666666666667,
+      "original_four_input_frames_viewed": true,
+      "dense_review_only_16_frames_viewed": true,
+      "causal_visual_feature_identified": false
+    }
+  ]
+}

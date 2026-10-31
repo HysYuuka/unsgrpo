@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "purpose": "Choose a bounded next research direction using existing assets",
+  "evaluation_status": "The original 10 test sources are now development evidence; no independent final test remains in this round",
+  "device": "cpu",
+  "cpu_threads": 4,
+  "max_wall_seconds": 1800,
+  "original_run": "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1_recovery1",
+  "prepared": "/root/autodl-tmp/unsgrpo-work/prepared/prepared.jsonl",
+  "pseudo": "/root/autodl-fs/unsgrpo/datasets/pseudo/r0_visual_v1/pseudo.json",
+  "train_pool": "/root/autodl-fs/unsgrpo/datasets/trainer_inputs/train_sft.jsonl",
+  "labels": "/root/autodl-fs/unsgrpo/datasets/labels_eval_only/round1_seed42_v1_recovery1/converted",
+  "cluster_seeds": [42, 43, 44, 45, 46],
+  "cluster_k_search": [4, 15],
+  "proxy_controls": ["original", "video_equal", "global_video_equal"],
+  "postprocessing": {"affine_shrink": 0.25, "overlap_offset_ridge": 1.0},
+  "students": {
+    "seeds": [42, 43, 44],
+    "views": ["local", "full_video_context"],
+    "objectives": ["mse_q", "rank_cal", "mse_raw_then_percentile"],
+    "hidden": 64,
+    "steps": 256,
+    "batch_windows": 16,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "rank_temperature": 0.1,
+    "rank_weight": 0.8,
+    "schedule_seed": 20261028,
+    "inputs": "Frozen clip CLIP + local window mean + global/local time positions; full_video_context additionally has the full-video CLIP mean",
+    "comparison_scope": "Same architecture family, pseudo labels, initialization seeds and exposure schedule within cheap students. Different representation and global evidence from Qwen: not a causal test of GRPO versus supervised Qwen. Raw-score objective also adds whole-video percentile postprocessing."
+  },
+  "evaluation": {
+    "primary": "Existing V0 stable mapping with 12-decimal tie sensitivity for all new diagnostics",
+    "also_report_unrounded_stable": true,
+    "unit": "video/source",
+    "no_train_human_labels": true,
+    "no_test_based_checkpoint_selection": true,
+    "no_hyperparameter_search": true,
+    "no_new_v1_claim": true
+  },
+  "case_selection": "Three largest proxy-over-human and three largest human-over-proxy percentile gaps, at most one case per video in each direction. Show clustering variability alongside each case.",
+  "expansion": "No new videos, Qwen training, GRPO runs, downloads or automatic Git synchronization in this diagnostic round."
+}

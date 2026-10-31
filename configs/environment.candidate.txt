@@ -1,0 +1,18 @@
+# Candidate only: promote to environment.freeze.txt after import and GPU checks.
+# Existing system torch 2.8.0+cu128 is inherited by the isolated venv.
+transformers==4.57.6
+peft==0.18.1
+trl==0.26.2
+ms-swift==4.6.0
+qwen-vl-utils==0.0.14
+# Required by Swift GRPO imports; absent from ms-swift base dependency metadata.
+msgspec==0.22.0
+numpy
+scipy
+scikit-learn
+umap-learn
+joblib
+pillow
+av
+pytest
+tensorboard

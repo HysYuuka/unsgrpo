@@ -1,0 +1,387 @@
+{
+  "document_type": "design_spec_not_executable_trainer_config",
+  "version": "2026-10-30",
+  "experiment_id": "geom_crop_rank_v1",
+  "guide": "/root/autodl-tmp/highlight-research/plans/CROP_RANK_FULL_VALIDATION_GUIDE_20261030.md",
+  "execution_status": "not_started",
+  "scope": "same-source annotated crop ranking and final selection",
+  "data": {
+    "primary": "GAICD-v2 native annotated candidates",
+    "expected_images": 3336,
+    "expected_split": {
+      "train": 2636,
+      "validation": 200,
+      "test": 500
+    },
+    "split_authority": "verified release manifests; expected counts are not permission to fabricate or mix versions",
+    "split_group": "original_image_identity",
+    "all_candidates_per_training_image": true,
+    "candidate_subsampling_allowed": false,
+    "primary_mos_range_must_verify": [
+      1,
+      5
+    ],
+    "normalized_label": "(MOS - 1) / 4",
+    "coordinates": "continuous xyxy pixel edges, right/bottom exclusive; pixel centers i+0.5",
+    "external": [
+      "CPC with source overlap removed",
+      "FGAesthetics-Cropping with verified source geometry mapping"
+    ],
+    "pseudo_aesthetic_labels_allowed": false,
+    "test_used_for_selection": false
+  },
+  "model": {
+    "semantic_encoder": {
+      "name": "OpenAI CLIP ViT-B/16 visual",
+      "initialization": "base pretrained weights, hash recorded",
+      "train_all_visual_parameters": true,
+      "long_edge": 512,
+      "preserve_aspect_ratio": true,
+      "center_crop": false,
+      "pad_to_patch_multiple": 16,
+      "feature_blocks": [
+        4,
+        8,
+        12
+      ],
+      "projection_dim": 256,
+      "layer_fusion": "learned softmax weights"
+    },
+    "detail_encoder": {
+      "name": "ImageNet pretrained ResNet-18 stem + layer1 + layer2",
+      "train_all_used_parameters": true,
+      "long_edge": 1024,
+      "input_source": "original pixels, not upscaled semantic input",
+      "feature_strides": [
+        4,
+        8
+      ],
+      "output_stride": 4,
+      "output_dim": 128,
+      "batchnorm_running_statistics": "fixed pretrained",
+      "batchnorm_affine": "trainable",
+      "cross_scale_resampling": "explicit feature-center affine mapping"
+    },
+    "geometry": {
+      "source_coordinates": [
+        "x/W",
+        "y/H"
+      ],
+      "crop_coordinates": [
+        "(x-x1)/wb",
+        "(y-y1)/hb"
+      ],
+      "fourier_frequencies": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "include_raw_coordinates": true,
+      "crop_coordinate_clip": [
+        -4,
+        4
+      ],
+      "include_overflow_flags": true,
+      "inside_outside_weight": "grid-cell area fraction alpha and 1-alpha",
+      "grid_sample_align_corners": false,
+      "empty_discard_branch": "zero vector plus empty flag",
+      "position_mlp_hidden": 128,
+      "bbox_raw_features": [
+        "x1/W",
+        "y1/H",
+        "x2/W",
+        "y2/H",
+        "wb/W",
+        "hb/H",
+        "wb*hb/(W*H)",
+        "log(wb/hb)"
+      ],
+      "bbox_embedding_dim": 256
+    },
+    "layout": {
+      "grid": [
+        9,
+        9
+      ],
+      "token_count": 81,
+      "token_dim": 256,
+      "cross_attention_heads": 8,
+      "cross_attention_branches": [
+        "retained source",
+        "discarded source"
+      ],
+      "candidate_conditioned_source_position": true,
+      "fusion": "nonlinear candidate-conditioned gate, residual, FFN",
+      "gate_hidden_dimensions": [
+        256,
+        512
+      ],
+      "gate_input_dimension": 1024,
+      "ffn_dimension": 1024
+    },
+    "boundary": {
+      "edges": 4,
+      "anchors_per_edge": 16,
+      "token_count": 64,
+      "samples_per_anchor": [
+        "inside",
+        "boundary",
+        "outside"
+      ],
+      "normal_offset_fraction_of_short_crop_edge": 0.04,
+      "inputs": [
+        "three sampled detail features",
+        "signed inside-minus-outside feature",
+        "validity flags",
+        "edge id",
+        "source and crop coordinates"
+      ],
+      "token_dim": 256
+    },
+    "fusion": {
+      "score_tokens": 1,
+      "total_tokens": 146,
+      "transformer_layers": 2,
+      "dimension": 256,
+      "heads": 8,
+      "ffn_dimension": 1024,
+      "dropout": 0.0,
+      "stochastic_depth": 0.0,
+      "score_head_hidden": [
+        256,
+        64
+      ],
+      "score_output": "one unbounded real scalar per crop",
+      "cross_candidate_attention": false,
+      "score_head_input_dimension": 1024,
+      "activation": "GELU",
+      "normalization": "pre-LayerNorm"
+    }
+  },
+  "loss": {
+    "per_original_image_reduction": "mean over images",
+    "regression": {
+      "kind": "SmoothL1",
+      "beta": 0.1,
+      "weight": 1.0
+    },
+    "ranking": {
+      "pairs": "all i<j within each original image",
+      "target": "sigmoid((yi-yj)/0.1), derived MOS target, not human vote probability",
+      "pair_weight": "min(1, abs(yi-yj)/0.05)",
+      "prediction_logit": "(si-sj)/0.1",
+      "normalizer": "sum of pair weights; zero loss if zero sum",
+      "weight": 0.2
+    },
+    "selection": {
+      "probability": "softmax(all candidate scores / 0.1)",
+      "cost": "max(0, max(y)-yj-0.05)",
+      "weight": 1.0
+    }
+  },
+  "training": {
+    "optimizer": "AdamW",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "pretrained_learning_rate": 1e-05,
+    "new_parameters_learning_rate": 0.0001,
+    "weight_decay": 0.05,
+    "no_decay": [
+      "bias",
+      "normalization"
+    ],
+    "epochs": 30,
+    "warmup_epochs": 2,
+    "lr_schedule": "cosine to 0.1 of initial LR",
+    "maximum_epochs_with_predeclared_extension": 50,
+    "extension_trigger": "See guide section 8; same rule applies to all 12 runs",
+    "effective_original_images_per_step": 8,
+    "microbatch_original_images": 1,
+    "candidate_chunk_initial": 4,
+    "candidate_chunk_allowed": [
+      4,
+      2,
+      1
+    ],
+    "mixed_precision": "bf16 with fp32 losses and score-gradient bookkeeping",
+    "global_gradient_clip_norm": 1.0,
+    "augmentation": {
+      "horizontal_flip_probability": 0.5,
+      "other_geometric": false,
+      "strong_photometric": false
+    },
+    "complete_candidate_score_gradient_replay_allowed": true,
+    "replay_equivalence_test_required": true,
+    "per_candidate_optimizer_step_allowed": false,
+    "validation_frequency_epochs": 1,
+    "checkpoint_selection": [
+      "max validation Acc1/5",
+      "min validation native-MOS regret",
+      "earlier epoch"
+    ],
+    "paired_augmentation_key": [
+      "seed",
+      "epoch",
+      "source_id"
+    ],
+    "paired_common_initial_weights": true
+  },
+  "runs": [
+    {
+      "variant": "FULL",
+      "seed": 17,
+      "geometry": "explicit",
+      "boundary": true,
+      "selection_loss": true
+    },
+    {
+      "variant": "FULL",
+      "seed": 29,
+      "geometry": "explicit",
+      "boundary": true,
+      "selection_loss": true
+    },
+    {
+      "variant": "FULL",
+      "seed": 43,
+      "geometry": "explicit",
+      "boundary": true,
+      "selection_loss": true
+    },
+    {
+      "variant": "MATCHED",
+      "seed": 17,
+      "geometry": "strong conventional fusion",
+      "boundary": true,
+      "selection_loss": true
+    },
+    {
+      "variant": "MATCHED",
+      "seed": 29,
+      "geometry": "strong conventional fusion",
+      "boundary": true,
+      "selection_loss": true
+    },
+    {
+      "variant": "MATCHED",
+      "seed": 43,
+      "geometry": "strong conventional fusion",
+      "boundary": true,
+      "selection_loss": true
+    },
+    {
+      "variant": "MUSIQ_FT",
+      "seed": 17,
+      "initialization": "musiq-ava",
+      "full_finetuning": true,
+      "selection_loss": true
+    },
+    {
+      "variant": "MUSIQ_FT",
+      "seed": 29,
+      "initialization": "musiq-ava",
+      "full_finetuning": true,
+      "selection_loss": true
+    },
+    {
+      "variant": "MUSIQ_FT",
+      "seed": 43,
+      "initialization": "musiq-ava",
+      "full_finetuning": true,
+      "selection_loss": true
+    },
+    {
+      "variant": "GEOM_BASE",
+      "seed": 17,
+      "geometry": "explicit",
+      "boundary": true,
+      "selection_loss": false
+    },
+    {
+      "variant": "MATCHED_BASE",
+      "seed": 17,
+      "geometry": "strong conventional fusion",
+      "boundary": true,
+      "selection_loss": false
+    },
+    {
+      "variant": "NO_BOUNDARY",
+      "seed": 17,
+      "geometry": "explicit",
+      "boundary": false,
+      "selection_loss": true
+    }
+  ],
+  "evaluation": {
+    "primary": "GAIC native candidate Acc1/5, no predicted-box IoU threshold",
+    "secondary": [
+      "Acc1/10",
+      "per-image SRCC",
+      "k=1..4 candidate acceptance",
+      "native MOS regret",
+      "end-to-end latency",
+      "peak VRAM"
+    ],
+    "hard_pair_subset": {
+      "minimum_iou": 0.7,
+      "minimum_native_mos_gap": 0.5
+    },
+    "quality_test_scope": "entire frozen test manifest",
+    "latency_images": 100,
+    "bootstrap_replicates": 10000,
+    "bootstrap_unit": "original image, paired across methods",
+    "primary_comparisons": [
+      "FULL-MATCHED",
+      "FULL-MUSIQ_FT"
+    ],
+    "corrected_two_sided_confidence": 0.975,
+    "also_report_confidence": 0.95,
+    "minimum_useful_gain_percentage_points": 2.0,
+    "test_time_ensemble": false,
+    "published_vs_reproduced_results_separate": true
+  },
+  "resource_policy": {
+    "hardware_observed": "RTX 4090 24564 MiB",
+    "runtime_estimate": "measure first 100 full optimizer steps of a formal run; no claimed wall-clock guarantee",
+    "persistent_root": "/root/autodl-fs/highlight-static-rank",
+    "working_root": "/root/autodl-tmp/highlight-static-rank",
+    "target_persistent_gb": {
+      "data": 30,
+      "weights": 10,
+      "runs": 30
+    },
+    "target_temp_cache_gb": 10,
+    "minimum_system_disk_free_gb": 10,
+    "on_oom": "reduce candidate chunk, checkpoint, exact gradient replay; never silently alter method",
+    "on_resource_shortfall": "checkpoint and report INCOMPLETE, not method failure",
+    "delete_other_project_assets": false
+  },
+  "decision_statuses": [
+    "METHOD_SUPPORTED",
+    "COMPETITIVE",
+    "METHOD_NOT_SUPPORTED",
+    "INCONCLUSIVE",
+    "IMPLEMENTATION_INVALID",
+    "INCOMPLETE"
+  ],
+  "required_deliverables": [
+    "METHOD_IMPLEMENTATION.md",
+    "PROTOCOL_LOCK.json",
+    "IMPLEMENTATION_ACCEPTANCE.md",
+    "environment lock",
+    "all configs",
+    "per-image/candidate predictions",
+    "per-seed curves and metrics",
+    "latency table",
+    "DECISION.md",
+    "hash manifest",
+    "resumable checkpoints"
+  ],
+  "external_baseline_training_reserve": {
+    "GAIC_full_official_recipe_runs_if_weights_unverifiable": 1,
+    "included_in_core_12_runs": false
+  }
+}

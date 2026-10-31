@@ -1,0 +1,58 @@
+{
+  "status": "ACTUAL_FROZEN_INPUT_OUTPUT_BINDINGS",
+  "protocol": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/protocol.json",
+    "sha256": "5228e6d91f114d159f9905199344583bb9efe6d066fd6ff7aa3fdcda8e9b301b",
+    "bytes": 5886
+  },
+  "screen_freeze": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_protocol.freeze.json",
+    "sha256": "01f64b5f3f56ee9010d78602acc3d3fcbbf7d14a33a08c80537300a2e81a8e6b",
+    "bytes": 5644
+  },
+  "common_S0": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/common_s0.json",
+    "sha256": "2ccf31ba127b4b18ea6909ad9cc4b8f3734ae8ff692a902e1547dc4be2dc82e9",
+    "bytes": 4798
+  },
+  "original_teacher": {
+    "path": "/root/autodl-tmp/unsgrpo/manifests/Qwen3-VL-2B-Instruct.asset.json",
+    "sha256": "76faa99fe16305bdd18c192e5121f8df581316f47cb7c11cf2617de29b54abf9",
+    "bytes": 1979
+  },
+  "developer_windows": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/dev_windows.jsonl",
+    "sha256": "c0b6de284f80c1dff8338c0ac9e5b279192f3936d24ddf56c412a1bba8276789",
+    "bytes": 256002
+  },
+  "new_candidates": {
+    "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/screen/candidates.jsonl",
+    "sha256": "9770a8786dcef0b1c744e2b70cfd648856db665fcb004256f58d5ada0407b9a4",
+    "bytes": 4212856
+  },
+  "old_greedy_not_in_sample_groups": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1_recovery1/inference/S0/windows.jsonl",
+    "sha256": "e1015adeaa66b011bc4759923291c47d96143c60a92be92c038f047d0aba4f0b",
+    "bytes": 168248
+  },
+  "teacher_edges": {
+    "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/screen/teacher_edges.jsonl",
+    "sha256": "b1ea1d3d44864ac0744871eada32aa8a9c9e0e1271c0cc1b214ebf3aecd1769c",
+    "bytes": 2499259
+  },
+  "reward_label_boundary": {
+    "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/screen/candidates_and_rewards.freeze.json",
+    "sha256": "44d2e241d9f6cc2a75cedae2d09c5fddc8c798ded3e6826cb3aa8c2cf41f0e6b",
+    "bytes": 868
+  },
+  "software_repair": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_fix1.json",
+    "sha256": "7d9ea337d69824cb8afca099bad69436fdfc4da29003f186819ec3fae827d94d",
+    "bytes": 2609
+  },
+  "failed_forward_count_correction": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_fix1_forward_count_correction.json",
+    "sha256": "45140671c348876bbc5d21269ad16003a3fc29b6f04683398a22b9e200fe2327",
+    "bytes": 557
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "status": "COMPLETED",
+  "started_utc": "2026-10-27T10:28:54.851153+00:00",
+  "all_rows_encoded": true,
+  "gpu_training_verified": false,
+  "errors": [],
+  "input_sha256": {
+    "/root/autodl-tmp/unsgrpo-work/smoke_inputs/train_sft.jsonl": "4e6f4e520d4274ab2a20266dd9783321c2fcdc2b20a4e11feecb7004ccf8eaeb",
+    "/root/autodl-tmp/unsgrpo-work/smoke_inputs/train_grpo.jsonl": "69847b0e6c100d614d5b742d08b135421a3235d677e8975e438d544a9848d909"
+  },
+  "n_rows_encoded": 16,
+  "versions": {
+    "ms-swift": "4.6.0",
+    "transformers": "4.57.6",
+    "torch": "2.8.0+cu128",
+    "peft": "0.18.1",
+    "trl": "0.26.2",
+    "qwen-vl-utils": "0.0.14"
+  },
+  "framework_source": {
+    "source_kind": "installed_distribution",
+    "sources": {
+      "advantages": {
+        "path": "/root/autodl-tmp/unsgrpo-work/envs/highlights/lib/python3.12/site-packages/swift/rl_core/advantage.py",
+        "sha256": "397e403576ad2557e0e7ee80130e0b37b1e400fa1c71a00eeee9d03e32354f64",
+        "locations": [
+          {
+            "line": 82,
+            "text": "std = grouped.std(dim=1).repeat_interleave(K) if K > 1 else torch.zeros_like(rewards)"
+          },
+          {
+            "line": 97,
+            "text": "advantages = advantages / (std + 1e-4)"
+          }
+        ]
+      },
+      "trainer_std": {
+        "path": "/root/autodl-tmp/unsgrpo-work/envs/highlights/lib/python3.12/site-packages/swift/rlhf_trainers/grpo_trainer.py",
+        "sha256": "53fddb594ce9a996da34b285984ce4fa3d8709fee4164cc88e98f1223732da2f",
+        "locations": [
+          {
+            "line": 690,
+            "text": "group_rewards_std = grouped_rewards.std(dim=1).repeat_interleave(num_generations)"
+          }
+        ]
+      },
+      "grpo_truncation": {
+        "path": "/root/autodl-tmp/unsgrpo-work/envs/highlights/lib/python3.12/site-packages/swift/arguments/rlhf_args.py",
+        "sha256": "398460c030da856dd962d7274232b7c9082c207defc5bf84f91aceeebf06b47b",
+        "locations": [
+          {
+            "line": 352,
+            "text": "self.truncation_strategy = 'left'"
+          }
+        ]
+      },
+      "template_truncation": {
+        "path": "/root/autodl-tmp/unsgrpo-work/envs/highlights/lib/python3.12/site-packages/swift/template/base.py",
+        "sha256": "a2d14012e37058ad392c1f242e220fd69bb654f29887baffb04aa552f3dfbc16",
+        "locations": [
+          {
+            "line": 1582,
+            "text": "elif self.truncation_strategy == 'raise':"
+          }
+        ]
+      },
+      "qwen_template": {
+        "path": "/root/autodl-tmp/unsgrpo-work/envs/highlights/lib/python3.12/site-packages/swift/template/templates/qwen.py",
+        "sha256": "600a230bbe1b55ebbfc97c2d366d7aa4bd0b5ab3da5219816958d1e1363e5707",
+        "locations": [
+          {
+            "line": 380,
+            "text": "inputs.mm_processor_kwargs['do_sample_frames'] = False"
+          },
+          {
+            "line": 557,
+            "text": "class Qwen3VLTemplate(Qwen2VLTemplate):"
+          }
+        ]
+      },
+      "rollout_identity": {
+        "path": "/root/autodl-tmp/unsgrpo-work/envs/highlights/lib/python3.12/site-packages/swift/rlhf_trainers/rollout_mixin.py",
+        "sha256": "5bf2ca9b283dab64a6f13dfca78ec57b5106e5074a55170cff55290adfab0934",
+        "locations": [
+          {
+            "line": 1254,
+            "text": "def _add_prompt_id_to_inputs(self, samples: List[OnPolicySample]) -> List[OnPolicySample]:"
+          },
+          {
+            "line": 1271,
+            "text": "s.request_id = f'chatcmpl-{str(uuid.uuid4().hex)}'"
+          }
+        ]
+      }
+    },
+    "advantage_numerical_check": {
+      "method": "Execute unchanged compute_advantages function AST extracted from identified framework source",
+      "fixture_rewards": [
+        0.0,
+        1.0,
+        2.0,
+        3.0
+      ],
+      "actual_advantages": [
+        -1.1618050336837769,
+        -0.3872683346271515,
+        0.3872683346271515,
+        1.1618050336837769
+      ],
+      "expected_sample_std_advantages": [
+        -1.1618050336837769,
+        -0.3872683346271515,
+        0.3872683346271515,
+        1.1618050336837769
+      ],
+      "population_std_advantages": [
+        -1.3415207862854004,
+        -0.4471735954284668,
+        0.4471735954284668,
+        1.3415207862854004
+      ],
+      "constant_group_advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "correction": 1,
+      "denominator_epsilon": 0.0001,
+      "source_function_sha256": "bb2f030e46ab5f2a3f512cfb6e63e6c95add0d3d30dfe654dc69b05cc94b832b",
+      "passed": true
+    },
+    "grpo_truncation": "Framework requires left/delete; audit uses raise and reserves completion length before training.",
+    "identity": "Dataset request_id is overwritten per rollout; preserve dataset_request_id and log framework UUID separately."
+  },
+  "model_path": "/autodl-fs/data/unsgrpo/models/Qwen3-VL-2B-Instruct",
+  "model_processor_files_sha256": {
+    "chat_template.json": "6f8a6a55027e3da5160105556cda5dd69f6423f1c32645f6730d32de7773d0c4",
+    "config.json": "bec4b3d446efa05807365c9e1cec03ac590836879d02f3a6da879971154bdd3b",
+    "generation_config.json": "1e241830b48b397cb0900101421df5450baddc7adf01e5fc86b5615865f3bae4",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+    "tokenizer.json": "a5d85b6dcc535e6b93115a9ef287e6132fdbf30270da6218194ba742261173c7",
+    "tokenizer_config.json": "c2da771801886ad9ae98181793ffd3dfb7f1af30f6f7c6a4e15d7dbba52e2399",
+    "video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "model_processor_semantic_sha256": {
+    "chat_template.json": "b2d75533ffe5e27d80a965fcd5ed4e7599f32525a4e8e7a41b354ffed7791a0a",
+    "config.json": "c1a0a85f147adaf6eb218f6119dda680081610d026e9ac585a2d8b3b0cf256b1",
+    "generation_config.json": "3666966b59c7dc1390f785db0bbf1eed92972a2eeaf2b694a30424fede4eb6c9",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "preprocessor_config.json": "465b9430ca4263c89a347330c0e245a9ec82ce635575f823a40fc0ec17bc5d77",
+    "tokenizer.json": "1fb05c117ba906dfe37d6e4d2088737bb4540ecfa7051644570680e52e182565",
+    "tokenizer_config.json": "498a7fcfbb3e70cf26438762a395b93c76dd3d510fa781a0949395f73994845e",
+    "video_preprocessor_config.json": "5c864f27124ca2e2fb4be738e3fa297e1a5d5cfaf77a45b2916e84b7a9921877",
+    "vocab.json": "443a8520aa231fcd8410634a0ecb54fe1f5689e0dfca517d77528e0beebdc548"
+  },
+  "chat_template_sha256": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4",
+  "template_class": "Qwen3VLTemplate",
+  "truncation_strategy": "raise",
+  "visual_environment": {
+    "IMAGE_MAX_TOKEN_NUM": "784",
+    "VIDEO_MIN_TOKEN_NUM": "64",
+    "VIDEO_MAX_TOKEN_NUM": "64",
+    "FPS": "2",
+    "FPS_MAX_FRAMES": "32",
+    "FPS_MIN_FRAMES": "4"
+  },
+  "n_actual_row_encodes": 16,
+  "n_cached_identical_rows": 0,
+  "rows_path": "/root/autodl-tmp/unsgrpo-work/audit_rows_smoke_v1.jsonl",
+  "rows_sha256": "72d6e0e2df649203c13736e355b5d81d96a663363448745693220a3e2706e8c8",
+  "max_encoded_tokens": 2309,
+  "min_processed_frames": 32,
+  "max_processed_frames": 32,
+  "per_file_rows": {
+    "/root/autodl-tmp/unsgrpo-work/smoke_inputs/train_sft.jsonl": 8,
+    "/root/autodl-tmp/unsgrpo-work/smoke_inputs/train_grpo.jsonl": 8
+  },
+  "per_file_unique_windows": {
+    "/root/autodl-tmp/unsgrpo-work/smoke_inputs/train_sft.jsonl": 8,
+    "/root/autodl-tmp/unsgrpo-work/smoke_inputs/train_grpo.jsonl": 8
+  },
+  "cache_policy": "Only identical full row content excluding pool_instance_id reuses a prior actual encode; every row is validated and receives an audit row.",
+  "max_length": 8192,
+  "max_completion_length": 128,
+  "wall_seconds": 12.8084905766882,
+  "ended_utc": "2026-10-27T10:29:07.659672+00:00"
+}

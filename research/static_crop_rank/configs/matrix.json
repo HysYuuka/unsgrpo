@@ -1,0 +1,50 @@
+[
+  {
+    "variant": "FULL",
+    "seed": 17
+  },
+  {
+    "variant": "MATCHED",
+    "seed": 17
+  },
+  {
+    "variant": "FULL",
+    "seed": 29
+  },
+  {
+    "variant": "MATCHED",
+    "seed": 29
+  },
+  {
+    "variant": "FULL",
+    "seed": 43
+  },
+  {
+    "variant": "MATCHED",
+    "seed": 43
+  },
+  {
+    "variant": "MUSIQ_FT",
+    "seed": 17
+  },
+  {
+    "variant": "MUSIQ_FT",
+    "seed": 29
+  },
+  {
+    "variant": "MUSIQ_FT",
+    "seed": 43
+  },
+  {
+    "variant": "GEOM_BASE",
+    "seed": 17
+  },
+  {
+    "variant": "MATCHED_BASE",
+    "seed": 17
+  },
+  {
+    "variant": "NO_BOUNDARY",
+    "seed": 17
+  }
+]

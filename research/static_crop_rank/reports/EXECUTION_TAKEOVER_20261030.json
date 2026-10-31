@@ -1,0 +1,24 @@
+{
+  "time_HK": "2026-10-30T18:19:50.984590+08:00",
+  "handoff": "reports/EXECUTION_AGENT_HANDOFF_20261030.md",
+  "existing_training_taken_over": {
+    "supervisor": 478364,
+    "worker": 478399,
+    "run": "FULL_s17",
+    "epochs": 30
+  },
+  "duplicate_training_queues_started": 0,
+  "monitor_pid": 486579,
+  "monitor_interval_seconds": 1800,
+  "source_protocol_unchanged": true,
+  "original_protocol_sha256": "4d75af7657fc42098452b8b7316a9427ea875e136b2059ddaf110d18f5b9537a",
+  "CPC_CPU_preparation": {
+    "pid": 486499,
+    "GPU": false,
+    "purpose": "native conversion + source overlap only"
+  },
+  "remote_sync": false,
+  "remote_sync_reason": "Human user explicitly cancelled daily automatic sync earlier in this conversation; overrides stale handoff statement",
+  "subagents_used": false,
+  "GPU_benchmark_or_training_interruption": false
+}

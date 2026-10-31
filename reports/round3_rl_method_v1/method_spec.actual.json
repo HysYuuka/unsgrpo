@@ -1,0 +1,47 @@
+{
+  "status": "TEACHER_NOT_READY_EARLY_STOP",
+  "time": {
+    "utc": "2026-10-29T01:48:51.380582+00:00",
+    "hong_kong": "2026-10-29T09:48:51.380582+08:00"
+  },
+  "frozen_method_spec": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/method_spec.json",
+    "sha256": "fb15941b07195671614d5e4a07ef4fd06787b4e3894084a0055a51558428df1a",
+    "bytes": 11164
+  },
+  "scientific_source_freeze": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/front_end.freeze.json",
+    "sha256": "892777826a35b8aafd107d0471e5f2abda8e52727f146658c9bbec949aa4a409",
+    "bytes": 11966
+  },
+  "actual_primary": "V0-stable-mapper-round12",
+  "public_top5": "NOT_READY",
+  "common_S0_receipt": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/common_s0.json",
+    "sha256": "2ccf31ba127b4b18ea6909ad9cc4b8f3734ae8ff692a902e1547dc4be2dc82e9",
+    "bytes": 4798
+  },
+  "common_S0_loaded_for_new_training": false,
+  "teacher_base_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+  "teacher_base_asset_files_SHA_verified_before_loading": true,
+  "actual_teacher_GPU_calls": 12,
+  "event_reference_calls": 8,
+  "actual_semantic_calls": 4,
+  "format_repair_count": 1,
+  "format_repair": "Fixed JSON syntax example added to semantic output instructions; no label-guided change; event reference cache retained.",
+  "common_event_reference_retries": 0,
+  "alpha_versions_materialized": [
+    0.75,
+    0.5
+  ],
+  "selected_alpha": null,
+  "valid_semantic_clip_targets": 0,
+  "targets_per_version": 6316,
+  "all_targets_are_q_excl_with_c_quarter": true,
+  "new_GRPO_runs": 0,
+  "new_SFT_runs": 0,
+  "policy_inputs_changed": false,
+  "raw_video_assets_added": 0,
+  "Git_sync": false,
+  "subagents_used": false
+}

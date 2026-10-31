@@ -1,0 +1,75 @@
+{
+  "created_at_utc": "2026-10-27T10:16:01.775163+00:00",
+  "budget_unit": "GiB",
+  "local_capacity_gib": 50,
+  "file_capacity_gib": 200,
+  "budgets_are_hard_quotas": false,
+  "groups": {
+    "local_code_env_cache": {
+      "paths": [
+        "/root/autodl-tmp/unsgrpo",
+        "/root/autodl-tmp/unsgrpo-work/envs",
+        "/root/autodl-tmp/unsgrpo-work/cache",
+        "/root/autodl-tmp/unsgrpo-work/prepared"
+      ],
+      "allocated_bytes": 1684692992,
+      "budget_bytes": 16106127360
+    },
+    "local_active": {
+      "paths": [
+        "/root/autodl-tmp/unsgrpo-work/runs",
+        "/root/autodl-tmp/unsgrpo-work/checkpoints"
+      ],
+      "allocated_bytes": 278528,
+      "budget_bytes": 26843545600
+    },
+    "local_temporary": {
+      "paths": [
+        "/root/autodl-tmp/unsgrpo-work/tmp"
+      ],
+      "allocated_bytes": 17952768,
+      "budget_bytes": 10737418240
+    },
+    "file_models": {
+      "paths": [
+        "/root/autodl-fs/unsgrpo/models"
+      ],
+      "allocated_bytes": 4942652928,
+      "budget_bytes": 85899345920
+    },
+    "file_datasets": {
+      "paths": [
+        "/root/autodl-fs/unsgrpo/datasets"
+      ],
+      "allocated_bytes": 2024727552,
+      "budget_bytes": 53687091200
+    },
+    "file_archives": {
+      "paths": [
+        "/root/autodl-fs/unsgrpo/archives"
+      ],
+      "allocated_bytes": 4096,
+      "budget_bytes": 53687091200
+    }
+  },
+  "filesystems": {
+    "local": {
+      "path": "/root/autodl-tmp/unsgrpo-work",
+      "device": 2304,
+      "total_bytes": 53687091200,
+      "used_bytes": 1704062976,
+      "free_bytes": 51983028224,
+      "minimum_free_bytes": 10737418240
+    },
+    "file": {
+      "path": "/autodl-fs/data/unsgrpo",
+      "device": 186,
+      "total_bytes": 214748364800,
+      "used_bytes": 6967537664,
+      "free_bytes": 207780827136,
+      "minimum_free_bytes": 21474836480
+    }
+  },
+  "errors": [],
+  "ok": true
+}

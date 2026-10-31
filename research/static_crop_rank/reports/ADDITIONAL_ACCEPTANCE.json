@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "matched_initialization": {
+    "FULL_parameters": 91104580,
+    "MATCHED_parameters": 91039044,
+    "relative_difference": 0.0007193491260263363,
+    "identical_common_tensors": 301
+  },
+  "bf16_replay_gradient": {
+    "relative_l2": 0.008771544848178223,
+    "cosine": 0.9999650845735697,
+    "score_max_abs": 0.0001220703125
+  },
+  "matched_flops": {
+    "counted_flops": {
+      "FULL": 137928779805,
+      "MATCHED": 137829717533
+    },
+    "candidates": 2,
+    "relative_difference": 0.0007187294131709709,
+    "coverage": "PyTorch linear/conv/mm profiler; fused attention and elementwise omitted, identical attention tensor shapes"
+  },
+  "eight_original_accumulation": {
+    "gradient_max_abs": 5.960464477539063e-08,
+    "trainer_optimizer_step": "once after image batch loop; no step inside candidate replay"
+  },
+  "musiq_full_gradient_replay": {
+    "fp32_relative_l2": 2.808294800649023e-07,
+    "train_eval_score_error": 0.0,
+    "mu_from_10bins": [
+      4.870789527893066
+    ],
+    "all_parameters_have_grad": true
+  }
+}

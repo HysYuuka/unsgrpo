@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "source_id": "492526",
+  "size": [
+    1024,
+    1024
+  ],
+  "candidates": 90,
+  "purpose": "complete model/candidates software equivalence and throughput; no optimizer update, not a quality screening experiment",
+  "timing": {
+    "4": {
+      "seconds": 1.950265632942319,
+      "peak_allocated": 872890368,
+      "loss": 0.9089154005050659
+    },
+    "16": {
+      "seconds": 0.3886042442172766,
+      "peak_allocated": 873318400,
+      "loss": 0.9088854789733887,
+      "relative_gradient_l2": 0.003114786135051634,
+      "gradient_cosine": 0.999995315385197,
+      "score_max_abs": 0.000732421875
+    },
+    "32": {
+      "seconds": 0.22629350796341896,
+      "peak_allocated": 870796288,
+      "loss": 0.9087957739830017,
+      "relative_gradient_l2": 0.003691897277063275,
+      "gradient_cosine": 0.9999932778386121,
+      "score_max_abs": 0.0008544921875
+    },
+    "64": {
+      "seconds": 0.17327300179749727,
+      "peak_allocated": 1072246784,
+      "loss": 0.9088222980499268,
+      "relative_gradient_l2": 0.00333965935810073,
+      "gradient_cosine": 0.9999944505736568,
+      "score_max_abs": 0.0008544921875
+    },
+    "90": {
+      "seconds": 0.12838801322504878,
+      "peak_allocated": 1303407616,
+      "loss": 0.9088788032531738,
+      "relative_gradient_l2": 0.0035330145456733764,
+      "gradient_cosine": 0.9999937590045392,
+      "score_max_abs": 0.0006103515625
+    }
+  },
+  "selected_chunk": 90,
+  "fp32": {
+    "global_relative_l2": 3.7333422863481277e-07,
+    "worst_material_tensor_relative_l2": 1.3174933850779403e-06,
+    "score_max_abs": 2.60770320892334e-08
+  }
+}

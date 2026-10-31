@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://huggingface.co/yzc002/FGAesQ/resolve/main/FGAesQ.pt",
+    "error": "SSLError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /yzc002/FGAesQ/resolve/main/FGAesQ.pt (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation",
+    "seconds": 4.702771355397999
+  },
+  {
+    "url": "https://huggingface.co/datasets/yzc002/FGAesthetics/resolve/main/crop-img.rar",
+    "error": "SSLError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /datasets/yzc002/FGAesthetics/resolve/main/crop-img.rar (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occ",
+    "seconds": 4.7013356778770685
+  },
+  {
+    "url": "https://huggingface.co/datasets/yzc002/FGAesthetics/resolve/main/label.rar",
+    "error": "SSLError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /datasets/yzc002/FGAesthetics/resolve/main/label.rar (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurr",
+    "seconds": 2.8891076240688562
+  }
+]

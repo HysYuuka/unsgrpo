@@ -1,0 +1,45 @@
+{
+  "status": "COMPLETED",
+  "created_utc": "2026-10-27T11:26:10.679174+00:00",
+  "scope": "Actual installed Swift CPU RowPreprocessor -> GRPOSample -> score_completions -> reward plugin; synthetic metadata fixture, no model decoding",
+  "command": [
+    "/root/autodl-tmp/unsgrpo-work/envs/highlights/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "/root/autodl-tmp/unsgrpo/tests/test_reward_wrapper.py"
+  ],
+  "observed_output": "5 passed in 5.43s",
+  "n_tests_passed": 5,
+  "n_tests_failed": 0,
+  "checks": [
+    "exact bytes=None/path wrapper accepted with unchanged reward values and ledger",
+    "wrong path rejected",
+    "non-None bytes rejected",
+    "extra wrapper key rejected",
+    "changed video frame rejected"
+  ],
+  "plugin_sha256": "06319f1ccba6bc3076a3643311f19dec813d9abb730aefb29a63451dfcedba49",
+  "test_sha256": "5b0666c36b43430a08abe44b4303f8960ccf6a7f0866f7183cb9d57f959c919f",
+  "versions": {
+    "ms-swift": "4.6.0",
+    "torch": "2.8.0+cu128",
+    "pytest": "9.1.1"
+  },
+  "sources": {
+    "RowPreprocessor._cast_mm_data": {
+      "path": "/root/autodl-tmp/unsgrpo-work/envs/highlights/lib/python3.12/site-packages/swift/dataset/preprocessor/core.py",
+      "sha256": "40723715b269d2778e68df75973716b09aa253f297f9fa25f339d2115c07f14e",
+      "line": 104
+    },
+    "score_completions": {
+      "path": "/root/autodl-tmp/unsgrpo-work/envs/highlights/lib/python3.12/site-packages/swift/rl_core/grpo_algorithm.py",
+      "sha256": "9f64a67b53b9cfa33b8cbb8270370c175f321910a057f28e54c34c52f7e18a9b",
+      "line": 90
+    }
+  },
+  "gpu_used": false,
+  "gpu_training_verified": false,
+  "actual_model_tensors_verified_by_this_check": false,
+  "media_tensor_guard": "Actual consumed model tensors remain independently checked by training_telemetry against full input audit"
+}

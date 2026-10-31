@@ -1,0 +1,88 @@
+{
+  "status": "COMPLETED",
+  "created": {
+    "utc": "2026-10-27T12:49:58.805244+00:00",
+    "hong_kong": "2026-10-27T20:49:58.805244+08:00"
+  },
+  "seed": 42,
+  "merge_validation_passed": true,
+  "acceptance_basis": "verified_bf16_tensor_merge_common_s0",
+  "merge_logp_within_initial_tolerance": true,
+  "merge_logp_gap": {
+    "mean_abs": 0.025587279203312534,
+    "max_abs": 0.1964130401611328,
+    "initial_mean_abs_tolerance": 0.03,
+    "initial_max_abs_tolerance": 0.25,
+    "within_initial_tolerance": true,
+    "original_compare_status": "COMPLETED",
+    "original_failed_report_modified": false,
+    "greedy_equal": false
+  },
+  "premerge_functional_equivalence_claimed": false,
+  "definition": "Common S0 is the actual verified BF16 quantized merged endpoint; all S0 inference and continuations use this identical model.",
+  "merged_model": "/root/autodl-tmp/unsgrpo-work/checkpoints/round1_seed42_v1__MERGE",
+  "merged_model_files": {
+    "args.json": "cdcc69511a7b18ab7f7f1a2cdf1917f5f780244be5144cd9edac47c9998b6f12",
+    "chat_template.json": "6f8a6a55027e3da5160105556cda5dd69f6423f1c32645f6730d32de7773d0c4",
+    "config.json": "bec4b3d446efa05807365c9e1cec03ac590836879d02f3a6da879971154bdd3b",
+    "generation_config.json": "1e241830b48b397cb0900101421df5450baddc7adf01e5fc86b5615865f3bae4",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "model.safetensors": "82eb14956d688064a7fc6a630e13b5ba9f6784522623a795d11e2aec8730d07b",
+    "preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+    "tokenizer.json": "a5d85b6dcc535e6b93115a9ef287e6132fdbf30270da6218194ba742261173c7",
+    "tokenizer_config.json": "c2da771801886ad9ae98181793ffd3dfb7f1af30f6f7c6a4e15d7dbba52e2399",
+    "video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "sft_endpoint": "/root/autodl-tmp/unsgrpo-work/checkpoints/round1_seed42_v1__S0/v0-20261027-200049/checkpoint-256",
+  "sft_endpoint_files": {
+    "README.md": "277f00c9b65d50b2405eab510c700881e4f32cb697981127296f5edf39dba0ca",
+    "adapter_config.json": "e5a6c66490e77c1f48b79135da93db306d7f059abffbb8d037c694fc4f6cb3ac",
+    "adapter_model.safetensors": "376e0bd5cdac0d8bab2fbcd10f00dd0c792d4f99ebdd1fc9e4a16611b381694a",
+    "additional_config.json": "c7799462ebedae6557ffad31566029e2d2f958b7b40e46e972cf901bcaf45733",
+    "args.json": "cdcc69511a7b18ab7f7f1a2cdf1917f5f780244be5144cd9edac47c9998b6f12",
+    "optimizer.pt": "bdb74bffc974f0572c9ee22cf6593df212a015166eca509d38861902d35f255f",
+    "rng_state.pth": "f90a5f2ed6d30ebfd28acaade74bb026468970204fa5b02eda67c20566c1a648",
+    "scheduler.pt": "e496630465d098646e0b7f8f54af5b9cd7b70d65fc0657e11e5fd571fad0ca59",
+    "trainer_state.json": "f0ff56f30a175e1ff3a4e10eb59d055ead3862435283fbf0702110ebff9424cc",
+    "training_args.bin": "f9fa884e26ed7e152795169bb88f9ee871493428c6e230cf15fd69e34d80019e"
+  },
+  "parent_sft_receipt": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1__S0/receipt.json",
+    "sha256": "b3457373336964e24150bfa824869a036dd2ba2e09e5640300dc848a79189ef4"
+  },
+  "parent_sft_acceptance": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1__S0/acceptance.json",
+    "sha256": "dd325ec1a32aeac512983d87886f31cade591cc554d6633f7626886f7eace3e3"
+  },
+  "snapshot": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1/checks/S0_snapshot.json",
+    "sha256": "bee1230d4636fa20c8a9f3150833904c00df783d85801ae6396c03297e4ce7b4"
+  },
+  "merge_comparison": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1/checks/S0_merge_compare.json",
+    "sha256": "48c4632f57fe55434f970e206d15b0f5b4d171ae63f94bda2800e3c072825c07"
+  },
+  "merge_bitwise_verification": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1/checks/S0_bf16_merge_verification.json",
+    "sha256": "d79c962814e6b8cdcdb99ef784cbd62eeb247fc5459cb005a0be87537650bf0d"
+  },
+  "reference_verification": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1/checks/S0_reference_integrity.json",
+    "sha256": "ebf55fe4218960f449d5efc0c5ad6652d493b898443d4dc83a8776bd5d581264"
+  },
+  "processor_restore": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1__MERGE/processor_restore.json",
+    "sha256": "f962ed9ae91f62152b8369fb89ff2bb895e9c847e63eb4b00d2a3998c1e6e64a"
+  },
+  "protocol_freeze": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/freeze.json",
+    "sha256": "bb933ec9fff891072ecedcc55d046fc4f0ceca5cdb4f22e4cb072e1264fb4037"
+  },
+  "exact_resume_verified": false,
+  "new_identical_lora_spec_for_each_continuation": {
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0
+  }
+}

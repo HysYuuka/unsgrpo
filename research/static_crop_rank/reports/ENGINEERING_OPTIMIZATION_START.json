@@ -1,0 +1,6 @@
+{
+  "reason": "100 formal steps show 1.87GB allocated on 24GB GPU; test larger candidate chunks preserving all model/loss/data semantics",
+  "old_candidate_chunk": 4,
+  "science_configuration_changed": false,
+  "time": 1793349544.3478606
+}

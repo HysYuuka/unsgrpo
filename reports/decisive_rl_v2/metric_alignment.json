@@ -1,0 +1,24 @@
+{
+  "status": "V0_PRIMARY_FROZEN_PUBLIC_TOP5_NOT_READY",
+  "time": {
+    "utc": "2026-10-29T10:16:48.038957+00:00",
+    "hong_kong": "2026-10-29T18:16:48.038957+08:00"
+  },
+  "primary": "Stable V0 / overlap integral / round12 exact ties",
+  "public_top5": "NOT_READY",
+  "existing_UMT_implementation_evidence": {
+    "status": "PASSED",
+    "exact_upstream_method_AST": {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/umt_tvsum.py",
+      "sha256": "f7c962a7abb061d37844eb4baa1503e0e3dba54caa5483d97f68287776e7f347",
+      "bytes": 4117
+    },
+    "fixtures": 15,
+    "max_difference_due_to_upstream_round5": 3.888888889025388e-06,
+    "torch_version": "2.8.0+cu128",
+    "source_median_top5_denominator_trapezoid_and_unstable_float32_ties_preserved": true
+  },
+  "reason": "Existing assets still lack audited UMT annotation/feature clip-time correspondence; no new download or metric invention.",
+  "engineering_wall_seconds": 0.19769945368170738,
+  "new_human_annotation_values_read": false
+}

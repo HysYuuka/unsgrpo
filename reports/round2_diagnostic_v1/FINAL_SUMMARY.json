@@ -1,0 +1,135 @@
+{
+  "status": "COMPLETED_REVIEWED_DEVELOPMENT_DIAGNOSTICS",
+  "created_utc": "2026-10-28T03:55:20.376689+00:00",
+  "primary_recommendation": "Prioritize teacher target/reference validity; do not expand current GRPO or blindly add overview frames.",
+  "scope": {
+    "development_sources": 10,
+    "train_sources": 40,
+    "new_videos": 0,
+    "new_GRPO_training_runs": 0,
+    "new_Qwen_training_runs": 0,
+    "frozen_Qwen_inference_requests": 24,
+    "small_CPU_student_fits": 12,
+    "student_initialization_seeds": [
+      42,
+      43,
+      44
+    ],
+    "checkpoint_selection_by_human_AP": false,
+    "subagents_used": false,
+    "Git_sync": "NONE"
+  },
+  "direct_observations": {
+    "full_pipeline_teacher_rank_rho_means": [
+      0.9803243000390058,
+      0.9823261523318797
+    ],
+    "stable_conflict_counts": {
+      "stable_proxy_high_human_low_clips": 40,
+      "stable_human_high_proxy_low_clips": 49,
+      "stable_conflict_video_ids": [
+        "-esJrBWj2d8",
+        "0tmA_C6XwfM",
+        "37rzWOQsNIw",
+        "Bhxk-O1Y7Ho",
+        "GsAD1KT1xo8",
+        "HT5vyqe0Xaw",
+        "Hl-__g2gn_A",
+        "cjibtmSLxQ4",
+        "gzDbaEs1Rlg"
+      ]
+    },
+    "development_clips": 1408,
+    "affine_canonical_max_user_AP_delta": 0.0,
+    "S0_offset_range_reduction_fraction": 0.6173531196656242,
+    "G_CAL_order_disagreement_vs_S0": 0.2792616638947766,
+    "students": {
+      "window_only__mse_q": {
+        "video_macro_ap": 0.42713023754578067,
+        "seed_std_ddof1": 0.002255164344514864,
+        "seed_min": 0.42455914832732616,
+        "seed_max": 0.42877340121746316
+      },
+      "window_only__rank_pair": {
+        "video_macro_ap": 0.38031668967468013,
+        "seed_std_ddof1": 0.0009456692058835895,
+        "seed_min": 0.3792426767395044,
+        "seed_max": 0.38102446618724917
+      },
+      "window_plus_video_statistics__mse_q": {
+        "video_macro_ap": 0.43415353507589255,
+        "seed_std_ddof1": 0.0019004299283128306,
+        "seed_min": 0.43240809451040774,
+        "seed_max": 0.43617808513629186
+      },
+      "window_plus_video_statistics__rank_pair": {
+        "video_macro_ap": 0.3809722672228953,
+        "seed_std_ddof1": 0.003845013555088074,
+        "seed_min": 0.37653978460504034,
+        "seed_max": 0.38340976092304474
+      }
+    },
+    "counterfactual_mean_ranges": {
+      "A": 0.32500000000000007,
+      "B": 0.148125,
+      "C": 0.35749999999999993
+    },
+    "counterfactual_mean_pair_order_disagreement": {
+      "A": 0.7083333333333334,
+      "B": 0.4375,
+      "C": 0.3125
+    },
+    "exact_original_S0_replays": 8
+  },
+  "supported_explanations": [
+    "Mean/variance shrink can improve pseudo-label calibration without changing AP.",
+    "Repeated typicality/importance conflicts survive the tested clustering/prototype changes.",
+    "Window offsets affect consistency but numerical consensus is not a guarantee of human importance quality.",
+    "Pure local pair ranking in this fixed regime has global calibration/generalization problems; worse AP cannot be attributed solely to better fitting wrong preferences."
+  ],
+  "not_established": [
+    "A unique causal decomposition of SFT continuation degradation.",
+    "That leave-video-out labels better match human importance.",
+    "That more global visual input improves full-video AP.",
+    "A fair same-Qwen supervised replacement for GRPO.",
+    "Generalization to independent final sources."
+  ],
+  "next_experiment": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/round2_diagnostic_v1/NEXT_MINIMAL_EXPERIMENT.json",
+    "sha256": "022c450da3e743d842c846afd74c2aee30a0120f69e9dd081fe94ecca2e82b63",
+    "bytes": 2484
+  },
+  "main_report": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/round2_diagnostic_v1/FINAL_REPORT.md",
+    "sha256": "62bf80ff2cf209224f77ad40a486f808df69361774d5f2cfc18d323bb995e4c8",
+    "bytes": 16829
+  },
+  "independent_metric_verification": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round2_diagnostic_v1/independent_verification.json",
+    "sha256": "41422a3062be43eaf1f13aac7620e90a27f8db755a2158a561f97abff996678b",
+    "bytes": 1614
+  },
+  "visual_observations": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round2_diagnostic_v1/visual_review/observations.json",
+    "sha256": "5b9c7de1d9ce28a16e1e003481fb6272d458850344397dfe53522fb23454af50",
+    "bytes": 6252
+  },
+  "original_code_and_inputs_unchanged_after_freeze": true,
+  "compute": {
+    "pipeline_wall_seconds": 106.99094423418865,
+    "CPU_phase_wall_seconds": 61.20951048377901,
+    "frozen_inference_phase_wall_seconds": 45.11757465079427,
+    "frozen_inference_profile_seconds": 42.48660186911002,
+    "peak_CUDA_allocated_bytes": 4908092928,
+    "additional_check_and_review_wall_seconds": {
+      "independent_verification.json": 52.07442137086764,
+      "visual_review/dense_frame_review_receipt.json": 2.344749282579869,
+      "postrun_analysis/analysis_receipt.json": 3.3695230931043625,
+      "postrun_analysis/aggregation_rank_tie_audit.json": 0.5265060537494719,
+      "replay_namespace_check_receipt.json": 0.3219459471292794
+    },
+    "sum_recorded_pipeline_and_postrun_windows_seconds": 165.62808998161927,
+    "not_full_task_or_billing_time": true,
+    "currency_cost": null
+  }
+}

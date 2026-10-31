@@ -1,0 +1,16 @@
+{
+  "candidate_chunk": 90,
+  "reason": "Increase candidate parallelism, no candidates omitted and all gradients retained; within guide semantics-preserving engineering allowance",
+  "acceptance": "reports/PARALLEL_CANDIDATES_ACCEPTANCE.json",
+  "effective_original_batch": 8,
+  "resolution": [
+    512,
+    1024
+  ],
+  "science_protocol_hash_unchanged": true,
+  "resume_existing_optimizer_and_rng": true,
+  "time": 1793349737.110638,
+  "musiq_candidate_batch": 4,
+  "musiq_validation": "reports/MUSIQ_BATCH_ACCEPTANCE.json",
+  "active_full_timing": "runs/FULL_s17/THROUGHPUT_ACTIVE.json"
+}

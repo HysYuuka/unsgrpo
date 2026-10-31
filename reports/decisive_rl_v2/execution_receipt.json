@@ -1,0 +1,25 @@
+{
+  "status": "NO_GO_REWARD",
+  "started": {
+    "utc": "2026-10-29T10:16:52.762176+00:00",
+    "hong_kong": "2026-10-29T18:16:52.762176+08:00"
+  },
+  "pid": 410445,
+  "network_required_after_start": false,
+  "ended": {
+    "utc": "2026-10-29T10:23:17.068009+00:00",
+    "hong_kong": "2026-10-29T18:23:17.068009+08:00"
+  },
+  "error": null,
+  "GPU_seconds": 382.56813483079895,
+  "report_time": {
+    "utc": "2026-10-29T10:23:17.315294+00:00",
+    "hong_kong": "2026-10-29T18:23:17.315294+08:00"
+  },
+  "actual_protocol": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/decisive_rl_v2/protocol.actual.json",
+    "sha256": "123c69237dc898371fbc86fbdf9bebfc90f19028536a321308088c8f0dbd6750",
+    "bytes": 7276
+  },
+  "no_automatic_followup": true
+}

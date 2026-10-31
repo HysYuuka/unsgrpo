@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETED_SHA_VERIFIED",
+  "receipt": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round2_diagnostic_v1/review_archive_receipt.json",
+    "sha256": "712994ecb793a7ff753cddf4c8166c56ea5e7019f5209fd1860d2266bd334517",
+    "bytes": 19388
+  },
+  "archive_root": "/autodl-fs/data/unsgrpo/archives/round2_diagnostic_v1_review_v1",
+  "verified_payload_files": 60,
+  "verified_payload_bytes": 5338847,
+  "main_archive_receipt": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round2_diagnostic_v1/archive_receipt.json",
+    "sha256": "2b1b06a1437e1a2eea1599fd9b19f343745e70c0128f35ad19a6c2dc4e9178bb",
+    "bytes": 37843
+  },
+  "main_archive_files": 114,
+  "main_archive_payload_bytes": 23673418,
+  "local_sources_retained": true
+}

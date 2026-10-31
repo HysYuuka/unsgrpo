@@ -1,0 +1,42 @@
+[
+  {
+    "video_id": "3eYKfiOEJNs",
+    "error": "ValueError('missing end frames: 391/392')"
+  },
+  {
+    "video_id": "E11zDS9XGzg",
+    "error": "ValueError('missing end frames: 1023/1024')"
+  },
+  {
+    "video_id": "EE-bNr36nyA",
+    "error": "ValueError('missing end frames: 199/200')"
+  },
+  {
+    "video_id": "EYqVtI9YWJA",
+    "error": "ValueError('missing end frames: 399/400')"
+  },
+  {
+    "video_id": "JKpqYvAdIsw",
+    "error": "ValueError('missing end frames: 306/308')"
+  },
+  {
+    "video_id": "LRw_obCPUt0",
+    "error": "ValueError('missing end frames: 523/524')"
+  },
+  {
+    "video_id": "PJrm840pAUI",
+    "error": "ValueError('missing end frames: 551/552')"
+  },
+  {
+    "video_id": "RBCABdttQmI",
+    "error": "ValueError('missing end frames: 731/732')"
+  },
+  {
+    "video_id": "iVt07TCkFM0",
+    "error": "ValueError('missing end frames: 211/212')"
+  },
+  {
+    "video_id": "xxdtq8mxegs",
+    "error": "ValueError('missing end frames: 291/292')"
+  }
+]

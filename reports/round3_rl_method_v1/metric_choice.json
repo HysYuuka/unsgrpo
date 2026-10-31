@@ -1,0 +1,233 @@
+{
+  "status": "FROZEN_BEFORE_NEW_TEACHER_RESULTS",
+  "time": {
+    "utc": "2026-10-29T01:35:34.311714+00:00",
+    "hong_kong": "2026-10-29T09:35:34.311714+08:00"
+  },
+  "primary": "V0-stable-mapper-round12",
+  "public_top5_status": "NOT_READY",
+  "preferred_public_name": "UMT-source TVSum development top-5 mAP",
+  "implementation_acceptance": {
+    "status": "PASSED",
+    "exact_upstream_method_AST": {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/umt_tvsum.py",
+      "sha256": "f7c962a7abb061d37844eb4baa1503e0e3dba54caa5483d97f68287776e7f347",
+      "bytes": 4117
+    },
+    "fixtures": 15,
+    "max_difference_due_to_upstream_round5": 3.888888889025388e-06,
+    "torch_version": "2.8.0+cu128",
+    "source_median_top5_denominator_trapezoid_and_unstable_float32_ties_preserved": true
+  },
+  "native_time_axis_acceptance": [
+    {
+      "video_id": "-esJrBWj2d8",
+      "native_frames": 6912,
+      "annotators": 20,
+      "prediction_clips": 116,
+      "duration": 230.4,
+      "native_clock": {
+        "path": "/root/autodl-tmp/unsgrpo-work/prepared/-esJrBWj2d8/frame_bounds.npy",
+        "sha256": "bb4f34e8f5b2e8242c27b701077d5b12763a1f9c0176d9db79c1b16ebfbb9a95",
+        "bytes": 110720
+      },
+      "converted_label": {
+        "path": "/autodl-fs/data/unsgrpo/datasets/labels_eval_only/round1_seed42_v1_recovery1/converted/-esJrBWj2d8.npz",
+        "sha256": "cf862c39cbb48b8920aa6cd07ed75b0fae76e2c177fc2ccd703a3f7f7154c914",
+        "bytes": 20247
+      },
+      "V0_overlap_integral_mapping": "verified inherited actual PTS and stable mapper",
+      "UMT_annotation_clip_axis_verified": false
+    },
+    {
+      "video_id": "0tmA_C6XwfM",
+      "native_frames": 3532,
+      "annotators": 20,
+      "prediction_clips": 71,
+      "duration": 141.28,
+      "native_clock": {
+        "path": "/root/autodl-tmp/unsgrpo-work/prepared/0tmA_C6XwfM/frame_bounds.npy",
+        "sha256": "d1c60b013e2727e17ed860ddf8166b819d37ff34479206532e8ad88dcffa8dc2",
+        "bytes": 56640
+      },
+      "converted_label": {
+        "path": "/autodl-fs/data/unsgrpo/datasets/labels_eval_only/round1_seed42_v1_recovery1/converted/0tmA_C6XwfM.npz",
+        "sha256": "5451442d2c8072ac242fa95a5f8c95f07d39d7cf618056872b57505286bc64bf",
+        "bytes": 11228
+      },
+      "V0_overlap_integral_mapping": "verified inherited actual PTS and stable mapper",
+      "UMT_annotation_clip_axis_verified": false
+    },
+    {
+      "video_id": "37rzWOQsNIw",
+      "native_frames": 5742,
+      "annotators": 20,
+      "prediction_clips": 96,
+      "duration": 191.5914,
+      "native_clock": {
+        "path": "/root/autodl-tmp/unsgrpo-work/prepared/37rzWOQsNIw/frame_bounds.npy",
+        "sha256": "09bb2257d71ef6b7dc9a1cdf987c8704a389dca91db1d9095928188f1f59757a",
+        "bytes": 92000
+      },
+      "converted_label": {
+        "path": "/autodl-fs/data/unsgrpo/datasets/labels_eval_only/round1_seed42_v1_recovery1/converted/37rzWOQsNIw.npz",
+        "sha256": "46ebf24234c4b6e9dab554b50a41c09155d54ee07d8fc58ec366220ea1600a64",
+        "bytes": 31189
+      },
+      "V0_overlap_integral_mapping": "verified inherited actual PTS and stable mapper",
+      "UMT_annotation_clip_axis_verified": false
+    },
+    {
+      "video_id": "Bhxk-O1Y7Ho",
+      "native_frames": 13511,
+      "annotators": 20,
+      "prediction_clips": 226,
+      "duration": 450.817033,
+      "native_clock": {
+        "path": "/root/autodl-tmp/unsgrpo-work/prepared/Bhxk-O1Y7Ho/frame_bounds.npy",
+        "sha256": "fa8775c8f8b1eaf05cba00df761cd3469c1a041fdb0e036ca205b2761bc3b920",
+        "bytes": 216304
+      },
+      "converted_label": {
+        "path": "/autodl-fs/data/unsgrpo/datasets/labels_eval_only/round1_seed42_v1_recovery1/converted/Bhxk-O1Y7Ho.npz",
+        "sha256": "20d8f76f473a0a7781a84317a820c89fe4273a91273cf350fa36d6f4dea887bf",
+        "bytes": 65728
+      },
+      "V0_overlap_integral_mapping": "verified inherited actual PTS and stable mapper",
+      "UMT_annotation_clip_axis_verified": false
+    },
+    {
+      "video_id": "GsAD1KT1xo8",
+      "native_frames": 4356,
+      "annotators": 20,
+      "prediction_clips": 73,
+      "duration": 145.3452,
+      "native_clock": {
+        "path": "/root/autodl-tmp/unsgrpo-work/prepared/GsAD1KT1xo8/frame_bounds.npy",
+        "sha256": "5e45b9a84be3d6dce3c14b6a52b3b9eee34c909b23aac8fb8bab737d2a35a6d1",
+        "bytes": 69824
+      },
+      "converted_label": {
+        "path": "/autodl-fs/data/unsgrpo/datasets/labels_eval_only/round1_seed42_v1_recovery1/converted/GsAD1KT1xo8.npz",
+        "sha256": "900cb6b1c6eedcf3d877d8caaaf2dd6eeb67d1de40b64959960cddbc8b6304ef",
+        "bytes": 24023
+      },
+      "V0_overlap_integral_mapping": "verified inherited actual PTS and stable mapper",
+      "UMT_annotation_clip_axis_verified": false
+    },
+    {
+      "video_id": "HT5vyqe0Xaw",
+      "native_frames": 9671,
+      "annotators": 20,
+      "prediction_clips": 162,
+      "duration": 322.689033,
+      "native_clock": {
+        "path": "/root/autodl-tmp/unsgrpo-work/prepared/HT5vyqe0Xaw/frame_bounds.npy",
+        "sha256": "0f3769a2a1c3d95559d752e9decf04e39720a44880c02a80fb7f15704be6b652",
+        "bytes": 154864
+      },
+      "converted_label": {
+        "path": "/autodl-fs/data/unsgrpo/datasets/labels_eval_only/round1_seed42_v1_recovery1/converted/HT5vyqe0Xaw.npz",
+        "sha256": "409c2df846c8ebed14428f6695797e50431da0b4249cb4e0729f8b6e8e067b5b",
+        "bytes": 49905
+      },
+      "V0_overlap_integral_mapping": "verified inherited actual PTS and stable mapper",
+      "UMT_annotation_clip_axis_verified": false
+    },
+    {
+      "video_id": "Hl-__g2gn_A",
+      "native_frames": 5846,
+      "annotators": 20,
+      "prediction_clips": 122,
+      "duration": 243.826917,
+      "native_clock": {
+        "path": "/root/autodl-tmp/unsgrpo-work/prepared/Hl-__g2gn_A/frame_bounds.npy",
+        "sha256": "14b63c2c6352af981cb89e9463ed184fae30c18fb0af256a2860141f014743f0",
+        "bytes": 93664
+      },
+      "converted_label": {
+        "path": "/autodl-fs/data/unsgrpo/datasets/labels_eval_only/round1_seed42_v1_recovery1/converted/Hl-__g2gn_A.npz",
+        "sha256": "d9c8904434c557e89524accbb45c3af459297b2c425c748679cf0586876a2a43",
+        "bytes": 27651
+      },
+      "V0_overlap_integral_mapping": "verified inherited actual PTS and stable mapper",
+      "UMT_annotation_clip_axis_verified": false
+    },
+    {
+      "video_id": "cjibtmSLxQ4",
+      "native_frames": 19406,
+      "annotators": 20,
+      "prediction_clips": 324,
+      "duration": 647.513533,
+      "native_clock": {
+        "path": "/root/autodl-tmp/unsgrpo-work/prepared/cjibtmSLxQ4/frame_bounds.npy",
+        "sha256": "b1838b82b8c774cf7a565821b7067183ee0eadcd03060e424c861a9395c067df",
+        "bytes": 310624
+      },
+      "converted_label": {
+        "path": "/autodl-fs/data/unsgrpo/datasets/labels_eval_only/round1_seed42_v1_recovery1/converted/cjibtmSLxQ4.npz",
+        "sha256": "4405eb491e323636cc329dd849797130659c1f3845131770a12ef64d0d802d88",
+        "bytes": 94910
+      },
+      "V0_overlap_integral_mapping": "verified inherited actual PTS and stable mapper",
+      "UMT_annotation_clip_axis_verified": false
+    },
+    {
+      "video_id": "gzDbaEs1Rlg",
+      "native_frames": 7210,
+      "annotators": 20,
+      "prediction_clips": 145,
+      "duration": 288.4,
+      "native_clock": {
+        "path": "/root/autodl-tmp/unsgrpo-work/prepared/gzDbaEs1Rlg/frame_bounds.npy",
+        "sha256": "9a4b11fd29497fd833dbc7c93b5a852325a7d8fdb69bcecf85a1ed8b5a36cf6d",
+        "bytes": 115488
+      },
+      "converted_label": {
+        "path": "/autodl-fs/data/unsgrpo/datasets/labels_eval_only/round1_seed42_v1_recovery1/converted/gzDbaEs1Rlg.npz",
+        "sha256": "8e0c919bab36250df3c6b8aeb46af5c9918144c6d5adbab1ab59cfee20fb9abf",
+        "bytes": 22944
+      },
+      "V0_overlap_integral_mapping": "verified inherited actual PTS and stable mapper",
+      "UMT_annotation_clip_axis_verified": false
+    },
+    {
+      "video_id": "xxdtq8mxegs",
+      "native_frames": 4324,
+      "annotators": 20,
+      "prediction_clips": 73,
+      "duration": 144.133333,
+      "native_clock": {
+        "path": "/root/autodl-tmp/unsgrpo-work/prepared/xxdtq8mxegs/frame_bounds.npy",
+        "sha256": "03fa201fb02d7d402fe6d04d0535a7c3567d8a4b3d278bc64613bd7d64106920",
+        "bytes": 69312
+      },
+      "converted_label": {
+        "path": "/autodl-fs/data/unsgrpo/datasets/labels_eval_only/round1_seed42_v1_recovery1/converted/xxdtq8mxegs.npz",
+        "sha256": "fdc574b6323f9f0631b1b54989c85644b56b092b8000e77081a513987effc06e",
+        "bytes": 13260
+      },
+      "V0_overlap_integral_mapping": "verified inherited actual PTS and stable mapper",
+      "UMT_annotation_clip_axis_verified": false
+    }
+  ],
+  "public_clip_axis_acceptance": "NOT_READY: released UMT annotation/feature clip-time correspondence unavailable; do not infer rows are 2 seconds",
+  "failed_release_archive_attempts": [
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/additional_network_receipt.json",
+      "sha256": "972e9ae14be1150e511745b7f5e34d3cbd112492617afd870b49b7520c2bd3d2",
+      "bytes": 1822
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/final_network_probes.json",
+      "sha256": "4500dba90e7e8dade207a73bb755c398c3d8f24b6df7d9b7dc135f3f68b05f19",
+      "bytes": 801
+    }
+  ],
+  "scope": "10 previously analyzed development sources; no paper split or independent test claim",
+  "selected_without_new_teacher_quality": true,
+  "old_benchmark_alignment_flag_modified": false,
+  "rounding": "Stable frame mapper then round 12 decimals; exact ties grouped by V0; raw stable value secondary",
+  "no_alternative_AP_definition_attempted": true,
+  "maximum_possible_final_claim": "internal method signal"
+}

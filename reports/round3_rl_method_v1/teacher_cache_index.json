@@ -1,0 +1,702 @@
+{
+  "status": "PARTIAL_SEMANTIC_CACHE_FULL_FALLBACK_TARGETS",
+  "semantic_calls": {
+    "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/semantic_calls.jsonl",
+    "sha256": "2eb2418e95c5517ea10d532bac9be0a8cb51e28bf59686edf818537c8de46905",
+    "bytes": 55669
+  },
+  "semantic_clips": {
+    "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/semantic_clips.jsonl",
+    "sha256": "4de9d328bb6a53ad815ab303ddb1f13a93aac75ecf6ad39f40513c064516735f",
+    "bytes": 5969773
+  },
+  "targets": [
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/targets_alpha075.npz",
+      "sha256": "baa7c8c7cc89c0fc0c1b1b9253f0f5d31d35ba854fadf3368a21d7b5d95a04f4",
+      "bytes": 52324
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/targets_alpha050.npz",
+      "sha256": "baa7c8c7cc89c0fc0c1b1b9253f0f5d31d35ba854fadf3368a21d7b5d95a04f4",
+      "bytes": 52324
+    }
+  ],
+  "clip_records": [
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/clips_alpha075.jsonl",
+      "sha256": "1c608104989aad21129b218a918d8ee8d67e3cb1a5baffece47fad1df6625ca2",
+      "bytes": 6923745
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/clips_alpha050.jsonl",
+      "sha256": "c26549e1d2d1596eed33aee00eff08fb75d75e4971e0794cef3293ea43002c25",
+      "bytes": 6917429
+    }
+  ],
+  "exclusion": {
+    "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/teacher/exclusion.json",
+    "sha256": "96147432e9f08049f4a5bcde3fc27a9414ff55ebd91c1be4ae6c4e3a9f916b0f",
+    "bytes": 10725
+  },
+  "n_clips": 6316,
+  "reason_counts": {
+    "INVALID_SHARED_EVENT_REFERENCE": 738,
+    "INVALID_SEMANTIC_RESPONSES": 8,
+    "NOT_SCORED_EARLY_FORMAT_STOP": 5570
+  },
+  "per_video": [
+    {
+      "video_id": "3eYKfiOEJNs",
+      "split": "train",
+      "n_clips": 98,
+      "event_reference_attempted": true,
+      "event_reference_valid": false,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "INVALID_SHARED_EVENT_REFERENCE": 98
+      }
+    },
+    {
+      "video_id": "4wU_LUjG5Ic",
+      "split": "train",
+      "n_clips": 84,
+      "event_reference_attempted": true,
+      "event_reference_valid": false,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "INVALID_SHARED_EVENT_REFERENCE": 84
+      }
+    },
+    {
+      "video_id": "91IHQYk1IQM",
+      "split": "train",
+      "n_clips": 56,
+      "event_reference_attempted": true,
+      "event_reference_valid": false,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "INVALID_SHARED_EVENT_REFERENCE": 56
+      }
+    },
+    {
+      "video_id": "98MoyGZKHXc",
+      "split": "train",
+      "n_clips": 94,
+      "event_reference_attempted": true,
+      "event_reference_valid": false,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "INVALID_SHARED_EVENT_REFERENCE": 94
+      }
+    },
+    {
+      "video_id": "AwmHb44_ouw",
+      "split": "train",
+      "n_clips": 177,
+      "event_reference_attempted": true,
+      "event_reference_valid": true,
+      "semantic_clip_attempts": 8,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "INVALID_SEMANTIC_RESPONSES": 8,
+        "NOT_SCORED_EARLY_FORMAT_STOP": 169
+      }
+    },
+    {
+      "video_id": "E11zDS9XGzg",
+      "split": "train",
+      "n_clips": 256,
+      "event_reference_attempted": true,
+      "event_reference_valid": false,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "INVALID_SHARED_EVENT_REFERENCE": 256
+      }
+    },
+    {
+      "video_id": "EE-bNr36nyA",
+      "split": "train",
+      "n_clips": 50,
+      "event_reference_attempted": true,
+      "event_reference_valid": false,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "INVALID_SHARED_EVENT_REFERENCE": 50
+      }
+    },
+    {
+      "video_id": "EYqVtI9YWJA",
+      "split": "train",
+      "n_clips": 100,
+      "event_reference_attempted": true,
+      "event_reference_valid": false,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "INVALID_SHARED_EVENT_REFERENCE": 100
+      }
+    },
+    {
+      "video_id": "J0nA4VgnoCo",
+      "split": "train",
+      "n_clips": 293,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 293
+      }
+    },
+    {
+      "video_id": "JKpqYvAdIsw",
+      "split": "train",
+      "n_clips": 77,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 77
+      }
+    },
+    {
+      "video_id": "JgHubY5Vw3Y",
+      "split": "train",
+      "n_clips": 72,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 72
+      }
+    },
+    {
+      "video_id": "LRw_obCPUt0",
+      "split": "train",
+      "n_clips": 131,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 131
+      }
+    },
+    {
+      "video_id": "NyBmCxDoHJU",
+      "split": "train",
+      "n_clips": 95,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 95
+      }
+    },
+    {
+      "video_id": "PJrm840pAUI",
+      "split": "train",
+      "n_clips": 138,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 138
+      }
+    },
+    {
+      "video_id": "RBCABdttQmI",
+      "split": "train",
+      "n_clips": 183,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 183
+      }
+    },
+    {
+      "video_id": "Se3oxnaPsz0",
+      "split": "train",
+      "n_clips": 70,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 70
+      }
+    },
+    {
+      "video_id": "VuWGsYPqAX8",
+      "split": "train",
+      "n_clips": 109,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 109
+      }
+    },
+    {
+      "video_id": "WG0MBPpPC6I",
+      "split": "train",
+      "n_clips": 199,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 199
+      }
+    },
+    {
+      "video_id": "WxtbjNsCQ8A",
+      "split": "train",
+      "n_clips": 133,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 133
+      }
+    },
+    {
+      "video_id": "XkqCExn6_Us",
+      "split": "train",
+      "n_clips": 94,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 94
+      }
+    },
+    {
+      "video_id": "XzYM3PfTM4w",
+      "split": "train",
+      "n_clips": 56,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 56
+      }
+    },
+    {
+      "video_id": "Yi4Ij2NM7U4",
+      "split": "train",
+      "n_clips": 203,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 203
+      }
+    },
+    {
+      "video_id": "_xMr-HKMfVA",
+      "split": "train",
+      "n_clips": 75,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 75
+      }
+    },
+    {
+      "video_id": "akI8YFjEmUw",
+      "split": "train",
+      "n_clips": 67,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 67
+      }
+    },
+    {
+      "video_id": "b626MiF1ew4",
+      "split": "train",
+      "n_clips": 118,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 118
+      }
+    },
+    {
+      "video_id": "byxOvuiIJV0",
+      "split": "train",
+      "n_clips": 78,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 78
+      }
+    },
+    {
+      "video_id": "eQu1rNs0an0",
+      "split": "train",
+      "n_clips": 83,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 83
+      }
+    },
+    {
+      "video_id": "fWutDQy1nnY",
+      "split": "train",
+      "n_clips": 293,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 293
+      }
+    },
+    {
+      "video_id": "i3wAGJaaktw",
+      "split": "train",
+      "n_clips": 79,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 79
+      }
+    },
+    {
+      "video_id": "iVt07TCkFM0",
+      "split": "train",
+      "n_clips": 53,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 53
+      }
+    },
+    {
+      "video_id": "jcoYJXDG9sw",
+      "split": "train",
+      "n_clips": 100,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 100
+      }
+    },
+    {
+      "video_id": "kLxoNp-UchI",
+      "split": "train",
+      "n_clips": 65,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 65
+      }
+    },
+    {
+      "video_id": "oDXZc0tZe04",
+      "split": "train",
+      "n_clips": 191,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 191
+      }
+    },
+    {
+      "video_id": "qqR6AEXwxoQ",
+      "split": "train",
+      "n_clips": 135,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 135
+      }
+    },
+    {
+      "video_id": "sTEELN-vY30",
+      "split": "train",
+      "n_clips": 75,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 75
+      }
+    },
+    {
+      "video_id": "uGu_10sucQo",
+      "split": "train",
+      "n_clips": 84,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 84
+      }
+    },
+    {
+      "video_id": "vdmoEJ5YbrQ",
+      "split": "train",
+      "n_clips": 165,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 165
+      }
+    },
+    {
+      "video_id": "xmEERLqJ2kU",
+      "split": "train",
+      "n_clips": 223,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 223
+      }
+    },
+    {
+      "video_id": "xwqBXPGE9pQ",
+      "split": "train",
+      "n_clips": 117,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 117
+      }
+    },
+    {
+      "video_id": "z_6gVvQb2d0",
+      "split": "train",
+      "n_clips": 139,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 139
+      }
+    },
+    {
+      "video_id": "-esJrBWj2d8",
+      "split": "development",
+      "n_clips": 116,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 116
+      }
+    },
+    {
+      "video_id": "0tmA_C6XwfM",
+      "split": "development",
+      "n_clips": 71,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 71
+      }
+    },
+    {
+      "video_id": "37rzWOQsNIw",
+      "split": "development",
+      "n_clips": 96,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 96
+      }
+    },
+    {
+      "video_id": "Bhxk-O1Y7Ho",
+      "split": "development",
+      "n_clips": 226,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 226
+      }
+    },
+    {
+      "video_id": "GsAD1KT1xo8",
+      "split": "development",
+      "n_clips": 73,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 73
+      }
+    },
+    {
+      "video_id": "HT5vyqe0Xaw",
+      "split": "development",
+      "n_clips": 162,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 162
+      }
+    },
+    {
+      "video_id": "Hl-__g2gn_A",
+      "split": "development",
+      "n_clips": 122,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 122
+      }
+    },
+    {
+      "video_id": "cjibtmSLxQ4",
+      "split": "development",
+      "n_clips": 324,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 324
+      }
+    },
+    {
+      "video_id": "gzDbaEs1Rlg",
+      "split": "development",
+      "n_clips": 145,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 145
+      }
+    },
+    {
+      "video_id": "xxdtq8mxegs",
+      "split": "development",
+      "n_clips": 73,
+      "event_reference_attempted": false,
+      "event_reference_valid": null,
+      "semantic_clip_attempts": 0,
+      "valid_semantic_targets": 0,
+      "high_confidence_targets": 0,
+      "fallback_reason_counts": {
+        "NOT_SCORED_EARLY_FORMAT_STOP": 73
+      }
+    }
+  ],
+  "no_synthesized_semantic_scores_for_unattempted_clips": true
+}

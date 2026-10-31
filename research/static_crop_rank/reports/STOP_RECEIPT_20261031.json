@@ -1,0 +1,18 @@
+{
+  "time_HK": "2026-10-31T18:55:46.022608+08:00",
+  "state": "STOPPED_BY_USER",
+  "checkpoint": "/autodl-fs/data/highlight-static-rank/runs/MUSIQ_FT_s17/last.pt",
+  "variant": "MUSIQ_FT",
+  "seed": 17,
+  "completed_epochs": 1,
+  "in_progress_epoch": 2,
+  "step": 397,
+  "next_index": 536,
+  "optimizer_saved": true,
+  "rng_saved": true,
+  "all_four_processes_exited": true,
+  "gpu_processes": "",
+  "formal_test_performed": false,
+  "method_decision": "INCOMPLETE_VALIDATION_ONLY",
+  "automatic_resume": false
+}

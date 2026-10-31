@@ -1,0 +1,122 @@
+[
+  {
+    "call_index": 0,
+    "kind": "events",
+    "video_id": "3eYKfiOEJNs",
+    "format_version": 0,
+    "valid": false,
+    "error": "JSONDecodeError: Extra data: line 1 column 487 (char 486)",
+    "finish_reason": "stop",
+    "response": "{\"events\":[{\"id\":\"E1\",\"description\":\"A man is brushing a white dog in a grooming salon.\"},{\"id\":\"E2\",\"description\":\"A man is brushing a white dog in a grooming salon.\"},{\"id\":\"E3\",\"description\":\"A man is brushing a white dog in a grooming salon.\"},{\"id\":\"E4\",\"description\":\"A man is brushing a white dog in a grooming salon.\"},{\"id\":\"E5\",\"description\":\"A man is brushing a white dog in a grooming salon.\"},{\"id\":\"E6\",\"description\":\"A man is brushing a white dog in a grooming salon.\"}]}}"
+  },
+  {
+    "call_index": 1,
+    "kind": "events",
+    "video_id": "4wU_LUjG5Ic",
+    "format_version": 0,
+    "valid": false,
+    "error": "JSONDecodeError: Extra data: line 1 column 611 (char 610)",
+    "finish_reason": "stop",
+    "response": "{\"events\":[{\"id\":\"E1\",\"description\":\"A group of people are riding bicycles on a cobblestone street in a city.\"},{\"id\":\"E2\",\"description\":\"A person is riding a bicycle on a paved road with a cart attached to the back.\"},{\"id\":\"E3\",\"description\":\"A group of people are standing in a park, smiling and posing for a photo.\"},{\"id\":\"E4\",\"description\":\"A man and a woman are standing in a park, looking at the camera.\"},{\"id\":\"E5\",\"description\":\"A group of people are riding bicycles on a street with shops on either side.\"},{\"id\":\"E6\",\"description\":\"A man is speaking to the camera in front of a clothing store.\"}]}\""
+  },
+  {
+    "call_index": 2,
+    "kind": "events",
+    "video_id": "91IHQYk1IQM",
+    "format_version": 0,
+    "valid": false,
+    "error": "JSONDecodeError: Extra data: line 1 column 541 (char 540)",
+    "finish_reason": "stop",
+    "response": "{\"events\":[{\"id\":\"E1\",\"description\":\"A man in a yellow beanie plays a violin while sitting on a step.\"},{\"id\":\"E2\",\"description\":\"A colorful dragon dance performance takes place in a city street.\"},{\"id\":\"E3\",\"description\":\"A crowd of people watches a dragon dance performance.\"},{\"id\":\"E4\",\"description\":\"A person in a red jacket performs a dance move in the street.\"},{\"id\":\"E5\",\"description\":\"A woman in a red hat smiles at the camera.\"},{\"id\":\"E6\",\"description\":\"A child in a black coat runs on a street with confetti on the ground.\"}]}}"
+  },
+  {
+    "call_index": 3,
+    "kind": "events",
+    "video_id": "98MoyGZKHXc",
+    "format_version": 0,
+    "valid": false,
+    "error": "ValueError: duplicate JSON key: events",
+    "finish_reason": "stop",
+    "response": "{\"events\":[{\"id\":\"E1\",\"description\":\"a black square appears on a red background\"}],\"events\":[{\"id\":\"E2\",\"description\":\"a white car is parked on a street with trees in the background\"}],\"events\":[{\"id\":\"E3\",\"description\":\"a person stands next to a white car on a street\"}],\"events\":[{\"id\":\"E4\",\"description\":\"a person is opening the trunk of a white car\"}],\"events\":[{\"id\":\"E5\",\"description\":\"a person is using a compressor to inflate a tire\"}],\"events\":[{\"id\":\"E6\",\"description\":\"a person is driving a car\"}]}"
+  },
+  {
+    "call_index": 4,
+    "kind": "events",
+    "video_id": "AwmHb44_ouw",
+    "format_version": 0,
+    "valid": true,
+    "error": null,
+    "finish_reason": "stop",
+    "response": "{\"events\":[{\"id\":\"E1\",\"description\":\"a man stands in front of a brick wall\"},{\"id\":\"E2\",\"description\":\"a man holds a tire in his hands\"},{\"id\":\"E3\",\"description\":\"a man uses a tool to remove a tire from a vehicle\"},{\"id\":\"E4\",\"description\":\"a man uses a tool to remove a tire from a vehicle\"},{\"id\":\"E5\",\"description\":\"a man uses a tool to remove a tire from a vehicle\"},{\"id\":\"E6\",\"description\":\"a man holds a tire in his hands\"}]}"
+  },
+  {
+    "call_index": 5,
+    "kind": "A",
+    "video_id": "AwmHb44_ouw",
+    "format_version": 0,
+    "valid": false,
+    "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+    "finish_reason": "stop",
+    "response": "```json\n[\n  {\n    \"scores\": [0, 0, 0, 0, 0, 0, 0, 0],\n    \"event_ids\": [],\n    \"roles\": [\"background\"]\n  },\n  {\n    \"scores\": [0, 0, 0, 0, 0, 0, 0, 0],\n    \"event_ids\": [],\n    \"roles\": [\"background\"]\n  },\n  {\n    \"scores\": [0, 0, 0, 0, 0, 0, 0, 0],\n    \"event_ids\": [],\n    \"roles\": [\"background\"]\n  },\n  {\n    \"scores\": [0, 0, 0, 0, 0, 0, 0, 0],\n    \"event_ids\": [],\n    \"roles\": [\"background\"]\n  },\n  {\n    \"scores\": [0, 0, 0, 0, 0, 0, 0, 0],\n    \"event_ids\": [],\n    \"roles\": [\"background\"]\n  },\n  {\n    \"scores\": [0, 0, 0, 0, 0, 0, 0, 0],\n    \"event_ids\": [],\n    \"roles\": [\"background\"]\n  },\n  {\n    \"scores\": [0, 0, 0, 0, 0, 0, 0, 0],\n    \"event_ids\": [],\n    \"roles\": [\"background\"]\n  },\n  {\n    \"scores\": [0, 0, 0, 0, 0, 0, 0, 0],\n    \"event_ids\": [],\n    \"roles\": [\"background\"]\n  }\n]\n```"
+  },
+  {
+    "call_index": 6,
+    "kind": "B",
+    "video_id": "AwmHb44_ouw",
+    "format_version": 0,
+    "valid": false,
+    "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+    "finish_reason": "stop",
+    "response": "```json\n[\n  {\n    \"scores\": [0, 0, 0, 0, 0, 0],\n    \"event_ids\": [],\n    \"roles\": [\"background\"]\n  },\n  {\n    \"scores\": [0, 0, 0, 0, 0, 0],\n    \"event_ids\": [],\n    \"roles\": [\"background\"]\n  },\n  {\n    \"scores\": [0, 0, 0, 0, 0, 0],\n    \"event_ids\": [],\n    \"roles\": [\"background\"]\n  },\n  {\n    \"scores\": [0, 0, 0, 0, 0, 0],\n    \"event_ids\": [],\n    \"roles\": [\"background\"]\n  },\n  {\n    \"scores\": [0, 0, 0, 0, 0, 0],\n    \"event_ids\": [],\n    \"roles\": [\"background\"]\n  },\n  {\n    \"scores\": [0, 0, 0, 0, 0, 0],\n    \"event_ids\": [],\n    \"roles\": [\"background\"]\n  },\n  {\n    \"scores\": [0, 0, 0, 0, 0, 0],\n    \"event_ids\": [],\n    \"roles\": [\"background\"]\n  },\n  {\n    \"scores\": [0, 0, 0, 0, 0, 0],\n    \"event_ids\": [],\n    \"roles\": [\"background\"]\n  }\n]\n```"
+  },
+  {
+    "call_index": 7,
+    "kind": "events",
+    "video_id": "E11zDS9XGzg",
+    "format_version": 0,
+    "valid": false,
+    "error": "JSONDecodeError: Expecting ',' delimiter: line 1 column 467 (char 466)",
+    "finish_reason": "stop",
+    "response": "{\"events\":[{\"id\":\"E1\",\"description\":\"a group of people are standing in a field, some holding dogs.\"},{\"id\":\"E2\",\"description\":\"a woman is speaking in front of a poster with a dog on it.\"},{\"id\":\"E3\",\"description\":\"a man is walking with a dog in a field.\"},{\"id\":\"E4\",\"description\":\"a dog is being held by a person in a field.\"},{\"id\":\"E5\",\"description\":\"a man is standing with a dog in a field.\"},{\"id\":\"E6\",\"description\":\"a man is standing with a dog in a field.\"}]"
+  },
+  {
+    "call_index": 8,
+    "kind": "events",
+    "video_id": "EE-bNr36nyA",
+    "format_version": 0,
+    "valid": false,
+    "error": "JSONDecodeError: Extra data: line 1 column 525 (char 524)",
+    "finish_reason": "stop",
+    "response": "{\"events\":[{\"id\":\"E1\",\"description\":\"a man stands in a greenhouse, pointing to the structure.\"},{\"id\":\"E2\",\"description\":\"a close-up of a large, hexagonal wasp nest.\"},{\"id\":\"E3\",\"description\":\"a man in a beige jacket stands in a greenhouse, gesturing with his hands.\"},{\"id\":\"E4\",\"description\":\"a man stands in a greenhouse, pointing to the structure.\"},{\"id\":\"E5\",\"description\":\"a man stands in a greenhouse, gesturing with his hands.\"},{\"id\":\"E6\",\"description\":\"a man stands in a greenhouse, gesturing with his hands.\"}]}}"
+  },
+  {
+    "call_index": 9,
+    "kind": "events",
+    "video_id": "EYqVtI9YWJA",
+    "format_version": 0,
+    "valid": false,
+    "error": "JSONDecodeError: Extra data: line 1 column 723 (char 722)",
+    "finish_reason": "stop",
+    "response": "{\"events\":[{\"id\":\"E1\",\"description\":\"a man in a green shirt and a black cap is talking to another man in a red and white jersey at a sports event.\"},{\"id\":\"E2\",\"description\":\"a man in a red and white jersey is smiling and looking at a man in a green shirt.\"},{\"id\":\"E3\",\"description\":\"a man in a red and white jersey is riding a motorcycle in a large indoor arena.\"},{\"id\":\"E4\",\"description\":\"a man in a red and white jersey is riding a motorcycle on a ramp in a large indoor arena.\"},{\"id\":\"E5\",\"description\":\"a man in a red and white jersey is riding a motorcycle on a ramp in a large indoor arena.\"},{\"id\":\"E6\",\"description\":\"a man in a red and white jersey is riding a motorcycle on a ramp in a large indoor arena.\"}]}\""
+  },
+  {
+    "call_index": 10,
+    "kind": "A",
+    "video_id": "AwmHb44_ouw",
+    "format_version": 1,
+    "valid": false,
+    "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+    "finish_reason": "stop",
+    "response": "```json\n{\n  \"scores\": [0, 0, 0, 0, 0, 0, 0, 0],\n  \"event_ids\": [[], [], [], [], [], [], [], []],\n  \"roles\": [\"background\", \"background\", \"background\", \"background\", \"background\", \"background\", \"background\", \"background\"]\n}\n```"
+  },
+  {
+    "call_index": 11,
+    "kind": "B",
+    "video_id": "AwmHb44_ouw",
+    "format_version": 1,
+    "valid": false,
+    "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+    "finish_reason": "stop",
+    "response": "```json\n{\n  \"scores\": [0, 0, 0, 0, 0, 0, 0, 0],\n  \"event_ids\": [[], [], [], [], [], [], [], []],\n  \"roles\": [\"background\", \"background\", \"background\", \"background\", \"background\", \"background\", \"background\", \"background\"]\n}\n```"
+  }
+]

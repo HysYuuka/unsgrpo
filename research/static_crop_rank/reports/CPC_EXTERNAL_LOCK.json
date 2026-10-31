@@ -1,0 +1,84 @@
+{
+  "status": "FROZEN_BEFORE_CPC_MODEL_INFERENCE",
+  "protocol": {
+    "version": "cpc_external_v1_20261030",
+    "purpose": "External inference only; no CPC training, calibration, checkpoint selection or parameter changes",
+    "coordinate_conversion": "Published bboxes are xyxy pixel edges; retain exact endpoints; reject invalid source rather than clip or shift",
+    "label_conversion": "Arithmetic mean across published per-rater assigned scores, with every raw rater vector retained; not GAIC MOS, no 1..5 normalization",
+    "candidate_policy": "Every native annotated candidate; original file order defines crop_id and score tie order",
+    "overlap": {
+      "exact": "file SHA256 or decoded RGB SHA256, including mirrored RGB",
+      "perceptual": "32x32 luminance DCT pHash, low8x8 median excluding DC; original and horizontal mirror",
+      "perceptual_max_hamming": 8,
+      "relative_aspect_ratio_tolerance": 0.02,
+      "strong_match_max_RGB_MAE_255": 8.0,
+      "strong_match_min_RGB_correlation": 0.98,
+      "ambiguous_policy": "Exclude entire CPC source group if any GAIC TRAIN/VAL pHash proposal within aspect tolerance remains ambiguous; retain every reason and coverage count",
+      "published_AVA_id_collision": "Also exclude an entire group if its published ava_obj_* numeric identity equals a GAIC TRAIN/VAL source_id; conservative possible-identity exclusion, not a verified pixel match",
+      "GAIC_TEST": "Flag and stratify overlap; do not claim shared sources are an independent test sample"
+    },
+    "CPC_source_groups": "Union exact/mirrored RGB identities and same published source family after removing _obj_<number>_; unknown original URL coverage remains a limitation",
+    "metrics": [
+      "acc1_5",
+      "acc1_10",
+      "mean_acc_5",
+      "mean_acc_10",
+      "srcc",
+      "regret_in_CPC_assigned_score_units"
+    ],
+    "statistical_unit": "source group, average images and then aligned seeds within group; no crop/pair bootstrap",
+    "evaluation_gate": "All12 controlled endpoints frozen and main supervisor successfully completed, with no other GPU worker",
+    "manual_geometry_examples": "First4 eligible originals by SHA256(source_id), candidate indices0,5,15,23 when present; no model-score selection",
+    "no_metric_based_protocol_adjustment": true
+  },
+  "report": {
+    "time_HK": "2026-10-30T18:21:52.180301+08:00",
+    "state": "READY_FOR_FROZEN_CHECKPOINT_EXTERNAL_INFERENCE",
+    "CPC_annotated_originals_valid": 10797,
+    "native_rejected_sources": [],
+    "source_groups_before_overlap": 10797,
+    "all_native_candidates_before_overlap": 259128,
+    "candidate_count_histogram": {
+      "24": 10797
+    },
+    "raters_per_original_histogram": {
+      "6": 10125,
+      "5": 354,
+      "10": 273,
+      "4": 18,
+      "9": 21,
+      "8": 6
+    },
+    "raw_assigned_score_range": [
+      0.0,
+      4.0
+    ],
+    "excluded_TRAIN_VAL_overlap_or_ambiguous_groups": 2,
+    "retained_originals": 10795,
+    "retained_source_groups": 10795,
+    "retained_GAIC_TEST_overlap_groups": 2,
+    "match_categories": {
+      "UNVERIFIED_PUBLISHED_AVA_ID_COLLISION": 1,
+      "AMBIGUOUS_PERCEPTUAL_PROPOSAL": 3
+    },
+    "manifest_sha256": "fa515d05edd5ef102f7a4dffbe750b1501d429c0d1ba0ad849d00a8eef6fe931",
+    "manifest_path": "/root/autodl-fs/highlight-static-rank/data/cpc_external_manifest.jsonl",
+    "overlap_audit_sha256": "01f7f9ed68a2ed23502fe3f506cbb86b55074abfc447698fa9b84533aa8d8c72",
+    "protocol_sha256": "bbdeac60bc8456ce5395a20330ecff6b7913782b932e64e143fe9f18c4e514b9",
+    "script_sha256": "de9886a68c245280bb59999d6765603e8bd50001d5ee177b7ecf7b7921a99845",
+    "geometry_examples": [
+      "/root/autodl-fs/highlight-static-rank/data/cpc_geometry_examples/places_obj_2_orchard_00002858.jpg",
+      "/root/autodl-fs/highlight-static-rank/data/cpc_geometry_examples/places_obj_3_castle_00004160.jpg",
+      "/root/autodl-fs/highlight-static-rank/data/cpc_geometry_examples/coco_obj_1_COCO_train2014_000000116592.jpg",
+      "/root/autodl-fs/highlight-static-rank/data/cpc_geometry_examples/coco_obj_1_COCO_train2014_000000553370.jpg"
+    ],
+    "CPU_wall_seconds": 231.56955480575562,
+    "GPU_used": false,
+    "trained_or_evaluated_models": 0,
+    "native_label_scope": "Assigned preference scores from CPC, not GAIC 1..5 MOS; dataset-native metrics remain separate",
+    "limitations": "Exact/mirrored/low-distance pHash and conservative AVA-id screen; not a proof that no visually transformed original-content overlap exists. Ambiguous TRAIN/VAL matches excluded without looking at model scores."
+  },
+  "input_GAIC_manifest_sha256": "0098f7686d7a984b9bfd6993040998a1366c85d5f0a5fcb837a7179404d37d84",
+  "input_CPC_archive_sha256": "dfa4ec73c9d9b4b525a8f79aee5670fac4797bad2eb1bd0e1f26f051ac3a7281",
+  "no_CPC_training_or_test_based_tuning": true
+}

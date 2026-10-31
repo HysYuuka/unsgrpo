@@ -1,0 +1,171 @@
+{
+  "time_HK": "2026-10-31T18:03:57.058134+08:00",
+  "source_benchmark": "/root/autodl-fs/highlight-static-rank/runs/MUSIQ_FT_s17/THROUGHPUT_ACTIVE.json",
+  "MUSIQ_observed_100_steps": {
+    "variant": "MUSIQ_FT",
+    "seed": 17,
+    "observed_optimizer_steps": 100,
+    "candidate_chunk": 90,
+    "global_step_end": 100,
+    "all_candidates": true,
+    "median_step_seconds": 22.513235645601526,
+    "mean_step_seconds": 22.396597198667006,
+    "train_only_hours_one_30epoch_run": 61.590642296334266,
+    "validation_excluded": true,
+    "do_not_apply_to_other_architectures": true,
+    "peak_allocated_bytes": 6652048896
+  },
+  "current_step": 268,
+  "steps_per_30_epoch_run": 9900,
+  "MUSIQ_remaining_current_30epoch_train_hours": 59.923340060433496,
+  "MUSIQ_all3_remaining_30epoch_train_hours": 183.10462465310204,
+  "three_ablations_train_hours_proxy": 9.849770570512046,
+  "ablation_estimate_is_unmeasured_architecture_proxy": true,
+  "remaining_30epoch_train_hours_rough": 192.95439522361409,
+  "validation_checkpoint_test_CPC_and_external_inference_excluded": true,
+  "rough_time_statement": "At present throughput, remaining full batch is about8days or longer; all-run50epoch extension would add roughly6days of training and is not yet decided",
+  "max50_extension_extra_train_hours_rough": 142.88082573369263,
+  "estimate_scope": "MUSIQ extrapolates measured MUSIQ steps to its3 seeds only; ablations use explicitly unmeasured FULL/MATCHED proxy. All estimates assume present engineering configuration and hardware.",
+  "GPU_hour_limit_from_user": null,
+  "authorization": "Existing full matrix remains authorized; no new hour cap was given in handoff",
+  "training_continues_without_shortening_or_early_test": true,
+  "currency_cost": null,
+  "currency_note": "No verified billing rate; these are runtime estimates, not a monetary invoice.",
+  "completed_30epoch_runs": [
+    {
+      "run": "FULL_s17",
+      "best_epoch": 29,
+      "validation": {
+        "regret": 0.2687500047683716,
+        "srcc": 0.8700983872543501,
+        "srcc_degenerate": 0.0,
+        "acc1_5": 0.615,
+        "acc2_5": 0.5925,
+        "acc3_5": 0.5733333333333334,
+        "acc4_5": 0.55625,
+        "mean_acc_5": 0.5842708333333333,
+        "acc1_10": 0.815,
+        "acc2_10": 0.7925,
+        "acc3_10": 0.7833333333333333,
+        "acc4_10": 0.7575,
+        "mean_acc_10": 0.7870833333333332
+      }
+    },
+    {
+      "run": "FULL_s29",
+      "best_epoch": 16,
+      "validation": {
+        "regret": 0.26470001339912413,
+        "srcc": 0.8663190003563149,
+        "srcc_degenerate": 0.0,
+        "acc1_5": 0.665,
+        "acc2_5": 0.615,
+        "acc3_5": 0.58,
+        "acc4_5": 0.54875,
+        "mean_acc_5": 0.6021875,
+        "acc1_10": 0.82,
+        "acc2_10": 0.8,
+        "acc3_10": 0.7833333333333334,
+        "acc4_10": 0.77125,
+        "mean_acc_10": 0.7936458333333334
+      }
+    },
+    {
+      "run": "FULL_s43",
+      "best_epoch": 26,
+      "validation": {
+        "regret": 0.2836000084877014,
+        "srcc": 0.8699829175974816,
+        "srcc_degenerate": 0.0,
+        "acc1_5": 0.625,
+        "acc2_5": 0.62,
+        "acc3_5": 0.5683333333333332,
+        "acc4_5": 0.55625,
+        "mean_acc_5": 0.5923958333333332,
+        "acc1_10": 0.795,
+        "acc2_10": 0.7825,
+        "acc3_10": 0.7666666666666666,
+        "acc4_10": 0.765,
+        "mean_acc_10": 0.7772916666666666
+      }
+    },
+    {
+      "run": "MATCHED_s17",
+      "best_epoch": 16,
+      "validation": {
+        "regret": 0.27355000138282776,
+        "srcc": 0.867340734539874,
+        "srcc_degenerate": 0.0,
+        "acc1_5": 0.665,
+        "acc2_5": 0.615,
+        "acc3_5": 0.5866666666666667,
+        "acc4_5": 0.53875,
+        "mean_acc_5": 0.6013541666666667,
+        "acc1_10": 0.82,
+        "acc2_10": 0.8,
+        "acc3_10": 0.775,
+        "acc4_10": 0.7575,
+        "mean_acc_10": 0.788125
+      }
+    },
+    {
+      "run": "MATCHED_s29",
+      "best_epoch": 27,
+      "validation": {
+        "regret": 0.25840001344680785,
+        "srcc": 0.8746648423394464,
+        "srcc_degenerate": 0.0,
+        "acc1_5": 0.655,
+        "acc2_5": 0.6125,
+        "acc3_5": 0.5883333333333333,
+        "acc4_5": 0.58375,
+        "mean_acc_5": 0.6098958333333333,
+        "acc1_10": 0.815,
+        "acc2_10": 0.8075,
+        "acc3_10": 0.8066666666666665,
+        "acc4_10": 0.79125,
+        "mean_acc_10": 0.8051041666666666
+      }
+    },
+    {
+      "run": "MATCHED_s43",
+      "best_epoch": 25,
+      "validation": {
+        "regret": 0.28595000624656675,
+        "srcc": 0.8736093576129262,
+        "srcc_degenerate": 0.0,
+        "acc1_5": 0.615,
+        "acc2_5": 0.605,
+        "acc3_5": 0.575,
+        "acc4_5": 0.55,
+        "mean_acc_5": 0.5862499999999999,
+        "acc1_10": 0.79,
+        "acc2_10": 0.8025,
+        "acc3_10": 0.775,
+        "acc4_10": 0.7475,
+        "mean_acc_10": 0.77875
+      }
+    }
+  ],
+  "validation_summary_only": {
+    "FULL": {
+      "val_acc1_5_by_seed": [
+        0.615,
+        0.665,
+        0.625
+      ],
+      "mean": 0.635,
+      "sample_SD": 0.02645751311064593
+    },
+    "MATCHED": {
+      "val_acc1_5_by_seed": [
+        0.665,
+        0.655,
+        0.615
+      ],
+      "mean": 0.645,
+      "sample_SD": 0.02645751311064593
+    }
+  },
+  "formal_test_and_bootstrap": "NOT_RUN_UNTIL_ALL12_ENDPOINTS_FREEZE"
+}

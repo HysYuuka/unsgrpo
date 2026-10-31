@@ -1,0 +1,264 @@
+{
+  "status": "SHA256_VERSIONED_NO_GIT_MUTATION",
+  "sources": [
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/reports/ROUND3_RL_METHOD_PLAN_20261028.json",
+        "sha256": "3b994e9748cb28cb87c7a18ca892dbcaf1c6d6cec02882d90f6a041b338cccef",
+        "bytes": 9866
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/reports/ROUND3_RL_METHOD_PLAN_20261028.json",
+        "sha256": "3b994e9748cb28cb87c7a18ca892dbcaf1c6d6cec02882d90f6a041b338cccef",
+        "bytes": 9866
+      },
+      "was_frozen_before_teacher": true,
+      "postrun_only": false
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/reports/ROUND3_RL_METHOD_PLAN_20261028.md",
+        "sha256": "62d1e4130c15c33c387b01d8724961a04d09289d67b69ecaa1dad352b482b756",
+        "bytes": 27078
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/reports/ROUND3_RL_METHOD_PLAN_20261028.md",
+        "sha256": "62d1e4130c15c33c387b01d8724961a04d09289d67b69ecaa1dad352b482b756",
+        "bytes": 27078
+      },
+      "was_frozen_before_teacher": true,
+      "postrun_only": false
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/round3_build_teacher.py",
+        "sha256": "4c9fffffe5e8df5b8dfde6ac67b3e5de2eb20de66edca99b0b00918c26348d4e",
+        "bytes": 10626
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_build_teacher.py",
+        "sha256": "4c9fffffe5e8df5b8dfde6ac67b3e5de2eb20de66edca99b0b00918c26348d4e",
+        "bytes": 10626
+      },
+      "was_frozen_before_teacher": true,
+      "postrun_only": false
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/round3_closeout.py",
+        "sha256": "aec8ae8b402ab3b7406fb35dcae11df0cd2e51dc554dcebff69fbf8aa85175d9",
+        "bytes": 10167
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_closeout.py",
+        "sha256": "aec8ae8b402ab3b7406fb35dcae11df0cd2e51dc554dcebff69fbf8aa85175d9",
+        "bytes": 10167
+      },
+      "was_frozen_before_teacher": false,
+      "postrun_only": true
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/round3_detached_front.sh",
+        "sha256": "62a28842e87fd173a196ab1edab172d8b18ae1be13608ea44752817dd6285879",
+        "bytes": 515
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_detached_front.sh",
+        "sha256": "62a28842e87fd173a196ab1edab172d8b18ae1be13608ea44752817dd6285879",
+        "bytes": 515
+      },
+      "was_frozen_before_teacher": false,
+      "postrun_only": false,
+      "execution_role": "Pre-teacher orchestration, created after front_end.freeze; actual archived source is SHA-versioned."
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/round3_front_driver.py",
+        "sha256": "e976f7451568ceccf890198d064f4c19459c7612a0c1964ff9316b3439b2b50f",
+        "bytes": 3099
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_front_driver.py",
+        "sha256": "e976f7451568ceccf890198d064f4c19459c7612a0c1964ff9316b3439b2b50f",
+        "bytes": 3099
+      },
+      "was_frozen_before_teacher": false,
+      "postrun_only": false,
+      "execution_role": "Pre-teacher orchestration, created after front_end.freeze; actual archived source is SHA-versioned."
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/round3_materialize_targets.py",
+        "sha256": "8e8743b95067615490372651e8ac7e203948d8c189f36047ecd364fabc6ad2e5",
+        "bytes": 2421
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_materialize_targets.py",
+        "sha256": "8e8743b95067615490372651e8ac7e203948d8c189f36047ecd364fabc6ad2e5",
+        "bytes": 2421
+      },
+      "was_frozen_before_teacher": true,
+      "postrun_only": false
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/round3_prepare.py",
+        "sha256": "0d8c8c5c511653a87475a481c91e5635aeec9d1458b0b768cb62ef15fd5f441b",
+        "bytes": 9546
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_prepare.py",
+        "sha256": "0d8c8c5c511653a87475a481c91e5635aeec9d1458b0b768cb62ef15fd5f441b",
+        "bytes": 9546
+      },
+      "was_frozen_before_teacher": true,
+      "postrun_only": false
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/round3_replay_cached.py",
+        "sha256": "0a11492fe9153f53a9a11141b683e8b1a4f58a6b9a29e5b77d0ae51f2c1c09ab",
+        "bytes": 4396
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_replay_cached.py",
+        "sha256": "0a11492fe9153f53a9a11141b683e8b1a4f58a6b9a29e5b77d0ae51f2c1c09ab",
+        "bytes": 4396
+      },
+      "was_frozen_before_teacher": false,
+      "postrun_only": true
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/round3_report.py",
+        "sha256": "1362c94a0945ec351d5585f5f76b84384383c06b7a38b1850122f0173d8b18f4",
+        "bytes": 20694
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_report.py",
+        "sha256": "1362c94a0945ec351d5585f5f76b84384383c06b7a38b1850122f0173d8b18f4",
+        "bytes": 20694
+      },
+      "was_frozen_before_teacher": false,
+      "postrun_only": true
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/round3_teacher_quality.py",
+        "sha256": "c2fc4663758a6753801ff3ed5034421dc6ab1767841f558fee8abcdda1b993e7",
+        "bytes": 5811
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_teacher_quality.py",
+        "sha256": "c2fc4663758a6753801ff3ed5034421dc6ab1767841f558fee8abcdda1b993e7",
+        "bytes": 5811
+      },
+      "was_frozen_before_teacher": true,
+      "postrun_only": false
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/scripts/round3_verify_artifacts.py",
+        "sha256": "735590b40967bf083d0fecbbf503f29a98d34fe9af6bae2d5fb0386033bca522",
+        "bytes": 4890
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/scripts/round3_verify_artifacts.py",
+        "sha256": "735590b40967bf083d0fecbbf503f29a98d34fe9af6bae2d5fb0386033bca522",
+        "bytes": 4890
+      },
+      "was_frozen_before_teacher": false,
+      "postrun_only": true
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/src/unsgrpo/round3_common.py",
+        "sha256": "9adb6020f355abb8ee530b83da26ae339968d19ea9a0c7acaa24e1ac44270788",
+        "bytes": 3330
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/src/unsgrpo/round3_common.py",
+        "sha256": "9adb6020f355abb8ee530b83da26ae339968d19ea9a0c7acaa24e1ac44270788",
+        "bytes": 3330
+      },
+      "was_frozen_before_teacher": true,
+      "postrun_only": false
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/src/unsgrpo/round3_reward.py",
+        "sha256": "0f01da3ed905ce76a3028cef78ac99feeadac912be74215286171f955783a5ca",
+        "bytes": 4464
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/src/unsgrpo/round3_reward.py",
+        "sha256": "0f01da3ed905ce76a3028cef78ac99feeadac912be74215286171f955783a5ca",
+        "bytes": 4464
+      },
+      "was_frozen_before_teacher": true,
+      "postrun_only": false
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/src/unsgrpo/round3_teacher.py",
+        "sha256": "0624d0ae13132a6add26be9004d558a5676a939044d7f5944968bbbd7f1b6bb0",
+        "bytes": 5416
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/src/unsgrpo/round3_teacher.py",
+        "sha256": "0624d0ae13132a6add26be9004d558a5676a939044d7f5944968bbbd7f1b6bb0",
+        "bytes": 5416
+      },
+      "was_frozen_before_teacher": true,
+      "postrun_only": false
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/src/unsgrpo/round3_trainer_adapter.py",
+        "sha256": "eb2b3469991e7c6c9bfbc123bf4eb4b6c0bf8e65c6a3dc0e13bdd5551facebd8",
+        "bytes": 2500
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/src/unsgrpo/round3_trainer_adapter.py",
+        "sha256": "eb2b3469991e7c6c9bfbc123bf4eb4b6c0bf8e65c6a3dc0e13bdd5551facebd8",
+        "bytes": 2500
+      },
+      "was_frozen_before_teacher": true,
+      "postrun_only": false
+    },
+    {
+      "source": {
+        "path": "/root/autodl-tmp/unsgrpo/tests/test_round3_contracts.py",
+        "sha256": "acfbec66c3f72ca364adabe52b2e05f385fd036559d977c92647bd71589d7199",
+        "bytes": 5228
+      },
+      "archived": {
+        "path": "/autodl-fs/data/unsgrpo/round3_rl_method_v1/source_snapshot/tests/test_round3_contracts.py",
+        "sha256": "acfbec66c3f72ca364adabe52b2e05f385fd036559d977c92647bd71589d7199",
+        "bytes": 5228
+      },
+      "was_frozen_before_teacher": true,
+      "postrun_only": false
+    }
+  ],
+  "reused_source_integrity": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/reused_source_integrity.json",
+    "sha256": "d7db8459f6b44599df6ad6eb9c413a4db6deb998e52b99fff1b929702781dab2",
+    "bytes": 1061
+  },
+  "runtime_versions": {
+    "torch": "2.8.0+cu128",
+    "ms-swift": "4.6.0",
+    "transformers": "4.57.6",
+    "numpy": "2.3.2",
+    "scipy": "1.18.1",
+    "Pillow": "11.3.0"
+  },
+  "scientific_source_freeze": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/front_end.freeze.json",
+    "sha256": "892777826a35b8aafd107d0471e5f2abda8e52727f146658c9bbec949aa4a409",
+    "bytes": 11966
+  },
+  "role_metadata_note": "Membership in the front-end freeze does not by itself determine whether a file ran before or after teacher generation. The two orchestration files are explicitly classified."
+}

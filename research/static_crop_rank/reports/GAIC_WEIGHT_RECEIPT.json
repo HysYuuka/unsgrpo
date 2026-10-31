@@ -1,0 +1,9 @@
+{
+  "source": "official GAIC README journal weights Google Drive 1KWYQdL6R5hmOC9toTymbMORZDThpiEW4",
+  "sha256": "b327c170b9738680b164783a0757fac7bd1f3f7eba76fcd71da09b7e605feef0",
+  "files": [
+    "mobilenet_0.682_0.643_0.613_0.585_0.844_0.827_0.807_0.787_0.849_0.874.pth",
+    "shufflenet_0.682_0.641_0.607_0.566_0.858_0.825_0.805_0.778_0.850_0.872.pth"
+  ],
+  "crc": "pass"
+}

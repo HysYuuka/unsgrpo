@@ -1,0 +1,385 @@
+{
+  "status": "COMPLETED_TECHNICAL_VERIFICATION",
+  "formal_counts_include_these_runs": false,
+  "runs": [
+    {
+      "run_id": "smoke_GRPO_v1",
+      "status": "FAILED",
+      "scope": "technical; excluded from formal budgets",
+      "wall_seconds": 11.94661199208349,
+      "exit_code": 1,
+      "observed_counts": null,
+      "source_receipt": "/root/autodl-tmp/unsgrpo-work/runs/smoke_GRPO_v1/receipt.json",
+      "stage_costs": null
+    },
+    {
+      "run_id": "smoke_GRPO_v2",
+      "status": "FAILED",
+      "scope": "technical; excluded from formal budgets",
+      "wall_seconds": 23.44914114382118,
+      "exit_code": 1,
+      "observed_counts": {},
+      "source_receipt": "/root/autodl-tmp/unsgrpo-work/runs/smoke_GRPO_v2/receipt.json",
+      "stage_costs": {},
+      "observed_parameter_changed_updates": 0
+    },
+    {
+      "run_id": "smoke_GRPO_v3",
+      "status": "FAILED",
+      "scope": "technical; excluded from formal budgets",
+      "wall_seconds": 27.667710409034044,
+      "exit_code": 1,
+      "observed_counts": {},
+      "source_receipt": "/root/autodl-tmp/unsgrpo-work/runs/smoke_GRPO_v3/receipt.json",
+      "stage_costs": {
+        "generation": {
+          "calls": 1,
+          "wall_seconds": 4.336156771052629,
+          "peak_allocated_bytes": 6649303040,
+          "peak_reserved_bytes": 6817841152,
+          "cuda_measured": true
+        }
+      },
+      "observed_parameter_changed_updates": 0
+    },
+    {
+      "run_id": "smoke_GRPO_v4",
+      "status": "FAILED",
+      "scope": "technical; excluded from formal budgets",
+      "wall_seconds": 32.79279251396656,
+      "exit_code": 1,
+      "observed_counts": {
+        "rollout_completions_generated": 4
+      },
+      "source_receipt": "/root/autodl-tmp/unsgrpo-work/runs/smoke_GRPO_v4/receipt.json",
+      "stage_costs": {
+        "generation": {
+          "calls": 1,
+          "wall_seconds": 5.042233723215759,
+          "peak_allocated_bytes": 6649303040,
+          "peak_reserved_bytes": 6817841152,
+          "cuda_measured": true
+        },
+        "reward": {
+          "calls": 1,
+          "wall_seconds": 0.003997993655502796,
+          "peak_allocated_bytes": 4333332480,
+          "peak_reserved_bytes": 6817841152,
+          "cuda_measured": true
+        },
+        "encode_old_ref_logps": {
+          "calls": 1,
+          "wall_seconds": 2.128264496102929,
+          "peak_allocated_bytes": 4767401472,
+          "peak_reserved_bytes": 6819938304,
+          "cuda_measured": true
+        }
+      },
+      "reward_rows": 4,
+      "valid_rows": 0,
+      "reward_range": [
+        -1.0,
+        -1.0
+      ],
+      "observed_parameter_changed_updates": 0
+    },
+    {
+      "run_id": "smoke_GRPO_v5",
+      "status": "TRAINER_EXITED_SUCCESS_REQUIRES_AUDIT",
+      "scope": "technical; excluded from formal budgets",
+      "wall_seconds": 62.85562910698354,
+      "exit_code": 0,
+      "observed_counts": {
+        "rollout_completions_generated": 16,
+        "attempted_microbatches": 16,
+        "attempted_completion_rows": 16,
+        "rollout_completions_consumed_in_successful_updates": 16,
+        "successful_optimizer_updates": 4,
+        "prompt_exposures_in_successful_updates": 4,
+        "effective_loss_tokens": 884,
+        "encoded_tokens_consumed": 37236,
+        "prompt_tokens_per_exposure": 9088
+      },
+      "source_receipt": "/root/autodl-tmp/unsgrpo-work/runs/smoke_GRPO_v5/receipt.json",
+      "stage_costs": {
+        "generation": {
+          "calls": 4,
+          "wall_seconds": 18.690570587292314,
+          "peak_allocated_bytes": 6987791360,
+          "peak_reserved_bytes": 7262437376,
+          "cuda_measured": true
+        },
+        "reward": {
+          "calls": 4,
+          "wall_seconds": 0.013143240474164486,
+          "peak_allocated_bytes": 4658151936,
+          "peak_reserved_bytes": 7262437376,
+          "cuda_measured": true
+        },
+        "encode_old_ref_logps": {
+          "calls": 4,
+          "wall_seconds": 8.318382527679205,
+          "peak_allocated_bytes": 5099572736,
+          "peak_reserved_bytes": 7262437376,
+          "cuda_measured": true
+        },
+        "forward_backward": {
+          "calls": 16,
+          "wall_seconds": 6.4804805419407785,
+          "peak_allocated_bytes": 5441489408,
+          "peak_reserved_bytes": 7262437376,
+          "cuda_measured": true
+        },
+        "optimizer": {
+          "calls": 4,
+          "wall_seconds": 0.06221912894397974,
+          "peak_allocated_bytes": 4727887360,
+          "peak_reserved_bytes": 7262437376,
+          "cuda_measured": true
+        }
+      },
+      "reward_rows": 16,
+      "valid_rows": 0,
+      "reward_range": [
+        -1.0,
+        -1.0
+      ],
+      "observed_parameter_changed_updates": 0
+    },
+    {
+      "run_id": "smoke_GRPO_v6",
+      "status": "TRAINER_EXITED_SUCCESS_REQUIRES_AUDIT",
+      "scope": "technical; excluded from formal budgets",
+      "wall_seconds": 56.63996939966455,
+      "exit_code": 0,
+      "observed_counts": {
+        "rollout_completions_generated": 16,
+        "attempted_microbatches": 16,
+        "attempted_completion_rows": 16,
+        "rollout_completions_consumed_in_successful_updates": 16,
+        "successful_optimizer_updates": 4,
+        "prompt_exposures_in_successful_updates": 4,
+        "effective_loss_tokens": 439,
+        "encoded_tokens_consumed": 36791,
+        "prompt_tokens_per_exposure": 9088
+      },
+      "source_receipt": "/root/autodl-tmp/unsgrpo-work/runs/smoke_GRPO_v6/receipt.json",
+      "stage_costs": {
+        "generation": {
+          "calls": 4,
+          "wall_seconds": 12.012183917686343,
+          "peak_allocated_bytes": 6987783168,
+          "peak_reserved_bytes": 7262437376,
+          "cuda_measured": true
+        },
+        "reward": {
+          "calls": 4,
+          "wall_seconds": 0.047110415995121,
+          "peak_allocated_bytes": 4658151424,
+          "peak_reserved_bytes": 7262437376,
+          "cuda_measured": true
+        },
+        "encode_old_ref_logps": {
+          "calls": 4,
+          "wall_seconds": 8.558673069812357,
+          "peak_allocated_bytes": 5092136960,
+          "peak_reserved_bytes": 7262437376,
+          "cuda_measured": true
+        },
+        "forward_backward": {
+          "calls": 16,
+          "wall_seconds": 6.4867802849039435,
+          "peak_allocated_bytes": 5411902464,
+          "peak_reserved_bytes": 7262437376,
+          "cuda_measured": true
+        },
+        "optimizer": {
+          "calls": 4,
+          "wall_seconds": 0.03697641845792532,
+          "peak_allocated_bytes": 4727880192,
+          "peak_reserved_bytes": 7262437376,
+          "cuda_measured": true
+        }
+      },
+      "reward_rows": 16,
+      "valid_rows": 16,
+      "reward_range": [
+        0.29842433478191016,
+        0.879419553743057
+      ],
+      "observed_parameter_changed_updates": 3
+    },
+    {
+      "run_id": "smoke_SFT_v1",
+      "status": "FAILED",
+      "scope": "technical; excluded from formal budgets",
+      "wall_seconds": 45.51249247090891,
+      "exit_code": 1,
+      "observed_counts": null,
+      "source_receipt": "/root/autodl-tmp/unsgrpo-work/runs/smoke_SFT_v1/receipt.json",
+      "stage_costs": null,
+      "observed_parameter_changed_updates": 0
+    },
+    {
+      "run_id": "smoke_SFT_v2",
+      "status": "TRAINER_EXITED_SUCCESS_REQUIRES_AUDIT",
+      "scope": "technical; excluded from formal budgets",
+      "wall_seconds": 30.930883412249386,
+      "exit_code": 0,
+      "observed_counts": {
+        "attempted_microbatches": 4,
+        "attempted_prompt_rows": 4,
+        "successful_optimizer_updates": 4,
+        "prompt_exposures_in_successful_updates": 4,
+        "effective_loss_tokens": 116,
+        "encoded_tokens_consumed": 9204,
+        "prompt_tokens_per_exposure": 9088
+      },
+      "source_receipt": "/root/autodl-tmp/unsgrpo-work/runs/smoke_SFT_v2/receipt.json",
+      "stage_costs": {
+        "forward_backward": {
+          "calls": 4,
+          "wall_seconds": 2.8360573602840304,
+          "peak_allocated_bytes": 9029938176,
+          "peak_reserved_bytes": 9934209024,
+          "cuda_measured": true
+        },
+        "optimizer": {
+          "calls": 4,
+          "wall_seconds": 0.043000864796340466,
+          "peak_allocated_bytes": 4595417600,
+          "peak_reserved_bytes": 9934209024,
+          "cuda_measured": true
+        }
+      },
+      "observed_parameter_changed_updates": 3
+    },
+    {
+      "run_id": "smoke_SFT_warm32_v1",
+      "status": "TRAINER_EXITED_SUCCESS_REQUIRES_AUDIT",
+      "scope": "technical; excluded from formal budgets",
+      "wall_seconds": 51.851547196973115,
+      "exit_code": 0,
+      "observed_counts": {
+        "attempted_microbatches": 32,
+        "attempted_prompt_rows": 32,
+        "successful_optimizer_updates": 32,
+        "prompt_exposures_in_successful_updates": 32,
+        "effective_loss_tokens": 916,
+        "encoded_tokens_consumed": 73664,
+        "prompt_tokens_per_exposure": 72748
+      },
+      "source_receipt": "/root/autodl-tmp/unsgrpo-work/runs/smoke_SFT_warm32_v1/receipt.json",
+      "stage_costs": {
+        "forward_backward": {
+          "calls": 32,
+          "wall_seconds": 14.03002763632685,
+          "peak_allocated_bytes": 9029938176,
+          "peak_reserved_bytes": 9934209024,
+          "cuda_measured": true
+        },
+        "optimizer": {
+          "calls": 32,
+          "wall_seconds": 0.1786614670418203,
+          "peak_allocated_bytes": 4595417600,
+          "peak_reserved_bytes": 9934209024,
+          "cuda_measured": true
+        }
+      },
+      "observed_parameter_changed_updates": 31
+    },
+    {
+      "run_id": "smoke_concurrency_v1",
+      "status": "TRAINER_EXITED_SUCCESS_REQUIRES_AUDIT",
+      "scope": "technical; excluded from formal budgets",
+      "wall_seconds": 76.12266484601423,
+      "exit_code": 0,
+      "observed_counts": {
+        "rollout_completions_generated": 32,
+        "attempted_microbatches": 32,
+        "attempted_completion_rows": 32,
+        "rollout_completions_consumed_in_successful_updates": 32,
+        "successful_optimizer_updates": 2,
+        "prompt_exposures_in_successful_updates": 8,
+        "effective_loss_tokens": 886,
+        "encoded_tokens_consumed": 73634,
+        "prompt_tokens_per_exposure": 18187
+      },
+      "source_receipt": "/root/autodl-tmp/unsgrpo-work/runs/smoke_concurrency_v1/receipt.json",
+      "stage_costs": {
+        "generation": {
+          "calls": 2,
+          "wall_seconds": 14.809327141847461,
+          "peak_allocated_bytes": 14589712896,
+          "peak_reserved_bytes": 15107883008,
+          "cuda_measured": true
+        },
+        "reward": {
+          "calls": 2,
+          "wall_seconds": 0.045393792912364006,
+          "peak_allocated_bytes": 5188042752,
+          "peak_reserved_bytes": 15107883008,
+          "cuda_measured": true
+        },
+        "encode_old_ref_logps": {
+          "calls": 2,
+          "wall_seconds": 16.599215170834213,
+          "peak_allocated_bytes": 6151929856,
+          "peak_reserved_bytes": 15107883008,
+          "cuda_measured": true
+        },
+        "forward_backward": {
+          "calls": 32,
+          "wall_seconds": 12.870909707155079,
+          "peak_allocated_bytes": 5941801984,
+          "peak_reserved_bytes": 15107883008,
+          "cuda_measured": true
+        },
+        "optimizer": {
+          "calls": 2,
+          "wall_seconds": 0.03103208914399147,
+          "peak_allocated_bytes": 5257779712,
+          "peak_reserved_bytes": 15107883008,
+          "cuda_measured": true
+        }
+      },
+      "reward_rows": 32,
+      "valid_rows": 31,
+      "reward_range": [
+        -1.0,
+        0.8604318786301381
+      ],
+      "observed_parameter_changed_updates": 1
+    },
+    {
+      "run_id": "smoke_merge_v1",
+      "status": "FAILED",
+      "scope": "technical; excluded from formal budgets",
+      "wall_seconds": 16.98641046602279,
+      "exit_code": 1,
+      "observed_counts": null,
+      "source_receipt": "/root/autodl-tmp/unsgrpo-work/runs/smoke_merge_v1/receipt.json",
+      "stage_costs": null
+    },
+    {
+      "run_id": "smoke_merge_v2",
+      "status": "TRAINER_EXITED_SUCCESS_REQUIRES_AUDIT",
+      "scope": "technical; excluded from formal budgets",
+      "wall_seconds": 33.26459133019671,
+      "exit_code": 0,
+      "observed_counts": null,
+      "source_receipt": "/root/autodl-tmp/unsgrpo-work/runs/smoke_merge_v2/receipt.json",
+      "stage_costs": null
+    },
+    {
+      "run_id": "smoke_merge_warm32_v1",
+      "status": "TRAINER_EXITED_SUCCESS_REQUIRES_AUDIT",
+      "scope": "technical; excluded from formal budgets",
+      "wall_seconds": 37.913464116863906,
+      "exit_code": 0,
+      "observed_counts": null,
+      "source_receipt": "/root/autodl-tmp/unsgrpo-work/runs/smoke_merge_warm32_v1/receipt.json",
+      "stage_costs": null
+    }
+  ]
+}

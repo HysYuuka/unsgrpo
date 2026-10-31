@@ -1,0 +1,1140 @@
+{
+  "status": "SHA_VERIFIED_FINAL_ARTIFACTS",
+  "time": {
+    "utc": "2026-10-29T03:35:38.697865+00:00",
+    "hong_kong": "2026-10-29T11:35:38.697865+08:00"
+  },
+  "files": [
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/context_position_postrun.json",
+      "sha256": "2596e9c28dbe99c5ee4dcbb6e365bcc77afd2bea886160523b52b89864b40a39",
+      "bytes": 10291,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/dev_windows.jsonl",
+      "sha256": "c0b6de284f80c1dff8338c0ac9e5b279192f3936d24ddf56c412a1bba8276789",
+      "bytes": 256002,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/driver.log",
+      "sha256": "08259f49ff0f906383735e41c231f86099c473bea389bf6caa6f82e0790cb2fe",
+      "bytes": 355,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/fixed_edge_choices.json",
+      "sha256": "b5db2988f39e87a2f507868388eb70e8082fbbc7c1ed5112061a9ddb5c722ebb",
+      "bytes": 93605,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/gpu_sessions.jsonl",
+      "sha256": "ede43a7cfad76223bb7fb9ddcbf8182b7c25b36d1f0178b6d5d6c6a1a50cc885",
+      "bytes": 3395,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/independent_verification.json",
+      "sha256": "f9c3ebe7f518ac641532140f81e0024c40bf6d66b3216e999153b1f97dfe7e02",
+      "bytes": 1057,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/initial_state.json",
+      "sha256": "46891fdcdc322136ba950a7b35226c5c4e0f3e97cc2bde17e573766740232111",
+      "bytes": 168,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/logs/context_position_postrun.log",
+      "sha256": "25db0c84d42804d8a76d826029dc3632e7faab5357faf5408ebea68d1f0b3f8e",
+      "bytes": 3595,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/logs/cpu_contracts.log",
+      "sha256": "ae2604274a833403d5a93d1b2dcea196bb9d11ba794c12f5c389cb0ec08875ba",
+      "bytes": 98,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/logs/cpu_contracts_repair1.log",
+      "sha256": "801285facaa9fdb198ce0a323cbb9feb534f778dd33bd221be2a285611c81b19",
+      "bytes": 98,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/logs/dev_candidates.log",
+      "sha256": "662fdfe427a5cf7a42f2332ce6409bb728677eed689284a1280290fc4f097bc9",
+      "bytes": 2983,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/logs/dev_reward_freeze.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/logs/dev_teacher.log",
+      "sha256": "580102b15dfe2010cbdb77f98bffbbf5189101f6881be9e97e6b1d9811f8137c",
+      "bytes": 2873,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/logs/independent_verification.log",
+      "sha256": "e33d0f243e227ea11bc39510b491ab0c34b74c8070308bde985f1639472c658b",
+      "bytes": 705,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/logs/interface.log",
+      "sha256": "2808786a0cc14c0aec010828ee54409405280ff782926f85b8d3e3a5d14c4abc",
+      "bytes": 2669,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/logs/prepare.log",
+      "sha256": "69b4da1bcf9cf7edc1e683b5eed9cd38e05f18e9772817c203a401279160208c",
+      "bytes": 97,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/logs/processor_fault_diagnosis.log",
+      "sha256": "995d672e72cf2179451f54bfdefab28186786cc4b601fd68638a9b2be3a0ac4f",
+      "bytes": 5010,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/logs/report.log",
+      "sha256": "d5754660424dff41ffaa41bfc7e50cd248ed8f1d940835b906ad1477ca6b3c07",
+      "bytes": 35,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/logs/screen_evaluation.log",
+      "sha256": "71f0a8a73d672679a3d3d1f07142d9456ea28a8a031682603123d41c5358a063",
+      "bytes": 1323,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/logs/storage_final.log",
+      "sha256": "dd2b33dc1d3f51c9dd2f1de75ce998f4c95b8538ac5ce9df11953652516bdade",
+      "bytes": 1916,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/processor_fault_diagnosis.json",
+      "sha256": "646c85959dbee993db98467e4469c405b1e0af410dc7cdfc2a97b46ab559cf8a",
+      "bytes": 1942,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_protocol.freeze.json",
+      "sha256": "01f64b5f3f56ee9010d78602acc3d3fcbbf7d14a33a08c80537300a2e81a8e6b",
+      "bytes": 5644,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/scripts/reward_to_rl_detached.sh",
+      "sha256": "8f9ee69b3f4e683510b48a34e47356fbc2890fc27ef21b84fd5725f63ec58923",
+      "bytes": 418,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/scripts/reward_to_rl_driver.py",
+      "sha256": "7d9847a37a689b3cc2b2f41f1049a47290168fcac8f0f65a009415ab67312d7c",
+      "bytes": 7767,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/scripts/reward_to_rl_evaluate.py",
+      "sha256": "a5d8d8bc5dc398cf3c150a121288d2d69dfd58c0875f89d565a88fb2d16ccfe3",
+      "bytes": 10665,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/scripts/reward_to_rl_infer.py",
+      "sha256": "1a05cf7ff08b83256672472afd27ac21790f7f748aaff5feb822a119d6ed5170",
+      "bytes": 3640,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/scripts/reward_to_rl_pool.py",
+      "sha256": "44dfad820d6fd07860cef689fc91da6fe28e6c2825115057d5f906042cb844fa",
+      "bytes": 6642,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/scripts/reward_to_rl_prepare.py",
+      "sha256": "00468880ce4fb4ba9ba2e2302073af11a789990acde957ddfab02bf6d454df20",
+      "bytes": 10138,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/scripts/reward_to_rl_report.py",
+      "sha256": "c22b9f267716b8ec62f7b662688930ee545d59e9e07187b6625fa8eaa794f339",
+      "bytes": 14398,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/scripts/reward_to_rl_screen.py",
+      "sha256": "15e3ffeb81c19e7a2f59a3b8644644890ea3d44ae6d1541ad456669f18379609",
+      "bytes": 9408,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/scripts/reward_to_rl_train.py",
+      "sha256": "e9da34e0546dac344d62270183093c95d7032be410dcc12d361bf6569f78ea78",
+      "bytes": 12003,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/scripts/training_telemetry.py",
+      "sha256": "c882434ace40f13bf429b60d10c8484056aa7b47c25ea8c2b490939698aee26f",
+      "bytes": 43496,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/scripts/verify_checkpoint.py",
+      "sha256": "51cd1f552c8b4e6f0716fcea49136b44614c604850bf1d8fe60ea24fb8561cb4",
+      "bytes": 24620,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/src/unsgrpo/core.py",
+      "sha256": "0dd3777df60a8db1a888d99fe05b7c7619854507f3104a18df2e02330eb354ed",
+      "bytes": 8430,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/src/unsgrpo/data.py",
+      "sha256": "7667bb9cfe43bd3a18a86b6d58c9760aeca0ea26cb515a92cb64a5d15a41d7cc",
+      "bytes": 15287,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/src/unsgrpo/diagnostics.py",
+      "sha256": "bb471b662ef5b2f2bcd972c31d811d24532ce26b883e04e48607a18dddc0a365",
+      "bytes": 5332,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/src/unsgrpo/evaluation.py",
+      "sha256": "ee1d55f36035151e06272e93cb3e670bf5372f1bf4466e198f21ad1e0ea3b6b0",
+      "bytes": 19613,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/src/unsgrpo/reward_to_rl.py",
+      "sha256": "94f7b86e3219cc02c5a1dcec330e81f80fcf5dbf348378182a419fa56bb631f4",
+      "bytes": 4569,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/src/unsgrpo/reward_to_rl_common.py",
+      "sha256": "07d5b051d75e084bccbdbd414189fb6e37c300a28958e285aaa3ea5ac0ef0eb3",
+      "bytes": 3556,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/src/unsgrpo/reward_to_rl_model.py",
+      "sha256": "aa5a5455c9e79883dd90294b9841219750c4707e8cd8d342682a44cbc486becd",
+      "bytes": 6903,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/src/unsgrpo/round2_metrics.py",
+      "sha256": "ef8a453ecd0a3484e4e720734c583549eea656be330646952e1723610483ebaf",
+      "bytes": 4398,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/src/unsgrpo/round2_utils.py",
+      "sha256": "f1fc5382b9b17aa75ab1294a4e430067e74c02e84b05687cc3b064916e713c73",
+      "bytes": 6098,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/screen_source_snapshot/tests/test_reward_to_rl.py",
+      "sha256": "1b8f7194c27e982f72a5724bd2bb015d4cb0adfe67806596e7ab370d0e399173",
+      "bytes": 2712,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_attempt1/driver.log",
+      "sha256": "81bbc1220d69afb81b49a05ad173ff12e678c2953837ff68216ea31adb141bc9",
+      "bytes": 909,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_attempt1/logs/failure_report.log",
+      "sha256": "2a64d4856a135295989e7c15ab5e1d2610f7de564f4547b3b5900d68a4b37ffb",
+      "bytes": 50,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_attempt1/logs/interface.log",
+      "sha256": "7a08d9be11e34c083956cc282a08e7c58263d43bc28b12f4f32ace88596c5f90",
+      "bytes": 3444,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_attempt1/reports/DECISION.md",
+      "sha256": "ffb2c966ec03008c3db3cb30ffee25c0f5b60315b0b30369da26f3ed229a8b81",
+      "bytes": 3838,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_attempt1/reports/endpoint_contrasts.json",
+      "sha256": "7446bb6b032b3be7ecc2c693c7dc67bdeb87f9acf8b66036d9ac40dd36d6b969",
+      "bytes": 170,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_attempt1/reports/execution_summary.json",
+      "sha256": "218c23e51fdcd083e707a1cc6991393cfc491077212bafaa600bad9675d08305",
+      "bytes": 544,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_attempt1/reports/per_seed.csv",
+      "sha256": "f522c7ea79b87be837f50a7d12eee93e7826d7a89017f5695f8acaef935e953e",
+      "bytes": 517,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_attempt1/reports/per_video.csv",
+      "sha256": "f13403960ad043c5914011d31c76e1e2235937d3390eba1eed97f250b54a4df8",
+      "bytes": 1226,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_attempt1/reports/resource_receipt.json",
+      "sha256": "fc824139d5737f63642af22ee01dea84caace916a251dc1827bd9e693832c9ba",
+      "bytes": 1111,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_attempt1/reports/results.csv",
+      "sha256": "2f7dedfe411c5417638f1977b54d13d3b3f7368bce5c57fd6e2ca81a82f17bd0",
+      "bytes": 533,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_attempt1/state.json",
+      "sha256": "9702df35df2b3a10c89acb37315744ee9af65ea6d5e11d148a79995fee59bf3a",
+      "bytes": 2429,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_fix1.json",
+      "sha256": "7d9ea337d69824cb8afca099bad69436fdfc4da29003f186819ec3fae827d94d",
+      "bytes": 2609,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_fix1_forward_count_correction.json",
+      "sha256": "45140671c348876bbc5d21269ad16003a3fc29b6f04683398a22b9e200fe2327",
+      "bytes": 557,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_fix1_source_snapshot/scripts/reward_to_rl_driver.py",
+      "sha256": "b62736edc2cab37ed720efa7b26de7bc99a995ac105ff211fe8743cf46e30c37",
+      "bytes": 7945,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_fix1_source_snapshot/src/unsgrpo/reward_to_rl_common.py",
+      "sha256": "9c0b7bbff778bbb91755b02b5f6ab0a1f929b991831fb7eb0819307587583775",
+      "bytes": 3953,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_fix1_source_snapshot/src/unsgrpo/reward_to_rl_model.py",
+      "sha256": "495fada09d7cc0a5e803c3fd466e2768741160eace1f9e48f785f10fc0ad115b",
+      "bytes": 6951,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/software_fix1_source_snapshot/tests/test_reward_to_rl.py",
+      "sha256": "862543daba3a17f436e4ed566fe811fa7773d709b38d1cd8649854b60c3cda48",
+      "bytes": 3880,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/state.json",
+      "sha256": "f66c3e98cad9dccd5d5a8cceb2bc6598fdb6f8b3536a0c3fbbb8392bcd293e80",
+      "bytes": 4297,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/storage_final.json",
+      "sha256": "dd2b33dc1d3f51c9dd2f1de75ce998f4c95b8538ac5ce9df11953652516bdade",
+      "bytes": 1916,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/teacher_coverage_postrun.json",
+      "sha256": "3ebf8eca2579fc1dc60b5dd77c3ee284ac017b75089963fec7cc910a7958b9a3",
+      "bytes": 804,
+      "location": "working"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/train_windows.initial.jsonl",
+      "sha256": "27e390529dd97ac1bedf529643acf5c26a1710e6cccd66a6b1ff7b9040d377d3",
+      "bytes": 698388,
+      "location": "working"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/final_control/storage_final.json",
+      "sha256": "dd2b33dc1d3f51c9dd2f1de75ce998f4c95b8538ac5ce9df11953652516bdade",
+      "bytes": 1916,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/report_snapshot/DECISION.md",
+      "sha256": "8b5bba8d86df59b29d230ec9a2fc0cca8cfa0c5d89f733dec6027b0e11412b11",
+      "bytes": 5723,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/report_snapshot/FINAL_REVIEW.md",
+      "sha256": "dff49b6ef0ff9bc40d615bbc0e1b61ff4ddf694e709c4c314fad49cf53b928dc",
+      "bytes": 3711,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/report_snapshot/candidate_provenance_index.json",
+      "sha256": "bfc629cc4dedad1b483224fda56a427205752f175f682661cc11c42fb3edc792",
+      "bytes": 2451,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/report_snapshot/endpoint_contrasts.json",
+      "sha256": "7446bb6b032b3be7ecc2c693c7dc67bdeb87f9acf8b66036d9ac40dd36d6b969",
+      "bytes": 170,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/report_snapshot/execution_summary.json",
+      "sha256": "4cd603de2190469fd18108d551a2db3f9bdf5a76bb3bfc83875d4095ede8b182",
+      "bytes": 981,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/report_snapshot/figures/source_selection_gains.pdf",
+      "sha256": "a17da3fa3f51a723027809a6319be49cff343f1427c949095585d11571e59631",
+      "bytes": 23414,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/report_snapshot/figures/source_selection_gains.png",
+      "sha256": "ffc1f0eee0e35db9f92a4987955a948ccd5692358e9198285f0b143c73f3e575",
+      "bytes": 102242,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/report_snapshot/per_seed.csv",
+      "sha256": "b7ddab6c9cdf903ec1974a971038aca95651391c4983d401e9835c2a92398e2b",
+      "bytes": 427,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/report_snapshot/per_video.csv",
+      "sha256": "f13403960ad043c5914011d31c76e1e2235937d3390eba1eed97f250b54a4df8",
+      "bytes": 1226,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/report_snapshot/protocol.json",
+      "sha256": "5228e6d91f114d159f9905199344583bb9efe6d066fd6ff7aa3fdcda8e9b301b",
+      "bytes": 5886,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/report_snapshot/resource_receipt.json",
+      "sha256": "fd1628cc1b4b34ae5e8ea4991ae2e8ecd96795eec77bfc7ae224ce536153c362",
+      "bytes": 4443,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/report_snapshot/results.csv",
+      "sha256": "de790e2bfef2817f58aaf7a47bfdfeb16a30016762b6faef96d0835c58790883",
+      "bytes": 443,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/report_snapshot/screen_per_video.csv",
+      "sha256": "49cadf395723e2a0f556d93257e5e30eb17757d17c2b909eb77590fe2d690229",
+      "bytes": 1999,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/report_snapshot/screen_per_window.csv",
+      "sha256": "5d3dbec5e67f499f34a5ebc5c607d255b9acce2b4274f7b2a955fd671dbb3101",
+      "bytes": 9165,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/report_snapshot/screen_result.json",
+      "sha256": "2d3756cdf16cad7a2074404534e1e6f8cdd9cdb65ed16e1c0e5391a909515854",
+      "bytes": 112588,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/report_snapshot/screen_reward_summary.csv",
+      "sha256": "81f09ef317ba974407c8f87c4a72c67cbfaa4d4a5c515aee909aba1a0aaca4ab",
+      "bytes": 505,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/report_snapshot/source_versions.json",
+      "sha256": "75c6ad6cae88000e3a6befbb673a8dccdb6ffb7c1d07a4b9df7b16ab9f5a6b69",
+      "bytes": 7995,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/screen/candidate_rewards.jsonl",
+      "sha256": "5db998145b83dd401a34f691e8c0c474063a8fade4bb4de89345b393e8fcc162",
+      "bytes": 46293,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/screen/candidates.jsonl",
+      "sha256": "9770a8786dcef0b1c744e2b70cfd648856db665fcb004256f58d5ada0407b9a4",
+      "bytes": 4212856,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/screen/candidates_and_rewards.freeze.json",
+      "sha256": "44d2e241d9f6cc2a75cedae2d09c5fddc8c798ded3e6826cb3aa8c2cf41f0e6b",
+      "bytes": 868,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/screen/candidates_receipt.json",
+      "sha256": "aa6ab2ac0a774d642397e220ed837582288db022d69d79de3f781c55b7015a79",
+      "bytes": 704,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/screen/interface.jsonl",
+      "sha256": "4ab1a501c092c26224c506935a9cba37bf5a5630b3483f2b80d3e94ffbd594de",
+      "bytes": 104972,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/screen/interface_receipt.json",
+      "sha256": "aa0d30548224cceae6934dd0ecff38981e2169b171183da6c0cb738a40a070cc",
+      "bytes": 359,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/screen/single_window_full_video_AP.jsonl",
+      "sha256": "acaa789c57f5453354fa328fec9e0754074a9ced39dd8869a7c09458ab22bc80",
+      "bytes": 183312,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/screen/teacher_edges.jsonl",
+      "sha256": "b1ea1d3d44864ac0744871eada32aa8a9c9e0e1271c0cc1b214ebf3aecd1769c",
+      "bytes": 2499259,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/screen/teacher_receipt.json",
+      "sha256": "40bb522facbf86e8b707919b96ca0e91893bcc2f8fc383959b6227437fe4ff8d",
+      "bytes": 703,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_closeout.py",
+      "sha256": "268c688d331c087f9af95317749221d616409acc7b88862ad36ad105e7e4287f",
+      "bytes": 14701,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_detached.sh",
+      "sha256": "8f9ee69b3f4e683510b48a34e47356fbc2890fc27ef21b84fd5725f63ec58923",
+      "bytes": 418,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_driver.py",
+      "sha256": "b62736edc2cab37ed720efa7b26de7bc99a995ac105ff211fe8743cf46e30c37",
+      "bytes": 7945,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_evaluate.py",
+      "sha256": "a5d8d8bc5dc398cf3c150a121288d2d69dfd58c0875f89d565a88fb2d16ccfe3",
+      "bytes": 10665,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_infer.py",
+      "sha256": "1a05cf7ff08b83256672472afd27ac21790f7f748aaff5feb822a119d6ed5170",
+      "bytes": 3640,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_pool.py",
+      "sha256": "44dfad820d6fd07860cef689fc91da6fe28e6c2825115057d5f906042cb844fa",
+      "bytes": 6642,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_prepare.py",
+      "sha256": "00468880ce4fb4ba9ba2e2302073af11a789990acde957ddfab02bf6d454df20",
+      "bytes": 10138,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_report.py",
+      "sha256": "c22b9f267716b8ec62f7b662688930ee545d59e9e07187b6625fa8eaa794f339",
+      "bytes": 14398,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_screen.py",
+      "sha256": "15e3ffeb81c19e7a2f59a3b8644644890ea3d44ae6d1541ad456669f18379609",
+      "bytes": 9408,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_train.py",
+      "sha256": "e9da34e0546dac344d62270183093c95d7032be410dcc12d361bf6569f78ea78",
+      "bytes": 12003,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/scripts/reward_to_rl_verify.py",
+      "sha256": "9ecbedcfc0e66fb369a7f0dadc373b740a768262c3b025dc1fecf634e80c719a",
+      "bytes": 6828,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/src/unsgrpo/reward_to_rl.py",
+      "sha256": "94f7b86e3219cc02c5a1dcec330e81f80fcf5dbf348378182a419fa56bb631f4",
+      "bytes": 4569,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/src/unsgrpo/reward_to_rl_common.py",
+      "sha256": "9c0b7bbff778bbb91755b02b5f6ab0a1f929b991831fb7eb0819307587583775",
+      "bytes": 3953,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/src/unsgrpo/reward_to_rl_model.py",
+      "sha256": "495fada09d7cc0a5e803c3fd466e2768741160eace1f9e48f785f10fc0ad115b",
+      "bytes": 6951,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/source_snapshot/tests/test_reward_to_rl.py",
+      "sha256": "862543daba3a17f436e4ed566fe811fa7773d709b38d1cd8649854b60c3cda48",
+      "bytes": 3880,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/context_position_postrun.json",
+      "sha256": "2596e9c28dbe99c5ee4dcbb6e365bcc77afd2bea886160523b52b89864b40a39",
+      "bytes": 10291,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/dev_windows.jsonl",
+      "sha256": "c0b6de284f80c1dff8338c0ac9e5b279192f3936d24ddf56c412a1bba8276789",
+      "bytes": 256002,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/driver.log",
+      "sha256": "08259f49ff0f906383735e41c231f86099c473bea389bf6caa6f82e0790cb2fe",
+      "bytes": 355,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/fixed_edge_choices.json",
+      "sha256": "b5db2988f39e87a2f507868388eb70e8082fbbc7c1ed5112061a9ddb5c722ebb",
+      "bytes": 93605,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/gpu_sessions.jsonl",
+      "sha256": "ede43a7cfad76223bb7fb9ddcbf8182b7c25b36d1f0178b6d5d6c6a1a50cc885",
+      "bytes": 3395,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/independent_verification.json",
+      "sha256": "f9c3ebe7f518ac641532140f81e0024c40bf6d66b3216e999153b1f97dfe7e02",
+      "bytes": 1057,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/initial_state.json",
+      "sha256": "46891fdcdc322136ba950a7b35226c5c4e0f3e97cc2bde17e573766740232111",
+      "bytes": 168,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/logs/context_position_postrun.log",
+      "sha256": "25db0c84d42804d8a76d826029dc3632e7faab5357faf5408ebea68d1f0b3f8e",
+      "bytes": 3595,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/logs/cpu_contracts.log",
+      "sha256": "ae2604274a833403d5a93d1b2dcea196bb9d11ba794c12f5c389cb0ec08875ba",
+      "bytes": 98,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/logs/cpu_contracts_repair1.log",
+      "sha256": "801285facaa9fdb198ce0a323cbb9feb534f778dd33bd221be2a285611c81b19",
+      "bytes": 98,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/logs/dev_candidates.log",
+      "sha256": "662fdfe427a5cf7a42f2332ce6409bb728677eed689284a1280290fc4f097bc9",
+      "bytes": 2983,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/logs/dev_reward_freeze.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/logs/dev_teacher.log",
+      "sha256": "580102b15dfe2010cbdb77f98bffbbf5189101f6881be9e97e6b1d9811f8137c",
+      "bytes": 2873,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/logs/independent_verification.log",
+      "sha256": "e33d0f243e227ea11bc39510b491ab0c34b74c8070308bde985f1639472c658b",
+      "bytes": 705,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/logs/interface.log",
+      "sha256": "2808786a0cc14c0aec010828ee54409405280ff782926f85b8d3e3a5d14c4abc",
+      "bytes": 2669,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/logs/prepare.log",
+      "sha256": "69b4da1bcf9cf7edc1e683b5eed9cd38e05f18e9772817c203a401279160208c",
+      "bytes": 97,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/logs/processor_fault_diagnosis.log",
+      "sha256": "995d672e72cf2179451f54bfdefab28186786cc4b601fd68638a9b2be3a0ac4f",
+      "bytes": 5010,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/logs/report.log",
+      "sha256": "d5754660424dff41ffaa41bfc7e50cd248ed8f1d940835b906ad1477ca6b3c07",
+      "bytes": 35,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/logs/screen_evaluation.log",
+      "sha256": "71f0a8a73d672679a3d3d1f07142d9456ea28a8a031682603123d41c5358a063",
+      "bytes": 1323,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/processor_fault_diagnosis.json",
+      "sha256": "646c85959dbee993db98467e4469c405b1e0af410dc7cdfc2a97b46ab559cf8a",
+      "bytes": 1942,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_protocol.freeze.json",
+      "sha256": "01f64b5f3f56ee9010d78602acc3d3fcbbf7d14a33a08c80537300a2e81a8e6b",
+      "bytes": 5644,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/scripts/reward_to_rl_detached.sh",
+      "sha256": "8f9ee69b3f4e683510b48a34e47356fbc2890fc27ef21b84fd5725f63ec58923",
+      "bytes": 418,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/scripts/reward_to_rl_driver.py",
+      "sha256": "7d9847a37a689b3cc2b2f41f1049a47290168fcac8f0f65a009415ab67312d7c",
+      "bytes": 7767,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/scripts/reward_to_rl_evaluate.py",
+      "sha256": "a5d8d8bc5dc398cf3c150a121288d2d69dfd58c0875f89d565a88fb2d16ccfe3",
+      "bytes": 10665,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/scripts/reward_to_rl_infer.py",
+      "sha256": "1a05cf7ff08b83256672472afd27ac21790f7f748aaff5feb822a119d6ed5170",
+      "bytes": 3640,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/scripts/reward_to_rl_pool.py",
+      "sha256": "44dfad820d6fd07860cef689fc91da6fe28e6c2825115057d5f906042cb844fa",
+      "bytes": 6642,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/scripts/reward_to_rl_prepare.py",
+      "sha256": "00468880ce4fb4ba9ba2e2302073af11a789990acde957ddfab02bf6d454df20",
+      "bytes": 10138,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/scripts/reward_to_rl_report.py",
+      "sha256": "c22b9f267716b8ec62f7b662688930ee545d59e9e07187b6625fa8eaa794f339",
+      "bytes": 14398,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/scripts/reward_to_rl_screen.py",
+      "sha256": "15e3ffeb81c19e7a2f59a3b8644644890ea3d44ae6d1541ad456669f18379609",
+      "bytes": 9408,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/scripts/reward_to_rl_train.py",
+      "sha256": "e9da34e0546dac344d62270183093c95d7032be410dcc12d361bf6569f78ea78",
+      "bytes": 12003,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/scripts/training_telemetry.py",
+      "sha256": "c882434ace40f13bf429b60d10c8484056aa7b47c25ea8c2b490939698aee26f",
+      "bytes": 43496,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/scripts/verify_checkpoint.py",
+      "sha256": "51cd1f552c8b4e6f0716fcea49136b44614c604850bf1d8fe60ea24fb8561cb4",
+      "bytes": 24620,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/src/unsgrpo/core.py",
+      "sha256": "0dd3777df60a8db1a888d99fe05b7c7619854507f3104a18df2e02330eb354ed",
+      "bytes": 8430,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/src/unsgrpo/data.py",
+      "sha256": "7667bb9cfe43bd3a18a86b6d58c9760aeca0ea26cb515a92cb64a5d15a41d7cc",
+      "bytes": 15287,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/src/unsgrpo/diagnostics.py",
+      "sha256": "bb471b662ef5b2f2bcd972c31d811d24532ce26b883e04e48607a18dddc0a365",
+      "bytes": 5332,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/src/unsgrpo/evaluation.py",
+      "sha256": "ee1d55f36035151e06272e93cb3e670bf5372f1bf4466e198f21ad1e0ea3b6b0",
+      "bytes": 19613,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/src/unsgrpo/reward_to_rl.py",
+      "sha256": "94f7b86e3219cc02c5a1dcec330e81f80fcf5dbf348378182a419fa56bb631f4",
+      "bytes": 4569,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/src/unsgrpo/reward_to_rl_common.py",
+      "sha256": "07d5b051d75e084bccbdbd414189fb6e37c300a28958e285aaa3ea5ac0ef0eb3",
+      "bytes": 3556,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/src/unsgrpo/reward_to_rl_model.py",
+      "sha256": "aa5a5455c9e79883dd90294b9841219750c4707e8cd8d342682a44cbc486becd",
+      "bytes": 6903,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/src/unsgrpo/round2_metrics.py",
+      "sha256": "ef8a453ecd0a3484e4e720734c583549eea656be330646952e1723610483ebaf",
+      "bytes": 4398,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/src/unsgrpo/round2_utils.py",
+      "sha256": "f1fc5382b9b17aa75ab1294a4e430067e74c02e84b05687cc3b064916e713c73",
+      "bytes": 6098,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/screen_source_snapshot/tests/test_reward_to_rl.py",
+      "sha256": "1b8f7194c27e982f72a5724bd2bb015d4cb0adfe67806596e7ab370d0e399173",
+      "bytes": 2712,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/software_attempt1/driver.log",
+      "sha256": "81bbc1220d69afb81b49a05ad173ff12e678c2953837ff68216ea31adb141bc9",
+      "bytes": 909,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/software_attempt1/logs/failure_report.log",
+      "sha256": "2a64d4856a135295989e7c15ab5e1d2610f7de564f4547b3b5900d68a4b37ffb",
+      "bytes": 50,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/software_attempt1/logs/interface.log",
+      "sha256": "7a08d9be11e34c083956cc282a08e7c58263d43bc28b12f4f32ace88596c5f90",
+      "bytes": 3444,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/software_attempt1/reports/DECISION.md",
+      "sha256": "ffb2c966ec03008c3db3cb30ffee25c0f5b60315b0b30369da26f3ed229a8b81",
+      "bytes": 3838,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/software_attempt1/reports/endpoint_contrasts.json",
+      "sha256": "7446bb6b032b3be7ecc2c693c7dc67bdeb87f9acf8b66036d9ac40dd36d6b969",
+      "bytes": 170,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/software_attempt1/reports/execution_summary.json",
+      "sha256": "218c23e51fdcd083e707a1cc6991393cfc491077212bafaa600bad9675d08305",
+      "bytes": 544,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/software_attempt1/reports/per_seed.csv",
+      "sha256": "f522c7ea79b87be837f50a7d12eee93e7826d7a89017f5695f8acaef935e953e",
+      "bytes": 517,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/software_attempt1/reports/per_video.csv",
+      "sha256": "f13403960ad043c5914011d31c76e1e2235937d3390eba1eed97f250b54a4df8",
+      "bytes": 1226,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/software_attempt1/reports/resource_receipt.json",
+      "sha256": "fc824139d5737f63642af22ee01dea84caace916a251dc1827bd9e693832c9ba",
+      "bytes": 1111,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/software_attempt1/reports/results.csv",
+      "sha256": "2f7dedfe411c5417638f1977b54d13d3b3f7368bce5c57fd6e2ca81a82f17bd0",
+      "bytes": 533,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/software_attempt1/state.json",
+      "sha256": "9702df35df2b3a10c89acb37315744ee9af65ea6d5e11d148a79995fee59bf3a",
+      "bytes": 2429,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/software_fix1.json",
+      "sha256": "7d9ea337d69824cb8afca099bad69436fdfc4da29003f186819ec3fae827d94d",
+      "bytes": 2609,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/software_fix1_forward_count_correction.json",
+      "sha256": "45140671c348876bbc5d21269ad16003a3fc29b6f04683398a22b9e200fe2327",
+      "bytes": 557,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/software_fix1_source_snapshot/scripts/reward_to_rl_driver.py",
+      "sha256": "b62736edc2cab37ed720efa7b26de7bc99a995ac105ff211fe8743cf46e30c37",
+      "bytes": 7945,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/software_fix1_source_snapshot/src/unsgrpo/reward_to_rl_common.py",
+      "sha256": "9c0b7bbff778bbb91755b02b5f6ab0a1f929b991831fb7eb0819307587583775",
+      "bytes": 3953,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/software_fix1_source_snapshot/src/unsgrpo/reward_to_rl_model.py",
+      "sha256": "495fada09d7cc0a5e803c3fd466e2768741160eace1f9e48f785f10fc0ad115b",
+      "bytes": 6951,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/software_fix1_source_snapshot/tests/test_reward_to_rl.py",
+      "sha256": "862543daba3a17f436e4ed566fe811fa7773d709b38d1cd8649854b60c3cda48",
+      "bytes": 3880,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/state.json",
+      "sha256": "f66c3e98cad9dccd5d5a8cceb2bc6598fdb6f8b3536a0c3fbbb8392bcd293e80",
+      "bytes": 4297,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/teacher_coverage_postrun.json",
+      "sha256": "3ebf8eca2579fc1dc60b5dd77c3ee284ac017b75089963fec7cc910a7958b9a3",
+      "bytes": 804,
+      "location": "persistent"
+    },
+    {
+      "path": "/autodl-fs/data/unsgrpo/reward_to_rl_v1/working_evidence/train_windows.initial.jsonl",
+      "sha256": "27e390529dd97ac1bedf529643acf5c26a1710e6cccd66a6b1ff7b9040d377d3",
+      "bytes": 698388,
+      "location": "persistent"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/DECISION.md",
+      "sha256": "8b5bba8d86df59b29d230ec9a2fc0cca8cfa0c5d89f733dec6027b0e11412b11",
+      "bytes": 5723,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/FINAL_REVIEW.md",
+      "sha256": "dff49b6ef0ff9bc40d615bbc0e1b61ff4ddf694e709c4c314fad49cf53b928dc",
+      "bytes": 3711,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/candidate_provenance_index.json",
+      "sha256": "bfc629cc4dedad1b483224fda56a427205752f175f682661cc11c42fb3edc792",
+      "bytes": 2451,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/endpoint_contrasts.json",
+      "sha256": "7446bb6b032b3be7ecc2c693c7dc67bdeb87f9acf8b66036d9ac40dd36d6b969",
+      "bytes": 170,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/execution_summary.json",
+      "sha256": "4cd603de2190469fd18108d551a2db3f9bdf5a76bb3bfc83875d4095ede8b182",
+      "bytes": 981,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/figures/source_selection_gains.pdf",
+      "sha256": "a17da3fa3f51a723027809a6319be49cff343f1427c949095585d11571e59631",
+      "bytes": 23414,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/figures/source_selection_gains.png",
+      "sha256": "ffc1f0eee0e35db9f92a4987955a948ccd5692358e9198285f0b143c73f3e575",
+      "bytes": 102242,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/per_seed.csv",
+      "sha256": "b7ddab6c9cdf903ec1974a971038aca95651391c4983d401e9835c2a92398e2b",
+      "bytes": 427,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/per_video.csv",
+      "sha256": "f13403960ad043c5914011d31c76e1e2235937d3390eba1eed97f250b54a4df8",
+      "bytes": 1226,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/protocol.json",
+      "sha256": "5228e6d91f114d159f9905199344583bb9efe6d066fd6ff7aa3fdcda8e9b301b",
+      "bytes": 5886,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/resource_receipt.json",
+      "sha256": "fd1628cc1b4b34ae5e8ea4991ae2e8ecd96795eec77bfc7ae224ce536153c362",
+      "bytes": 4443,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/results.csv",
+      "sha256": "de790e2bfef2817f58aaf7a47bfdfeb16a30016762b6faef96d0835c58790883",
+      "bytes": 443,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/screen_per_video.csv",
+      "sha256": "49cadf395723e2a0f556d93257e5e30eb17757d17c2b909eb77590fe2d690229",
+      "bytes": 1999,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/screen_per_window.csv",
+      "sha256": "5d3dbec5e67f499f34a5ebc5c607d255b9acce2b4274f7b2a955fd671dbb3101",
+      "bytes": 9165,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/screen_result.json",
+      "sha256": "2d3756cdf16cad7a2074404534e1e6f8cdd9cdb65ed16e1c0e5391a909515854",
+      "bytes": 112588,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/screen_reward_summary.csv",
+      "sha256": "81f09ef317ba974407c8f87c4a72c67cbfaa4d4a5c515aee909aba1a0aaca4ab",
+      "bytes": 505,
+      "location": "reports"
+    },
+    {
+      "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/source_versions.json",
+      "sha256": "75c6ad6cae88000e3a6befbb673a8dccdb6ffb7c1d07a4b9df7b16ab9f5a6b69",
+      "bytes": 7995,
+      "location": "reports"
+    }
+  ],
+  "n_files": 185,
+  "logical_bytes_including_verified_copies": 10450337,
+  "input_references": {
+    "/root/autodl-tmp/unsgrpo/reports/NEXT_REWARD_AND_RL_EXPERIMENT_20261029.md": "db9afd687ced8920b3238d4b191646cbb52f8010a2c58de4369adc898bfc1d35",
+    "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/protocol.json": "5228e6d91f114d159f9905199344583bb9efe6d066fd6ff7aa3fdcda8e9b301b",
+    "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/dev_windows.jsonl": "c0b6de284f80c1dff8338c0ac9e5b279192f3936d24ddf56c412a1bba8276789",
+    "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/train_windows.initial.jsonl": "27e390529dd97ac1bedf529643acf5c26a1710e6cccd66a6b1ff7b9040d377d3",
+    "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/fixed_edge_choices.json": "b5db2988f39e87a2f507868388eb70e8082fbbc7c1ed5112061a9ddb5c722ebb",
+    "/root/autodl-tmp/unsgrpo/reports/common_s0.json": "2ccf31ba127b4b18ea6909ad9cc4b8f3734ae8ff692a902e1547dc4be2dc82e9",
+    "/root/autodl-tmp/unsgrpo/manifests/Qwen3-VL-2B-Instruct.asset.json": "76faa99fe16305bdd18c192e5121f8df581316f47cb7c11cf2617de29b54abf9",
+    "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1_recovery1/predictions.freeze.json": "24b2e8c9adc8274c694404167228c21374fe262d129ab876db6b2418ad07e7d3",
+    "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1_recovery1/inference/S0/windows.jsonl": "e1015adeaa66b011bc4759923291c47d96143c60a92be92c038f047d0aba4f0b",
+    "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1_recovery1/inference/S0/videos.jsonl": "3351751322be25d32e2fb7684163d6b38061cf05980a09b4e30b3ddb769de7d6",
+    "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1_recovery1/inference/S0/receipt.json": "1b09bd5cb215785f15263a65ffb1e1c890273e9a72f40e7f6a63b79ec0c56ff8",
+    "/root/autodl-tmp/unsgrpo-work/prepared/prepared.jsonl": "ec889de91b2e10ab9810f5dd66349ce2f9353ec21c52c633701f71ca7b714b29",
+    "/root/autodl-fs/unsgrpo/datasets/pseudo/r0_visual_v1/pseudo.json": "31d341de06e08ec5407ddba1c3ff82638ad16da7c7f4af99c525d25b4f52bb4e",
+    "/root/autodl-fs/unsgrpo/datasets/trainer_inputs/eval.jsonl": "ce9511b1be0ce581b88f93acc77785fcc28499dc0a230b374a8a008cd82ff07e",
+    "/root/autodl-tmp/unsgrpo-work/runs/round2_diagnostic_v1/protocol.json": "780bd1e4f68534f378c9e76d630fb68b4d0afe88fb04af15f0f1ec1be06abd4d"
+  },
+  "self_and_final_control_records_excluded": true,
+  "old_models_videos_or_human_annotation_arrays_copied": false
+}

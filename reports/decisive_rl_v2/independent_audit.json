@@ -1,0 +1,17 @@
+{
+  "status": "PASSED",
+  "time": {
+    "utc": "2026-10-29T10:23:18.580313+00:00",
+    "hong_kong": "2026-10-29T18:23:18.580313+08:00"
+  },
+  "checks": {
+    "all_previous_reward_to_rl_indexed_files_unchanged": 185,
+    "all_previous_round3_indexed_files_unchanged": 198,
+    "technical_actual_media_position_probability_gate_independently_recomputed": true,
+    "new_and_old_G_on_identical_59_groups_independently_recomputed": true,
+    "GPU_and_storage_within_frozen_limits": true
+  },
+  "no_additional_model_or_scientific_variant": true,
+  "no_training_human_labels_read": true,
+  "actual_loss_rows_checked": 0
+}

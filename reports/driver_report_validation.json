@@ -1,0 +1,24 @@
+{
+  "status": "PASSED",
+  "scope": "CPU-only controller/report/archive safety fixtures; no actual GPU execution or large asset archival started",
+  "tests_passed": 21,
+  "acceptance_basis": "verified_bf16_tensor_merge_common_s0",
+  "formal_budget": {
+    "S0_updates": 256,
+    "S0_exposures": 4096,
+    "continuation_updates": 256,
+    "continuation_exposures": 1024,
+    "GRPO_completions_each": 4096
+  },
+  "archive_before_final_storage_and_report": true,
+  "local_sources_deleted": false,
+  "sync_policy": "ON_DEMAND_USER_REQUEST_ONLY_NO_AUTOMATION",
+  "files_sha256": {
+    "scripts/execute_round1.py": "8cbd83c1dd751dc4da53979199938cc5f70994fd92deb775a803e19d3e807a03",
+    "scripts/report_round1.py": "69524eff2bbdd523ba00e75af090afc57ab9a4bd4ff2493166b80ac925001b40",
+    "scripts/archive_round1.py": "499e97943b832244d86094da2eeb3d4774e01c3155045cc6a25e56c4d8523f2a",
+    "tests/test_execute_round1.py": "f2f757de74055c46f1385a45436045f11da4c4419e3a9aae2434a7916667978a",
+    "tests/test_report_round1.py": "f1cc76afdffdd6845f2233ef7f3bef48979f7bf042e99c00b1b46534f0dda705",
+    "tests/test_archive_round1.py": "b07d8e8234b862de95570d1f8be239f273ed2d72b671dff5c6bef7d1d92ce88d"
+  }
+}

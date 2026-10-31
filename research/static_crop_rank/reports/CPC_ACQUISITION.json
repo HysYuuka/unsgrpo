@@ -1,0 +1,8 @@
+{
+  "source": "https://drive.google.com/uc?export=download&id=1TMvuCSONEN1_9y7KnzKgy_7_fSFTHzyO",
+  "elapsed_seconds": 1581.2497131824493,
+  "state": "ACQUIRED_NOT_YET_PROTOCOL_READY",
+  "bytes_total": 1365111871,
+  "sha256": "dfa4ec73c9d9b4b525a8f79aee5670fac4797bad2eb1bd0e1f26f051ac3a7281",
+  "note": "Original overlap audit and native annotation conversion still required; not fed into any training"
+}

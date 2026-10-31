@@ -1,0 +1,9 @@
+{
+  "interval_seconds": 1800,
+  "stale_progress_warning_seconds": 3600,
+  "local_log_only": true,
+  "no_automatic_restart_or_training_change": true,
+  "no_remote_git_sync": true,
+  "stop_on": ["CONTROLLED_MATRIX_COMPLETE", "STOPPED_WITH_RECOVERABLE_CHECKPOINT", "EXECUTION_ERROR"],
+  "protected_hash_record": "reports/IMPLEMENTATION_SHA256_CURRENT.json"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "NOT_TRAINED_TEACHER_NOT_READY",
+  "adapters": [],
+  "policy_rollout_ledgers": [],
+  "actual_policy_loss_ledgers": [],
+  "optimizer_updates": 0,
+  "policy_prompt_exposures": 0,
+  "generated_policy_completions": 0,
+  "C_32_prompt_signal_check": "NOT_RUN_TEACHER_GATE_FAILED",
+  "C_4_actual_updates": "NOT_RUN_TEACHER_GATE_FAILED",
+  "D_seed42_matrix": "NOT_RUN_TEACHER_GATE_FAILED",
+  "E_repeats": "NOT_REACHED",
+  "G_external_predictions": "NOT_REACHED",
+  "reward_and_weighted_SFT_code_status": "CPU mathematical, gradient and real tokenizer contracts passed; not integrated/accepted in a live Swift training run",
+  "formal_training_freeze_summary_required_before_first_training": "NOT_APPLICABLE_NO_FORMAL_TRAINING_STARTED"
+}

@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "status": "FRONT_END_IMPLEMENTATION_FROZEN_BEFORE_TEACHER_EXECUTION",
+  "document": "/root/autodl-tmp/unsgrpo/reports/ROUND3_RL_METHOD_PLAN_20261028.md",
+  "execution_in_this_chat": true,
+  "research_mainline": "Unsupervised highlight detection with Qwen and GRPO",
+  "scope": "Finite candidate-method experiment; no unrestricted diagnostics or hyperparameter search",
+  "model": {
+    "policy": "Qwen/Qwen3-VL-2B-Instruct",
+    "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+    "common_s0_receipt": "/root/autodl-tmp/unsgrpo/reports/common_s0.json",
+    "teacher": "Frozen original local base checkpoint, not the updating policy",
+    "fresh_adapter_per_training_branch": true,
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0,
+    "freeze_vision": true,
+    "freeze_aligner": true
+  },
+  "data": {
+    "train_videos": 40,
+    "development_videos": 10,
+    "reuse_existing_split": true,
+    "development_is_independent_test": false,
+    "human_highlight_labels_in_training": false,
+    "human_titles_or_categories_in_model_input": false,
+    "same_training_prompt_pool_and_order_across_arms": true,
+    "clip_seconds": 2,
+    "frames_per_clip": 4,
+    "clips_per_window": 8,
+    "stride_clips": 4,
+    "overview_cells": 16,
+    "policy_input_changed_from_round1": false
+  },
+  "budget": {
+    "gpu_occupied_hours_total_max": 12,
+    "includes_teacher_smoke_failures_training_and_inference": true,
+    "active_engineering_hours_max": 6,
+    "metric_alignment_active_hours_max": 2,
+    "decision_hours_after_first_formal_training_start": 24,
+    "teacher_gpu_hours": 1.5,
+    "reward_smoke_gpu_hours": 0.25,
+    "seed42_matrix_training_gpu_hours": 3.75,
+    "conditional_repeats_training_gpu_hours": 3.75,
+    "tvsum_evaluation_gpu_hours": 1.25,
+    "external_screen_gpu_hours": 1,
+    "implementation_fix_reserve_gpu_hours": 0.5,
+    "unused_budget_may_transfer_forward": true,
+    "grpo_training_runs_max": 8,
+    "sft_training_runs_max": 3,
+    "scientific_hyperparameter_search": false,
+    "technical_fix_attempts_max": 1
+  },
+  "evaluation": {
+    "preferred_primary": "UMT-source TVSum development top-5 mAP after implementation and real-time-axis verification",
+    "source_revision": "bde05e3de39049bf90d8807f6b2a4ed8b42acbb0",
+    "source_file": "datasets/tvsum.py",
+    "fallback_primary": "Existing stable V0 if real-time-axis alignment cannot finish within the fixed timebox",
+    "choose_primary_before_new_teacher_results": true,
+    "secondary": [
+      "V0",
+      "Spearman",
+      "cross-window rank disagreement",
+      "format validity",
+      "cost"
+    ],
+    "checkpoint_primary_step": 128,
+    "trajectory_only": {
+      "seed": 42,
+      "step": 64,
+      "arms": [
+        "E11",
+        "S1"
+      ]
+    },
+    "checkpoint_selection_by_development_score": false,
+    "bootstrap_unit": "source_group",
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 42,
+    "same_video_across_seeds_is_not_independent": true,
+    "paper_benchmark_comparability_claimed": false
+  },
+  "teacher": {
+    "T0": {
+      "q": "Original R0 whole-video percentile",
+      "c": 1
+    },
+    "T1": {
+      "reference": "Frozen clusters; exclude the whole source training video from its prototype",
+      "empty_cluster_fallback": "All other training videos, still excluding self",
+      "full_cross_fitting_claimed": false,
+      "event_reference_max_events": 6,
+      "event_reference_max_new_tokens": 256,
+      "semantic_views": 2,
+      "same_media_for_both_views": true,
+      "semantic_scores": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "semantic_max_new_tokens": 384,
+      "semantic_decoding": "greedy",
+      "u_formula": "(a+b)/8",
+      "z_exact_agreement": 1,
+      "z_difference_one": 0.75,
+      "z_invalid_uncertain_or_difference_gt_one": 0,
+      "q_formula": "(1-alpha*z)*q_excl + alpha*z*u",
+      "c_formula": "0.25+0.75*z",
+      "rerank_q_to_percentile": false,
+      "alpha_primary": 0.75,
+      "alpha_fallback_only_if_primary_fails_gate": 0.5,
+      "fallback_requires_no_new_teacher_calls": true,
+      "c_is_calibrated_probability": false
+    },
+    "format_precheck": {
+      "training_videos": 8,
+      "clip_scoring_calls": 16,
+      "valid_fraction_min": 0.95
+    },
+    "quality_gate": {
+      "pair_pool_max_per_development_video": 2000,
+      "pair_pool_seed": 310,
+      "high_confidence_threshold": 0.75,
+      "q_pair_gap_min": 0.15,
+      "human_pair_tie_credit": 0.5,
+      "pair_agreement_macro_min": 0.6,
+      "pair_agreement_lift_vs_T0_on_same_pairs_min": 0.03,
+      "high_confidence_clip_coverage_min": 0.3,
+      "development_videos_with_usable_pairs_min": 8,
+      "training_windows_with_at_least_3_pairs_fraction_min": 0.5,
+      "primary_direct_score_delta_vs_T0_pp_min": -1,
+      "V0_direct_score_delta_vs_T0_pp_min": -1,
+      "failure_after_fallback": "TEACHER_NOT_READY; no formal training"
+    }
+  },
+  "reward": {
+    "R0": "Existing G-RANK: 0.8 original ranking plus 0.2 original MSE calibration; original sample-std group normalization; ignores c",
+    "R1": {
+      "eligible_pair_c_min": 0.5,
+      "eligible_pair_q_gap_min": 0.15,
+      "pair_weight": "c_i*c_j*abs(q_i-q_j)*(1+max(q_i,q_j))",
+      "pair_correct_tied_incorrect_credit": [
+        1,
+        0.5,
+        0
+      ],
+      "high_anchor_q_min": 0.8,
+      "low_anchor_q_max": 0.2,
+      "anchor_c_min": 0.5,
+      "anchor_reward": "Equal mean over available high and low classes; c-weighted mean(s) for high and mean(1-s) for low",
+      "pair_component_weight": 0.8,
+      "anchor_component_weight": 0.2,
+      "one_component_missing": "Use the available component without an extra scale factor",
+      "both_components_missing": "u_g=0; zero actor and KL loss; retain ledger",
+      "invalid_reward": -1,
+      "valid_format_bonus": 0,
+      "group_reliability": "Mean c of distinct clips participating in any defined reward component",
+      "advantage": "u_g*(R_i-mean(R))/(max(std_sample(R),0.05)+0.0001)",
+      "std_floor": 0.05,
+      "advantage_epsilon": 0.0001,
+      "kl_also_weighted_by_group_reliability": true,
+      "batch_denominator": "Original fixed sample count, not sum of reliability weights",
+      "advantages_and_weights_detached": true,
+      "online_teacher_updates": false
+    },
+    "smoke": {
+      "train_prompts": 32,
+      "completions_per_prompt": 4,
+      "nonzero_content_reward_variance_group_fraction_min": 0.25,
+      "actual_update_steps": 4,
+      "inspect_actual_loss_not_only_logged_advantages": true
+    }
+  },
+  "optimization": {
+    "updates": 128,
+    "prompt_exposures_per_update": 4,
+    "prompt_exposures_per_run": 512,
+    "grpo_group_size": 4,
+    "grpo_completions_per_run": 2048,
+    "learning_rate": 1e-05,
+    "scheduler": "cosine",
+    "warmup_ratio": 0.05,
+    "max_grad_norm": 1,
+    "beta": 0.04,
+    "clip_epsilon": 0.2,
+    "temperature": 1,
+    "top_p": 1,
+    "num_iterations": 1,
+    "policy_max_completion_length": 128,
+    "save_steps": [
+      64,
+      128
+    ],
+    "S1": {
+      "target": "rint(100*q1)",
+      "numeric_token_weight": "c_i*(1+q_i)",
+      "json_structural_token_weight": 0.1,
+      "normalization": "Per-sequence weighted token count",
+      "prompt_tokens_in_loss": false
+    }
+  },
+  "seed42_matrix": [
+    {
+      "id": "E00",
+      "teacher": "T0",
+      "method": "GRPO",
+      "reward": "R0"
+    },
+    {
+      "id": "E10",
+      "teacher": "T1",
+      "method": "GRPO",
+      "reward": "R0"
+    },
+    {
+      "id": "E01",
+      "teacher": "T0",
+      "method": "GRPO",
+      "reward": "R1"
+    },
+    {
+      "id": "E11",
+      "teacher": "T1",
+      "method": "GRPO",
+      "reward": "R1"
+    },
+    {
+      "id": "S1",
+      "teacher": "T1",
+      "method": "Weighted SFT",
+      "reward": null
+    }
+  ],
+  "repeat_gate": {
+    "reference_set": [
+      "E00",
+      "E10",
+      "E01",
+      "S1",
+      "S0",
+      "historical G-CAL",
+      "direct T1"
+    ],
+    "E11_primary_delta_vs_best_reference_pp_min": 2,
+    "E11_V0_delta_vs_best_V0_reference_pp_min": -1,
+    "positive_video_deltas_vs_best_primary_reference_min": 6,
+    "extra_seeds": [
+      43,
+      44
+    ],
+    "extra_arms_each_seed": [
+      "E11",
+      "C",
+      "S1"
+    ],
+    "C_selection": "Best seed42 primary among E00/E10/E01; ties prefer E10 then E01 then E00",
+    "same_fixed_S0_for_all_seeds": true,
+    "seed_variability_scope": "Continuation only, not full-pipeline training",
+    "three_seed_mean_primary_delta_vs_C_and_S1_pp_min": 1,
+    "positive_seeds_vs_each_comparator_min": 2,
+    "thresholds_are_project_budget_rules_not_significance_tests": true
+  },
+  "external_screen": {
+    "dataset": "YouTube Highlights official test split",
+    "size": 24,
+    "videos_per_category": 4,
+    "selection": "Freeze hash-ordered available source IDs per official category before reading highlight labels",
+    "asset_download_active_hours_max": 1,
+    "new_asset_size_GiB_max": 10,
+    "freeze_during_stage_A": true,
+    "run_only_after_three_seed_gate": true,
+    "models": [
+      "E11 seed42 step128",
+      "S1 seed42 step128",
+      "S0"
+    ],
+    "label_reads": "Once, after all three prediction sets are frozen",
+    "training_on_external_sources": false,
+    "criterion": "E11 mAP exceeds S1 and S0; positive vs S0 in at least 4 of 6 categories; report intervals",
+    "complete_benchmark_claimed": false
+  },
+  "storage": {
+    "report_root": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1",
+    "active_run_root": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1",
+    "persistent_root": "/root/autodl-fs/unsgrpo/round3_rl_method_v1",
+    "report_MiB_max": 100,
+    "new_temporary_GiB_max": 8,
+    "new_persistent_GiB_max": 30,
+    "temporary_free_GiB_min": 10,
+    "persistent_free_GiB_min": 120,
+    "duplicate_base_models": false,
+    "delete_previous_round_artifacts": false
+  },
+  "final_deliverables": [
+    "DECISION.md",
+    "method_spec.json and actual source code",
+    "teacher_quality.csv and frozen q/c caches",
+    "results.csv, per_video.csv, per_seed.csv",
+    "Actual adapters, rollout and loss ledgers if training passed gates",
+    "external_screen.json",
+    "resource_receipt.json",
+    "artifact_index.json"
+  ],
+  "no_automatic_git_commit_or_push": true,
+  "full_five_split_or_full_youtube_benchmark_in_current_budget": false,
+  "actual_primary": "V0-stable-mapper-round12",
+  "public_metric_status": "NOT_READY",
+  "engineering_start": "2026-10-29T01:26:48.701960+00:00",
+  "GPU_ledger": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/gpu_sessions.jsonl",
+  "format_implementation": {
+    "version0": "strict JSON schema instructions",
+    "version1_only_if_precheck_fails": "one fixed JSON syntax example; event/scoring semantics unchanged"
+  },
+  "precheck_video_rule": "first eight lexicographically sorted training IDs; first packet per video",
+  "source_control": "Per-file SHA256; no repository commit exists; no Git mutations",
+  "formal_training_status": "NOT_STARTED_PENDING_TEACHER_AND_REWARD_GATES",
+  "external_asset_status": "CANDIDATE_IDS_FROZEN_RAW_ASSETS_NOT_READY",
+  "subagents_used": false
+}

@@ -1,0 +1,175 @@
+#!/usr/bin/env python3
+"""Close the predeclared early-stop path without fabricating training results."""
+import csv
+import json
+import shutil
+from pathlib import Path
+from unsgrpo.round3_common import *
+
+
+def csvfile(path, rows, fields=None):
+    fields=fields or list(rows[0])
+    with Path(path).open('x') as f:
+        writer=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore');writer.writeheader();writer.writerows(rows)
+
+
+def main():
+    state=read(WORK/'front_state.json');assert state['status']=='TEACHER_NOT_READY'
+    verify=read(WORK/'independent_verification.json');assert verify['status']=='PASSED'
+    sealed=read(STORE/'teacher/semantic.freeze.json');r=verify['resources']
+    gates={tag:read(REPORT/f'teacher_gate_{tag}.json') for tag in ('alpha075','alpha050')}
+    historic=read(REPORT/'historical_baselines.json');metric=read(REPORT/'metric_choice.json')
+    spec=read(REPORT/'method_spec.json');common=read(PROJECT/'reports/common_s0.json')
+    quality=[]
+    for tag,g in gates.items():
+        quality += [dict(v,variant=tag,gate_passed=g['passed'],semantic_quality_status='NOT_MEASURABLE_NO_HIGH_CONFIDENCE_PAIRS') for v in g['per_video']]
+    csvfile(REPORT/'teacher_quality.csv',quality)
+    results=[];per_video=[];per_seed=[]
+    for method,item in historic.items():
+        e=item['evaluation'];results.append({'method':method,'origin':'HISTORICAL_REEVALUATED','seed':42,
+            'step':0 if method in ('B0','B1') else 256,'status':'CACHED_PREDICTIONS_REEVALUATED',
+            'V0_AP_percent':100*e['video_macro_ap'],'public_top5':'NOT_READY','new_training_updates':0})
+        per_video += [dict(method=method,origin='HISTORICAL_REEVALUATED',seed=42,step=0 if method in ('B0','B1') else 256,
+            video_id=v['video_id'],source_group=v['source_group'],status='OBSERVED',
+            V0_AP_percent=100*v['mean_ap'],spearman=v['spearman']['value'] if v['spearman']['defined'] else None) for v in e['per_video']]
+    direct=[('T0','alpha075','T0'),('q_excl','alpha075','q_excl_direct'),('T1_alpha075','alpha075','T1'),('T1_alpha050','alpha050','T1')]
+    for name,tag,key in direct:
+        e=gates[tag][key];status='DIRECT_FALLBACK_ONLY_NO_VALID_SEMANTICS' if name.startswith('T1') else 'DIRECT_REFERENCE'
+        results.append({'method':name,'origin':'ROUND3_DIRECT_TEACHER','seed':None,'step':0,'status':status,
+            'V0_AP_percent':100*e['video_macro_ap'],'public_top5':'NOT_READY','new_training_updates':0})
+        per_video += [dict(method=name,origin='ROUND3_DIRECT_TEACHER',seed=None,step=0,video_id=v['video_id'],
+            source_group=v['source_group'],status=status,V0_AP_percent=100*v['mean_ap'],
+            spearman=v['spearman']['value'] if v['spearman']['defined'] else None) for v in e['per_video']]
+    dev=read(WORK/'front_end.freeze.json')['development']
+    for arm in spec['seed42_matrix']:
+        for step in (64,128):
+            results.append({'method':arm['id'],'origin':'ROUND3_PLANNED_NOT_RUN','seed':42,'step':step,
+                'status':'NOT_TRAINED_TEACHER_NOT_READY','V0_AP_percent':None,'public_top5':'NOT_READY','new_training_updates':0})
+            if step==128:
+                per_seed.append({'method':arm['id'],'seed':42,'step':128,'status':'NOT_TRAINED_TEACHER_NOT_READY',
+                    'V0_AP_percent':None,'actual_prompt_exposures':0,'actual_generated_policy_completions':0})
+                per_video += [dict(method=arm['id'],origin='ROUND3_PLANNED_NOT_RUN',seed=42,step=128,video_id=k,
+                    source_group=k,status='NOT_TRAINED_TEACHER_NOT_READY',V0_AP_percent=None,spearman=None) for k in dev]
+    for seed in (43,44):
+        for arm in ('E11','C_NOT_SELECTED','S1'):
+            per_seed.append({'method':arm,'seed':seed,'step':128,'status':'NOT_REACHED_REPEAT_GATE',
+                'V0_AP_percent':None,'actual_prompt_exposures':0,'actual_generated_policy_completions':0})
+    csvfile(REPORT/'results.csv',results);csvfile(REPORT/'per_video.csv',per_video);csvfile(REPORT/'per_seed.csv',per_seed)
+    csvfile(REPORT/'ablation_contrasts.csv',[{'contrast':c,'status':'NOT_ESTIMABLE_NO_TRAINED_ENDPOINTS',
+        'delta_pp':None,'source_bootstrap_CI':None} for c in ('E10-E00','E01-E00','E11-E10','E11-E01','(E11-E10)-(E01-E00)')])
+    failures=[]
+    for item in records(STORE/'teacher/semantic_calls.jsonl'):
+        failures.append({k:item[k] for k in ('call_index','kind','video_id','format_version','valid','error','finish_reason','response')})
+    write(REPORT/'format_failure_examples.json',failures)
+    write(REPORT/'training_status.json',{'status':'NOT_TRAINED_TEACHER_NOT_READY','adapters':[],
+        'policy_rollout_ledgers':[],'actual_policy_loss_ledgers':[],'optimizer_updates':0,
+        'policy_prompt_exposures':0,'generated_policy_completions':0,
+        'C_32_prompt_signal_check':'NOT_RUN_TEACHER_GATE_FAILED','C_4_actual_updates':'NOT_RUN_TEACHER_GATE_FAILED',
+        'D_seed42_matrix':'NOT_RUN_TEACHER_GATE_FAILED','E_repeats':'NOT_REACHED','G_external_predictions':'NOT_REACHED',
+        'reward_and_weighted_SFT_code_status':'CPU mathematical, gradient and real tokenizer contracts passed; not integrated/accepted in a live Swift training run',
+        'formal_training_freeze_summary_required_before_first_training':'NOT_APPLICABLE_NO_FORMAL_TRAINING_STARTED'})
+    write(REPORT/'method_spec.actual.json',{'status':'TEACHER_NOT_READY_EARLY_STOP','time':timestamp(),
+        'frozen_method_spec':reference(REPORT/'method_spec.json'),'scientific_source_freeze':reference(WORK/'front_end.freeze.json'),
+        'actual_primary':'V0-stable-mapper-round12','public_top5':'NOT_READY','common_S0_receipt':reference(PROJECT/'reports/common_s0.json'),
+        'common_S0_loaded_for_new_training':False,'teacher_base_revision':spec['model']['revision'],
+        'teacher_base_asset_files_SHA_verified_before_loading':True,'actual_teacher_GPU_calls':12,
+        'event_reference_calls':8,'actual_semantic_calls':4,'format_repair_count':1,
+        'format_repair':'Fixed JSON syntax example added to semantic output instructions; no label-guided change; event reference cache retained.',
+        'common_event_reference_retries':0,'alpha_versions_materialized':[.75,.5],
+        'selected_alpha':None,'valid_semantic_clip_targets':0,'targets_per_version':6316,
+        'all_targets_are_q_excl_with_c_quarter':True,'new_GRPO_runs':0,'new_SFT_runs':0,
+        'policy_inputs_changed':False,'raw_video_assets_added':0,'Git_sync':False,'subagents_used':False})
+    resources={'status':'ACTUAL_EXECUTION_MEASUREMENTS','time':timestamp(),'GPU_budget_seconds':43200,
+        'GPU_occupied_seconds':r['GPU_occupied_seconds'],'GPU_budget_unused_seconds':43200-r['GPU_occupied_seconds'],
+        'teacher_generation_seconds':r['generation_wall_seconds'],'teacher_phase_wall_seconds':sealed['wall_seconds'],
+        'model_asset_hash_verification_before_GPU_session':True,'teacher_calls':r['n_calls'],
+        'teacher_prompt_tokens':r['tokens_prompt'],'teacher_generated_tokens':r['tokens_generated'],
+        'peak_CUDA_allocated_bytes':sealed['GPU_resources']['peak_CUDA_allocated_bytes'],
+        'peak_CUDA_reserved_bytes':sealed['GPU_resources']['peak_CUDA_reserved_bytes'],
+        'new_policy_training_runs':0,'optimizer_updates':0,'policy_rollout_tokens':0,
+        'currency_cost':None,'currency_cost_note':'No rental-rate/billing evidence; do not infer a monetary charge from 12-hour budget.',
+        'engineering_wall_start':read(WORK/'initial_state.json')['started_utc'],
+        'active_engineering_timer_available':False,'engineering_limit_seconds':21600,
+        'storage_final_receipt':'Final storage and allocated/logical counts appended by closure; no quota numbers are presented as consumption.',
+        'postrun_verification':reference(WORK/'independent_verification.json'),
+        'cache_replay':reference(WORK.parent/'round3_cache_replay_verification_v1/receipt.json')}
+    write(REPORT/'resource_receipt.json',resources)
+    write(REPORT/'external_stage_status.json',{'status':'NOT_REACHED_TEACHER_GATE_FAILED',
+        'candidate_manifest':reference(REPORT/'external_screen.json'),'official_ID_lists_pinned_revision_verified':
+            reference(WORK/'sources/youtube_lists_pinned_revision_verification.json'),
+        'candidate_sources':24,'verified_available_raw_sources':0,'downloaded_raw_video_bytes':0,
+        'highlight_label_reads':0,'external_predictions':0,
+        'protocol_exception':'Stage A froze official hash-ranked candidate IDs, not 24 verified available original videos; external data readiness was not established.'})
+    lines=['# 第三轮结论：TEACHER_NOT_READY，停止正式 GRPO', '',
+        '当前冻结的本地2B事件语义教师未通过结构化输出前端检查；本轮按预定停止规则结束，没有启动任何正式策略训练。RL方法有效性、教师语义质量和公开竞争力均未得到本轮验证。', '',
+        '香港时间：'+timestamp()['hong_kong']+'。40个训练来源、10个既有开发来源；未读取训练人工标签，未增加视频，未提交或推送Git，未使用子智能体。', '',
+        '## 实际执行到哪里', '',
+        '|阶段|实际状态|证据与范围|','|---|---|---|',
+        '|A 评价接轨|V0冻结；公开top-5 NOT_READY|UMT来源方法15组数值复核通过；10条真实原生帧轴通过。发布标签的片段轴未接通，未把原生帧top-5冒充片段top-5。|',
+        '|B 语义教师|TEACHER_NOT_READY|8次事件参照生成，1次合法；两版各2次实际评分，均非法。已用唯一预定格式修复和alpha回退。|',
+        '|C 奖励检查|CPU已验证；GPU检查未运行|7项新契约通过，包括真实tokenizer跨度及actor/KL权重梯度；32提示、4步真实更新未执行。|',
+        '|D/E 五分支及重复|未训练|E00/E10/E01/E11/S1均无64/128端点；未选择C，未追加seed。|',
+        '|F 评价|历史缓存重算、回退目标核算完成|没有新策略预测或完整方法比较。|',
+        '|G 独立筛查|未到达；原视频资产NOT_READY|官方六类24个候选ID及替换顺序已冻结；并非24个已验证可用原视频。未下载原视频、未读外部高光标签。|','',
+        '## 为什么提前停止', '',
+        '|项目|首版|唯一格式修复后|','|---|---:|---:|',
+        '|预定训练视频|同一8个ID|同一8个ID|',
+        '|预定评分槽位|16|16|',
+        '|实际语义评分调用|2|2|',
+        '|因事件参照非法而未调用的槽位|14|14|',
+        '|合法语义评分|0/2|0/2|','',
+        '**分母必须分开。** 不是已经完成32次评分，也不是实测了16个评分的合法率。8个事件参照中7个非法，使每版14个评分槽位被阻断；共同事件参照按规则不重试。前端未完整达到“8视频、16评分”的预检设计，因此不能把缺失槽位写成真实错误回答。仅有的一个合法参照用于A/B各一次评分，两版全部失败，仍无可用语义信号。', '',
+        '事件输出的具体问题包括尾部多余括号/引号、缺失闭合和重复events键；初始评分出现Markdown代码围栏及不符合三数组接口的顶层列表。唯一格式修复在两种表述中加入固定JSON语法示例，没有改评分定义；随后数组内容仍被代码围栏包住，严格JSON接口仍失败。全部12次调用的finish_reason均为stop，没有触及256/384 token上限；不能归因于输出被截断。完整原文见format_failure_examples.json及文件存储semantic_calls.jsonl。', '',
+        '本次没有第二次格式修复、事件参照重生成、剥离围栏、括号修补、第三个prompt、温度调整或更大教师。语义评分实际输入为同一概览784视觉token和8个分开绑定的4帧片段，共1008视频视觉token、32帧；两种表述的帧与参照保持相同。1008来自分片视频的实际processor网格，不能套用首轮单段32帧输入的960。策略输入本轮没有被调用或修改。', '',
+        '## 准入表如何解释', '',
+        '|量|alpha=0.75|固定回退alpha=0.50|','|---|---:|---:|',
+        '|已物化片段记录|6316|6316|',
+        '|合法双表述语义片段|0|0|',
+        '|高置信开发片段覆盖|0%|0%|',
+        '|有可用偏好的开发视频|0/10|0/10|',
+        '|至少3对可用偏好的训练池窗口|0/1280|0/1280|',
+        '|高置信偏好一致率及相对T0增益|不可测|不可测|',
+        f"|直接目标开发V0 AP|{100*gates['alpha075']['T1']['video_macro_ap']:.4f}%|{100*gates['alpha050']['T1']['video_macro_ap']:.4f}%|",'',
+        '两版全部z=0，故q1=q_excl、c1=0.25；调整alpha在数学上无法改变这些目标。6316条是完整的回退记录，**不是6316条已经完成语义判断的缓存**。训练4908片段、开发1408片段；仅8个训练视频生成了参照、一个训练视频的首包发生评分尝试。10个开发视频没有运行语义教师。偏好一致率为缺失值而不是0%：它没有可用片段对作为分母。', '',
+        '开发q_excl与T0相同，因为开发本来只查询训练库；其44.12%不能解释为新教师保持或提升了语义质量。无有效语义版本通过，正式训练准入失败。两版门槛布尔值保留在teacher_gate_*.json，原始质量缺失值和逐视频覆盖见teacher_quality.csv。', '',
+        '## 固定矩阵与历史参照', '',
+        '|新分支|教师/目标|奖励/学习|128步结果|','|---|---|---|---|',
+        '|E00|T0|R0 GRPO|未训练：教师准入失败|','|E10|T1|R0 GRPO|未训练：教师准入失败|',
+        '|E01|T0|R1 GRPO|未训练：教师准入失败|','|E11|T1|R1 GRPO|未训练：教师准入失败|',
+        '|S1|T1|加权SFT|未训练：教师准入失败|','',
+        '所有64步端点也未生成。E10−E00、E01−E00、E11−E10、E11−E01和交互项均不可估计，不填0，不用首轮256步模型顶替本轮128步对照。', '',
+        '|历史模型，同一稳定V0重算|开发AP|','|---|---:|']
+    for name in ('B0','B1','S0','SPLUS','G-CAL','G-RANK'):
+        lines.append(f"|{name}|{100*historic[name]['evaluation']['video_macro_ap']:.4f}%|")
+    lines += ['', '这些是历史预测重算，非第三轮新端点。沿用第二轮稳定时间映射与12位小数并列规范；与首轮未规范浮点结果的细微差异不能写成模型收益。所有失败窗口保留于既有聚合，未删除不利窗口或按开发AP选检查点。10来源一直是开发集，不是独立测试。', '',
+        '## 两项候选贡献与下一步', '',
+        '- **事件语义伪监督：当前构造未就绪。** 直接观测是输出接口及覆盖失败，不能得出事件语义目标本身无效，亦不能声称已经改善教师。',
+        '- **可靠排序奖励与GRPO更新：尚未检验。** R1公式和独立可微损失、加权SFT函数已有实现；真实tokenizer数值跨度、prompt零损失、样本标准差、std下限、actor及KL共同乘u_g均有CPU证据。它们尚未接入并通过真实Swift训练，不能把CPU梯度检查写成4步Qwen更新验收。原R0及前两轮57个冻结项目文件未改。',
+        '- **完整方法与竞争力：无结论。** 没有E11端点、seed重复或迁移预测；公开指标仍NOT_READY。', '',
+        '**主要建议：结束当前无结构约束生成的教师配方，保留RL主线，但不要把未通过格式准入的信号送入GRPO。** 下次若另行登记重启，先以同一小批无人工标签训练输入，验证本地冻结2B的可核验结构化输出约束能否同时满足事件参照和三数组接口；这是最低成本的前端工程问题。成功后仍须重新冻结并检查人工一致性，格式成功不等于语义正确。本轮不再做第三个prompt或补跑训练。', '',
+        '尚无法区分“严格结构输出机制不足”和“多片段包/共同参照指令遵循不足”；更无法比较奖励模块对人工重要性的作用。预算未耗尽不是追加搜索的理由，本次是前端停止，不是BUDGET_LIMITED或已证明RL失败。', '',
+        '## 公开文献参照（与本轮不可横比）', '',
+        '|方法|TVSum top-5|YouTube mAP|模态、额外训练与预训练知识|','|---|---:|---:|',
+        '|CHD|52.76|65.39|视觉；不额外收集方法训练视频，但使用预训练视觉特征。数值在UAVR论文表中核验，非本项目复现。|',
+        '|UAVR|60.34|68.30|视听；不额外收集方法训练视频；预训练视觉特征及AudioSet PANN。|',
+        '|MT/RASL|78.30|65.10|视听预训练、视觉推理；额外ActivityNet训练及预训练特征知识。|',
+        '|本项目第三轮|NOT_READY|未运行|视觉CLIP缓存及预训练Qwen；不应把“本轮没有新视频”解释为模型没有外部预训练知识。|','',
+        '数值和资源差异见[UAVR论文表1–3](https://arxiv.org/html/2407.13933v2)、[MT/RASL的ActivityNet预训练说明](https://arxiv.org/html/2403.09401)。以上文献值不是同一开发划分的门槛，不能计算本项目与它们的AP差或宣称竞争力。', '',
+        '## 成本、边界与可复现证据', '',
+        f"GPU实际占用 **{r['GPU_occupied_seconds']:.2f}秒**，包含加载、编码和本次失败调用；12小时是硬预算而非已用时长。12次调用累计prompt {r['tokens_prompt']} token、生成{r['tokens_generated']} token；生成调用合计{r['generation_wall_seconds']:.2f}秒，峰值CUDA分配{sealed['GPU_resources']['peak_CUDA_allocated_bytes']/1024**3:.2f}GiB。新训练曝光、优化步骤、策略rollout均为0；没有租机单价证据，不推造金额。", '',
+        '独立CPU复核确认两版q/c全数组与回退定义一致、40个训练视频的整视频排除原型重算完全一致、所有实际调用媒体SHA/四帧绑定不变。另以新输出命名空间复放缓存目标与准入计算，数组完全一致、两份逐视频CSV逐字节一致；没有重新调用教师或重训。源与输入版本见front_end.freeze.json及最终artifact_index.json。', '',
+        '工程准备以initial_state的UTC/Hong Kong时间为起点，未部署主动工作计时器；总经过时长可作为主动工作上界，不能伪称精确人时。首次CPU测试因0.1的浮点精确相等断言失败，改为容差后7项通过；事后复核初次误把教师网格当作首轮960 token，已按实际1008网格改正。两份失败日志均保留，没有因此追加任何GPU调用或改变科学输出。', '',
+        '协议偏差完整披露：①本轮只取得24个官方哈希候选ID，未在A阶段验证24个可用原视频；②每版只实际完成2个语义评分调用，另外14个因非法参照未调用，没有完成原设计16次评分；③正式训练前摘要无需触发，因为从未启动正式训练。它们均不支持外部或完整方法结论。原始冻结method_spec.json记录预定参数；method_spec.actual.json记录实际执行子集，两者不能混淆。', '',
+        '轻量结果在当前报告目录；语义原文、全量回退目标及冻结源码/运行证据保留在 `/root/autodl-fs/unsgrpo/round3_rl_method_v1`。大型模型和视频复用原位置，不复制。最后的实际存储字节、50/200GiB盘剩余与每文件SHA见resource_receipt.json、storage_final.json及artifact_index.json。', '',
+        '缓存复核命令（不会调用GPU；新目录须不存在）：', '', '```bash',
+        'export PYTHONPATH=/root/autodl-tmp/unsgrpo/src:/root/autodl-tmp/unsgrpo/scripts',
+        '/root/autodl-tmp/unsgrpo-work/envs/highlights/bin/python -m pytest /root/autodl-tmp/unsgrpo/tests/test_round3_contracts.py -q',
+        '/root/autodl-tmp/unsgrpo-work/envs/highlights/bin/python /root/autodl-tmp/unsgrpo/scripts/round3_replay_cached.py --check-only',
+        '/root/autodl-tmp/unsgrpo-work/envs/highlights/bin/python /root/autodl-tmp/unsgrpo/scripts/round3_replay_cached.py --out-root /root/autodl-tmp/unsgrpo-work/runs/round3_cache_replay_new',
+        '```','',
+        '原始实际执行命令和顺序在front_state.json、front_driver.log、阶段日志中。round3_prepare.py → round3_build_teacher.py → round3_materialize_targets.py --alpha 0.75 → round3_teacher_quality.py --alpha 0.75 → 固定回退0.50，分别由独立进程执行；原始入口拒绝覆盖完成目录。不得删除失败缓存重新运行并继续称同一次实验。']
+    (REPORT/'DECISION.md').write_text('\n'.join(lines)+'\n')
+    print('TEACHER_NOT_READY report and all non-fabricated deliverables written.',flush=True)
+
+
+if __name__=='__main__':main()

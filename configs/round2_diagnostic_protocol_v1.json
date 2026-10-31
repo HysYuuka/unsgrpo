@@ -1,0 +1,200 @@
+{
+  "protocol_id": "round2_diagnostic_v1",
+  "status": "PREREGISTERED_DIAGNOSTIC_BOUNDARIES",
+  "created_hong_kong": "2026-10-28T10:38:27.927802+08:00",
+  "purpose": [
+    "Separate teacher instability from stable typicality/importance mismatch",
+    "Diagnose window-dependent scores and distinguish score compression from rank changes",
+    "Screen cheap supervised objectives and whole-video statistics before a same-Qwen controlled comparison"
+  ],
+  "scope": {
+    "development_sources": 10,
+    "training_videos": 40,
+    "independent_test_claim": false,
+    "new_videos": 0,
+    "new_GRPO_training": false,
+    "Qwen_training": false,
+    "human_annotations_for_fitting": false,
+    "Git_sync": "NONE_UNLESS_USER_REQUESTS",
+    "subagents_used": false
+  },
+  "paths": {
+    "root": "/root/autodl-tmp/unsgrpo-work/runs/round2_diagnostic_v1",
+    "prepared": "/root/autodl-tmp/unsgrpo-work/prepared/prepared.jsonl",
+    "pseudo": "/root/autodl-fs/unsgrpo/datasets/pseudo/r0_visual_v1/pseudo.json",
+    "cluster_model": "/root/autodl-fs/unsgrpo/datasets/pseudo/r0_visual_v1/cluster_model.joblib",
+    "original_run": "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1_recovery1",
+    "train_pool": "/root/autodl-fs/unsgrpo/datasets/trainer_inputs/train_sft.jsonl",
+    "eval_pool": "/root/autodl-fs/unsgrpo/datasets/trainer_inputs/eval.jsonl",
+    "labels": "/root/autodl-fs/unsgrpo/datasets/labels_eval_only/round1_seed42_v1_recovery1/converted"
+  },
+  "limits": {
+    "cpu_threads": 4,
+    "cpu_compute_max_seconds": 1800,
+    "optional_Qwen_inference_max_seconds": 600,
+    "new_storage_max_bytes": 1073741824
+  },
+  "teachers": {
+    "baseline": "Original frozen R0; reproduce q/raw before controls",
+    "fixed_embedding_KMeans": {
+      "seeds": [
+        43,
+        44,
+        45,
+        46
+      ],
+      "k": 10,
+      "n_init": 20,
+      "fixed_original_UMAP_embedding": true
+    },
+    "full_pipeline": {
+      "seeds": [
+        43,
+        44
+      ],
+      "UMAP_and_transform_seed_changes": true,
+      "KMeans_seed_changes": true,
+      "same_K_search_4_to_15": true,
+      "n_init": 20,
+      "UMAP_fit_train_only": true
+    },
+    "prototype_controls": [
+      "video_equal_in_original_clusters",
+      "global_video_equal_no_clusters"
+    ],
+    "train_self_exclusion": {
+      "factorial": [
+        "clip_weighted_including_self",
+        "clip_weighted_excluding_whole_video",
+        "video_equal_including_self",
+        "video_equal_excluding_whole_video"
+      ],
+      "clustering_unchanged": true,
+      "human_train_labels_read": false,
+      "singleton_fallback": "Record explicitly; use train-global peers only if needed"
+    }
+  },
+  "cases": {
+    "n_each_direction": 3,
+    "max_one_video_per_direction": true,
+    "rule": "Sort by signed (mean percentile over all 9 teacher versions minus human mean-importance percentile), decreasing absolute directional gap, tie video_id then clip index. Select all top 3 per direction, no deletion.",
+    "stability_definition": "Teacher q standard deviation <=0.10 and each family mean (original/KM/full/prototype) on same >=0.75 or <=0.25 side; human percentile on opposite <=0.25 or >=0.75 side. These cutoffs classify cases; they do not select model parameters.",
+    "human_disagreement": "Per-user clip-average importance distribution, per-user whole-video importance percentile distribution, and fraction above own native-frame median",
+    "frames": "Exact four cached sampled inputs per selected clip, SHA verified; view images before content interpretation"
+  },
+  "cached_predictions": {
+    "methods": [
+      "B0",
+      "B1",
+      "S0",
+      "S+",
+      "G-CAL",
+      "G-RANK"
+    ],
+    "metrics": [
+      "pseudo MSE and weighted pair agreement",
+      "score dispersion/ties and calibrated reward decomposition",
+      "native-frame human V0 AP",
+      "same-clip cross-window range/std, within-clip position and context association"
+    ],
+    "constant_baseline": 0.5,
+    "affine": {
+      "slope": 0.25,
+      "intercept": 0.375,
+      "no_clipping": true,
+      "check_after_mapping_and_before_aggregation": true,
+      "quantized_control_step": 0.01
+    },
+    "window_offset": {
+      "methods": [
+        "S0",
+        "S+",
+        "G-CAL",
+        "G-RANK"
+      ],
+      "ridge": 1.0,
+      "fit": "Shared-clip predicted scores only; zero-mean component gauge via ridge; no q/human access",
+      "no_clipping_or_reordering": true
+    }
+  },
+  "students": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "views": [
+      "window_only",
+      "window_plus_video_statistics"
+    ],
+    "objectives": [
+      "mse_q",
+      "rank_pair"
+    ],
+    "runs": 12,
+    "steps": 256,
+    "batch_windows": 16,
+    "prompt_exposures": 4096,
+    "schedule_seed": 20261028,
+    "same_schedule_and_initial_parameters_across_objective_and_view": true,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "rank_temperature": 0.1,
+    "architecture": "Fixed random projection to 512 (not learned), shared 512->64 GELU ->1 sigmoid MLP; 32897 trainable parameters in every run",
+    "input_features": "clip CLIP512 + window CLIP mean512 + within-window position1; global view additionally full-video CLIP mean512/std512, zeroed after normalization in local view. No absolute/global time position or video ID.",
+    "capacity_control": "Same frozen random projection and all trainable dimensions active in both views; train-only scaling fitted separately for projected view. Additional global information explicitly disclosed.",
+    "normalization_fit": "Training-feature/pool inputs only; no development feature fitting or human labels",
+    "fixed_saved_prediction_steps": [
+      0,
+      64,
+      128,
+      256
+    ],
+    "human_metrics": "Only after all 12 training runs end, evaluate every pre-fixed saved prediction step; final step256 primary, no endpoint selection",
+    "scope": "Different backbone and features from Qwen; cannot claim supervised Qwen substitutes GRPO"
+  },
+  "optional_input_counterfactual": {
+    "gate": "Run only if original S0 mean shared-clip range>=0.05 and overlap-offset correction reduces it by>=20%; compute gate from cached predictions only, no human AP",
+    "checkpoint": "Same frozen common merged S0, no adapter update",
+    "video_selection": "Fixed rng42 chooses four sorted development IDs before any new-round human evaluation; two adjacent center windows each",
+    "conditions": [
+      "A: exact original one-overview input",
+      "B: original overview plus duplicate original overview",
+      "C: original overview plus 16 complementary cached global frames in same-layout second overview"
+    ],
+    "primary_comparison": "B vs C: identical text/placeholders, local frames, image sizes, image token budget, weights, greedy decoder and score aggregation; only second overview image content changes. A is replay/cost reference.",
+    "calls": 24,
+    "new_unique_global_frames_per_video": 16,
+    "local_frames_per_window": 32,
+    "generation_tokens": 128,
+    "input_max_tokens": 8192,
+    "no_full_video_AP_claim_for_partial_counterfactual_coverage": true,
+    "record": [
+      "actual processed image/video frame grids and visual tokens",
+      "new unique frames and timestamps",
+      "wall seconds and CUDA peaks",
+      "shared-clip consistency and pseudo-fit; no tuning"
+    ]
+  },
+  "evaluation": {
+    "primary": "Registered V0 stable interval mapper, then fixed decimal12 tie canonicalization for every old/new score",
+    "sensitivity": "Also report unrounded stable metrics; preserve original first-round reports",
+    "binary": "Per annotator native-frame strict above own median; noninterpolated tied AP; no-positive=0; user then video mean",
+    "resampling_unit": "Registered video/source, 10000 bootstrap draws seed42; no frame/window independent-sample claims",
+    "seed_reporting": "All three student initializations; summarize paired per-video differences averaged over seeds and separately report seed spread; not n=30 independent sources",
+    "multiple_comparisons": "Descriptive diagnostic, no confirmatory discovery or selection of largest AP",
+    "new_variants": "Any additional attempts explicitly logged, never silently omit"
+  },
+  "preparation_draft_review": {
+    "draft_is_not_a_result": true,
+    "changes": [
+      "Separate fixed-embedding KMeans from full UMAP/KMeans sensitivity",
+      "Factor self-exclusion independently from video weighting",
+      "Use same real active model capacity through fixed projection; remove global time from local view",
+      "Use two clean objectives and 12 runs; exclude raw-score+percentile objective which changes target and postprocessing together",
+      "Verify draft stable mapper against registered implementation before reuse",
+      "Conditional true input experiment has matched duplicate-image token control"
+    ]
+  }
+}

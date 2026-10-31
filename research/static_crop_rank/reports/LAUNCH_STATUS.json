@@ -1,0 +1,45 @@
+{
+  "status": "RUNNING_NOT_COMPLETE",
+  "run": {
+    "variant": "FULL",
+    "seed": 17,
+    "epoch": 2,
+    "step": 432,
+    "images_in_epoch": 816
+  },
+  "completed_epochs": 1,
+  "first_validation": {
+    "regret": 0.4103500020503998,
+    "srcc": 0.8076086666202965,
+    "srcc_degenerate": 0.0,
+    "acc1_5": 0.43,
+    "acc2_5": 0.4225,
+    "acc3_5": 0.39833333333333326,
+    "acc4_5": 0.38375,
+    "mean_acc_5": 0.40864583333333326,
+    "acc1_10": 0.65,
+    "acc2_10": 0.66,
+    "acc3_10": 0.6316666666666666,
+    "acc4_10": 0.60625,
+    "mean_acc_10": 0.6369791666666668
+  },
+  "quality_interpretation": "early validation only; no method success/failure conclusion and no test-set evaluation",
+  "active_throughput": {
+    "variant": "FULL",
+    "seed": 17,
+    "observed_optimizer_steps": 100,
+    "candidate_chunk": 90,
+    "global_step_end": 224,
+    "all_candidates": true,
+    "median_step_seconds": 1.224573279498145,
+    "mean_step_seconds": 1.219039249564521,
+    "train_only_hours_one_30epoch_run": 3.352357936302433,
+    "validation_excluded": true,
+    "do_not_apply_to_other_architectures": true,
+    "peak_allocated_bytes": 2401821184
+  },
+  "cleanup_bytes": 17020561248,
+  "timestamp": 1793350195.0442247,
+  "core_tasks": 12,
+  "core_tasks_completed": 0
+}

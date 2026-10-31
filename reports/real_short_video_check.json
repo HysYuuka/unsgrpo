@@ -1,0 +1,41 @@
+{
+  "status": "COMPLETED",
+  "scope": "Real training-source video derived 0.32-second engineering case; excluded from all formal pools and exposures",
+  "parent": {
+    "video_id": "3eYKfiOEJNs",
+    "source_group": "3eYKfiOEJNs",
+    "split": "train",
+    "sha256": "d8c2669fbd08e8b2f35ebce82dfe5aa6cbf7e8fbee56df9e971ca12b7dd9e322",
+    "offset_seconds": 30
+  },
+  "clip_sha256": "8a0065a75ef30ba6b569cad4cb488a09ac40aceef57dcef32c48321427508cb0",
+  "duration_seconds": 0.32,
+  "native_frames": 8,
+  "n_clips": 1,
+  "sampled_frames": 4,
+  "sampling_error": {
+    "mean_seconds": 0.0,
+    "max_seconds": 0.0,
+    "start_pts_seconds": 0.0,
+    "decoded_native_frames": 8,
+    "terminal_frame_holds": [],
+    "rule": "first-after-target, except actual final frame holding a terminal target"
+  },
+  "feature_shape": [
+    1,
+    512
+  ],
+  "processor_audit": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/input_audit_real_short.json",
+    "sha256": "180605ebfc85c0fdb22defc1ee6f782d351b96be9078da0d49e8b7f5ff8db196",
+    "status": "COMPLETED",
+    "encoded_tokens": 1078,
+    "min_processed_frames": 4,
+    "max_processed_frames": 4
+  },
+  "technical_answer": {
+    "q": 0.5,
+    "purpose": "constant deterministic format audit only; not fitted proxy labels"
+  },
+  "human_highlight_labels_read": false
+}

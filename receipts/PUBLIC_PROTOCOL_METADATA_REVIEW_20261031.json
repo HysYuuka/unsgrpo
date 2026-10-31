@@ -1,0 +1,9 @@
+{
+  "reason": "Exact reviewed files: annotation-named fields contain local paths or evaluation-scope descriptions only, no human score payload. Changed files must be reviewed again.",
+  "sha256": {
+    "configs/round2_diagnostic_plan.json": "7fac77798c1ef7def334c74edf19eeeb91a83a55deabf8c1a34ea8eb0f04f0e6",
+    "configs/round2_diagnostic_protocol_v1.json": "780bd1e4f68534f378c9e76d630fb68b4d0afe88fb04af15f0f1ec1be06abd4d",
+    "reports/decisive_rl_v2/protocol.actual.json": "123c69237dc898371fbc86fbdf9bebfc90f19028536a321308088c8f0dbd6750",
+    "reports/reward_to_rl_v1/protocol.json": "5228e6d91f114d159f9905199344583bb9efe6d066fd6ff7aa3fdcda8e9b301b"
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "status": "CANDIDATE_NOT_FROZEN",
+  "purpose": "Determine whether proxy supervision and GRPO justify further investment",
+  "seed": 42,
+  "data": {
+    "dataset": "TVSum official v1.1",
+    "source_group_train_fraction": 0.8,
+    "split_before_windows": true,
+    "human_training_labels": false,
+    "training_windows_per_video": 32,
+    "window_pool_sampling": "replacement with fixed seed"
+  },
+  "models": {
+    "policy": "Qwen/Qwen3-VL-2B-Instruct",
+    "policy_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+    "features": "openai/clip-vit-base-patch32",
+    "features_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268"
+  },
+  "input": {
+    "clip_seconds": 2,
+    "frames_per_clip": 4,
+    "window_clips": 8,
+    "stride_clips": 4,
+    "overview_cells": 16,
+    "image_max_tokens": 784,
+    "video_min_tokens_per_frame": 64,
+    "video_max_tokens_per_frame": 64,
+    "max_length": 8192,
+    "max_completion_length": 128,
+    "sampling_error_limit_seconds": 0.5
+  },
+  "proxy": {
+    "method": "R0 visual mean cosine including self-video in train bank",
+    "fit_split": "train only",
+    "embedding": "UMAP",
+    "n_neighbors": "min(15,N_train-1)",
+    "n_components": "min(5,N_train-2)",
+    "metric": "cosine",
+    "k_search": "4..min(15,N_train-1)",
+    "selection": "silhouette",
+    "q": "whole-video midrank percentile",
+    "integer_target": "numpy rint(100*q)",
+    "loo": "diagnostic only"
+  },
+  "lora": {
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0,
+    "target": "language linear layers",
+    "freeze_vit": true,
+    "freeze_aligner": true,
+    "new_adapter_for_each_continuation": true
+  },
+  "optimization": {
+    "framework": "ms-swift==4.6.0",
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "microbatch": 1,
+    "gradient_checkpointing": true,
+    "optimizer": "AdamW",
+    "scheduler": "cosine",
+    "warmup_ratio": 0.05,
+    "weight_decay": 0,
+    "max_grad_norm": 1,
+    "sft0_lr": 5e-05,
+    "continuation_lr": 1e-05
+  },
+  "grpo": {
+    "G": 4,
+    "beta": 0.04,
+    "epsilon": 0.2,
+    "num_iterations": 1,
+    "loss_type": "grpo",
+    "importance_sampling_level": "token",
+    "temperature": 1,
+    "top_p": 1,
+    "top_k": 0,
+    "repetition_penalty": 1,
+    "scale_rewards": "group",
+    "std_correction": 1,
+    "advantage_epsilon": 0.0001,
+    "std_deviation_from_reference": "Actual Swift sample std differs from standalone population-std mathematical helper; not silently patched",
+    "invalid_reward": -1,
+    "kl_log_ratio_clamp": [
+      -20,
+      20
+    ],
+    "kl_estimator_clamp": [
+      -10,
+      10
+    ],
+    "kl_implementation": "Actual Swift4.6 K3 safety clamps, not unclamped standalone helper",
+    "formal_zero_signal_policy": {
+      "enabled_only_for_formal_grpo": true,
+      "default_validator_allowance": false,
+      "negative_outcome": "ALL_GROUP_ADVANTAGES_ZERO_NO_POLICY_UPDATE",
+      "requirements": "All 256 optimizer calls, 1024 prompt exposures and 4096 generated/consumed completions are verified from raw ledgers; every reward group has zero variance, actual advantages/gradient norms/current-old-ref differences/KL and independently reconstructed losses are zero; initial/final adapter identities are identical; real pre-step optimizer learning rates include positive values. Reject variance-positive zero-gradient runs or optimizer failures.",
+      "technical_nonzero_update_requirement_unchanged": true,
+      "automatic_extra_training": false
+    }
+  },
+  "matrix": {
+    "B0": {
+      "status": "PLANNED",
+      "updates": 0
+    },
+    "B1": {
+      "status": "PLANNED",
+      "updates": 0
+    },
+    "S0": {
+      "status": "PLANNED",
+      "updates": 256,
+      "prompt_exposures_per_update": 16,
+      "group_size": 1,
+      "seed": 42
+    },
+    "S+": {
+      "status": "PLANNED",
+      "updates": 256,
+      "prompt_exposures_per_update": 4,
+      "group_size": 1,
+      "seed": 42
+    },
+    "G-CAL": {
+      "status": "PLANNED",
+      "updates": 256,
+      "prompt_exposures_per_update": 4,
+      "group_size": 4,
+      "rank_weight": 0,
+      "seed": 42
+    },
+    "G-RANK": {
+      "status": "PLANNED",
+      "updates": 256,
+      "prompt_exposures_per_update": 4,
+      "group_size": 4,
+      "rank_weight": 0.8,
+      "seed": 42
+    }
+  },
+  "evaluation": {
+    "primary_contrast": "G-RANK minus S+",
+    "protocol": "V0-strict-median-noninterpolated-AP-v1",
+    "V1_status": "BLOCKED_CLIP_AND_REFERENCE_SPLIT_ALIGNMENT",
+    "greedy": true,
+    "invalid_window": "all zero scores included in overlap average denominator",
+    "freeze_all_six_predictions_before_labels": true,
+    "bootstrap_unit": "source_group",
+    "n_bootstrap": 10000,
+    "bootstrap_seed": 42,
+    "training_seeds": 1,
+    "checkpoint_selection": "fixed endpoint only",
+    "cross_paper_comparison": false
+  },
+  "merge_numeric_acceptance": {
+    "fixed_answer_logp_mean_absolute_error_max": 0.03,
+    "fixed_answer_logp_max_absolute_error_max": 0.25,
+    "initial_tolerances_are_diagnostic_only": true,
+    "dtype": "bfloat16",
+    "acceptance_basis": "verified_bf16_tensor_merge_common_s0",
+    "definition": "The common S0 is the actual BF16 merged checkpoint after every merged tensor is verified against BF16(float32(base)+2*(B@A)) and every non-LoRA tensor is bitwise unchanged. This does not assert pre-merge functional equivalence; preserve the original failed log-probability comparison and measured gap. All continuation arms and S0 evaluation share this exact merged endpoint.",
+    "initial_failure": {
+      "comparison": {
+        "path": "/root/autodl-tmp/unsgrpo/reports/smoke_merge_v2_compare.json",
+        "sha256": "1edf064b2af53ad2e960f48c065e59d9f2eaef6c2bf74857e5102367bb8d3dd8"
+      },
+      "tensor_diagnosis": {
+        "path": "/root/autodl-tmp/unsgrpo/reports/smoke_merge_v2_bitwise_diagnosis.json",
+        "sha256": "761ae947c8e0580f62127a9324fe44ff82641e5780191a28de802820b8564d6f"
+      },
+      "scope": "Historical evidence supporting the pre-freeze common-endpoint definition; these weights do not validate a later technical SFT endpoint."
+    },
+    "current_diagnosis": {
+      "status": "COMPLETED",
+      "path": "/root/autodl-tmp/unsgrpo/reports/smoke_warm32_bf16_verification.json",
+      "sha256": "23768d13c0981351f2e2324717b2f4238bc8565f445dd54e3782eeaa2be14b5e"
+    },
+    "original_failed_compare": {
+      "path": "/root/autodl-tmp/unsgrpo/reports/smoke_merge_v2_compare.json",
+      "sha256": "1edf064b2af53ad2e960f48c065e59d9f2eaef6c2bf74857e5102367bb8d3dd8"
+    },
+    "premerge_functional_equivalence_claimed": false,
+    "reference_after_adapter_update": "exact same fixed-answer token logps relative to the actual verified merged S0",
+    "protocol_revision": "20261027-pre-freeze-actual-quantized-common-S0-v1"
+  },
+  "technical_budget": {
+    "SFT": {"updates": 32, "prompt_exposures_per_update": 1, "group_size": 1},
+    "GRPO": {"updates": 4, "prompt_exposures_per_update": 1, "group_size": 4},
+    "CONCURRENCY": {"minimum_updates": 2, "prompt_exposures_per_update": 4, "group_size": 4},
+    "input_pool": "The same first eight unique real R0 training windows; restart technical SFT from the original Qwen base.",
+    "reason": "The completed GRPO v5 technical loop generated and consumed 16 invalid answers: every reward was -1, group reward std and advantages were zero, and the observed LoRA gradients and parameter changes were zero. Increase only technical SFT format warm-up to 32 updates to verify a nonzero training signal; retain the zero-signal run as valid negative evidence. Use two concurrency updates because the first cosine warm-up step has learning rate zero.",
+    "excluded_from_formal_exposures": true,
+    "human_evaluation_labels_used": false,
+    "null_reward_diagnostic": {
+      "run_dir": "/root/autodl-tmp/unsgrpo-work/runs/smoke_GRPO_v5",
+      "files": {
+        "receipt.json": "8ef3894f70a8392f5ef774ad358bb89917c49fee995c263c8f89039d24f1ee8a",
+        "training_summary.json": "3a6298b931a668dd0b217184849f6341237da02bcf0f10a253083fb1980a8109",
+        "training_ledger.jsonl": "a6d0a9617e63e32cb43ea779606b098556280aa23989f47e9dc7d18322f968de",
+        "rollouts.rank0.jsonl": "b035090aa5696030ab3b2227bd037d868d6d106802f241989d5f62c826e56868"
+      }
+    }
+  },
+  "technical_gate": "Real preprocessing and full input audit; separately registered technical SFT warm-up, GRPO four-update save/reload and at least two formal-concurrency probe updates; verify the current actual merged S0 tensors and invariant reference before freeze. Formal matrix budgets remain unchanged."
+}

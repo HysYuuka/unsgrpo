@@ -1,0 +1,12 @@
+{
+  "GAIC_official_weights_ported": {
+    "path": "/root/autodl-fs/highlight-static-rank/weights/gaic_official/mobilenet_0.682_0.643_0.613_0.585_0.844_0.827_0.807_0.787_0.849_0.874.pth",
+    "bytes": 11820410,
+    "sha256": "dd649fdeac59bb586d9f47cbb2fd768584c8d943670247d035260ca8fa6f1d5e"
+  },
+  "MUSIQ_AVA_stock": {
+    "path": "/root/autodl-fs/highlight-static-rank/weights/musiq_ava_ckpt-e8d3f067.pth",
+    "bytes": 108624935,
+    "sha256": "e8d3f0671965dfe4301a1f7a4aedc8f49be8fed33b82dd5d116a9eb3ce2bd16b"
+  }
+}

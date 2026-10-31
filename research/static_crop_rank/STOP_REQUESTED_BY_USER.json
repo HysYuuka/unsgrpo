@@ -1,0 +1,52 @@
+{
+  "state": "STOP_REQUESTED_BY_USER",
+  "requested_time_HK": "2026-10-31T18:52:44.223388+08:00",
+  "reason": "User stopped experiments and redirected work to competition-content organization. No automatic resume or external inference.",
+  "signals": [
+    {
+      "pid": 487036,
+      "command": "/root/autodl-tmp/highlight-static-rank/.venv/bin/python -u /root/autodl-tmp/highlight-static-rank/scripts/finish_external_when_ready.py ",
+      "signal": "SIGTERM"
+    },
+    {
+      "pid": 486579,
+      "command": "/root/autodl-tmp/highlight-static-rank/.venv/bin/python -u /root/autodl-tmp/highlight-static-rank/scripts/monitor_execution.py ",
+      "signal": "SIGTERM"
+    },
+    {
+      "pid": 478364,
+      "command": "/root/autodl-tmp/highlight-static-rank/.venv/bin/python -u /root/autodl-tmp/highlight-static-rank/scripts/run_matrix.py ",
+      "signal": "SIGTERM"
+    }
+  ],
+  "status_before_stop": {
+    "state": "TRAINING",
+    "variant": "MUSIQ_FT",
+    "seed": 17,
+    "epoch": 2,
+    "step": 396,
+    "images_in_epoch": 528,
+    "epoch_images": 2635,
+    "last_step": {
+      "epoch": 2,
+      "step": 396,
+      "next_index": 528,
+      "images": 8,
+      "candidates": 675,
+      "loss": {
+        "reg": 0.08820129791274667,
+        "rank": 0.5183933973312378,
+        "sel": 0.1729760835878551,
+        "total": 0.3648560605943203
+      },
+      "gradient_norm_before_clip": 2.6548235416412354,
+      "seconds": 21.85152086103335,
+      "peak_allocated_bytes": 6656607232,
+      "lr_factor": 0.6001897533206831,
+      "candidate_chunk": 90
+    },
+    "pid": 530482,
+    "updated_unix": 1793443954.0066738
+  },
+  "preserve_recoverable_checkpoints": true
+}

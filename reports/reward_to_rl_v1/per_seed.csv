@@ -1,0 +1,7 @@
+method,seed,step,origin,status,V0_AP_percent,prompt_exposures,generated_policy_completions,actual_optimizer_steps
+G_plain,42,80,NEW,NOT_RUN_REWARD_NOT_ALIGNED,,0,0,0
+G_guard,42,80,NEW,NOT_RUN_REWARD_NOT_ALIGNED,,0,0,0
+RSFT,42,80,NEW,NOT_RUN_REWARD_NOT_ALIGNED,,0,0,0
+G_plain,43,80,NEW,NOT_RUN_REWARD_NOT_ALIGNED,,0,0,0
+G_guard,43,80,NEW,NOT_RUN_REWARD_NOT_ALIGNED,,0,0,0
+RSFT,43,80,NEW,NOT_RUN_REWARD_NOT_ALIGNED,,0,0,0

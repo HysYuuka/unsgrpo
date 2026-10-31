@@ -1,0 +1,17 @@
+{
+  "snapshot_hong_kong": "2026-10-30T18:08:23+08:00",
+  "files": [
+    {
+      "path": "/root/autodl-tmp/highlight-static-rank/reports/EXECUTION_AGENT_HANDOFF_20261030.md",
+      "bytes": 20062,
+      "sha256": "a9b0fc8294722f8a1112d0b29d976680b910a2e36e88ec4362d7b7b40951119a"
+    },
+    {
+      "path": "/root/autodl-tmp/highlight-static-rank/reports/HANDOFF_SNAPSHOT_20261030.json",
+      "bytes": 11358,
+      "sha256": "adbcd0c92c6472989a5eb7ea43ff23d666433cd0cb58bd3ae8b4c18512077ce4"
+    }
+  ],
+  "all_document_links_exist": true,
+  "no_training_change_for_handoff": true
+}

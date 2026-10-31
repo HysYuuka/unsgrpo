@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://huggingface.co/api/models/yzc002/FGAesQ?blobs=true",
+    "seconds": 3.3751585190184414,
+    "error": "SSLError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/models/yzc002/FGAesQ?blobs=true (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF oc"
+  },
+  {
+    "url": "https://huggingface.co/api/datasets/yzc002/FGAesthetics/tree/main?recursive=true",
+    "seconds": 2.875956729054451,
+    "error": "SSLError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/datasets/yzc002/FGAesthetics/tree/main?recursive=true (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF"
+  },
+  {
+    "url": "https://hf-mirror.com/api/models/yzc002/FGAesQ?blobs=true",
+    "seconds": 4.436924085021019,
+    "error": "SSLError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/models/yzc002/FGAesQ?blobs=true (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF oc"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "status": "NOT_REACHED_TEACHER_GATE_FAILED",
+  "candidate_manifest": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/external_screen.json",
+    "sha256": "53f0fc491cfae9169a85ced81e8d6af9e03e91ba2656a66f96dccf665c1c3ba9",
+    "bytes": 17026
+  },
+  "official_ID_lists_pinned_revision_verified": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round3_rl_method_v1/sources/youtube_lists_pinned_revision_verification.json",
+    "sha256": "61f95c24f49477c431cd4588beb459ad187f7b8c66deb78bf7cfc6ed621e8b4e",
+    "bytes": 1877
+  },
+  "candidate_sources": 24,
+  "verified_available_raw_sources": 0,
+  "downloaded_raw_video_bytes": 0,
+  "highlight_label_reads": 0,
+  "external_predictions": 0,
+  "protocol_exception": "Stage A froze official hash-ranked candidate IDs, not 24 verified available original videos; external data readiness was not established."
+}

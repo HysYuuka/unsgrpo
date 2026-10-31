@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://hf-mirror.com/api/models/yzc002/FGAesQ/tree/main",
+    "error": "URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'))"
+  },
+  {
+    "url": "https://hf-mirror.com/api/datasets/BWGZK/procrop_dataset/tree/main",
+    "error": "URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'))"
+  },
+  {
+    "url": "https://hf-mirror.com/api/datasets/yzc002/FGAesthetics/tree/main",
+    "error": "URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'))"
+  }
+]

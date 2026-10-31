@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETED",
+  "archive_root": "/autodl-fs/data/unsgrpo/archives/round2_diagnostic_v1",
+  "receipt": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round2_diagnostic_v1/archive_receipt.json",
+    "sha256": "2b1b06a1437e1a2eea1599fd9b19f343745e70c0128f35ad19a6c2dc4e9178bb",
+    "bytes": 37843
+  },
+  "n_files": 114,
+  "bytes": 23673418,
+  "local_sources_deleted": false
+}

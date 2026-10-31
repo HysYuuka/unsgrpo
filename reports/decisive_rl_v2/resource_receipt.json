@@ -1,0 +1,45 @@
+{
+  "status": "ACTUAL_ACCOUNTING",
+  "time": {
+    "utc": "2026-10-29T10:23:17.249645+00:00",
+    "hong_kong": "2026-10-29T18:23:17.249645+08:00"
+  },
+  "GPU_seconds": 382.56813483079895,
+  "GPU_hours": 0.1062689263418886,
+  "GPU_bucket_seconds": {
+    "teacher": 382.56813483079895,
+    "student": 0,
+    "training": 0,
+    "evaluation": 0
+  },
+  "GPU_limits_seconds": {
+    "teacher": 5400,
+    "student": 1800,
+    "training": 18000,
+    "evaluation": 3600
+  },
+  "GPU_total_limit_seconds": 28800,
+  "GPU_ledger": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/decisive_rl_v2/GPU_ledger.jsonl",
+    "sha256": "08ab7dbe15fe86e127f5898dd18eb6c63bcfa684d3690e409b3490f17fe11b09",
+    "bytes": 1698
+  },
+  "download_wall_seconds_not_GPU": 2796.900880468078,
+  "preparation": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/decisive_rl_v2/protocol.freeze.json",
+    "sha256": "cc1741d064f3ddac6a7982e124f6631b31f0a042b2975f38bf52867e55b02017",
+    "bytes": 9694
+  },
+  "new_storage_bytes": {
+    "work": 1415942,
+    "store": 17559630963,
+    "report_at_receipt": 231831
+  },
+  "currency_cost": null,
+  "currency_note": "No billing evidence; elapsed compute and bytes reported",
+  "Git_sync": false,
+  "subagents_used": false,
+  "new_formal_training_arms": 0,
+  "new_human_labeled_training_examples": 0,
+  "technical_training_receipts": []
+}

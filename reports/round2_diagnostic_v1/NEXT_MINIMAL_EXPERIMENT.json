@@ -1,0 +1,34 @@
+{
+  "status": "PROPOSED_NOT_RUN",
+  "primary_recommendation": "Prioritize teacher target/reference validity rather than seed tuning, more GRPO, or blindly adding overviews.",
+  "unresolved_explanations": [
+    "Part of the late pseudo-fitting damage comes from train self-reference/domain shift.",
+    "Even a more transferable predictor can retain the stable typicality/importance mismatch."
+  ],
+  "minimal_next_experiment": {
+    "backbone": "Reuse the current fixed CLIP-feature MLP, 32897 trainable parameters, full-video-statistics input view",
+    "comparison": "Reuse three existing global MSE/R0 endpoints versus three fresh MSE/clip-weighted-whole-video-excluded-q endpoints",
+    "new_fits": 3,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "steps": 256,
+    "window_exposures": 4096,
+    "dataset_and_sampling_schedule": "Identical old 40-train pool and existing schedule/projection/scalers",
+    "only_factor_changed": "Training q target removes whole query video from its original-cluster clip-weighted prototype. Keep cluster assignments, peer weighting and all development q unchanged.",
+    "train_human_labels": false,
+    "human_AP_checkpoint_selection": false,
+    "new_videos": 0,
+    "GPU_training": false,
+    "evaluation": "Same 10 development sources; all seed/fixed endpoints and source-paired intervals; not independent test.",
+    "evidence_rules": [
+      "Better development q fit plus better human AP supports self-reference/domain shift as a contributing mechanism.",
+      "Better q fit with no human gain, while stable conflicts persist, strengthens the reason to change teacher objective rather than fit it harder.",
+      "If intervals include zero or q generalization worsens, keep the distinction unresolved; do not append hyperparameter search."
+    ]
+  },
+  "consistency_engineering_hypothesis_not_validated": "A single deterministic clip score conditioned on a shared full-video representation, without window-relative position/context inputs, is consistent by construction. Its human usefulness must be tested; adding an overview or label-free offsets alone did not establish it.",
+  "same_Qwen_followup": "Not prioritized yet: final cheap student mean did not beat direct B0 or G-CAL. If future evidence supports it, register same Qwen/common-S0, same 32 frames/overview, same LoRA, matched exposure and calibration/ordinal-supervision control; disclose remaining output/loss/compute differences before claiming RL substitution."
+}

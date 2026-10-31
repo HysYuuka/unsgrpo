@@ -1,0 +1,20 @@
+{
+  "status": "PASSED",
+  "scope": "Synthetic schema/bookkeeping fixtures only; no real model, GPU or scientific metrics are represented by these fixtures",
+  "checks": [
+    "consistent 256/4096 consumed SFT ledger accepted by bookkeeping audit",
+    "smoke rejected even with matching nominal counts",
+    "four observed updates rejected as 256-step formal endpoint",
+    "changed input SHA256 rejected",
+    "missing complete index yields INCOMPLETE and process exit 2",
+    "no missing AP values imputed",
+    "missing GPU cost rejected rather than filled with zero",
+    "synthetic evaluator output cannot count as real first-round results"
+  ],
+  "report_script_sha256": "9f7f422bcda7050d6504e4274f5e42a182227e90922c4ac9defb07f7337eb471",
+  "committed_unit_tests": {
+    "path": "/root/autodl-tmp/unsgrpo/tests/test_report_round1.py",
+    "passed": 7,
+    "gpu_or_model_validation": false
+  }
+}

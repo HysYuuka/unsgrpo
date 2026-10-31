@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "strict_official_task_weight_load": true,
+  "scalar_cuda_formula_vs_vector_port_max_abs": {
+    "False": 1.3113021850585938e-06,
+    "True": 4.172325134277344e-07
+  },
+  "full_frame_RoD_zero": true,
+  "label": "GAIC official released weights with verified inference arithmetic port",
+  "parameters": 2909961,
+  "caveat": "not an official rebuilt legacy CUDA binary; published checkpoint training/selection exposure is separate from controlled same-data comparisons",
+  "real_train_source_all_candidates": {
+    "source_id": "210429",
+    "n": 75,
+    "scores_finite": true
+  }
+}

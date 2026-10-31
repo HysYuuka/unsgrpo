@@ -1,0 +1,224 @@
+{
+  "status": "FAILED",
+  "mode": "compare-merged",
+  "started_utc": "2026-10-27T10:39:55.763255+00:00",
+  "gpu_checkpoint_verification": false,
+  "gpu_grpo_training_verified": false,
+  "human_highlight_labels_read": false,
+  "merge_tolerances_preregistered": {
+    "mean_abs": 0.03,
+    "max_abs": 0.25
+  },
+  "versions": {
+    "ms-swift": "4.6.0",
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.6",
+    "peft": "0.18.1"
+  },
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "fixed_training_example": {
+    "inputs_path": "/root/autodl-tmp/unsgrpo-work/smoke_inputs/train_sft.jsonl",
+    "inputs_sha256": "4e6f4e520d4274ab2a20266dd9783321c2fcdc2b20a4e11feecb7004ccf8eaeb",
+    "request_id": "3eYKfiOEJNs__000008_000015",
+    "dataset_request_id": "3eYKfiOEJNs__000008_000015",
+    "pool_instance_id": "3eYKfiOEJNs__pool_0000",
+    "media_signature": "24b3c2124b78bfe7d612c28c077d5eb59f5a60456fa50228c7cfe36ed1b9980f",
+    "clip_ids": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "assistant_answer": "{\"scores\":[46,63,49,18,47,55,51,65]}",
+    "row_sha256": "6471fd834097ca677dcbe7d85e8b5f27004c0546e005a8ea1be78461a358fb41"
+  },
+  "model_path": "/root/autodl-tmp/unsgrpo-work/checkpoints/smoke_merge_v2",
+  "model_file_hashes": {
+    "args.json": {
+      "bytes": 19896,
+      "sha256": "d69993cf96baaef571304c473c0ff670bc15d84a9b150dd0c3b393474f27d69a"
+    },
+    "chat_template.json": {
+      "bytes": 5502,
+      "sha256": "6f8a6a55027e3da5160105556cda5dd69f6423f1c32645f6730d32de7773d0c4"
+    },
+    "config.json": {
+      "bytes": 1505,
+      "sha256": "bec4b3d446efa05807365c9e1cec03ac590836879d02f3a6da879971154bdd3b"
+    },
+    "generation_config.json": {
+      "bytes": 269,
+      "sha256": "1e241830b48b397cb0900101421df5450baddc7adf01e5fc86b5615865f3bae4"
+    },
+    "merges.txt": {
+      "bytes": 1671839,
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+    },
+    "model.safetensors": {
+      "bytes": 4255140312,
+      "sha256": "e849834799d7dc3bd7e5a4caaf98c874f686043d772cb95afa2c4b8696bfc7fa"
+    },
+    "preprocessor_config.json": {
+      "bytes": 390,
+      "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516"
+    },
+    "tokenizer.json": {
+      "bytes": 7032403,
+      "sha256": "a5d85b6dcc535e6b93115a9ef287e6132fdbf30270da6218194ba742261173c7"
+    },
+    "tokenizer_config.json": {
+      "bytes": 10868,
+      "sha256": "c2da771801886ad9ae98181793ffd3dfb7f1af30f6f7c6a4e15d7dbba52e2399"
+    },
+    "video_preprocessor_config.json": {
+      "bytes": 385,
+      "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13"
+    },
+    "vocab.json": {
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  },
+  "snapshot_path": "/root/autodl-tmp/unsgrpo/reports/smoke_SFT_v2_snapshot.json",
+  "snapshot_sha256": "704922682cf027833fba246b4a4757fa2f5016172e0eec29899b7fa31d7e4b19",
+  "stages": {
+    "load_model": {
+      "wall_seconds": 5.351247651968151,
+      "peak_cuda_allocated_bytes": 4256128000,
+      "peak_cuda_reserved_bytes": 4257218560
+    },
+    "fixed_answer_forward": {
+      "wall_seconds": 0.7934126779437065,
+      "peak_cuda_allocated_bytes": 5040718336,
+      "peak_cuda_reserved_bytes": 5337251840
+    },
+    "greedy_generation": {
+      "wall_seconds": 1.439045389648527,
+      "peak_cuda_allocated_bytes": 4743987712,
+      "peak_cuda_reserved_bytes": 5337251840
+    }
+  },
+  "fixed_answer": {
+    "token_logps": [
+      -3.408674716949463,
+      0.0,
+      -0.1606271117925644,
+      -3.0472142696380615,
+      -3.572441816329956,
+      -9.536738616588991e-07,
+      -2.009146213531494,
+      -2.5341978073120117,
+      -1.5497195136049413e-06,
+      -2.0344958305358887,
+      -2.0672168731689453,
+      -2.145764938177308e-06,
+      -4.822315692901611,
+      -2.9725959300994873,
+      -0.0001833270798670128,
+      -1.6405047178268433,
+      -2.089168071746826,
+      -0.0014265133067965508,
+      -1.4711717367172241,
+      -2.0794100761413574,
+      -0.0035266606137156487,
+      -1.2674850225448608,
+      -2.3602466583251953,
+      -0.026782091706991196,
+      -1.6691560745239258,
+      -2.16922926902771,
+      -1.3283860683441162,
+      -9.536738616588991e-07,
+      -1.1920928244535389e-07
+    ],
+    "answer_token_ids": [
+      4913,
+      46695,
+      8899,
+      19,
+      21,
+      11,
+      21,
+      18,
+      11,
+      19,
+      24,
+      11,
+      16,
+      23,
+      11,
+      19,
+      22,
+      11,
+      20,
+      20,
+      11,
+      20,
+      16,
+      11,
+      21,
+      20,
+      13989,
+      151645,
+      198
+    ],
+    "prediction_positions": [
+      2261,
+      2262,
+      2263,
+      2264,
+      2265,
+      2266,
+      2267,
+      2268,
+      2269,
+      2270,
+      2271,
+      2272,
+      2273,
+      2274,
+      2275,
+      2276,
+      2277,
+      2278,
+      2279,
+      2280,
+      2281,
+      2282,
+      2283,
+      2284,
+      2285,
+      2286,
+      2287,
+      2288,
+      2289
+    ],
+    "supervised_tokens_including_eos": 29,
+    "input_ids_sha256": "08770b0c1368db4d45a2942886156983cab51640cee85e10c11cbdd9adfc25e4"
+  },
+  "greedy": {
+    "response": "```json\n{\n  \"scores\": [\n    10,\n    10,\n    10,\n    10,\n    10,\n    10,\n    10\n  ]\n}\n```",
+    "finish_reason": "stop",
+    "valid_json": false,
+    "proxy_reward": -1.0,
+    "prompt_tokens": 2262,
+    "completion_tokens": 49
+  },
+  "adapter_parameter_hashes": {},
+  "merge_logp_comparison": {
+    "mean_abs": 0.046200871953268344,
+    "max_abs": 0.23313379287719727,
+    "mean_abs_tolerance": 0.03,
+    "max_abs_tolerance": 0.25,
+    "exact_equal": false,
+    "passed": false
+  },
+  "greedy_equal_before_after_merge": true,
+  "error": "RuntimeError: Merge exceeded preregistered BF16 logp tolerance; retain failure and investigate",
+  "traceback": "Traceback (most recent call last):\n  File \"/root/autodl-tmp/unsgrpo/scripts/verify_checkpoint.py\", line 424, in main\n    raise RuntimeError('Merge exceeded preregistered BF16 logp tolerance; retain failure and investigate')\nRuntimeError: Merge exceeded preregistered BF16 logp tolerance; retain failure and investigate\n",
+  "wall_seconds": 12.858719489071518,
+  "ended_utc": "2026-10-27T10:40:08.621991+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETED",
+  "scope": "Real processed train-video input only; no human highlight labels consulted",
+  "overview": "/root/autodl-tmp/unsgrpo-work/previews/train_sft_3eYKfiOEJNs__000008_000015/overview_processed_frame000.png",
+  "local_frame": "/root/autodl-tmp/unsgrpo-work/previews/train_sft_3eYKfiOEJNs__000008_000015/window_processed_frame016.png",
+  "observations": [
+    "16-cell chronological overview and added timestamps readable at processed resolution",
+    "Global people/dogs/shop actions and background identifiable",
+    "Local frame is low resolution; small distant movements and fine text are difficult to resolve; retained as shared first-round input limitation",
+    "Embedded subtitles/titles are natural pixels in the original video, not annotation/title fields inserted into the prompt"
+  ],
+  "input_budget_changed": false
+}

@@ -1,0 +1,39 @@
+{
+  "status": "COMPLETED_FINITE_JOB",
+  "decision": "REWARD_NOT_ALIGNED",
+  "time": {
+    "utc": "2026-10-29T03:35:38.748625+00:00",
+    "hong_kong": "2026-10-29T11:35:38.748625+08:00"
+  },
+  "main_report": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/DECISION.md",
+    "sha256": "8b5bba8d86df59b29d230ec9a2fc0cca8cfa0c5d89f733dec6027b0e11412b11",
+    "bytes": 5723
+  },
+  "independent_review": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/FINAL_REVIEW.md",
+    "sha256": "dff49b6ef0ff9bc40d615bbc0e1b61ff4ddf694e709c4c314fad49cf53b928dc",
+    "bytes": 3711
+  },
+  "artifact_index": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/artifact_index.json",
+    "sha256": "52dedb9deee9b77edf49dfbe80c527678e2d65dc2e7990ed97c5a93f4dd73d35",
+    "bytes": 49285
+  },
+  "resource_receipt": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/reward_to_rl_v1/resource_receipt.json",
+    "sha256": "fd1628cc1b4b34ae5e8ea4991ae2e8ecd96795eec77bfc7ae224ce536153c362",
+    "bytes": 4443
+  },
+  "independent_verification": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/reward_to_rl_v1/independent_verification.json",
+    "sha256": "f9c3ebe7f518ac641532140f81e0024c40bf6d66b3216e999153b1f97dfe7e02",
+    "bytes": 1057
+  },
+  "GPU_conservative_seconds": 645.5105947097763,
+  "software_repairs_used": 1,
+  "old_rounds_unchanged": true,
+  "Git_sync": false,
+  "subagents_used": false,
+  "remaining_work": "No automatic continuation, additional sampling, search or long training."
+}

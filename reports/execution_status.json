@@ -1,0 +1,143 @@
+{
+  "status": "COMPLETED_REVIEWED_AND_ARCHIVED",
+  "stage": "ROUND1_CLOSED",
+  "updated_hong_kong": "2026-10-28T09:32:09.238431+08:00",
+  "original_starter_found": false,
+  "reconstruction_required": true,
+  "cpu_core_data_tests": {
+    "passed": 45,
+    "log_dir": "/root/autodl-tmp/unsgrpo-work/runs"
+  },
+  "real_preprocessing": "COMPLETED",
+  "gpu_training_verified": true,
+  "matrix_frozen": true,
+  "human_annotation_values_read": true,
+  "git_sync": "MANUAL_ONLY_WHEN_USER_REQUESTS",
+  "v1": "BLOCKED_TIME_AXIS_AND_REFERENCE_SPLIT_ALIGNMENT",
+  "matrix": {
+    "B0": {
+      "status": "COMPLETED_EVALUATED"
+    },
+    "B1": {
+      "status": "COMPLETED_EVALUATED"
+    },
+    "S0": {
+      "status": "COMPLETED_EVALUATED",
+      "successful_updates": 256,
+      "actual_prompt_exposures": 4096,
+      "endpoint_accepted": true
+    },
+    "S+": {
+      "status": "COMPLETED_EVALUATED",
+      "successful_updates": 256,
+      "actual_prompt_exposures": 1024,
+      "endpoint_accepted": true
+    },
+    "G-CAL": {
+      "status": "COMPLETED_EVALUATED",
+      "successful_updates": 256,
+      "actual_prompt_exposures": 1024,
+      "endpoint_accepted": true
+    },
+    "G-RANK": {
+      "status": "COMPLETED_EVALUATED",
+      "run": "round1_seed42_v1_recovery1__G_RANK",
+      "interrupted_prior_attempt_preserved": true,
+      "successful_updates": 256,
+      "actual_prompt_exposures": 1024,
+      "endpoint_accepted": true
+    }
+  },
+  "assets": {
+    "videos": 50,
+    "train": 40,
+    "test": 10,
+    "qwen_sha256_verified": true,
+    "clip_sha256_verified": true
+  },
+  "dependencies": "IMPORTS_AND_PIP_CHECK_PASSED",
+  "tests": {
+    "passed": 143,
+    "subtests": 17,
+    "log": "/root/autodl-tmp/unsgrpo-work/runs/pytest_final_before_freeze.log"
+  },
+  "input_audit": "COMPLETED",
+  "real_train_only_umap": "COMPLETED",
+  "daily_sync_scheduled": false,
+  "last_failed_technical_run": "smoke_SFT_v1",
+  "last_failure": "Telemetry sentinel used float32 linspace indices on a large embedding; zero optimizer updates before failure",
+  "sft_smoke": {
+    "run": "smoke_SFT_v2",
+    "successful_updates": 4,
+    "actual_exposures": 4,
+    "checkpoint_reload": "COMPLETED"
+  },
+  "grpo_smoke": {
+    "run_id": "smoke_GRPO_v6",
+    "status": "ACCEPTED_NONZERO_POLICY_UPDATE",
+    "successful_optimizer_calls": 4,
+    "exposures": 4,
+    "generated_and_consumed": 16
+  },
+  "reference_integrity": "COMPLETED_EXACT_INVARIANCE",
+  "merge_status": "COMMON_S0_REGISTERED_BF16_TENSOR_PROOF_COMPLETE",
+  "paused_at_hong_kong": "2026-10-27T22:50:29.879518+08:00",
+  "paused_from_stage": "GRPO_SMOKE_RUNNING_MERGE_ROUNDING_DIAGNOSIS",
+  "resume_requires_explicit_user_message": false,
+  "active_training_processes": [],
+  "active_gpu_processes": [],
+  "automatic_git_sync": false,
+  "resumed_at_hong_kong": "2026-10-27T22:58:12.467398+08:00",
+  "technical_sft_warmup": {
+    "run_id": "smoke_SFT_warm32_v1",
+    "updates": 32,
+    "batch": 1,
+    "purpose": "format learning for nonzero-reward technical validation only",
+    "formal_budget_changed": false
+  },
+  "technical_acceptance": "COMPLETED_11_OF_11",
+  "formal_controller": "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1_recovery1/state.json",
+  "formal_launch_hong_kong": "2026-10-27T19:58:15.815517+08:00",
+  "final_local_tests": {
+    "passed": 143,
+    "subtests": 17,
+    "source_hashes_stable": true
+  },
+  "formal_driver_pid": null,
+  "common_s0_identity": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/common_s0.json",
+    "sha256": "2ccf31ba127b4b18ea6909ad9cc4b8f3734ae8ff692a902e1547dc4be2dc82e9"
+  },
+  "pause_receipt": "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1/pauses/20261027T225029/pause_verification.json",
+  "recovery_registration": "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1_recovery1/recovery_registration.json",
+  "monitor_interval_minutes": 30,
+  "monitor_policy": "User requested: check every 30 minutes; notify only actionable failure or completion; training logs continuous.",
+  "offline_service_status": "WAITING_FOR_CONTROLLER",
+  "offline_service_pid": 225224,
+  "offline_completion_state": "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1_recovery1/offline_completion_repair_v2_state.json",
+  "offline_completion_registration": "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1_recovery1/offline_completion_registration.json",
+  "offline_screen_session": "unsgrpo-round1-offline",
+  "updated_utc": "2026-10-28T01:22:50.913658+00:00",
+  "human_annotation_use": "TEST_EVALUATION_ONLY_AFTER_ALL_SIX_PREDICTIONS_FROZEN",
+  "final_review": "/root/autodl-tmp/unsgrpo/reports/round1_final_review_recovery1/FINAL_ROUND1_REVIEW.md",
+  "final_review_json": "/root/autodl-tmp/unsgrpo/reports/round1_final_review_recovery1/FINAL_ROUND1_REVIEW.json",
+  "offline_completion_receipt": "/autodl-fs/data/unsgrpo/archives/round1_seed42_v1_recovery1_closeout_v1/offline_completion_final.json",
+  "monitoring_status": "STOPPED_AFTER_COMPLETION",
+  "final_decision": "NO_CURRENT_G_RANK_BUDGET_EXPANSION",
+  "final_decision_report": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/ROUND1_DECISION_AND_FAILURE_REVIEW_20261028.md",
+    "sha256": "e226431ff31a40b390085f9c4f2e7cca8f368a5e3fefe04cda0b5264d77e2d41"
+  },
+  "independent_metric_audit": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1_recovery1/visual_review_v1/independent_metrics_crosscheck_receipt.json",
+    "sha256": "4c53071cf9c573fc55c30b1e49ad0fea03459c3763faa8ed5bcedc9927989cb5"
+  },
+  "final_visual_review_archive": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1_recovery1/visual_review_archive_receipt.json",
+    "sha256": "483383d7c1a212dec664a0743302d741c22cce49f9ef9bbd7eaf3dac5c5f2e26"
+  },
+  "evaluation_io_repair": {
+    "path": "/root/autodl-tmp/unsgrpo-work/runs/round1_seed42_v1_recovery1/evaluation_io_repair_v1/repair_registration.json",
+    "sha256": "05068685f4c6cf429248007284e5b42ace7ec9e514cee6d43eb57f3672c8706e"
+  }
+}

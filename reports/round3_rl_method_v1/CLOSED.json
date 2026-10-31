@@ -1,0 +1,47 @@
+{
+  "status": "COMPLETED_WITH_PREDECLARED_EARLY_STOP",
+  "decision": "TEACHER_NOT_READY",
+  "time": {
+    "utc": "2026-10-29T01:51:58.202088+00:00",
+    "hong_kong": "2026-10-29T09:51:58.202088+08:00"
+  },
+  "main_report": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/DECISION.md",
+    "sha256": "6c902c2e51e47d7d6f6b58271020140d68606c142cab0248b2fca39f25498dd8",
+    "bytes": 10760
+  },
+  "actual_spec": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/method_spec.actual.json",
+    "sha256": "3e31b10336df8664d7e38d227d09885c72fb5c4938ac2579db568cd7c310d4c7",
+    "bytes": 1722
+  },
+  "resource_receipt": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/resource_receipt.json",
+    "sha256": "ec8f3ceca2bbe894a2593bd961a81bd8692175b7c920521429992a556971ceba",
+    "bytes": 2837
+  },
+  "artifact_index": {
+    "path": "/root/autodl-tmp/unsgrpo/reports/round3_rl_method_v1/artifact_index.json",
+    "sha256": "bad617dff3deef16cf6b31cd96a0a4cc73fb7fd8463e1b7ed8d49ad605e3a5c1",
+    "bytes": 52775
+  },
+  "storage_limits_and_reserves_passed": true,
+  "frozen_first_round_project_files_unchanged": 57,
+  "frozen_round2_reused_sources_unchanged": true,
+  "frozen_round3_front_sources_and_inputs_unchanged": true,
+  "GPU_occupied_seconds": 57.21812811307609,
+  "new_training_runs": 0,
+  "teacher_calls": 12,
+  "formal_RL_hypothesis_tested": false,
+  "automatic_Git_sync": false,
+  "subagents_used": false,
+  "persistent_root": "/root/autodl-fs/unsgrpo/round3_rl_method_v1",
+  "policy_adapter_files": [],
+  "remaining_planned_work": "C GPU signal/update check, D/E formal training, new F inference, G external evaluation deliberately not reached after failed teacher gate.",
+  "source_role_metadata_correction": {
+    "path": "/root/autodl-fs/unsgrpo/round3_rl_method_v1/final_control/source_role_metadata_correction.json",
+    "sha256": "c51867087cf1507e499bf962635555930e95d5ad58df75646597ee5420b2e941",
+    "bytes": 1081
+  },
+  "updated_metadata_time_utc": "2026-10-29T01:54:01.954583+00:00"
+}

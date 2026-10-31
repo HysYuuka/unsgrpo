@@ -1,0 +1,15 @@
+{
+  "source": "pyiqa 0.1.16 wheel",
+  "wheel_sha256": "42bbcf1c274a8b53f040a3ec5ec304a15b7725afb5a85b81050e9cc7e6d09ed4",
+  "changes": [
+    "Isolate official network, padding, multiscale modules; remove global registry/import unrelated architectures",
+    "Strict local weight load; 10-bin MOS unchanged",
+    "Preprocess RGB inputs in both train and eval; original upstream only preprocesses eval and expects preprocessed training patches"
+  ],
+  "architecture_changed": false,
+  "native_scales": [
+    224,
+    384
+  ],
+  "original_resolution_patch_limit": -1
+}
